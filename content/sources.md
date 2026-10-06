@@ -1,4 +1,4 @@
-{"slug": "sources", "title": "用語・情報源", "checked_at": "2026-10-06", "source_ids": ["jp-rewards", "jp-classes", "beginner", "progress", "daily", "nightmare", "transcend", "festival", "enhance", "unreleased", "note", "lst", "chanter-kr-jp", "spirit-kr-jp", "inven-chanter", "inven-pve", "kr-expedition", "tw-guide", "jp-notices", "build-gladiator", "build-templar", "build-assassin", "build-ranger", "build-chanter", "build-cleric", "build-sorcerer", "build-spiritmaster"]}
+{"slug":"sources","title":"用語・情報源","checked_at":"2026-10-06","source_ids":["jp-rewards","jp-classes","beginner","progress","daily","nightmare","transcend","festival","enhance","unreleased","note","lst","chanter-kr-jp","spirit-kr-jp","inven-chanter","inven-pve","kr-expedition","tw-guide","jp-notices","build-gladiator","build-templar","build-assassin","build-ranger","build-chanter","build-cleric","build-sorcerer","build-spiritmaster","daevanion-guide","gear-guide","storage-guide","character-progress"]}
 
 ## 職業名の対応
 | 日本語 | 英語 | 韓国語 |

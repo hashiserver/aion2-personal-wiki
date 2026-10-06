@@ -10,7 +10,8 @@ from urllib.parse import urlsplit
 import markdown2
 
 ROOT = Path(__file__).resolve().parent
-NAV = [('', '最初にやること'), ('progression', '育成の順番'), ('routine', '日課・週課'),
+NAV = [('', '最初にやること'), ('progression', '育成の順番'), ('inventory', 'カバン整理'),
+       ('daevanion', 'ディーヴァニオン'), ('routine', '日課・週課'),
        ('classes', '職業比較・ビルド'), ('equipment', '装備・素材'), ('dungeons', 'ダンジョン'),
        ('differences', '先行版との仕様差'), ('sources', '用語・情報源')]
 CLASS_NAMES = [('gladiator', 'グラディエーター'), ('templar', 'テンプラー'), ('assassin', 'アサシン'),

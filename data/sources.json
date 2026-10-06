@@ -175,7 +175,7 @@
     "url": "https://aion2.gaming.tools/ja/builds/gladiator/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "第三者のグローバル版向け構成。キャラLvに応じて表示が変わる",
+    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
     "published_at": null,
     "checked_at": "2026-10-06"
   },
@@ -184,7 +184,7 @@
     "url": "https://aion2.gaming.tools/ja/builds/templar/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "第三者のグローバル版向け構成。キャラLvに応じて表示が変わる",
+    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
     "published_at": null,
     "checked_at": "2026-10-06"
   },
@@ -193,7 +193,7 @@
     "url": "https://aion2.gaming.tools/ja/builds/assassin/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "第三者のグローバル版向け構成。キャラLvに応じて表示が変わる",
+    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
     "published_at": null,
     "checked_at": "2026-10-06"
   },
@@ -202,7 +202,7 @@
     "url": "https://aion2.gaming.tools/ja/builds/ranger/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "第三者のグローバル版向け構成。キャラLvに応じて表示が変わる",
+    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
     "published_at": null,
     "checked_at": "2026-10-06"
   },
@@ -211,7 +211,7 @@
     "url": "https://aion2.gaming.tools/ja/builds/chanter/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "第三者のグローバル版向け構成。キャラLvに応じて表示が変わる",
+    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
     "published_at": null,
     "checked_at": "2026-10-06"
   },
@@ -220,7 +220,7 @@
     "url": "https://aion2.gaming.tools/ja/builds/cleric/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "第三者のグローバル版向け構成。キャラLvに応じて表示が変わる",
+    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
     "published_at": null,
     "checked_at": "2026-10-06"
   },
@@ -229,7 +229,7 @@
     "url": "https://aion2.gaming.tools/ja/builds/sorcerer/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "第三者のグローバル版向け構成。キャラLvに応じて表示が変わる",
+    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
     "published_at": null,
     "checked_at": "2026-10-06"
   },
@@ -238,7 +238,43 @@
     "url": "https://aion2.gaming.tools/ja/builds/spiritmaster/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "第三者のグローバル版向け構成。キャラLvに応じて表示が変わる",
+    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "published_at": null,
+    "checked_at": "2026-10-06"
+  },
+  "daevanion-guide": {
+    "title": "AION2 Times：ディーヴァニオンの基本と振り方",
+    "url": "https://aion2-times.com/aion2-devanion-node-guide/",
+    "tag": "日本記事",
+    "region": "グローバル／韓国",
+    "scope": "基本操作を参照。韓国版の後半配分と日本版の初期化費用は確定根拠に不使用",
+    "published_at": "2026-08-13",
+    "checked_at": "2026-10-06"
+  },
+  "gear-guide": {
+    "title": "AION2 Times：装備の強化と継承",
+    "url": "https://aion2-times.com/aion2-gear-enhancement/",
+    "tag": "日本記事",
+    "region": "グローバル",
+    "scope": "2026-10-05更新。抽出と継承の条件を参照。返却量はゲーム内の確認表示を優先",
+    "published_at": "2026-07-10",
+    "checked_at": "2026-10-06"
+  },
+  "storage-guide": {
+    "title": "Aion 2 Maps：Storage",
+    "url": "https://aion2maps.com/guides/storage/",
+    "tag": "海外攻略・解析",
+    "region": "グローバル／韓国",
+    "scope": "2026-09-28更新。グローバル解析と韓国版参考を含む。日本版の全品目・拡張料金は実機未照合",
+    "published_at": null,
+    "checked_at": "2026-10-06"
+  },
+  "character-progress": {
+    "title": "AION 2 Global Database：キャラクター成長",
+    "url": "https://aion2.gaming.tools/ja/progression/character",
+    "tag": "海外データ（日本語）",
+    "region": "グローバル",
+    "scope": "Lv22のレベル報酬累計44を参照。クエスト追加分・未登録結晶は別",
     "published_at": null,
     "checked_at": "2026-10-06"
   }

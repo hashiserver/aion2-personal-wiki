@@ -1,5 +1,7 @@
 {"slug":"equipment","title":"装備・素材","checked_at":"2026-10-06","source_ids":["enhance","beginner"]}
 
+カバンに空きがない場合は、先に[カバン整理・残すもの](../inventory/)を確認します。
+
 ## 強化する前の順番
 | 順番 | 確認 | 判断の目的 |
 |---|---|---|
