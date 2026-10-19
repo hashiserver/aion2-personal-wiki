@@ -1,5 +1,7 @@
 import importlib.util
 import json
+import re
+import shutil
 from pathlib import Path
 import tempfile
 import unittest
@@ -18,12 +20,14 @@ class BuildTests(unittest.TestCase):
         self.sources = self.root / 'sources.json'
         self.sources.write_text(json.dumps({'s1': {'title': '資料', 'url': 'https://example.com/guide', 'tag': '日本記事', 'region': 'グローバル', 'scope': '未確認', 'checked_at': '2026-10-06', 'published_at': None}}))
 
-    def build(self):
+    def build(self, project_root=None):
         spec = importlib.util.spec_from_file_location('wiki_build', ROOT / 'build.py')
         if spec is None or not Path(spec.origin).exists():
             self.fail('build_site is not implemented')
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
+        if project_root is not None:
+            module.ROOT = project_root
         module.build_site(self.content, self.sources, self.root / 'dist')
 
     def article(self, filename, slug='', body=INTRO, ids=None):
@@ -67,7 +71,7 @@ class BuildTests(unittest.TestCase):
         self.article('class.md', slug='classes/test', body='## 構成\n\n| 技 | 出典 |\n|---|---|\n| 技名 | [[source:s1]] |')
         self.build()
         html = (self.root / 'dist/classes/test/index.html').read_text()
-        self.assertIn('../../assets/style.css', html)
+        self.assertRegex(html, r'href="/assets/style\.[0-9a-f]{12}\.css"')
         self.assertIn('公開日不明', html)
         self.assertIn('確認日 2026-10-06', html)
         self.assertIn('tabindex="0"', html)
@@ -96,6 +100,49 @@ class BuildTests(unittest.TestCase):
         self.build()
         self.assertFalse(old_page.exists())
         self.assertTrue((self.root / 'dist/index.html').exists())
+
+    def test_navigation_and_body_links_use_canonical_worker_routes(self):
+        self.article('index.md', body='[イベント](events/index.html)\n\n[外部](https://example.com/index.html)')
+        self.article('events.md', slug='events')
+        self.article('links.md', slug='links')
+        self.article('sources.md', slug='sources')
+        self.article('nested.md', slug='classes/test', body='[イベント](../../events/index.html?view=compact#details)\n\n[出典](#source-s1)')
+        self.build()
+        for page in (self.root / 'dist').rglob('index.html'):
+            text = page.read_text()
+            self.assertIn('href="/"', text)
+            self.assertIn('href="/events/"', text)
+            self.assertIn('href="/links/"', text)
+            self.assertNotRegex(text, r'href="(?!https?://)[^"]*index\.html')
+        home = (self.root / 'dist/index.html').read_text()
+        nested = (self.root / 'dist/classes/test/index.html').read_text()
+        self.assertIn('href="https://example.com/index.html"', home)
+        self.assertIn('href="/events/?view=compact#details"', nested)
+        self.assertIn('href="#source-s1"', nested)
+
+    def test_changed_css_has_new_cache_key_and_old_assets_are_removed(self):
+        self.article('index.md')
+        project = self.root / 'project'
+        shutil.copytree(ROOT / 'assets', project / 'assets')
+        shutil.copytree(ROOT / 'templates', project / 'templates')
+        shutil.copyfile(ROOT / '_redirects', project / '_redirects')
+        def stylesheet():
+            page = (self.root / 'dist/index.html').read_text()
+            return re.search(r'<link rel="stylesheet" href="([^"]+)"', page)[1]
+        self.build(project)
+        first = stylesheet()
+        self.build(project)
+        self.assertEqual(stylesheet(), first)
+        css = project / 'assets/style.css'
+        css.write_text(css.read_text() + '\nbody{outline:1px solid red}\n')
+        self.build(project)
+        second = stylesheet()
+        self.assertNotEqual(first, second)
+        self.assertFalse((self.root / 'dist' / first.lstrip('/')).exists())
+        self.assertEqual((self.root / 'dist' / second.lstrip('/')).read_text(), css.read_text())
+        headers = (self.root / 'dist/_headers').read_text()
+        self.assertIn(second + '\n  Cache-Control: public, max-age=31536000, immutable', headers)
+        self.assertNotIn(first, headers)
 
 
 if __name__ == '__main__':

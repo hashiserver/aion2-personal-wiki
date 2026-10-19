@@ -3,3 +3,12 @@
 @media print{.site-header,.sources,.skip-link,footer{display:none}body{background:white}main{padding:0}.task-panel{break-inside:avoid}.task-columns{gap:1rem}}
 
 .event-notice{display:flex;align-items:center;gap:.6rem 1rem;flex-wrap:wrap;padding:.8rem 1rem;margin:0 0 1.3rem;border:1px solid #d2dfe7;background:#edf4f8;border-radius:5px;text-decoration:none;font-size:.85rem;min-height:48px}.event-notice strong{color:var(--ink)}.notice-action{margin-left:auto;font-weight:650}@media(max-width:767px){.event-notice{display:block;font-size:.85rem;padding:.8rem 1rem}.event-notice strong{display:block}.event-notice span{display:block}.event-notice .notice-action{margin-top:.3rem}}
+
+/* Keep the outgoing document visible until the next one is ready, without a fade or zoom. */
+@media (prefers-reduced-motion:no-preference){
+  @view-transition{navigation:auto}
+  ::view-transition-group(root),::view-transition-old(root),::view-transition-new(root){animation:none}
+  ::view-transition-old(root){display:none}
+  ::view-transition-new(root){mix-blend-mode:normal}
+}
+@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}

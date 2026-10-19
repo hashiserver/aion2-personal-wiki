@@ -31,12 +31,12 @@ def render_portal(data, sources, declared_ids):
     notice = ''
     if active:
         item = active[0]
-        notice = ('<a class="event-notice" href="events/index.html"><strong>開催中イベント</strong><span>' + escape(item['title']) + '：' + escape(item['short_end']) + '</span><span class="notice-action">期限・受取を確認</span></a>')
+        notice = ('<a class="event-notice" href="/events/"><strong>開催中イベント</strong><span>' + escape(item['title']) + '：' + escape(item['short_end']) + '</span><span class="notice-action">期限・受取を確認</span></a>')
     return (notice + '<div class="task-columns">' +
             panel('daily', '毎日やること', '受取と、あふれそうな回数から。') +
             panel('weekly', '毎週やること', '週の残数と交換枠を確認。') + '</div>' +
             '<aside class="plain-note"><strong>リセットの時刻について</strong><p>出席簿は毎日16:00 JST。その他はゲーム内の残り時間を優先してください。すべてを毎日消化する必要はありません。</p></aside>' +
-            '<div class="related"><a href="events/index.html">開催中イベントと受取期限を見る</a><a href="links/index.html">職業ビルド・マップ・計算機を探す</a></div>')
+            '<div class="related"><a href="/events/">開催中イベントと受取期限を見る</a><a href="/links/">職業ビルド・マップ・計算機を探す</a></div>')
 
 
 def render_links(data, sources, declared_ids):

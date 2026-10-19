@@ -1,11 +1,12 @@
 """Generate a lightweight static wiki; no network calls or runtime JavaScript."""
 import html
+import hashlib
 import json
-import os
 from pathlib import Path
+import posixpath
 import re
 import shutil
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urlunsplit
 
 import markdown2
 from portal import render_portal, render_links, render_events
@@ -25,9 +26,21 @@ def load_article(path: Path) -> tuple[dict, str]:
 
 
 def relative_link(slug: str, target: str) -> str:
-    start = slug or '.'
-    dest = f'{target}/index.html' if target else 'index.html'
-    return os.path.relpath(dest, start).replace(os.sep, '/')
+    # Match Workers' force-trailing-slash routes without a redirect hop.
+    return f'/{target}/' if target else '/'
+
+
+def canonical_link(slug: str, ref: str, known_slugs: set[str]) -> str:
+    url = urlsplit(ref)
+    if url.scheme or url.netloc or not url.path:
+        return ref
+    path = posixpath.normpath(posixpath.join('/' + slug, url.path))
+    if path.endswith('/index.html'):
+        path = path[:-len('/index.html')]
+    target = path.strip('/')
+    if target not in known_slugs:
+        return ref
+    return urlunsplit(('', '', relative_link(slug, target), url.query, url.fragment))
 
 
 def navigation(slug: str, known_slugs: set[str]) -> str:
@@ -90,8 +103,19 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
         if old_page not in expected_pages:
             old_page.unlink()
     (output_dir / 'assets').mkdir(exist_ok=True)
+    css_bytes = (ROOT / 'assets/style.css').read_bytes()
+    css_name = f'style.{hashlib.sha256(css_bytes).hexdigest()[:12]}.css'
+    for old_css in (output_dir / 'assets').glob('style.*.css'):
+        if old_css.name != css_name:
+            old_css.unlink()
+    (output_dir / 'assets' / css_name).write_bytes(css_bytes)
+    # Keep the former URL working for an already-open, older document.
     shutil.copyfile(ROOT / 'assets/style.css', output_dir / 'assets/style.css')
     shutil.copyfile(ROOT / '_redirects', output_dir / '_redirects')
+    # Only content-addressed CSS gets an immutable cache. HTML revalidates.
+    header_rules = [f'{relative_link("", slug)}\n  Cache-Control: public, max-age=0, must-revalidate' for slug in sorted(known)]
+    header_rules.append(f'/assets/{css_name}\n  Cache-Control: public, max-age=31536000, immutable')
+    (output_dir / '_headers').write_text('\n\n'.join(header_rules) + '\n', encoding='utf-8')
     template = (ROOT / 'templates/page.html').read_text(encoding='utf-8')
     for meta, body in articles:
         slug = meta['slug']
@@ -101,8 +125,6 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
         body_html = body_html.replace('</table>', '</table></div>')
         toc = ''.join(f'<a href="#{html.escape(anchor, quote=True)}">{re.sub("<[^>]+>", "", title)}</a>'
                       for anchor, title in re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body_html))
-        # Export Markdown directory links as explicit files so downloads work offline too.
-        body_html = re.sub(r'href="([^":#?]+/)"', lambda m: 'href="' + m[1] + 'index.html"', body_html)
         layout = meta.get('layout')
         is_portal = layout in ('portal', 'resources', 'events')
         if is_portal:
@@ -116,7 +138,7 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
                             for target, label in NAV[:5] if target in known)
         values = {
             'TITLE': html.escape(meta['title']), 'DATE': html.escape(meta['checked_at']),
-            'CSS': os.path.relpath('assets/style.css', slug or '.').replace(os.sep, '/'),
+            'CSS': f'/assets/{css_name}',
             'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known), 'BODY': body_html,
             'TOC': '<nav class="toc" aria-label="この記事の目次">' + toc + '</nav>' if toc else '',
             'SOURCES': render_sources(meta['source_ids'], sources),
@@ -128,6 +150,8 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
         page = template
         for key, value in values.items():
             page = page.replace('{{' + key + '}}', value)
+        page = re.sub(r'href="([^"]+)"', lambda m: 'href="' + html.escape(
+            canonical_link(slug, html.unescape(m[1]), known), quote=True) + '"', page)
         if slug == '' and not all(word in page for word in ('AI', '個人利用', '公開情報')):
             raise ValueError('missing AI notice on homepage')
         dest = output_dir / slug / 'index.html'
