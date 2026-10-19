@@ -128,7 +128,7 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known), 'BODY': body_html,
             'TOC': '<nav class="toc" aria-label="この記事の目次">' + toc + '</nav>' if toc else '',
             'SOURCES': render_sources(meta['source_ids'], sources),
-            'PAGE_CLASS': 'page-portal' if is_portal else 'page-note',
+            'PAGE_CLASS': 'page-portal' if is_portal else 'page-note page-' + (slug.replace('/', '-') or 'home'),
             'HEADING': '' if is_portal else '<h1>' + html.escape(meta['title']) + '</h1>',
             'QUICK_NAV': quick_nav,
         }
