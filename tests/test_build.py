@@ -41,10 +41,12 @@ class BuildTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'duplicate slug'):
             self.build()
 
-    def test_missing_ai_notice_is_rejected(self):
-        self.article('index.md', body='はじめに')
-        with self.assertRaisesRegex(ValueError, 'AI notice'):
-            self.build()
+    def test_shared_notice_is_present_with_a_brief_homepage(self):
+        self.article('index.md', body='今日やること')
+        self.build()
+        rendered = (self.root / 'dist/index.html').read_text()
+        for word in ('AI', '個人利用', '公開情報'):
+            self.assertIn(word, rendered)
 
     def test_unsafe_slug_is_rejected(self):
         self.article('index.md')
@@ -76,6 +78,13 @@ class BuildTests(unittest.TestCase):
         self.article('index.md', body=INTRO + '\n[[source:s2]]')
         with self.assertRaisesRegex(ValueError, 'undeclared source'):
             self.build()
+
+    def test_legacy_route_rules_are_shipped_with_generated_pages(self):
+        self.article('index.md')
+        self.build()
+        rules = self.root / 'dist/_redirects'
+        self.assertTrue(rules.exists(), 'old URLs must keep working after removing articles')
+        self.assertIn('/routine/ /#daily 302', rules.read_text())
 
     def test_removed_article_disappears_after_rebuild(self):
         self.article('index.md')

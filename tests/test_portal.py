@@ -25,16 +25,16 @@ class PortalTests(unittest.TestCase):
                 self.assertEqual(portal.event_state(event, date.fromisoformat(day)), state)
 
     def test_unknown_card_source_prevents_publication(self):
-        data = {'checked_at': '2026-10-19', 'events': [], 'tools': [
-            {'source_id': 'missing', 'title': 'ツール', 'description': '説明'}]}
+        data = {'checked_at': '2026-10-19', 'events': [], 'tools': [], 'daily': [
+            {'source_id': 'missing', 'title': '任務', 'description': '説明'}]}
         with self.assertRaisesRegex(ValueError, 'source'):
             portal.render_portal(data, {}, [])
 
     def test_cards_escape_text_and_use_the_declared_source_link(self):
         data = {'checked_at': '2026-10-19', 'events': [], 'tools': [
             {'source_id': 'tool', 'title': '<script>alert(1)</script>', 'description': '説明 & 詳細'}]}
-        sources = {'tool': {'url': 'https://example.com/tool?a=1&b=2', 'tag': '海外ツール'}}
-        result = portal.render_portal(data, sources, ['tool'])
+        sources = {'tool': {'url': 'https://example.com/tool?a=1&b=2', 'tag': '海外ツール', 'title': 'ツールの出典'}}
+        result = portal.render_links(data, sources, ['tool'])
         self.assertNotIn('<script>', result)
         self.assertIn('&lt;script&gt;', result)
         self.assertIn('https://example.com/tool?a=1&b=2', Links(result).hrefs)

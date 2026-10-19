@@ -8,18 +8,10 @@ import shutil
 from urllib.parse import urlsplit
 
 import markdown2
-from portal import render_portal
+from portal import render_portal, render_links, render_events
 
 ROOT = Path(__file__).resolve().parent
-NAV = [('', 'ポータルトップ'), ('routine', '日課・週課'), ('events', 'イベント'),
-       ('links', '便利なリンク'), ('build-comparison', 'ビルド比較'),
-       ('progression', '育成の順番'), ('inventory', 'カバン整理'),
-       ('daevanion', 'ディーヴァニオン'),
-       ('classes', '職業比較・ビルド'), ('equipment', '装備・素材'), ('dungeons', 'ダンジョン'),
-       ('differences', '先行版との仕様差'), ('sources', '用語・情報源')]
-CLASS_NAMES = [('gladiator', 'グラディエーター'), ('templar', 'テンプラー'), ('assassin', 'アサシン'),
-               ('ranger', 'レンジャー'), ('chanter', 'チャンター'), ('cleric', 'クレリック'),
-               ('sorcerer', 'ソーサラー'), ('spiritmaster', 'スピリットマスター')]
+NAV = [('', '日課・週課'), ('events', 'イベント'), ('links', 'ビルド・ツール')]
 MARKER = re.compile(r'\[\[source:([a-z0-9-]+)\]\]')
 
 
@@ -45,8 +37,7 @@ def navigation(slug: str, known_slugs: set[str]) -> str:
         current = ' aria-current="page" class="current"' if target == slug else ''
         return f'<a href="{relative_link(slug, target)}"{current}>{html.escape(title)}</a>'
     primary = ''.join(item(s, t) for s, t in NAV)
-    classes = ''.join(item('classes/' + s, t) for s, t in CLASS_NAMES)
-    return f'<nav aria-label="ページ一覧">{primary}<p class="nav-label">職業別ビルド</p>{classes}</nav>'
+    return f'<nav aria-label="ページ一覧">{primary}</nav>'
 
 
 def render_sources(ids: list[str], sources: dict) -> str:
@@ -59,7 +50,7 @@ def render_sources(ids: list[str], sources: dict) -> str:
                     f'<p class="source-meta">対象：{html.escape(s["region"])} · {html.escape(date)} · '
                     f'確認日 {html.escape(s["checked_at"])}（JST）</p>'
                     f'<p class="source-scope">{html.escape(s["scope"])}</p></li>')
-    return '<section class="sources" aria-labelledby="source-heading"><h2 id="source-heading">この記事の出典</h2><ul>' + ''.join(rows) + '</ul></section>'
+    return '<details class="sources"><summary>情報源・確認した範囲（' + str(len(ids)) + '件）</summary><ul>' + ''.join(rows) + '</ul></details>' if ids else ''
 
 
 def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
@@ -90,8 +81,6 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
                 raise ValueError(f'undeclared source: {sid}')
         if '[[source:' in MARKER.sub('', body):
             raise ValueError(f'invalid source marker: {slug}')
-        if slug == '' and not all(word in body for word in ('AI', '個人利用', '公開情報')):
-            raise ValueError('missing AI notice on homepage')
     if '' not in known:
         raise ValueError('missing homepage')
 
@@ -102,6 +91,7 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             old_page.unlink()
     (output_dir / 'assets').mkdir(exist_ok=True)
     shutil.copyfile(ROOT / 'assets/style.css', output_dir / 'assets/style.css')
+    shutil.copyfile(ROOT / '_redirects', output_dir / '_redirects')
     template = (ROOT / 'templates/page.html').read_text(encoding='utf-8')
     for meta, body in articles:
         slug = meta['slug']
@@ -113,12 +103,14 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
                       for anchor, title in re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body_html))
         # Export Markdown directory links as explicit files so downloads work offline too.
         body_html = re.sub(r'href="([^":#?]+/)"', lambda m: 'href="' + m[1] + 'index.html"', body_html)
-        is_portal = meta.get('layout') == 'portal'
+        layout = meta.get('layout')
+        is_portal = layout in ('portal', 'resources', 'events')
         if is_portal:
             portal_data = json.loads((ROOT / 'data/portal.json').read_text(encoding='utf-8'))
             if portal_data['checked_at'] != meta['checked_at']:
                 raise ValueError('portal checked date does not match article')
-            body_html = render_portal(portal_data, sources, meta['source_ids']) + body_html
+            renderer = {'portal': render_portal, 'resources': render_links, 'events': render_events}[layout]
+            body_html = body_html + renderer(portal_data, sources, meta['source_ids'])
         quick_nav = ''.join(f'<a href="{relative_link(slug, target)}"' +
                             (' aria-current="page"' if slug == target else '') + f'>{label}</a>'
                             for target, label in NAV[:5] if target in known)
@@ -128,13 +120,16 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known), 'BODY': body_html,
             'TOC': '<nav class="toc" aria-label="この記事の目次">' + toc + '</nav>' if toc else '',
             'SOURCES': render_sources(meta['source_ids'], sources),
-            'PAGE_CLASS': 'page-portal' if is_portal else 'page-note page-' + (slug.replace('/', '-') or 'home'),
+            'PAGE_CLASS': 'page-' + (slug.replace('/', '-') or 'home'),
+            'ABOUT': relative_link(slug, 'sources'),
             'HEADING': '' if is_portal else '<h1>' + html.escape(meta['title']) + '</h1>',
             'QUICK_NAV': quick_nav,
         }
         page = template
         for key, value in values.items():
             page = page.replace('{{' + key + '}}', value)
+        if slug == '' and not all(word in page for word in ('AI', '個人利用', '公開情報')):
+            raise ValueError('missing AI notice on homepage')
         dest = output_dir / slug / 'index.html'
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(page, encoding='utf-8')

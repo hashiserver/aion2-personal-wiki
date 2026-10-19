@@ -9,7 +9,8 @@
       "ends_on": "2026-11-04",
       "period": "10/14 メンテナンス後 → 11/4 メンテナンス前",
       "description": "出席と週のミッションでコインを集め、各地域の商人で交換。普段の周回と一緒に進めよう。",
-      "deadline": "コインはイベント終了後に削除。交換は期間内に。"
+      "deadline": "コインはイベント終了後に削除。交換は期間内に。",
+      "short_end": "11/4 メンテナンス前まで"
     },
     {
       "source_id": "attendance-official",
@@ -19,7 +20,8 @@
       "ends_on": "2026-12-16",
       "period": "9/30 22:30 → 12/16 15:30 JST",
       "description": "ログイン後は出席簿を開いて、成長支援アイテムを受け取ろう。毎日16:00 JST更新。",
-      "deadline": "開催中でも受取条件・残り日数をゲーム内で確認。"
+      "deadline": "開催中でも受取条件・残り日数をゲーム内で確認。",
+      "short_end": "12/16 15:30 JSTまで"
     },
     {
       "source_id": "launch-rewards-current",
@@ -29,7 +31,8 @@
       "ends_on": "2026-12-09",
       "period": "対象アカウント作成：12/2 15:30 JSTまで",
       "description": "乗り物2種の記念報酬をゲーム内郵便から受け取ろう。1アカウント・1リージョンにつき1回。",
-      "deadline": "報酬受取：12/9 15:30 JSTまで。"
+      "deadline": "報酬受取：12/9 15:30 JSTまで。",
+      "short_end": "12/9 15:30 JSTまで"
     }
   ],
   "daily": [
@@ -66,6 +69,11 @@
       "source_id": "official-daily"
     },
     {
+      "title": "遠征・超越の報酬",
+      "description": "入場回数とは別に、報酬の残数とエネルギーを確認。",
+      "source_id": "official-expedition"
+    },
+    {
       "title": "覚醒戦の挑戦",
       "description": "週替わりの対象・IL・残り回数を確認。",
       "source_id": "official-ordeal"
@@ -83,34 +91,79 @@
   ],
   "tools": [
     {
-      "title": "職業別ビルド",
-      "description": "育成中・Lv45、用途別に配分を探す。",
-      "source_id": "gaming-builds"
+      "source_id": "gaming-map",
+      "title": "マップ",
+      "description": "探索先・クエストの場所を調べる。"
     },
     {
-      "title": "インタラクティブマップ",
-      "description": "クエストや探索の寄り道を調べる。",
-      "source_id": "gaming-map"
+      "source_id": "gaming-daevanion",
+      "title": "ディーヴァニオン計画",
+      "description": "手持ちの結晶に合わせて、取得ルートを考える。"
     },
     {
-      "title": "ディーヴァニオン",
-      "description": "手持ちポイントに合わせて経路を計画。",
-      "source_id": "gaming-daevanion"
-    },
-    {
+      "source_id": "gaming-crafting",
       "title": "製作計算機",
-      "description": "必要素材と製作の計画を立てる。",
-      "source_id": "gaming-crafting"
+      "description": "作りたい装備に必要な素材を調べる。"
+    }
+  ],
+  "classes": [
+    {
+      "name": "グラディエーター",
+      "leveling": "build-gladiator",
+      "pve": "pve-gladiator",
+      "alternative": "guide-gladiator"
     },
     {
-      "title": "日本語のビルド解説",
-      "description": "チャンターの特化と回し方を読む。",
-      "source_id": "times-chanter-current"
+      "name": "テンプラー",
+      "leveling": "build-templar",
+      "pve": "pve-templar",
+      "alternative": "guide-templar"
     },
     {
-      "title": "精霊使いの作者ガイド",
-      "description": "Global向けPvE・PvP構成を比較する。",
-      "source_id": "sm-creator"
+      "name": "アサシン",
+      "leveling": "build-assassin",
+      "pve": "pve-assassin",
+      "alternative": "guide-assassin"
+    },
+    {
+      "name": "レンジャー",
+      "leveling": "build-ranger",
+      "pve": "pve-ranger",
+      "alternative": "guide-ranger"
+    },
+    {
+      "name": "チャンター",
+      "leveling": "build-chanter",
+      "pve": "pve-chanter",
+      "alternative": "guide-chanter"
+    },
+    {
+      "name": "クレリック",
+      "leveling": "build-cleric",
+      "pve": "pve-cleric",
+      "alternative": "guide-cleric"
+    },
+    {
+      "name": "ソーサラー",
+      "leveling": "build-sorcerer",
+      "pve": "pve-sorcerer",
+      "alternative": "guide-sorcerer"
+    },
+    {
+      "name": "スピリットマスター",
+      "leveling": "build-spiritmaster",
+      "pve": "pve-spiritmaster",
+      "alternative": "guide-spiritmaster"
+    }
+  ],
+  "guides": [
+    {
+      "source_id": "beginner",
+      "title": "初心者の進め方"
+    },
+    {
+      "source_id": "gear-guide",
+      "title": "装備・強化・カバン整理の解説"
     }
   ]
 }

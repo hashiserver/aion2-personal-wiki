@@ -1,22 +1,4 @@
 {
-  "jp-rewards": {
-    "title": "日本公式：サービス開始記念報酬・遠征紹介",
-    "url": "https://aion2.ncsoft.jp/ja/contents",
-    "tag": "日本公式",
-    "region": "日本・グローバル",
-    "scope": "2026-10-06時点の掲載内容",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "jp-classes": {
-    "title": "日本公式：8クラス紹介",
-    "url": "https://aion2.ncsoft.jp/ja/teaser",
-    "tag": "日本公式",
-    "region": "日本・グローバル",
-    "scope": "公式掲載の職業名",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
   "beginner": {
     "title": "AION2攻略wiki：初心者ガイド",
     "url": "https://aion2.emagwiki.jp/beginner-guide",
@@ -26,230 +8,77 @@
     "published_at": null,
     "checked_at": "2026-10-06"
   },
-  "progress": {
-    "title": "AION2 Times：序盤の進め方",
-    "url": "https://aion2-times.com/aion2-beginner-progression-guide/",
-    "tag": "日本記事",
-    "region": "グローバル",
-    "scope": "2026-10-06更新の解説",
-    "published_at": "2026-08-12",
-    "checked_at": "2026-10-06"
-  },
-  "daily": {
-    "title": "AION2攻略wiki：デイリーダンジョン",
-    "url": "https://aion2.emagwiki.jp/daily-dungeon",
-    "tag": "日本記事",
-    "region": "グローバル",
-    "scope": "2026-10-02更新のゲーム内表示報告",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "nightmare": {
-    "title": "AION2攻略wiki：悪夢",
-    "url": "https://aion2.emagwiki.jp/nightmare",
-    "tag": "日本記事",
-    "region": "グローバル",
-    "scope": "2026-10-03更新のゲーム内表示報告",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "transcend": {
-    "title": "AION2攻略wiki：超越",
-    "url": "https://aion2.emagwiki.jp/transcendence",
-    "tag": "日本記事",
-    "region": "グローバル",
-    "scope": "2026-10-03更新のゲーム内表示報告",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "festival": {
-    "title": "AION2攻略wiki：シューゴフェスタ",
-    "url": "https://aion2.emagwiki.jp/shugo-festival",
-    "tag": "日本記事",
-    "region": "グローバル",
-    "scope": "ミニゲームの公開解説",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "enhance": {
-    "title": "AION2攻略wiki：装備強化",
-    "url": "https://aion2.emagwiki.jp/enhancement",
-    "tag": "日本記事",
-    "region": "グローバル",
-    "scope": "2026-10-05更新のゲーム内表示報告",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "unreleased": {
-    "title": "AION2 Times：グローバル版の未実装コンテンツ",
-    "url": "https://aion2-times.com/aion2-unreleased-contents/",
-    "tag": "日本記事",
-    "region": "グローバル／韓国",
-    "scope": "先行版との差分報告。聖域の停止情報は公式本文未照合",
-    "published_at": "2026-10-02",
-    "checked_at": "2026-10-06"
-  },
-  "note": {
-    "title": "こぎみるく：初心者が書く、AION2のはじめ方",
-    "url": "https://note.com/cogimilk/n/n0b5d2ab1d1e2",
-    "tag": "日本SNS（note）",
-    "region": "グローバル",
-    "scope": "作者の公開投稿。9月末の記事に10月の追記あり",
-    "published_at": "2026-09-28",
-    "checked_at": "2026-10-06"
-  },
-  "lst": {
-    "title": "AION2 Times：日本版LST初日レポート",
-    "url": "https://aion2-times.com/aion2-lst-day1-impressions/",
-    "tag": "日本記事",
-    "region": "日本版テスト",
-    "scope": "Lv16までのプレイ報告とX反応の二次紹介。正式版の実測ではない",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "chanter-kr-jp": {
-    "title": "AION2 Times：チャンタービルド",
-    "url": "https://aion2-times.com/aion2-chanter-build/",
-    "tag": "旧記録・先行版参考",
-    "region": "旧版の対象：韓国",
-    "scope": "2026/10/6に参照した旧版の記録。当時は韓国先行版の説明。リンク先はその後Global向けに改稿済みであり、旧表を現行版の推奨としては不使用",
-    "published_at": "2026-09-08",
-    "checked_at": "2026-10-06"
-  },
-  "spirit-kr-jp": {
-    "title": "AION2 Times：スピリットマスタービルド",
-    "url": "https://aion2-times.com/aion2-spiritmaster-build/",
-    "tag": "旧記録・先行版参考",
-    "region": "旧版の対象：韓国",
-    "scope": "2026/10/6に参照した旧版の記録。当時は韓国先行版の説明。リンク先はその後Global向けに改稿済みであり、旧表を現行版の推奨としては不使用",
-    "published_at": "2026-09-15",
-    "checked_at": "2026-10-06"
-  },
-  "inven-chanter": {
-    "title": "Inven：호법성 스킬배치와 세팅에 대해",
-    "url": "https://www.inven.co.kr/board/aion2/6451/21630",
-    "tag": "韓国攻略・検証",
-    "region": "韓国",
-    "scope": "2026-08-28の投稿。後続調整に注意",
-    "published_at": "2026-08-28",
-    "checked_at": "2026-10-06"
-  },
-  "inven-pve": {
-    "title": "Inven：[수정중] 호법성 PVE 종합 가이드",
-    "url": "https://www.inven.co.kr/board/aion2/6451/116",
-    "tag": "韓国攻略・検証",
-    "region": "韓国",
-    "scope": "随時編集されるPvEガイド。本文内に旧仕様も残る",
-    "published_at": "2025-11-24",
-    "checked_at": "2026-10-06"
-  },
-  "kr-expedition": {
-    "title": "韓国公式：遠征ガイド",
-    "url": "https://aion2.plaync.com/ko-kr/guidebook/view?title=%EC%9B%90%EC%A0%95",
-    "tag": "韓国公式",
-    "region": "韓国",
-    "scope": "検索インデックスのみ参照可能。日本版仕様の確定根拠には不使用",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "tw-guide": {
-    "title": "台湾公式：遠征ガイド",
-    "url": "https://tw.ncsoft.com/aion2/guidebook/view?title=%E9%81%A0%E5%BE%81",
-    "tag": "台湾公式",
-    "region": "台湾",
-    "scope": "本文取得不可。参考リンクのみ、攻略の根拠には不使用",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "jp-notices": {
-    "title": "日本公式：更新・お知らせ",
-    "url": "https://aion2.plaync.com/ja-jp/board/notice/list",
-    "tag": "日本公式",
-    "region": "日本・グローバル",
-    "scope": "動的ページ本文を取得できないため、確認先リンクとして掲載",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
   "build-gladiator": {
     "title": "AION 2 Global Database：グラディエーター育成ガイド",
     "url": "https://aion2.gaming.tools/ja/builds/gladiator/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "scope": "育成中ガイドへのリンク。キャラLvと所持ポイントを合わせて参照。過去のLv22配分表は本サイトから撤去し、リンク先の最新表示を優先",
     "published_at": null,
-    "checked_at": "2026-10-06"
+    "checked_at": "2026-10-19"
   },
   "build-templar": {
     "title": "AION 2 Global Database：テンプラー育成ガイド",
     "url": "https://aion2.gaming.tools/ja/builds/templar/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "scope": "育成中ガイドへのリンク。キャラLvと所持ポイントを合わせて参照。過去のLv22配分表は本サイトから撤去し、リンク先の最新表示を優先",
     "published_at": null,
-    "checked_at": "2026-10-06"
+    "checked_at": "2026-10-19"
   },
   "build-assassin": {
     "title": "AION 2 Global Database：アサシン育成ガイド",
     "url": "https://aion2.gaming.tools/ja/builds/assassin/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "scope": "育成中ガイドへのリンク。キャラLvと所持ポイントを合わせて参照。過去のLv22配分表は本サイトから撤去し、リンク先の最新表示を優先",
     "published_at": null,
-    "checked_at": "2026-10-06"
+    "checked_at": "2026-10-19"
   },
   "build-ranger": {
     "title": "AION 2 Global Database：レンジャー育成ガイド",
     "url": "https://aion2.gaming.tools/ja/builds/ranger/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "scope": "育成中ガイドへのリンク。キャラLvと所持ポイントを合わせて参照。過去のLv22配分表は本サイトから撤去し、リンク先の最新表示を優先",
     "published_at": null,
-    "checked_at": "2026-10-06"
+    "checked_at": "2026-10-19"
   },
   "build-chanter": {
     "title": "AION 2 Global Database：チャンター育成ガイド",
     "url": "https://aion2.gaming.tools/ja/builds/chanter/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "scope": "育成中ガイドへのリンク。キャラLvと所持ポイントを合わせて参照。過去のLv22配分表は本サイトから撤去し、リンク先の最新表示を優先",
     "published_at": null,
-    "checked_at": "2026-10-06"
+    "checked_at": "2026-10-19"
   },
   "build-cleric": {
     "title": "AION 2 Global Database：クレリック育成ガイド",
     "url": "https://aion2.gaming.tools/ja/builds/cleric/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "scope": "育成中ガイドへのリンク。キャラLvと所持ポイントを合わせて参照。過去のLv22配分表は本サイトから撤去し、リンク先の最新表示を優先",
     "published_at": null,
-    "checked_at": "2026-10-06"
+    "checked_at": "2026-10-19"
   },
   "build-sorcerer": {
     "title": "AION 2 Global Database：ソーサラー育成ガイド",
     "url": "https://aion2.gaming.tools/ja/builds/sorcerer/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "scope": "育成中ガイドへのリンク。キャラLvと所持ポイントを合わせて参照。過去のLv22配分表は本サイトから撤去し、リンク先の最新表示を優先",
     "published_at": null,
-    "checked_at": "2026-10-06"
+    "checked_at": "2026-10-19"
   },
   "build-spiritmaster": {
     "title": "AION 2 Global Database：スピリットマスター育成ガイド",
     "url": "https://aion2.gaming.tools/ja/builds/spiritmaster/leveling",
     "tag": "海外攻略（日本語）",
     "region": "グローバル",
-    "scope": "新しいキャラクター・Lv22のソロ育成表示を確認（2.0.5.0）。取得済み表示と追加番号ノードを集計。公式推奨ではない",
+    "scope": "育成中ガイドへのリンク。キャラLvと所持ポイントを合わせて参照。過去のLv22配分表は本サイトから撤去し、リンク先の最新表示を優先",
     "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "daevanion-guide": {
-    "title": "AION2 Times：ディーヴァニオンの基本と振り方",
-    "url": "https://aion2-times.com/aion2-devanion-node-guide/",
-    "tag": "日本記事",
-    "region": "グローバル／韓国",
-    "scope": "基本操作を参照。韓国版の後半配分と日本版の初期化費用は確定根拠に不使用",
-    "published_at": "2026-08-13",
-    "checked_at": "2026-10-06"
+    "checked_at": "2026-10-19"
   },
   "gear-guide": {
     "title": "AION2 Times：装備の強化と継承",
@@ -259,42 +88,6 @@
     "scope": "2026-10-05更新。抽出と継承の条件を参照。返却量はゲーム内の確認表示を優先",
     "published_at": "2026-07-10",
     "checked_at": "2026-10-06"
-  },
-  "storage-guide": {
-    "title": "Aion 2 Maps：Storage",
-    "url": "https://aion2maps.com/guides/storage/",
-    "tag": "海外攻略・解析",
-    "region": "グローバル／韓国",
-    "scope": "2026-09-28更新。グローバル解析と韓国版参考を含む。日本版の全品目・拡張料金は実機未照合",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "character-progress": {
-    "title": "AION 2 Global Database：キャラクター成長",
-    "url": "https://aion2.gaming.tools/ja/progression/character",
-    "tag": "海外データ（日本語）",
-    "region": "グローバル",
-    "scope": "Lv22のレベル報酬累計44を参照。クエスト追加分・未登録結晶は別",
-    "published_at": null,
-    "checked_at": "2026-10-06"
-  },
-  "gaming-home": {
-    "title": "AION 2 Global Database",
-    "url": "https://aion2.gaming.tools/ja",
-    "tag": "海外ツール",
-    "region": "グローバル",
-    "scope": "非公式のデータ・ツール集。2.0.7.0、サイト表示の更新日10/14。最適ビルドの保証ではない",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
-  "gaming-builds": {
-    "title": "gaming.tools：職業別ビルド",
-    "url": "https://aion2.gaming.tools/ja/builds",
-    "tag": "海外ツール",
-    "region": "グローバル",
-    "scope": "非公式ツール。ゲーム内の装備・条件・現行表示を優先",
-    "published_at": null,
-    "checked_at": "2026-10-19"
   },
   "gaming-map": {
     "title": "gaming.tools：インタラクティブマップ",
@@ -413,15 +206,6 @@
     "published_at": null,
     "checked_at": "2026-10-19"
   },
-  "routine-jp-current": {
-    "title": "Gamerch：毎日・毎週やること",
-    "url": "https://gamerch.com/aion2/1019900",
-    "tag": "日本攻略",
-    "region": "グローバル",
-    "scope": "10/9更新。回数・全般リセット時刻は二次情報。任務の同時受注数と日次上限を混同しない",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
   "routine-data-current": {
     "title": "MetaBot：Daily & Weekly Checklist",
     "url": "https://metabot.gg/en/aion-2/guides/daily-weekly-checklist",
@@ -429,33 +213,6 @@
     "region": "グローバル",
     "scope": "クライアント解析による補充・蓄積の分類。サーバー運用の公式確認と区別。一般リセットのタイムゾーン解釈に注意",
     "published_at": "2026-10-01",
-    "checked_at": "2026-10-19"
-  },
-  "sm-creator": {
-    "title": "Evripides：Spirit Master Global Guide",
-    "url": "https://aion2sm.com/global/",
-    "tag": "作者ガイド",
-    "region": "グローバル／先行版から調整",
-    "scope": "作者本人のテキスト。TW/KR版からGlobal向けに調整。Starter更新10/3、装備・アルカナ込み目標。公式仕様や同条件DPS実測の保証ではない",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
-  "times-chanter-current": {
-    "title": "AION2 Times：チャンター 現行解説",
-    "url": "https://aion2-times.com/aion2-chanter-build/",
-    "tag": "日本攻略",
-    "region": "グローバル／韓国",
-    "scope": "10/16更新。先行版記事からGlobal向けへ改稿済み。韓国調整の段落は別扱い。同じ元動画の転載先を独立した検証として数えない",
-    "published_at": "2026-09-08",
-    "checked_at": "2026-10-19"
-  },
-  "times-sm-current": {
-    "title": "AION2 Times：スピリットマスター 現行解説",
-    "url": "https://aion2-times.com/aion2-spiritmaster-build/",
-    "tag": "日本攻略",
-    "region": "グローバル／韓国",
-    "scope": "10/14更新。先行版記事からGlobal向けへ改稿済み。韓国調整を別扱い。3精霊の構成は目的・スキルLvの条件付き",
-    "published_at": "2026-09-15",
     "checked_at": "2026-10-19"
   },
   "pve-gladiator": {
