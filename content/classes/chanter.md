@@ -1,4 +1,11 @@
-{"slug":"classes/chanter","title":"チャンターのビルド","checked_at":"2026-10-06","source_ids":["build-chanter","chanter-kr-jp","inven-chanter"]}
+{"slug":"classes/chanter","title":"チャンターのビルド","checked_at":"2026-10-19","source_ids":["build-chanter","chanter-kr-jp","inven-chanter","pve-chanter","guide-chanter"]}
+
+## 現行ガイドへの入口
+育成中は[レベル別ガイド](https://aion2.gaming.tools/ja/builds/chanter/leveling)、Lv45は[用途別PvE](https://aion2.gaming.tools/ja/builds/chanter/pve)へ。[[source:pve-chanter]]
+
+別の回し方は[Global向け作者ガイドの整理](https://aion2-guides.info/en/chanter/)と[8職の比較](../../build-comparison/)で確認します。目的と到達スキルLvを揃えて読んでください。[[source:guide-chanter]]
+
+**以下のLv22表は2026年10月6日・データ版2.0.5.0の参考記録です。現行版での再検証は未実施です。**
 
 ## Lv22：ディーヴァニオンの参考配分
 第三者のグローバル版ガイドを新しいキャラクター・Lv22で確認した、育成中ソロPvEの例です（データ版2.0.5.0）。クエスト追加分は含めていません。
@@ -45,7 +52,8 @@
 後半2行は編集上の提案です。確認できていないスキル係数や能力値の最適比率は計算していません。
 
 
-## 韓国版PvEの参考構成
+## 2026年10月6日時点の韓国版参考記録
+**以下は当時の資料を整理した記録です。リンク先の記事はその後Global向けに改稿されており、この表を現行版の推薦としては扱っていません。**
 **先行版参考。日本版の確定構成ではありません。** 特化番号は、画面の効果説明と一致する場合だけ参考にします。
 
 | スキル | 参考のスキルLv | 特化番号 | 位置付け |

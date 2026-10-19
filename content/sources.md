@@ -1,4 +1,4 @@
-{"slug":"sources","title":"用語・情報源","checked_at":"2026-10-06","source_ids":["jp-rewards","jp-classes","beginner","progress","daily","nightmare","transcend","festival","enhance","unreleased","note","lst","chanter-kr-jp","spirit-kr-jp","inven-chanter","inven-pve","kr-expedition","tw-guide","jp-notices","build-gladiator","build-templar","build-assassin","build-ranger","build-chanter","build-cleric","build-sorcerer","build-spiritmaster","daevanion-guide","gear-guide","storage-guide","character-progress"]}
+{"slug":"sources","title":"用語・情報源","checked_at":"2026-10-19","source_ids":["jp-rewards","jp-classes","beginner","progress","daily","nightmare","transcend","festival","enhance","unreleased","note","lst","chanter-kr-jp","spirit-kr-jp","inven-chanter","inven-pve","kr-expedition","tw-guide","jp-notices","build-gladiator","build-templar","build-assassin","build-ranger","build-chanter","build-cleric","build-sorcerer","build-spiritmaster","daevanion-guide","gear-guide","storage-guide","character-progress","gaming-home","gaming-builds","gaming-map","gaming-daevanion","gaming-crafting","halloween-official","attendance-official","launch-rewards-current","official-quests","official-nightmare","official-expedition","official-daily","official-ordeal","official-abyss","official-season","routine-jp-current","routine-data-current","sm-creator","times-chanter-current","times-sm-current","pve-gladiator","guide-gladiator","pve-templar","guide-templar","pve-assassin","guide-assassin","pve-ranger","guide-ranger","pve-chanter","guide-chanter","pve-cleric","guide-cleric","pve-sorcerer","guide-sorcerer","pve-spiritmaster","guide-spiritmaster"]}
 
 ## 職業名の対応
 | 日本語 | 英語 | 韓国語 |
@@ -41,3 +41,7 @@ Xの一部は本文を取得できませんでした。その投稿には情報�
 
 ## 調査日と更新
 初版の確認日は2026年10月6日（日本時間）です。閲覧時に自動収集する仕組みはありません。更新告知と資料を再確認したうえで記事を更新します。
+
+
+## 現行ポータルの編集方針
+日本公式、Globalのクライアント解析、作者のプレイ解説を区別します。掲載サイトの多数決だけで最適解を決めず、同じ元動画・作者を参照している場合は同じ情報の系列として扱います。イベントと記事は確認日時点の記録です。

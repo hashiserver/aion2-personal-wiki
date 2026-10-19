@@ -1,4 +1,6 @@
-{"slug":"daevanion","title":"ディーヴァニオン・Lv22の振り方","checked_at":"2026-10-06","source_ids":["daevanion-guide","character-progress","build-gladiator","build-templar","build-assassin","build-ranger","build-chanter","build-cleric","build-sorcerer","build-spiritmaster"]}
+{"slug":"daevanion","title":"ディーヴァニオン・Lv22の振り方","checked_at":"2026-10-19","source_ids":["daevanion-guide","character-progress","build-gladiator","build-templar","build-assassin","build-ranger","build-chanter","build-cleric","build-sorcerer","build-spiritmaster","gaming-daevanion"]}
+
+**このLv22配分は2026年10月6日・2.0.5.0の参考記録です。現行版の再検証は未実施です。** 最新の経路は[ディーヴァニオンプランナー](https://aion2.gaming.tools/ja/daevanion-planner)で、所持ポイントと効果を確認してください。[[source:gaming-daevanion]]
 
 ## 先に知りたい答え
 | 疑問 | 答え |

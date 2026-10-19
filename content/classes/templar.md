@@ -1,4 +1,11 @@
-{"slug":"classes/templar","title":"テンプラーのビルド","checked_at":"2026-10-06","source_ids":["build-templar"]}
+{"slug":"classes/templar","title":"テンプラーのビルド","checked_at":"2026-10-19","source_ids":["build-templar","pve-templar","guide-templar"]}
+
+## 現行ガイドへの入口
+育成中は[レベル別ガイド](https://aion2.gaming.tools/ja/builds/templar/leveling)、Lv45は[用途別PvE](https://aion2.gaming.tools/ja/builds/templar/pve)へ。[[source:pve-templar]]
+
+別の回し方は[Global向け作者ガイドの整理](https://aion2-guides.info/en/templar/)と[8職の比較](../../build-comparison/)で確認します。目的と到達スキルLvを揃えて読んでください。[[source:guide-templar]]
+
+**以下のLv22表は2026年10月6日・データ版2.0.5.0の参考記録です。現行版での再検証は未実施です。**
 
 ## Lv22：ディーヴァニオンの参考配分
 第三者のグローバル版ガイドを新しいキャラクター・Lv22で確認した、育成中ソロPvEの例です（データ版2.0.5.0）。クエスト追加分は含めていません。

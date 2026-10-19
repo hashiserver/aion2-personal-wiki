@@ -8,10 +8,13 @@ import shutil
 from urllib.parse import urlsplit
 
 import markdown2
+from portal import render_portal
 
 ROOT = Path(__file__).resolve().parent
-NAV = [('', '最初にやること'), ('progression', '育成の順番'), ('inventory', 'カバン整理'),
-       ('daevanion', 'ディーヴァニオン'), ('routine', '日課・週課'),
+NAV = [('', 'ポータルトップ'), ('routine', '日課・週課'), ('events', 'イベント'),
+       ('links', '便利なリンク'), ('build-comparison', 'ビルド比較'),
+       ('progression', '育成の順番'), ('inventory', 'カバン整理'),
+       ('daevanion', 'ディーヴァニオン'),
        ('classes', '職業比較・ビルド'), ('equipment', '装備・素材'), ('dungeons', 'ダンジョン'),
        ('differences', '先行版との仕様差'), ('sources', '用語・情報源')]
 CLASS_NAMES = [('gladiator', 'グラディエーター'), ('templar', 'テンプラー'), ('assassin', 'アサシン'),
@@ -110,12 +113,24 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
                       for anchor, title in re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body_html))
         # Export Markdown directory links as explicit files so downloads work offline too.
         body_html = re.sub(r'href="([^":#?]+/)"', lambda m: 'href="' + m[1] + 'index.html"', body_html)
+        is_portal = meta.get('layout') == 'portal'
+        if is_portal:
+            portal_data = json.loads((ROOT / 'data/portal.json').read_text(encoding='utf-8'))
+            if portal_data['checked_at'] != meta['checked_at']:
+                raise ValueError('portal checked date does not match article')
+            body_html = render_portal(portal_data, sources, meta['source_ids']) + body_html
+        quick_nav = ''.join(f'<a href="{relative_link(slug, target)}"' +
+                            (' aria-current="page"' if slug == target else '') + f'>{label}</a>'
+                            for target, label in NAV[:5] if target in known)
         values = {
             'TITLE': html.escape(meta['title']), 'DATE': html.escape(meta['checked_at']),
             'CSS': os.path.relpath('assets/style.css', slug or '.').replace(os.sep, '/'),
             'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known), 'BODY': body_html,
             'TOC': '<nav class="toc" aria-label="この記事の目次">' + toc + '</nav>' if toc else '',
             'SOURCES': render_sources(meta['source_ids'], sources),
+            'PAGE_CLASS': 'page-portal' if is_portal else 'page-note',
+            'HEADING': '' if is_portal else '<h1>' + html.escape(meta['title']) + '</h1>',
+            'QUICK_NAV': quick_nav,
         }
         page = template
         for key, value in values.items():

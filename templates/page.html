@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{TITLE}} | AION2 初心者Wiki</title>
-  <meta name="description" content="日本・グローバル版AION2の初心者向け非公式攻略メモ。進行順・日課・職業ビルドを、情報源付きで確認できます。">
+  <title>{{TITLE}} | AION2 プレイポータル</title>
+  <meta name="description" content="日本・グローバル版AION2の日課・週課、イベント期限、便利なツールと職業別ビルド比較を情報源付きで確認できる非公式ポータル。">
   <meta name="color-scheme" content="light">
   <link rel="stylesheet" href="{{CSS}}">
 </head>
-<body>
+<body class="{{PAGE_CLASS}}">
   <a class="skip-link" href="#main">本文へ移動</a>
-  <header class="site-header"><div><a class="brand" href="{{HOME}}">AION2 <span>初心者Wiki</span></a><span class="edition">日本・グローバル版 / 非公式</span></div></header>
+  <header class="site-header"><div><a class="brand" href="{{HOME}}"><span class="brand-mark" aria-hidden="true">AⅡ</span><span class="brand-text">AION2 <span>PLAY PORTAL</span></span></a><nav class="quick-nav" aria-label="主要ページ">{{QUICK_NAV}}</nav><span class="edition">日本・グローバル版 / 非公式</span></div></header>
   <div class="layout">
     <aside class="sidebar">{{NAV}}<p class="sidebar-note">公開情報をAIで収集・整理<br>個人利用を想定</p></aside>
     <div class="main-column">
@@ -18,7 +18,7 @@
       <main id="main">
         <div class="page-meta">攻略メモ <span>確認日 {{DATE}}（JST）</span></div>
         <p class="site-notice">AIを活用して公開情報を収集・整理した、個人利用向けの非公式メモです。</p>
-        <h1>{{TITLE}}</h1>
+        {{HEADING}}
         <article>{{BODY}}</article>
         {{TOC}}
         {{SOURCES}}

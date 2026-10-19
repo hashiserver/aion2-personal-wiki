@@ -110,18 +110,18 @@
   "chanter-kr-jp": {
     "title": "AION2 Times：チャンタービルド",
     "url": "https://aion2-times.com/aion2-chanter-build/",
-    "tag": "日本記事・韓国版参考",
-    "region": "韓国",
-    "scope": "記事冒頭に韓国先行版と明記。日本版の確定ビルドではない",
+    "tag": "旧記録・先行版参考",
+    "region": "旧版の対象：韓国",
+    "scope": "2026/10/6に参照した旧版の記録。当時は韓国先行版の説明。リンク先はその後Global向けに改稿済みであり、旧表を現行版の推奨としては不使用",
     "published_at": "2026-09-08",
     "checked_at": "2026-10-06"
   },
   "spirit-kr-jp": {
     "title": "AION2 Times：スピリットマスタービルド",
     "url": "https://aion2-times.com/aion2-spiritmaster-build/",
-    "tag": "日本記事・韓国版参考",
-    "region": "韓国",
-    "scope": "記事冒頭に韓国先行版と明記。日本版の確定ビルドではない",
+    "tag": "旧記録・先行版参考",
+    "region": "旧版の対象：韓国",
+    "scope": "2026/10/6に参照した旧版の記録。当時は韓国先行版の説明。リンク先はその後Global向けに改稿済みであり、旧表を現行版の推奨としては不使用",
     "published_at": "2026-09-15",
     "checked_at": "2026-10-06"
   },
@@ -277,5 +277,329 @@
     "scope": "Lv22のレベル報酬累計44を参照。クエスト追加分・未登録結晶は別",
     "published_at": null,
     "checked_at": "2026-10-06"
+  },
+  "gaming-home": {
+    "title": "AION 2 Global Database",
+    "url": "https://aion2.gaming.tools/ja",
+    "tag": "海外ツール",
+    "region": "グローバル",
+    "scope": "非公式のデータ・ツール集。2.0.7.0、サイト表示の更新日10/14。最適ビルドの保証ではない",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "gaming-builds": {
+    "title": "gaming.tools：職業別ビルド",
+    "url": "https://aion2.gaming.tools/ja/builds",
+    "tag": "海外ツール",
+    "region": "グローバル",
+    "scope": "非公式ツール。ゲーム内の装備・条件・現行表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "gaming-map": {
+    "title": "gaming.tools：インタラクティブマップ",
+    "url": "https://aion2.gaming.tools/ja/map",
+    "tag": "海外ツール",
+    "region": "グローバル",
+    "scope": "非公式ツール。ゲーム内の装備・条件・現行表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "gaming-daevanion": {
+    "title": "gaming.tools：ディーヴァニオン プランナー",
+    "url": "https://aion2.gaming.tools/ja/daevanion-planner",
+    "tag": "海外ツール",
+    "region": "グローバル",
+    "scope": "非公式ツール。ゲーム内の装備・条件・現行表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "gaming-crafting": {
+    "title": "gaming.tools：製作計算機",
+    "url": "https://aion2.gaming.tools/ja/crafting-calculator",
+    "tag": "海外ツール",
+    "region": "グローバル",
+    "scope": "非公式ツール。ゲーム内の装備・条件・現行表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "halloween-official": {
+    "title": "AION2公式：Trick or Treat!",
+    "url": "https://steamcommunity.com/gid/103582791475596239/announcements/detail/670631196372238793?l=japanese",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "公式Steam一覧で日本語本文と対応記事IDを照合。10/14メンテ後〜11/4メンテ前。イベント終了と個別アイテム削除日は別",
+    "published_at": "2026-10-15",
+    "checked_at": "2026-10-19"
+  },
+  "attendance-official": {
+    "title": "NC公式：新規出席イベント",
+    "url": "https://lounge.plaync.com/feed/83051?country=JP&locale=ja-JP",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "7日・14日出席簿。9/30 22:30〜12/16 15:30 JST。毎日16:00更新",
+    "published_at": "2026-10-05",
+    "checked_at": "2026-10-19"
+  },
+  "launch-rewards-current": {
+    "title": "日本公式：サービス開始記念報酬",
+    "url": "https://aion2.ncsoft.jp/ja/contents",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "対象アカウント作成12/2 15:30 JSTまで、受取12/9 15:30 JSTまで。10/19再照合",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "official-quests": {
+    "title": "日本公式ガイド：クエストの種類",
+    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E7%A8%AE%E9%A1%9E",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "official-nightmare": {
+    "title": "日本公式ガイド：悪夢",
+    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E6%82%AA%E5%A4%A2",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "official-expedition": {
+    "title": "日本公式ガイド：遠征",
+    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E9%81%A0%E5%BE%81",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "official-daily": {
+    "title": "日本公式ガイド：デイリー ダンジョン",
+    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E3%83%87%E3%82%A4%E3%83%AA%E3%83%BC-%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "official-ordeal": {
+    "title": "日本公式ガイド：覚醒戦",
+    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E8%A6%9A%E9%86%92%E6%88%A6",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "official-abyss": {
+    "title": "日本公式ガイド：アビス",
+    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E3%82%A2%E3%83%93%E3%82%B9",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "official-season": {
+    "title": "日本公式ガイド：シーズン",
+    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3",
+    "tag": "日本公式",
+    "region": "日本・グローバル",
+    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "routine-jp-current": {
+    "title": "Gamerch：毎日・毎週やること",
+    "url": "https://gamerch.com/aion2/1019900",
+    "tag": "日本攻略",
+    "region": "グローバル",
+    "scope": "10/9更新。回数・全般リセット時刻は二次情報。任務の同時受注数と日次上限を混同しない",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "routine-data-current": {
+    "title": "MetaBot：Daily & Weekly Checklist",
+    "url": "https://metabot.gg/en/aion-2/guides/daily-weekly-checklist",
+    "tag": "海外解析",
+    "region": "グローバル",
+    "scope": "クライアント解析による補充・蓄積の分類。サーバー運用の公式確認と区別。一般リセットのタイムゾーン解釈に注意",
+    "published_at": "2026-10-01",
+    "checked_at": "2026-10-19"
+  },
+  "sm-creator": {
+    "title": "Evripides：Spirit Master Global Guide",
+    "url": "https://aion2sm.com/global/",
+    "tag": "作者ガイド",
+    "region": "グローバル／先行版から調整",
+    "scope": "作者本人のテキスト。TW/KR版からGlobal向けに調整。Starter更新10/3、装備・アルカナ込み目標。公式仕様や同条件DPS実測の保証ではない",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "times-chanter-current": {
+    "title": "AION2 Times：チャンター 現行解説",
+    "url": "https://aion2-times.com/aion2-chanter-build/",
+    "tag": "日本攻略",
+    "region": "グローバル／韓国",
+    "scope": "10/16更新。先行版記事からGlobal向けへ改稿済み。韓国調整の段落は別扱い。同じ元動画の転載先を独立した検証として数えない",
+    "published_at": "2026-09-08",
+    "checked_at": "2026-10-19"
+  },
+  "times-sm-current": {
+    "title": "AION2 Times：スピリットマスター 現行解説",
+    "url": "https://aion2-times.com/aion2-spiritmaster-build/",
+    "tag": "日本攻略",
+    "region": "グローバル／韓国",
+    "scope": "10/14更新。先行版記事からGlobal向けへ改稿済み。韓国調整を別扱い。3精霊の構成は目的・スキルLvの条件付き",
+    "published_at": "2026-09-15",
+    "checked_at": "2026-10-19"
+  },
+  "pve-gladiator": {
+    "title": "gaming.tools：グラディエーター Lv45 PvE",
+    "url": "https://aion2.gaming.tools/ja/builds/gladiator/pve",
+    "tag": "海外攻略",
+    "region": "グローバル",
+    "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "guide-gladiator": {
+    "title": "AION 2 Global Guides：グラディエーター",
+    "url": "https://aion2-guides.info/en/gladiator/",
+    "tag": "海外攻略",
+    "region": "グローバル／一部先行版参考",
+    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "pve-templar": {
+    "title": "gaming.tools：テンプラー Lv45 PvE",
+    "url": "https://aion2.gaming.tools/ja/builds/templar/pve",
+    "tag": "海外攻略",
+    "region": "グローバル",
+    "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "guide-templar": {
+    "title": "AION 2 Global Guides：テンプラー",
+    "url": "https://aion2-guides.info/en/templar/",
+    "tag": "海外攻略",
+    "region": "グローバル／一部先行版参考",
+    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "pve-assassin": {
+    "title": "gaming.tools：アサシン Lv45 PvE",
+    "url": "https://aion2.gaming.tools/ja/builds/assassin/pve",
+    "tag": "海外攻略",
+    "region": "グローバル",
+    "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "guide-assassin": {
+    "title": "AION 2 Global Guides：アサシン",
+    "url": "https://aion2-guides.info/en/assassin/",
+    "tag": "海外攻略",
+    "region": "グローバル／一部先行版参考",
+    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "pve-ranger": {
+    "title": "gaming.tools：レンジャー Lv45 PvE",
+    "url": "https://aion2.gaming.tools/ja/builds/ranger/pve",
+    "tag": "海外攻略",
+    "region": "グローバル",
+    "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "guide-ranger": {
+    "title": "AION 2 Global Guides：レンジャー",
+    "url": "https://aion2-guides.info/en/ranger/",
+    "tag": "海外攻略",
+    "region": "グローバル／一部先行版参考",
+    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "pve-chanter": {
+    "title": "gaming.tools：チャンター Lv45 PvE",
+    "url": "https://aion2.gaming.tools/ja/builds/chanter/pve",
+    "tag": "海外攻略",
+    "region": "グローバル",
+    "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "guide-chanter": {
+    "title": "AION 2 Global Guides：チャンター",
+    "url": "https://aion2-guides.info/en/chanter/",
+    "tag": "海外攻略",
+    "region": "グローバル／一部先行版参考",
+    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "pve-cleric": {
+    "title": "gaming.tools：クレリック Lv45 PvE",
+    "url": "https://aion2.gaming.tools/ja/builds/cleric/pve",
+    "tag": "海外攻略",
+    "region": "グローバル",
+    "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "guide-cleric": {
+    "title": "AION 2 Global Guides：クレリック",
+    "url": "https://aion2-guides.info/en/cleric/",
+    "tag": "海外攻略",
+    "region": "グローバル／一部先行版参考",
+    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "pve-sorcerer": {
+    "title": "gaming.tools：ソーサラー Lv45 PvE",
+    "url": "https://aion2.gaming.tools/ja/builds/sorcerer/pve",
+    "tag": "海外攻略",
+    "region": "グローバル",
+    "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "guide-sorcerer": {
+    "title": "AION 2 Global Guides：ソーサラー",
+    "url": "https://aion2-guides.info/en/sorcerer/",
+    "tag": "海外攻略",
+    "region": "グローバル／一部先行版参考",
+    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "pve-spiritmaster": {
+    "title": "gaming.tools：スピリットマスター Lv45 PvE",
+    "url": "https://aion2.gaming.tools/ja/builds/spiritmaster/pve",
+    "tag": "海外攻略",
+    "region": "グローバル",
+    "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "guide-spiritmaster": {
+    "title": "AION 2 Global Guides：スピリットマスター",
+    "url": "https://aion2-guides.info/en/elementalist/",
+    "tag": "海外攻略",
+    "region": "グローバル／一部先行版参考",
+    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
+    "published_at": null,
+    "checked_at": "2026-10-19"
   }
 }

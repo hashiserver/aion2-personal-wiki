@@ -1,4 +1,11 @@
-{"slug":"classes/gladiator","title":"グラディエーターのビルド","checked_at":"2026-10-06","source_ids":["build-gladiator"]}
+{"slug":"classes/gladiator","title":"グラディエーターのビルド","checked_at":"2026-10-19","source_ids":["build-gladiator","pve-gladiator","guide-gladiator"]}
+
+## 現行ガイドへの入口
+育成中は[レベル別ガイド](https://aion2.gaming.tools/ja/builds/gladiator/leveling)、Lv45は[用途別PvE](https://aion2.gaming.tools/ja/builds/gladiator/pve)へ。[[source:pve-gladiator]]
+
+別の回し方は[Global向け作者ガイドの整理](https://aion2-guides.info/en/gladiator/)と[8職の比較](../../build-comparison/)で確認します。目的と到達スキルLvを揃えて読んでください。[[source:guide-gladiator]]
+
+**以下のLv22表は2026年10月6日・データ版2.0.5.0の参考記録です。現行版での再検証は未実施です。**
 
 ## Lv22：ディーヴァニオンの参考配分
 第三者のグローバル版ガイドを新しいキャラクター・Lv22で確認した、育成中ソロPvEの例です（データ版2.0.5.0）。クエスト追加分は含めていません。

@@ -1,4 +1,6 @@
-{"slug":"classes","title":"職業比較・ビルド","checked_at":"2026-10-06","source_ids":["jp-classes","build-gladiator","build-templar","build-assassin","build-ranger","build-chanter","build-cleric","build-sorcerer","build-spiritmaster"]}
+{"slug":"classes","title":"職業比較・ビルド","checked_at":"2026-10-19","source_ids":["jp-classes","build-gladiator","build-templar","build-assassin","build-ranger","build-chanter","build-cleric","build-sorcerer","build-spiritmaster"]}
+
+[全8職のビルド比較と現行ガイド](../build-comparison/)から、育成・Lv45・用途の違いを確認できます。以下は初心者向けの役割メモです。
 
 ## 8職を役割で比較
 職業名は日本公式。役割と操作上の注意は各育成ガイドを基にした編集整理です。操作の難しさを数字で順位付けしていません。

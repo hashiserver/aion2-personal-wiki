@@ -1,32 +1,3 @@
-{"slug":"","title":"最初にやること","checked_at":"2026-10-06","source_ids":["jp-rewards","note","beginner"]}
+{"slug":"","title":"冒険の入口","checked_at":"2026-10-19","source_ids":["gaming-home","halloween-official","attendance-official","launch-rewards-current","official-quests","official-nightmare","official-expedition","routine-data-current","official-daily","official-ordeal","official-abyss","official-season","gaming-builds","gaming-map","gaming-daevanion","gaming-crafting","times-chanter-current","sm-creator"],"layout":"portal"}
 
-このサイトは、個人利用を想定したAION2の非公式攻略メモです。AIを活用して公開情報を収集・整理しています。日本・グローバル版を基準にしていますが、先行版の情報や未確認の内容を含む場合があります。各項目の情報源タグ・確認日・出典をご確認ください。
-
-## いまの進行に合わせて読む
-| いまの状態 | 次にやること | 詳細 |
-|---|---|---|
-| これから開始 | 友人とリージョン・種族・サーバーを合わせ、遊びたい役割を選ぶ | [職業を比較する](classes/) |
-| 育成中 | エピソードを進め、止まったら必要クエストと覚醒ゲージを見る | [育成の順番](progression/) |
-| カバンがいっぱい | 素材を倉庫へ移し、不要装備を抽出する | [カバン整理・残すもの](inventory/) |
-| Lv22の配分で迷う | 全8職のボード配分と振り直しの注意を確認 | [ディーヴァニオン](daevanion/) |
-| Lv45に到達 | 装備と入場条件を確認し、育成素材の入手先を選ぶ | [装備・素材](equipment/) |
-| 今日の分を確認 | 期限付き報酬、回数・エネルギーの残量を確認する | [日課・週課](routine/) |
-
-国内Wikiと公開noteを参考にした進行案です。優先順位は編集上の判断です。[[source:beginner]] [[source:note]]
-
-## 開始記念報酬を先に確認
-ログイン後、ゲーム内郵便を開きましょう。公式は無料の乗り物2種を案内しています。対象は**2026年12月2日15:30 JSTまでのアカウント作成**、受取期限は**12月9日15:30 JST**。1アカウント・1リージョンにつき1回です。[[source:jp-rewards]]
-
-## 記事の目次
-- [育成の順番と詰まったときの確認](progression/)
-- [カバン整理と取っておくもの](inventory/)
-- [ディーヴァニオン・全8職のLv22配分](daevanion/)
-- [日課・週課の優先表](routine/)
-- [8職の比較とビルド](classes/)
-- [装備・素材の使い道](equipment/)
-- [ダンジョンに入る前の準備](dungeons/)
-- [先行版・国内記事との仕様差](differences/)
-- [用語・情報源の読み方](sources/)
-
-## 初版で確認できていないこと
-日本版の同条件DPS比較、職業別PvPの確定構成、最新の全ボスギミックは未確認です。韓国版の高レベル装備や特化をそのまま最適解とはしていません。SNSの声も性能順位の根拠には使いません。
+このポータルはAIを活用して公開情報を整理した個人利用向けの非公式メモです。情報は確認日時点の記録です。[情報源の読み方](sources/)をご確認ください。
