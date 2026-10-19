@@ -358,5 +358,32 @@
     "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
     "published_at": null,
     "checked_at": "2026-10-19"
+  },
+  "command-scroll-merchants": {
+    "title": "gaming.tools：指令書商人・所在地",
+    "url": "https://aion2.gaming.tools/ja/npcs/2939438",
+    "tag": "海外解析（日本語）",
+    "region": "グローバル",
+    "scope": "通常マップの魔族2拠点・天族2拠点とアビスの販売NPCを確認。逃亡者の村／ノルニル集会所は魔族向け。",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "command-scroll-field": {
+    "title": "gaming.tools：指令書：アルトガルド（刻印）",
+    "url": "https://aion2.gaming.tools/ja/items/532360075",
+    "tag": "海外解析（日本語）",
+    "region": "グローバル",
+    "scope": "Lv45以上、15,000ギーナ、サーバーごと毎週12枚の購入制限。天族のベルテロン指令書（532360074）も同条件。所在地は指令書商人の項目で確認。購入枠とクエストの完了期限を区別。",
+    "published_at": null,
+    "checked_at": "2026-10-19"
+  },
+  "command-scroll-abyss": {
+    "title": "gaming.tools：東ラテスランの根の指令書（魔族）",
+    "url": "https://aion2.gaming.tools/ja/items/532360077",
+    "tag": "海外解析（日本語）",
+    "region": "グローバル",
+    "scope": "アビス下層。一般（532360077）、熟練（532350027）、精鋭（532340033）、特命（532330033）の4種類を照合。各Lv45以上、サーバーごと毎週5枚、合計20枚の購入枠。天族の西ラテスランの根も同条件。中層・表層の枠やクエスト完了期限とは別。",
+    "published_at": null,
+    "checked_at": "2026-10-19"
   }
 }
