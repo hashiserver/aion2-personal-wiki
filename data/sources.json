@@ -385,5 +385,68 @@
     "scope": "アビス下層。一般（532360077）、熟練（532350027）、精鋭（532340033）、特命（532330033）の4種類を照合。各Lv45以上、サーバーごと毎週5枚、合計20枚の購入枠。天族の西ラテスランの根も同条件。中層・表層の枠やクエスト完了期限とは別。",
     "published_at": null,
     "checked_at": "2026-10-19"
+  },
+  "reward-daily": {
+    "title": "Gamerch：日課・週課とデイリーダンジョンの報酬",
+    "url": "https://gamerch.com/aion2/1019900",
+    "tag": "攻略・解析",
+    "region": "日本・グローバル",
+    "scope": "週14回の枠と強化石・ギーナ・ペット関連報酬を照合。任務5個を日上限とする記載は採用しない。強化石の対象はgaming.toolsのディーヴァ生体研究基地でも照合。",
+    "published_at": null,
+    "checked_at": "2026-10-20"
+  },
+  "reward-nightmare": {
+    "title": "gaming.tools：巨像：ジケルの思念体",
+    "url": "https://aion2.gaming.tools/ja/items/534330011",
+    "tag": "攻略・解析",
+    "region": "日本・グローバル",
+    "scope": "ジケル1段階クリアを交換条件とし、夢幻の破片14,000で購入。直接ドロップではない。結晶・シャードの交換先はlan-gamingの商店解説および悪夢交換商店データで照合。回数は従来の公式ガイド記録を維持。",
+    "published_at": null,
+    "checked_at": "2026-10-20"
+  },
+  "reward-festival": {
+    "title": "MetaBot：シューゴフェスタ報酬",
+    "url": "https://metabot.gg/ja_JP/aion-2/events/shugo-festival",
+    "tag": "攻略・解析",
+    "region": "日本・グローバル",
+    "scope": "クライアント解析に記載された装備・オード類・精錬石・百年人参の証。金装備や煌めく素材は確定としない。NCER記事はAI生成と注記されており、公式の独立検証として扱わない。",
+    "published_at": null,
+    "checked_at": "2026-10-20"
+  },
+  "reward-ordeal": {
+    "title": "Aion2.gg：アルカナと神秘的な結晶の入手先",
+    "url": "https://aion2.gg/guides/arcana-system-explained",
+    "tag": "攻略・解析",
+    "region": "日本・グローバル",
+    "scope": "覚醒戦のスコア達成に対応するシーズンミッション報酬と、通常クリア報酬を区別。魔石・霊石系の箱はgaming.toolsのAscension Trial報酬と攻略ガイドでも照合。スコア報酬を毎週再獲得できるとは記載しない。",
+    "published_at": null,
+    "checked_at": "2026-10-20"
+  },
+  "exchange-festival": {
+    "title": "wikily：フェスタ商店",
+    "url": "https://wikily.gg/ja/aion-2/shops/festival-shop",
+    "tag": "攻略・解析",
+    "region": "日本・グローバル",
+    "scope": "ディーヴァニオン結晶とスティグマ シャードの交換候補を確認。購入枠は週枠・月枠・キャラ総枠が混在するため毎日購入必須とはしない。",
+    "published_at": null,
+    "checked_at": "2026-10-20"
+  },
+  "exchange-abyss": {
+    "title": "MetaBot：アビスポイント交換商店",
+    "url": "https://metabot.gg/ja_JP/aion-2/shops/trade-shop",
+    "tag": "攻略・解析",
+    "region": "日本・グローバル",
+    "scope": "スティグマ シャード、アスフェル結晶、神石箱を確認。優先順位は育成状況で異なる。攻略記事にはアスフェル先行案もあり、提供メモの序列を一律推奨にはしない。",
+    "published_at": null,
+    "checked_at": "2026-10-20"
+  },
+  "exchange-season": {
+    "title": "gaming.tools：神秘的な結晶とシーズン商店",
+    "url": "https://aion2.gaming.tools/ja/items/631700001",
+    "tag": "攻略・解析",
+    "region": "日本・グローバル",
+    "scope": "神秘的な結晶の販売を確認。翼・修練のアルカナ・神石箱・賢者の石は同DBの各アイテム販売先とlan-gaming商店解説を照合。翼210,000コインは貯蓄判断用。期間・購入上限はゲーム内表示優先。",
+    "published_at": null,
+    "checked_at": "2026-10-20"
   }
 }

@@ -48,8 +48,8 @@
     },
     {
       "title": "悪夢の残り回数",
-      "description": "毎日2回補充・最大14回。上限になる前に。",
-      "source_id": "official-nightmare"
+      "description": "毎日2回補充・最大14回。夢幻の破片を集めて結晶・シャードへ。ジケル1段階達成後は巨像の交換も目標に。",
+      "source_id": "reward-nightmare"
     },
     {
       "title": "オードエネルギー",
@@ -57,7 +57,12 @@
       "source_id": "official-expedition"
     },
     {
-      "title": "フェスタ・次元侵攻の鍵",
+      "title": "シューゴフェスタ",
+      "description": "鍵をあふれる前に消化。百年人参の証と、装備・オード類・精錬石が目的。金装備や煌めく素材は抽選。",
+      "source_id": "reward-festival"
+    },
+    {
+      "title": "次元侵攻の鍵",
       "description": "解放後、鍵の残数と開催時間を確認する。",
       "source_id": "routine-data-current"
     }
@@ -75,8 +80,8 @@
     },
     {
       "title": "デイリーダンジョン",
-      "description": "名前はデイリー、挑戦はサーバーごと週14回。",
-      "source_id": "official-daily"
+      "description": "サーバーごと週14回。強化石不足なら生体研究基地。育成が進んだら、必要に応じてギーナ・成長のペット箱へ。",
+      "source_id": "reward-daily"
     },
     {
       "title": "遠征・超越の報酬",
@@ -85,8 +90,8 @@
     },
     {
       "title": "覚醒戦の挑戦",
-      "description": "週替わりの対象・IL・残り回数を確認。",
-      "source_id": "official-ordeal"
+      "description": "魔石などの育成素材が目的。スコア達成時はシーズンミッションから神秘的な結晶（アルカナ用）も受け取る。",
+      "source_id": "reward-ordeal"
     },
     {
       "title": "アビスの利用時間",
@@ -174,6 +179,23 @@
     {
       "source_id": "gear-guide",
       "title": "装備・強化・カバン整理の解説"
+    }
+  ],
+  "exchanges": [
+    {
+      "title": "フェスタ商店｜百年人参の証",
+      "description": "ディーヴァニオン結晶・スティグマ シャードが候補。必要な配分と購入済みの段階を確認。",
+      "source_id": "exchange-festival"
+    },
+    {
+      "title": "アビス交換商店｜アビスポイント",
+      "description": "スティグマ シャード・ディーヴァニオン結晶：アスフェル・神石箱が候補。優先順は不足と育成方針で変わるため、一括交換せず必要分から。",
+      "source_id": "exchange-abyss"
+    },
+    {
+      "title": "シーズン商店｜誓いのコイン",
+      "description": "空虚のターリスラの翼、神秘的な結晶・修練のアルカナ、神石箱、賢者の石が候補。翼を目指すなら21万コインを使い切らずに確保。",
+      "source_id": "exchange-season"
     }
   ]
 }

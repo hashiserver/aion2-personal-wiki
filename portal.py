@@ -27,6 +27,13 @@ def render_portal(data, sources, declared_ids):
             rows.append(f'<li><div><h3>{escape(item["title"])}</h3><p>{escape(item["description"])}</p></div>'
                         f'{source_tag(item["source_id"], sources, declared_ids)}</li>')
         return f'<section class="task-panel" id="{key}" aria-labelledby="{key}-title"><header><h2 id="{key}-title">{title}</h2><p>{description}</p></header><ul>{"".join(rows)}</ul></section>'
+    exchanges = ''.join(
+        f'<li><div><h3>{escape(item["title"])}</h3><p>{escape(item["description"])}</p></div>'
+        f'{source_tag(item["source_id"], sources, declared_ids)}</li>'
+        for item in data.get('exchanges', []))
+    exchange_note = ('<details class="guide-note" id="exchanges"><summary>通貨の交換候補を見る</summary>'
+                     '<p>購入上限と更新周期は商品ごとに異なります。交換前にゲーム内の残数を確認してください。</p>'
+                     f'<ul class="resource-list">{exchanges}</ul></details>') if exchanges else ''
     active = sorted((item for item in data.get('events', []) if event_state(item, date.fromisoformat(data['checked_at'])) in ('active', 'ending')), key=lambda item: item['ends_on'])
     notice = ''
     if active:
@@ -36,7 +43,7 @@ def render_portal(data, sources, declared_ids):
             panel('daily', '毎日やること', '受取と、あふれそうな回数から。') +
             panel('weekly', '毎週やること', '週の残数と交換枠を確認。') + '</div>' +
             '<aside class="plain-note"><strong>リセットの時刻について</strong><p>出席簿は毎日16:00 JST。その他はゲーム内の残り時間を優先してください。すべてを毎日消化する必要はありません。</p></aside>' +
-            '<div class="related"><a href="/events/">開催中イベントと受取期限を見る</a><a href="/links/">職業ビルド・マップ・計算機を探す</a></div>')
+            exchange_note + '<div class="related"><a href="/events/">開催中イベントと受取期限を見る</a><a href="/links/">職業ビルド・マップ・計算機を探す</a></div>')
 
 
 def render_links(data, sources, declared_ids):
@@ -73,3 +80,4 @@ def render_events(data, sources, declared_ids):
                      f'<div><dt>期限・注意</dt><dd>{escape(item["deadline"])}</dd></div></dl>'
                      f'<a class="resource-link" href="{escape(sources[sid]["url"],quote=True)}" rel="noreferrer">報酬・条件は公式で確認 <span aria-hidden="true">↗</span></a></article>')
     return ''.join(items)
+

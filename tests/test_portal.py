@@ -17,6 +17,12 @@ class Links(HTMLParser):
 
 
 class PortalTests(unittest.TestCase):
+    def test_exchange_source_must_be_declared(self):
+        data = {'checked_at': '2026-10-20', 'exchanges': [
+            {'source_id': 'missing', 'title': '交換', 'description': '説明'}]}
+        with self.assertRaisesRegex(ValueError, 'source'):
+            portal.render_portal(data, {}, [])
+
     def test_event_end_day_is_not_claimed_to_be_fully_active(self):
         event = {'starts_on': '2026-10-14', 'ends_on': '2026-11-04'}
         for day, state in [('2026-10-13', 'upcoming'), ('2026-10-19', 'active'),
@@ -43,3 +49,4 @@ class PortalTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
