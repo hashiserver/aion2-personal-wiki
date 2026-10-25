@@ -484,5 +484,23 @@
     "scope": "4体を討伐候補として比較。唯一装備・名画・精錬石などの報酬、陣営別の場所と経路。ドロップ率はゲーム内表示・最新版のデータを優先",
     "published_at": null,
     "checked_at": "2026-10-25"
+  },
+  "global-ludra-official": {
+    "title": "AION 2 Global公式：Ludra Awakens on November 4th",
+    "url": "https://steamcommunity.com/ogg/3393110/announcements/detail/675135430408017339",
+    "tag": "グローバル公式",
+    "region": "Global（欧州CET/北米PSTで日時告知。討伐称号対象にはAsia明記。日本・アジア固有の開始時刻は未確認）",
+    "scope": "2026-10-23に発表。対象版はGlobal（2026-10-21適用版の次回2026-11-04実装予定、ビルド番号未公表）。10/28からオードエネルギー×2/日、11/4ルドラ開放IL2800/3000、出席簿・Drops・討伐イベント等。公開日と適用日は別。EUの10/25臨時メンテナンス・デイリーリセット不具合を日本/アジア全体に拡張しない。公式Steam一覧にも同告知あり。",
+    "published_at": "2026-10-23",
+    "checked_at": "2026-10-26"
+  },
+  "global-ludra-review": {
+    "title": "AION2 Vault：Ludra Global復帰・イベント日程の独立照合",
+    "url": "https://aion2vault.com/builds/ludra-raid/",
+    "tag": "海外攻略・照合",
+    "region": "Global（非公式、Asia固有の適用時刻は未確認）",
+    "scope": "2026-10-24公開の記事で11/4ルドラNormal IL2800/Hard IL3000、10/28〜11/11 CETのオードエネルギー支援、11/4〜11/18 CETの出席簿等を公式告知と照合。推測・未適用の戦闘詳細は採用しない。",
+    "published_at": "2026-10-24",
+    "checked_at": "2026-10-26"
   }
 }
