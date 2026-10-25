@@ -1,0 +1,26 @@
+[
+  {
+    "id": "jp-official",
+    "url": "https://aion2.ncsoft.jp/ja/",
+    "region": "JP-Global",
+    "classification": "official"
+  },
+  {
+    "id": "global-db",
+    "url": "https://aion2.gaming.tools/ja",
+    "region": "Global",
+    "classification": "third-party-database"
+  },
+  {
+    "id": "wikily",
+    "url": "https://new.wikily.gg/ja/aion-2/",
+    "region": "Global/mixed-review",
+    "classification": "third-party-guide"
+  },
+  {
+    "id": "metabot",
+    "url": "https://metabot.gg/en/aion-2",
+    "region": "Global/mixed-review",
+    "classification": "third-party-database"
+  }
+]
