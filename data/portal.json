@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19",
+  "checked_at": "2026-10-25",
   "events": [
     {
       "source_id": "halloween-official",
@@ -33,6 +33,17 @@
       "description": "乗り物2種の記念報酬をゲーム内郵便から受け取ろう。1アカウント・1リージョンにつき1回。",
       "deadline": "報酬受取：12/9 15:30 JSTまで。",
       "short_end": "12/9 15:30 JSTまで"
+    },
+    {
+      "source_id": "rise-challenge-official",
+      "category": "期間限定",
+      "title": "Rise to the Challenge（挑戦の時）",
+      "starts_on": "2026-10-21",
+      "ends_on": "2026-12-16",
+      "period": "10/21 メンテ後〜12/16 メンテ前（欧州CEST/CET表記。北米は10/20〜12/15）",
+      "description": "ショップ＞Wind Breeze Merchantsで期間限定の復活の精霊石を購入可能。25,000ギーナで30個、次の段階は50,000ギーナで30個（各サーバー週単位）。",
+      "deadline": "期間限定品は12/16 09:00 CETに削除予定。自分のサーバーとゲーム内表記を優先。",
+      "short_end": "12/16 メンテ前（欧州表記）"
     }
   ],
   "daily": [
