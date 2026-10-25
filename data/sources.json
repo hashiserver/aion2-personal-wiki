@@ -457,5 +457,32 @@
     "scope": "2026/10/20掲載の公式イベント告知。欧州は10/21メンテ後〜12/16メンテ前。復活の精霊石はサーバー週ごとの2段階購入。実際の残数はゲーム内を優先。公式Steamの告知一覧を参照",
     "published_at": "2026-10-20",
     "checked_at": "2026-10-25"
+  },
+  "global-boss-list": {
+    "title": "Wikily：Globalフィールドボス一覧",
+    "url": "https://new.wikily.gg/ja/aion-2/bosses",
+    "tag": "海外攻略（日本語）",
+    "region": "グローバル（天族・魔族別）",
+    "scope": "ガルトゥアLv51・ラグタ/タルタン/カシャパLv48の4体を照合。魔族はアルトガルド、天族はベルテロンに出現。特定順での確実な連続湧きは未検証。ゲーム内の出現状況を優先",
+    "published_at": null,
+    "checked_at": "2026-10-25"
+  },
+  "global-boss-timer": {
+    "title": "AION2 Status：フィールドボスの再出現タイマー",
+    "url": "https://aion2status.com/en/boss-timer/",
+    "tag": "海外解析",
+    "region": "グローバル（プレイヤー報告、非公式）",
+    "scope": "ガルトゥア/ラグタ約12時間、タルタン/カシャパ約6時間。各サーバー討伐からの経過時間で変動。固定開催時刻や全サーバー共通の時刻を保証しない",
+    "published_at": null,
+    "checked_at": "2026-10-25"
+  },
+  "global-boss-loot": {
+    "title": "lan-gaming：フィールドネームドの報酬と場所",
+    "url": "https://www.lan-gaming.net/aion2-field-bosses/",
+    "tag": "日本攻略記事",
+    "region": "グローバル（第三者攻略）",
+    "scope": "4体を討伐候補として比較。唯一装備・名画・精錬石などの報酬、陣営別の場所と経路。ドロップ率はゲーム内表示・最新版のデータを優先",
+    "published_at": null,
+    "checked_at": "2026-10-25"
   }
 }
