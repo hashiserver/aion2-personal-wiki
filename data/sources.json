@@ -448,5 +448,14 @@
     "scope": "神秘的な結晶の販売を確認。翼・修練のアルカナ・神石箱・賢者の石は同DBの各アイテム販売先とlan-gaming商店解説を照合。翼210,000コインは貯蓄判断用。期間・購入上限はゲーム内表示優先。",
     "published_at": null,
     "checked_at": "2026-10-20"
+  },
+  "rise-challenge-official": {
+    "title": "AION 2公式Steam告知：[Event] Rise to the Challenge",
+    "url": "https://steamcommunity.com/app/3393110/announcements/",
+    "tag": "グローバル公式",
+    "region": "Global（北米PDT/PST、欧州CEST/CET。日本サーバー時刻は未照合）",
+    "scope": "2026/10/20掲載の公式イベント告知。欧州は10/21メンテ後〜12/16メンテ前。復活の精霊石はサーバー週ごとの2段階購入。実際の残数はゲーム内を優先。公式Steamの告知一覧を参照",
+    "published_at": "2026-10-20",
+    "checked_at": "2026-10-25"
   }
 }
