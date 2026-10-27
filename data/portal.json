@@ -92,25 +92,26 @@
     },
     {
       "title": "使命：任務（Lv45〜）",
-      "description": "Jキー → ジャーナル → 使命 → 任務。報酬と行き先を確認して受諾し、目標達成後に報酬を受取。1日5回、サーバー共通。16:00までに消化。",
-      "source_id": "duty-reward-guide"
-    },
-    {
-      "title": "任務の報酬の選び方",
-      "description": "魂結晶（ペットの種族理解度）や不足しているオードエネルギーを優先。強化石・ギーナも必要に応じて。悪夢の挑戦券やフェスタの鍵は不足時に選ぶ。報酬の数量・獲得確率と移動距離を比較し、更新費用にも注意。",
-      "source_id": "duty-reward-guide"
+      "description": "1日5回・サーバー共通。報酬と行き先を見て受諾し、16:00までに消化。",
+      "source_id": "duty-reward-guide",
+      "detail_url": "/duty/",
+      "detail_label": "任務の受け方と報酬の選び方"
     }
   ],
   "weekly": [
     {
       "title": "通常マップの指令書（Lv45〜）",
       "description": "魔族は逃亡者の村／ノルニル集会所、天族は暁のレギオン基地／ズミオン村で購入。週12枚・サーバー共通。バッグで使用し受諾、ジャーナルの使命 → 指令で進行を確認。購入枠と完了期限は別。",
-      "source_id": "command-scroll-field"
+      "source_id": "command-scroll-field",
+      "detail_url": "/duty/",
+      "detail_label": "指令書の使い方"
     },
     {
       "title": "アビスの指令書（Lv45〜）",
       "description": "アビス下層の商人で購入し、バッグで使用して受諾。ジャーナルの使命 → 指令から目標を確認し消化。4種類×週5枚、サーバー共通。予算に合わせて購入。",
-      "source_id": "command-scroll-abyss"
+      "source_id": "command-scroll-abyss",
+      "detail_url": "/duty/",
+      "detail_label": "指令書の使い方"
     },
     {
       "title": "デイリーダンジョン",

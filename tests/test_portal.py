@@ -17,6 +17,18 @@ class Links(HTMLParser):
 
 
 class PortalTests(unittest.TestCase):
+    def test_task_detail_link_is_distinct_from_external_resource(self):
+        sources = {'s': {'tag': '攻略', 'title': '出典', 'url': 'https://example.com/guide'}}
+        data = {'checked_at': '2026-10-27', 'events': [],
+                'daily': [{'source_id': 's', 'title': '任務', 'description': '5回', 'detail_url': '/duty/', 'detail_label': '任務の詳しい進め方'}],
+                'tools': [{'source_id': 's', 'title': '攻略', 'description': '説明'}]}
+        home = portal.render_portal(data, sources, ['s'])
+        resources = portal.render_links(data, sources, ['s'])
+        self.assertIn('href="/duty/"', home)
+        self.assertIn('任務の詳しい進め方', home)
+        self.assertIn('外部サイト', resources)
+        self.assertIn('https://example.com/guide', Links(resources).hrefs)
+
     def test_routines_are_rendered_by_consumption_cycle(self):
         sources = {'s': {'tag': '攻略', 'title': '出典'}}
         data = {'checked_at': '2026-10-27', 'events': [],
