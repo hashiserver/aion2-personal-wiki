@@ -1,9 +1,17 @@
-{"slug":"events","title":"イベント","checked_at":"2026-10-27","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review"],"layout":"events"}
+{"slug":"events","title":"イベント","checked_at":"2026-10-28","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official"],"layout":"events"}
 
-開催期間・やること・受取期限だけをまとめています。報酬の全一覧と詳しい条件は公式へ。既存掲載分は10月19日時点の確認内容を含みます。Rise to the Challengeは10月25日に公式告知を確認しました。ルドラ復帰と関連イベントは10月23日公開のGlobal公式告知を10月26日に確認しました。11月4日のルドラ実装は予定であり、10月26日時点では未適用です。日時は公式の欧州・北米表記を維持し、日本・アジア固有の開始時刻は未確認として扱います。
+開催期間・やること・受取期限だけをまとめています。報酬の全一覧と詳しい条件は公式へ。既存掲載分は10月19日時点の確認内容を含みます。Rise to the Challengeは10月25日に公式告知を確認しました。ルドラ復帰と関連イベントは10月23日公開のGlobal公式告知を10月26日に確認し、10月27日付の配布条件訂正を10月28日に再確認しました。11月4日のルドラ実装は予定であり、10月28日朝時点では未適用です。日時は公式の欧州・北米表記を維持し、日本・アジア固有の開始時刻は未確認として扱います。
 
-## サーバー移転の一時停止（10月26日Global公式）
+## 10/28定期メンテナンス（Global公式・10/27公開）
 
-Global公式は、問題の調査中につきサーバー移転を**再開案内まで保留**すると発表しました。告知には停止の厳密な開始時刻・再開予定日・地域別の例外は記載されていません。日本・Asiaサーバーでの実際の申請画面は未確認のため、個別サーバーの状態を断定しません。ゲーム内アップデートではなく運用上の告知で、適用ビルド番号も示されていません。[[source:global-transfer-hold-official]]
+10/27 23:30 PDT／10/28 07:30 CET（**日本時間10/28 15:30**）からゲームサーバーの定期メンテナンスを予定。所要は**4時間30分**で、予定どおりなら日本時間20:00頃までです。終了時刻は計算上の目安で、完了済みという意味ではありません。公式は更新内容を後日案内するとしており、**10/28朝時点でパッチ内容・適用ビルド番号は未公表**です。日本・Asiaの個別運用は公式とゲーム内表示を優先。[[source:global-maintenance-2026-10-28-official]]
 
-従来の正式サービスサーバー移転期間は、10月20日PDT／21日CESTメンテナンス後から10月27日PDT／28日CETメンテナンス前までと案内されていました。ただし、**この当初日程をもって現在も申請できるとは判断しないでください**。ゲーム内の「ショップ → サーバー移転」と最新の公式告知を確認してください。[[source:global-transfer-window-review]]
+## サーバー移転：停止後の再開案内（Global公式・10/26公開、その後更新）
+
+10/26に問題調査のため一時停止が告知されました。その後、**欧州は03:00 PDT／12:00 CETから、NA East・NA West・South Americaは各地域の次回受付枠から再開**すると公式本文に追記されました。**移転の必要Lvは45に変更**。再開案内の列挙にはAsiaがないため、日本・Asiaの申請再開は確認済みと扱いません。ゲーム内の「ショップ → サーバー移転」で可否を確認してください。これは運用告知で、適用ビルド番号は未記載です。[[source:global-transfer-hold-official]]
+
+正式サービスの当初移転期間は、10/20 PDT・10/21 CESTのメンテナンス後から10/27 PDT・10/28 CETのメンテナンス前まで。元の公式案内にはAsiaの受付枠もありますが、**再開告知にAsiaの明記はなく、当初枠だけで現在の申請可否を保証できません**。10/26 23:30 PDT更新の公式商品案内でもLv45への変更を確認。[[source:global-transfer-products-official]][[source:global-transfer-window-review]]
+
+## オードエネルギー支援：配布数・単位の訂正（Global公式・10/27更新）
+
+10/23公開のルドラ関連公式告知が10/27に訂正され、10/28メンテナンス後〜11/11メンテナンス前（CET、北米表記では11/10まで）の郵便配布は、**オードエネルギー×4・1アカウント1日1回**となりました。以前の**×2・1キャラクター1日1回は旧情報**です。郵便の受取期限は受信から7日。10/28朝時点では配布開始前で、日本・Asiaの個別配布状況は未確認です。公式の本文に訂正時刻のタイムゾーン換算上の不一致があるため、訂正日は10/27として記録し、正確な訂正時刻は断定しません。[[source:global-ludra-official]]
