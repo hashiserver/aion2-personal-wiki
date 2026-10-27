@@ -486,13 +486,13 @@
     "checked_at": "2026-10-25"
   },
   "global-ludra-official": {
-    "title": "AION 2 Global公式：Ludra Awakens on November 4th",
-    "url": "https://steamcommunity.com/ogg/3393110/announcements/detail/675135430408017339",
+    "title": "AION 2 Global公式：Ludra Awakens on November 4th（10/27訂正）",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6adbaeb06cfe4756db5b8efb",
     "tag": "グローバル公式",
-    "region": "Global（欧州CET/北米PSTで日時告知。討伐称号対象にはAsia明記。日本・アジア固有の開始時刻は未確認）",
-    "scope": "2026-10-23に発表。対象版はGlobal（2026-10-21適用版の次回2026-11-04実装予定、ビルド番号未公表）。10/28からオードエネルギー×2/日、11/4ルドラ開放IL2800/3000、出席簿・Drops・討伐イベント等。公開日と適用日は別。EUの10/25臨時メンテナンス・デイリーリセット不具合を日本/アジア全体に拡張しない。公式Steam一覧にも同告知あり。",
+    "region": "Global（イベント告知はCET/PST基準。討伐・Bootcamp対象にAsia明記。Asia個別の配布時刻は未確認）",
+    "scope": "初回公開2026-10-23、2026-10-27に本文訂正。10/28〜11/11 CETのオードエネルギー支援は旧×2/キャラ/日から×4/アカウント/日に変更。1アカウント1日1回、郵便7日で失効。公式本文には訂正時刻として08:15 CET/12:15 PDTの併記があるが相互換算に不整合があるため、訂正日は10/27のみ採用。11/4ルドラNormal IL2800/Hard IL3000は未適用予定。Global適用ビルド番号は告知に記載なし。公式Steam一覧でも最新本文を照合。",
     "published_at": "2026-10-23",
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-10-28"
   },
   "global-ludra-review": {
     "title": "AION2 Vault：Ludra Global復帰・イベント日程の独立照合",
@@ -504,13 +504,13 @@
     "checked_at": "2026-10-26"
   },
   "global-transfer-hold-official": {
-    "title": "AION 2 Global公式：Server Transfers on Hold（サーバー移転の一時停止）",
-    "url": "https://steamcommunity.com/app/3393110/allnews/",
+    "title": "AION 2 Global公式：Server Transfers Update（停止と再開）",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6adfa9906276ae76f3e4a593",
     "tag": "グローバル公式",
-    "region": "Global公式運用告知（地域の限定記載なし。日本/Asiaサーバーの申請画面は未確認）",
-    "scope": "2026-10-26のSteam公式一覧で告知。問題調査のためサーバー移転を追って通知するまで保留。再開日、停止の厳密な適用時刻、Asia個別の受付状態は未公表。ゲーム内パッチの告知ではなく、適用ビルド番号も記載なし。公式一覧の当該告知は12:24pmと表示（タイムゾーン明記なし）。",
+    "region": "Global運用告知。再開文はEurope、NA East/West、South Americaを列挙。Asiaは明記されず個別再開状況は未確認",
+    "scope": "初回公開2026-10-26。問題調査で移転を一時停止した本文に、欧州から再開（03:00 PDT/12:00 CET）、米州は次回受付枠で再開と追記。必要レベルは45に変更。Asiaの再開は追記文に明示されておらず断定しない。運用告知でゲーム内ビルド番号なし。旧一時停止の事実は履歴として保持。",
     "published_at": "2026-10-26",
-    "checked_at": "2026-10-27"
+    "checked_at": "2026-10-28"
   },
   "global-transfer-window-review": {
     "title": "AION2help：Globalサーバー移転の当初予定（10月15日記事）",
@@ -529,5 +529,23 @@
     "scope": "使命の任務5回・サーバー共通、報酬候補の魂結晶・オード等を確認。優先順位は不足・消化可能性に基づく本サイトの提案。画面表示と確率を優先。",
     "published_at": null,
     "checked_at": "2026-10-27"
+  },
+  "global-transfer-products-official": {
+    "title": "AION 2 Global公式：Server Transfer Products Info（10/26要件更新）",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac932a8fa34c1011d627bc9",
+    "tag": "グローバル公式",
+    "region": "Global（Europe・NA・South America・Asiaを含む受付時間の案内）",
+    "scope": "初回記事2026-10-09、更新2026-10-26 23:30 PDT（Lv10→Lv45）。正式サービスの当初受付期限は10/27 PDT・10/28 CETの定期メンテナンス前。Asiaの元の受付枠と10/28特別枠を記載。ただし一時停止/再開告知は別途確認し、Asiaの再開を保証しない。運用規則でゲーム内ビルド番号なし。",
+    "published_at": "2026-10-09",
+    "checked_at": "2026-10-28"
+  },
+  "global-maintenance-2026-10-28-official": {
+    "title": "AION 2 Global公式：10/27 PDT・10/28 CET定期メンテナンス",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae0ae606cfe4756db5b8f5a",
+    "tag": "グローバル公式",
+    "region": "Global（公式のゲームサーバー保守告知。Asia個別の実施・終了時刻は未確認）",
+    "scope": "2026-10-27公開。10/27 23:30 PDT／10/28 07:30 CET（10/28 15:30 JST）開始予定、所要4時間30分。予定終了は10/28 20:00 JST相当（計算値で公式の完了発表ではない）。更新内容は後日発表と明記。適用ビルド番号未公表。10/28早朝JST時点で開始・完了未確認。",
+    "published_at": "2026-10-27",
+    "checked_at": "2026-10-28"
   }
 }
