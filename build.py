@@ -12,7 +12,7 @@ import markdown2
 from portal import render_portal, render_links, render_events
 
 ROOT = Path(__file__).resolve().parent
-NAV = [('', '日課・週課'), ('events', 'イベント'), ('links', 'ビルド・ツール')]
+NAV = [('', '日課・週課'), ('duty', '任務・指令'), ('events', 'イベント'), ('links', 'リンク集')]
 MARKER = re.compile(r'\[\[source:([a-z0-9-]+)\]\]')
 
 
@@ -59,7 +59,7 @@ def render_sources(ids: list[str], sources: dict) -> str:
         s = sources[sid]
         date = f'公開日 {s["published_at"]}' if s['published_at'] else '公開日不明'
         rows.append(f'<li id="source-{sid}"><span class="tag">{html.escape(s["tag"])}</span> '
-                    f'<a href="{html.escape(s["url"], quote=True)}" rel="noreferrer">{html.escape(s["title"])}</a>'
+                    f'<a href="{html.escape(s["url"], quote=True)}" rel="noreferrer">{html.escape(s["title"])} <span class="external-label">外部サイト ↗</span></a>'
                     f'<p class="source-meta">対象：{html.escape(s["region"])} · {html.escape(date)} · '
                     f'確認日 {html.escape(s["checked_at"])}（JST）</p>'
                     f'<p class="source-scope">{html.escape(s["scope"])}</p></li>')
@@ -162,3 +162,4 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
 if __name__ == '__main__':
     build_site(ROOT / 'content', ROOT / 'data/sources.json', ROOT / 'dist')
     print(f'Built {len(list((ROOT / "dist").rglob("index.html")))} pages in dist/')
+
