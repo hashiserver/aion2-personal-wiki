@@ -40,8 +40,10 @@ def render_portal(data, sources, declared_ids):
         item = active[0]
         notice = ('<a class="event-notice" href="/events/"><strong>開催中イベント</strong><span>' + escape(item['title']) + '：' + escape(item['short_end']) + '</span><span class="notice-action">期限・受取を確認</span></a>')
     return (notice + '<div class="task-columns">' +
-            panel('daily', '毎日やること', '受取と、あふれそうな回数から。') +
-            panel('weekly', '毎週やること', '週の残数と交換枠を確認。') + '</div>' +
+            panel('daily', '毎日確認', '受取と日ごとの報酬枠を確認。') +
+            panel('accumulating', '上限前に消化', '毎日補充。残数に余裕があればまとめて消化。') +
+            panel('weekly', '週の期限までに', '週の残数と購入枠を確認。') +
+            panel('optional', '開催時・余裕があれば', '出現状況や目的に合わせて参加。') + '</div>' +
             '<aside class="plain-note"><strong>リセットの時刻について</strong><p>出席簿は毎日16:00 JST。その他はゲーム内の残り時間を優先してください。すべてを毎日消化する必要はありません。</p></aside>' +
             exchange_note + '<div class="related"><a href="/events/">開催中イベントと受取期限を見る</a><a href="/links/">職業ビルド・マップ・計算機を探す</a></div>')
 
@@ -80,4 +82,5 @@ def render_events(data, sources, declared_ids):
                      f'<div><dt>期限・注意</dt><dd>{escape(item["deadline"])}</dd></div></dl>'
                      f'<a class="resource-link" href="{escape(sources[sid]["url"],quote=True)}" rel="noreferrer">報酬・条件は公式で確認 <span aria-hidden="true">↗</span></a></article>')
     return ''.join(items)
+
 
