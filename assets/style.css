@@ -12,3 +12,8 @@
   ::view-transition-new(root){mix-blend-mode:normal}
 }
 @media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}
+
+
+.detail-link{display:inline-flex;align-items:center;gap:.25rem;min-height:44px;margin-top:.35rem;font-size:.88rem;font-weight:650;text-decoration:underline}
+.external-label{display:inline-block;margin-left:.35rem;padding:.08rem .35rem;border:1px solid #bdd0dc;border-radius:3px;color:#355768;font-size:.7rem;font-weight:600;white-space:nowrap;line-height:1.6}
+@media(max-width:767px){.primary-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
