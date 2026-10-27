@@ -16,15 +16,20 @@ def source_tag(sid, sources, declared_ids):
     if sid not in sources or sid not in declared_ids:
         raise ValueError(f'undeclared portal source: {sid}')
     s = sources[sid]
-    label = '公式' if '公式' in s['tag'] else '攻略・解析'
-    return f'<a class="evidence" href="#source-{escape(sid)}" aria-label="出典：{escape(s["title"], quote=True)}">{label}</a>'
+    return f'<a class="evidence" href="#source-{escape(sid)}" aria-label="出典を見る：{escape(s["title"], quote=True)}">出典</a>'
 
 
 def render_portal(data, sources, declared_ids):
     def panel(key, title, description):
         rows = []
         for item in data.get(key, []):
-            rows.append(f'<li><div><h3>{escape(item["title"])}</h3><p>{escape(item["description"])}</p></div>'
+            detail = ''
+            if item.get('detail_url'):
+                url = item['detail_url']
+                if not url.startswith('/') or url.startswith('//'):
+                    raise ValueError('detail_url must be a site path')
+                detail = f'<a class="detail-link" href="{escape(url, quote=True)}">{escape(item["detail_label"])} <span aria-hidden="true">→</span></a>'
+            rows.append(f'<li><div><h3>{escape(item["title"])}</h3><p>{escape(item["description"])}</p>{detail}</div>'
                         f'{source_tag(item["source_id"], sources, declared_ids)}</li>')
         return f'<section class="task-panel" id="{key}" aria-labelledby="{key}-title"><header><h2 id="{key}-title">{title}</h2><p>{description}</p></header><ul>{"".join(rows)}</ul></section>'
     exchanges = ''.join(
@@ -52,7 +57,7 @@ def render_links(data, sources, declared_ids):
     e = lambda v: escape(str(v), quote=True)
     def link(sid, text):
         source_tag(sid, sources, declared_ids)
-        return f'<a class="resource-link" href="{e(sources[sid]["url"])}" rel="noreferrer" aria-label="{e(text)}：{e(sources[sid]["title"])}">{e(text)}<span aria-hidden="true"> ↗</span></a>'
+        return f'<a class="resource-link" href="{e(sources[sid]["url"])}" rel="noreferrer" aria-label="{e(text)}：{e(sources[sid]["title"])}（外部サイト）">{e(text)}<span class="external-label" aria-hidden="true">外部サイト ↗</span></a>'
     classes = []
     for item in data.get('classes', []):
         classes.append(f'<li><h3>{e(item["name"])}</h3><div class="class-actions">{link(item["leveling"], "育成中")}{link(item["pve"], "Lv45・PvE")}</div></li>')
@@ -80,7 +85,7 @@ def render_events(data, sources, declared_ids):
                      f'<dl><div><dt>期間</dt><dd>{escape(item["period"])}</dd></div>'
                      f'<div><dt>やること</dt><dd>{escape(item["description"])}</dd></div>'
                      f'<div><dt>期限・注意</dt><dd>{escape(item["deadline"])}</dd></div></dl>'
-                     f'<a class="resource-link" href="{escape(sources[sid]["url"],quote=True)}" rel="noreferrer">報酬・条件は公式で確認 <span aria-hidden="true">↗</span></a></article>')
+                     f'<a class="resource-link" href="{escape(sources[sid]["url"],quote=True)}" rel="noreferrer">報酬・条件を公式で確認 <span class="external-label">外部サイト ↗</span></a></article>')
     return ''.join(items)
 
 
