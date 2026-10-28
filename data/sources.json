@@ -540,12 +540,75 @@
     "checked_at": "2026-10-28"
   },
   "global-maintenance-2026-10-28-official": {
-    "title": "AION 2 Global公式：10/27 PDT・10/28 CET定期メンテナンス",
+    "title": "AION2 Global公式：10/28定期メンテナンス（完了追記）",
     "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae0ae606cfe4756db5b8f5a",
     "tag": "グローバル公式",
     "region": "Global（公式のゲームサーバー保守告知。Asia個別の実施・終了時刻は未確認）",
-    "scope": "2026-10-27公開。10/27 23:30 PDT／10/28 07:30 CET（10/28 15:30 JST）開始予定、所要4時間30分。予定終了は10/28 20:00 JST相当（計算値で公式の完了発表ではない）。更新内容は後日発表と明記。適用ビルド番号未公表。10/28早朝JST時点で開始・完了未確認。",
+    "scope": "2026-10-27公開。10/27 23:30 PDT／10/28 07:30 CET（10/28 15:30 JST）開始予定、所要4時間30分。予定終了は10/28 20:00 JST相当（計算値で公式の完了発表ではない）。更新内容は後日発表と明記。適用ビルド番号未公表。10/28早朝JST時点で開始・完了未確認。 10/29の再確認で同一公式記事の見出しがCompleteに更新され、10/28メンテ完了が確認できた。以前の開始予定・所要時間は当時の予告履歴。Asiaの実際の完了時刻・パッチビルド番号は未確認。",
     "published_at": "2026-10-27",
-    "checked_at": "2026-10-28"
+    "checked_at": "2026-10-29"
+  },
+  "global-patch-2026-10-28-official": {
+    "title": "AION2 Global公式：10/27 PDT・10/28 CETパッチノート",
+    "url": "https://aion2.plaync.com/en-us/board/update/view?articleId=6ae19668577e8c01355e0210",
+    "tag": "Global公式",
+    "region": "Global公式告知（日本・Asiaの実装ビルド番号は未確認）",
+    "scope": "2026-10-28公開。10/28定期メンテナンスに伴う遠征/超越ボス弱体化、ウルググ峡谷/ヴァクロン空島Hard IL2700、Lv45基礎HP増加、オディリウム貯蔵庫、採集Lv45/サーバー1日1000回、装備増幅/継承、28日出席簿、商店/パス等。正式クライアントビルド番号は本文に明記なし。原文はNC公式ページで本文抽出が難しいためSteam公式告知索引・第三者原文転載・別解説で照合。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-10-29"
+  },
+  "global-patch-2026-10-28-review": {
+    "title": "AION2HUB：Global 10/28公式パッチノートの原文転載",
+    "url": "https://aion2hub.me/en/news/notice-patch-notes-oct-27-pdt-oct-28-cet-h68djg",
+    "tag": "公式原文転載（第三者）",
+    "region": "Global（韓国・台湾版ではない）",
+    "scope": "2026-10-28付の公式告知を転載。遠征・超越ボス調整、Hard追加、全8職Lv45基礎HP、採集・商店・装備強化・出席簿を項目別に照合。転載元であり独立した公式発表ではない。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-10-29"
+  },
+  "global-patch-2026-10-28-independent": {
+    "title": "Aion2Builds：10/28 Globalパッチの要点とビルドへの影響",
+    "url": "https://aion2builds.com/updates/patch-notes-2026-10-27/",
+    "tag": "海外攻略（独立要約）",
+    "region": "Global（地域固有差分は未確認）",
+    "scope": "10/27 PDT／10/28 CET更新のGlobalパッチを公式リンクと照合。遠征・超越弱体化、ウルググ/ヴァクロンHard、HP、採集、装備継承など。ページ上の更新日表示には不整合があるため記事公開日時はGlobal公式を優先。",
+    "published_at": null,
+    "checked_at": "2026-10-29"
+  },
+  "global-attendance-2026-10-28-review": {
+    "title": "AION2HUB：Atreia's Call 28日出席簿の公式告知転載",
+    "url": "https://aion2hub.me/en/news/notice-new-attendance-event-notice-pwwzoz",
+    "tag": "公式原文転載（第三者）",
+    "region": "Global告知（日本・Asia固有の日付は未確認）",
+    "scope": "2026-10-28公開。出席簿は10/28メンテ後に開始、1サーバー1回、28日分の報酬。単独の公式告知原文に終了日12/1と12/2が併記され矛盾。別の公式パッチ本文は12/2と記載。終了日を確定せず12/1までの早期受取を推奨。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-10-29"
+  },
+  "global-halloween-twitch-2026-10-28-official": {
+    "title": "AION2 Global公式：Halloween Twitch Drops 10/28–11/3 PT",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6adb63578af865061f6b12b8",
+    "tag": "Global公式",
+    "region": "Global Twitchイベント告知（日本・Asiaアカウント適用条件は未確認）",
+    "scope": "2026-10-28公開。10/28 10:00 PDT〜11/3 23:59 PST（欧州10/28 18:00〜11/4 08:59 CET）。参加チャンネル視聴1/2/4/6/8時間の5段階。Twitch報酬受取期限11/17 23:59 PST／11/18 08:59 CET。公式告知の存在をNCニュース一覧で確認し、詳細は転載/独立記事で照合。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-10-29"
+  },
+  "global-halloween-twitch-2026-10-28-review": {
+    "title": "AION2HUB：Halloween Twitch Drops公式本文転載",
+    "url": "https://aion2hub.me/en/news/global-halloween-twitch-drops-8h7saf",
+    "tag": "公式原文転載（第三者）",
+    "region": "Global（参加条件は公式を優先）",
+    "scope": "2026-10-28付。視聴時間・報酬・配信期間・11/18 CET受取期限を転載原文で照合。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-10-29"
+  },
+  "global-pass-2026-10-28-official": {
+    "title": "AION2 Global公式：10/28新ディーヴァパス案内",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6acf216828c7452635072d9c",
+    "tag": "Global公式",
+    "region": "Global公式告知（日本・Asiaの販売条件は未確認）",
+    "scope": "2026-10-28公開。Prelude to Flightは10/28 08:00 CET〜12/2 09:00 CET。Basic無料、Premium1,000キューナ、各キャラ1回。詳細は同日Globalパッチ原文転載と公式告知一覧を照合。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-10-29"
   }
 }
