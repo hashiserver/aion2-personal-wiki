@@ -1,8 +1,25 @@
-{"slug":"events","title":"イベント","checked_at":"2026-10-28","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official"],"layout":"events"}
+{"slug":"events","title":"イベント","checked_at":"2026-10-29","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official","global-patch-2026-10-28-official","global-patch-2026-10-28-review","global-patch-2026-10-28-independent","global-attendance-2026-10-28-review","global-halloween-twitch-2026-10-28-official","global-halloween-twitch-2026-10-28-review","global-pass-2026-10-28-official"],"layout":"events"}
+
+## 10/28 Globalアップデート（10/29確認）
+
+10/27 PDT／10/28 CETに公開されたGlobal公式パッチノートを確認。10/28定期メンテナンスは**公式で完了扱い**になりました（開始予定10/27 23:30 PDT／10/28 07:30 CET＝10/28 15:30 JST、予定所要4時間30分）。**適用ビルド番号と日本・Asiaの個別メンテ完了時刻は未確認**です。韓国・台湾版の変更は含めていません。[[source:global-maintenance-2026-10-28-official]][[source:global-patch-2026-10-28-official]]
+
+- **遠征・超越**：通常遠征／超越1段階のボス攻撃力15%減、難しい遠征／超越2〜4段階のボス攻撃力とダメージ増幅が各10%減、超越1〜2段階のボスHP6.5%減。**ウルググ峡谷・ヴァクロン空島に難しい追加（必要IL2,700、狂暴化4分、1人3回復活）**。アリエルの欠片、賢者の石：啓示などが報酬候補。
+- **クラス・育成**：Lv45基礎HPはグラディエーター・テンプラーが4,702→6,202、その他6クラス（チャンター含む）は4,702→5,702。アサシンの一部スキル調整。装備の増幅上限・遠征装備から製作装備への継承条件も拡張。
+- **日課・商店**：新デイリーダンジョン「オディリウム貯蔵庫」は魂結晶を獲得でき、生体研究基地と入場回数を共有。採集は**Lv45以上・サーバーごと1日1,000回上限**に変更。オードエネルギー商店は移転期間用のキャラ20個枠を終了し、週4個/キャラ・週16個/サーバーの枠を追加。悪夢即時完了券は週14枚/サーバー、各30,000ギーナ。[[source:global-patch-2026-10-28-official]][[source:global-patch-2026-10-28-review]][[source:global-patch-2026-10-28-independent]]
+
+## 10/28開始のイベントと注意点
+
+**Atreia's Call（28日出席簿）**：10/28メンテ後開始。ゲーム内「出席簿」で1サーバーにつき1回ずつ受取。オードエネルギー、魂結晶、挑戦券など。**終了日は公式本文間で12/1と12/2の記載が混在**（単独の出席簿告知に両日があり、パッチノートは12/2）。確定期限として掲載せず、12/1より前に受取を進め、後続の訂正を確認してください。対象アイテムの一部は12/16 PST削除と案内。[[source:global-attendance-2026-10-28-review]][[source:global-patch-2026-10-28-official]]
+
+**ハロウィンTwitch Drops**：10/28 10:00 PDT／18:00 CET〜11/3 23:59 PST／11/4 08:59 CET。参加配信の累計1/2/4/6/8時間で復活の精霊石×15、外見変更券、カスタマイズ券×3、オードエネルギー×4、パンダ頭装備。**11/17 23:59 PST／11/18 08:59 CETまでにTwitch側で受取**。アカウント連携・日本/Asiaでの対象条件は公式で確認。[[source:global-halloween-twitch-2026-10-28-official]][[source:global-halloween-twitch-2026-10-28-review]]
+
+**新ディーヴァパス「Prelude to Flight」**：10/28 08:00 CET〜12/2 09:00 CET。Basic無料、Premium1,000キューナ（各キャラ1回）。遠征・超越、採集、製作などでパスEXPを獲得。日本・Asiaの個別販売条件はゲーム内優先。[[source:global-pass-2026-10-28-official]][[source:global-patch-2026-10-28-review]]
+
 
 開催期間・やること・受取期限だけをまとめています。報酬の全一覧と詳しい条件は公式へ。既存掲載分は10月19日時点の確認内容を含みます。Rise to the Challengeは10月25日に公式告知を確認しました。ルドラ復帰と関連イベントは10月23日公開のGlobal公式告知を10月26日に確認し、10月27日付の配布条件訂正を10月28日に再確認しました。11月4日のルドラ実装は予定であり、10月28日朝時点では未適用です。日時は公式の欧州・北米表記を維持し、日本・アジア固有の開始時刻は未確認として扱います。
 
-## 10/28定期メンテナンス（Global公式・10/27公開）
+## 10/28定期メンテナンスの事前予告（Global公式・10/27公開、履歴）
 
 10/27 23:30 PDT／10/28 07:30 CET（**日本時間10/28 15:30**）からゲームサーバーの定期メンテナンスを予定。所要は**4時間30分**で、予定どおりなら日本時間20:00頃までです。終了時刻は計算上の目安で、完了済みという意味ではありません。公式は更新内容を後日案内するとしており、**10/28朝時点でパッチ内容・適用ビルド番号は未公表**です。日本・Asiaの個別運用は公式とゲーム内表示を優先。[[source:global-maintenance-2026-10-28-official]]
 
