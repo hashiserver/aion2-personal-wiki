@@ -610,5 +610,59 @@
     "scope": "2026-10-28公開。Prelude to Flightは10/28 08:00 CET〜12/2 09:00 CET。Basic無料、Premium1,000キューナ、各キャラ1回。詳細は同日Globalパッチ原文転載と公式告知一覧を照合。",
     "published_at": "2026-10-28",
     "checked_at": "2026-10-29"
+  },
+  "global-security-restrictions-2026-10-29-official": {
+    "title": "AION2 Global公式：10/28 PDT・10/29 CETのアカウント制限",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae2b7c0fa7da41c727d6a4f",
+    "tag": "Global公式",
+    "region": "Global（アカウント運用方針の告知。日本・Asia個別の対象件数内訳は未記載）",
+    "scope": "公開2026-10-28 20:04 PDT／10-29 03:04 UTC、処分実施2026-10-28 20:00 PDT／10-29 04:00 CET。4,651アカウントをBOT・金策組織・不正プログラム・RMT等の違反で制限。別途の一時的セキュリティロックは違反制裁とは異なる。公式Steam全文と照合。運用告知でゲーム内ビルド番号なし。日本・Asiaの個別件数は未確認。",
+    "published_at": "2026-10-29",
+    "checked_at": "2026-10-30"
+  },
+  "global-security-restrictions-2026-10-29-review": {
+    "title": "Aion2Builds：Globalアカウント制限の公式記事リンク付き要約",
+    "url": "https://aion2builds.com/updates/",
+    "tag": "海外攻略・照合",
+    "region": "Global公式ニュースの第三者索引",
+    "scope": "2026-10-29更新のニュース索引で、公式10/28 PDTの4,651アカウント制限と別扱いのセキュリティロックを照合。第三者による要約であり一次情報ではない。",
+    "published_at": "2026-10-29",
+    "checked_at": "2026-10-30"
+  },
+  "global-matchmaking-2026-10-28-official": {
+    "title": "AION2 Global公式：10/28サーバーマッチング（Asia含む）",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae00a2f6276ae76f3e4a59d",
+    "tag": "Global公式",
+    "region": "Global（Europe・NA East/West・South America・Asiaの地域別表）",
+    "scope": "公式Steamで2026-10-27 PDT公開、10/28マッチング案内。Asiaを含むアビス・時空の亀裂のサーバー組合せを別々に掲載。アビスは同陣営同士も組合せあり（AsiaのMarchutan/Ereshkigal、Hithanya/Naniaなど）。組合せは定期的に更新されるため恒久的な固定表ではない。適用開始の厳密な時刻とクライアントビルド番号は本文に記載なし。",
+    "published_at": "2026-10-27",
+    "checked_at": "2026-10-30"
+  },
+  "global-matchmaking-2026-10-28-review": {
+    "title": "AION2HUB：10/28公式サーバーマッチングの原文転載",
+    "url": "https://aion2hub.me/en/news/notice-server-matchmaking-october-28-q6wldy",
+    "tag": "公式原文転載（第三者）",
+    "region": "Global（Asiaのアビス・亀裂の組合せを含む）",
+    "scope": "2026-10-28付の転載記事にAsiaのAbyss 10組、Rift 10組を掲載。Steam公式本文と照合。転載元であり独立した公式発表ではない。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-10-30"
+  },
+  "global-client-2-0-9-0-gamingtools": {
+    "title": "gaming.tools：AION2 Globalデータベース版2.0.9.0",
+    "url": "https://aion2.gaming.tools/ja",
+    "tag": "海外データベース（日本語）",
+    "region": "Globalデータベース。日本・Asiaのクライアント実測ではない",
+    "scope": "サイト上のGlobal版表示2.0.9.0、最終更新2026-10-29。ゲーム内の日本・Asiaクライアントに同版が適用されたことや公式ビルド番号を証明するものではない。別のEUクライアント解析サイトとも照合。",
+    "published_at": null,
+    "checked_at": "2026-10-30"
+  },
+  "global-client-2-0-9-0-aion2gg": {
+    "title": "Aion2.gg：EUクライアント解析版2.0.9.0",
+    "url": "https://aion2.gg/database",
+    "tag": "海外データベース（解析）",
+    "region": "EUクライアント（Globalの欧州版。日本・Asiaは未検証）",
+    "scope": "サイトのゲーム版2.0.9.0、Steam build 26262663、データ最終更新2026-10-28を確認。gaming.toolsと版表示が一致。NCSOFT公式がビルド番号を告知した証拠ではない。",
+    "published_at": null,
+    "checked_at": "2026-10-30"
   }
 }

@@ -1,4 +1,17 @@
-{"slug":"events","title":"イベント","checked_at":"2026-10-29","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official","global-patch-2026-10-28-official","global-patch-2026-10-28-review","global-patch-2026-10-28-independent","global-attendance-2026-10-28-review","global-halloween-twitch-2026-10-28-official","global-halloween-twitch-2026-10-28-review","global-pass-2026-10-28-official"],"layout":"events"}
+{"slug":"events","title":"イベント","checked_at":"2026-10-30","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official","global-patch-2026-10-28-official","global-patch-2026-10-28-review","global-patch-2026-10-28-independent","global-attendance-2026-10-28-review","global-halloween-twitch-2026-10-28-official","global-halloween-twitch-2026-10-28-review","global-pass-2026-10-28-official","global-security-restrictions-2026-10-29-official","global-security-restrictions-2026-10-29-review","global-matchmaking-2026-10-28-official","global-matchmaking-2026-10-28-review","global-client-2-0-9-0-gamingtools","global-client-2-0-9-0-aion2gg"],"layout":"events"}
+
+## 10/29 Global運用告知：不正アカウント制限（10/30確認）
+
+公式は**10/28 20:00 PDT／10/29 04:00 CET**にBOT・不正プログラム・金策組織・RMT・異常取引などの違反を理由として**4,651アカウントを制限**したと発表。公式の公開は10/28 20:04 PDT／10/29 03:04 UTCで、**公開日と処分実施日・時刻は別**です。通常の長時間プレイは処分対象としない旨も明記されています。アカウント保護のための**一時的なセキュリティロックは違反制裁と別**で、対象者は公式サポートへ問い合わせる案内です。日本・Asiaの対象件数の内訳は未公表。これは運用告知で、ゲーム内ビルド番号の変更は示されていません。[[source:global-security-restrictions-2026-10-29-official]][[source:global-security-restrictions-2026-10-29-review]]
+
+## 10/28サーバーマッチング：Asiaの組合せも掲載（10/30確認）
+
+**10/27 PDT公開のGlobal公式告知**に、10/28のアビスと時空の亀裂のサーバー組合せが**Asiaを含む地域別**に掲載されています。**アビスと時空の亀裂は別々の組合せ**で、アビスは同じ陣営同士の組合せもあります（Asiaの例：Marchutan対Ereshkigalは魔族同士、Hithanya対Naniaは天族同士）。組合せは定期的に変更されるため、最新の[公式表](https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae00a2f6276ae76f3e4a59d)を優先。実際の適用開始時刻・ビルド番号は告知で特定できません。[[source:global-matchmaking-2026-10-28-official]][[source:global-matchmaking-2026-10-28-review]]
+
+## クライアント版：第三者データベースの観測（10/30確認）
+
+Globalデータベースの**gaming.toolsは2.0.9.0（データ更新10/29）**、EUクライアント解析の**Aion2.ggも2.0.9.0（データ更新10/28、Steam build 26262663）**を表示しています。これは**第三者が観測したGlobal/EUクライアント情報**であり、10/28のGlobal公式パッチノートに公式ビルド番号の明記はなく、**日本・Asiaの実際の適用版を保証しません**。データ更新日を公式パッチ公開日やゲーム内適用日時と混同しないでください。[[source:global-client-2-0-9-0-gamingtools]][[source:global-client-2-0-9-0-aion2gg]]
+
 
 ## 10/28 Globalアップデート（10/29確認）
 
