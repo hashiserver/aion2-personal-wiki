@@ -1,4 +1,14 @@
-{"slug":"events","title":"イベント","checked_at":"2026-10-30","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official","global-patch-2026-10-28-official","global-patch-2026-10-28-review","global-patch-2026-10-28-independent","global-attendance-2026-10-28-review","global-halloween-twitch-2026-10-28-official","global-halloween-twitch-2026-10-28-review","global-pass-2026-10-28-official","global-security-restrictions-2026-10-29-official","global-security-restrictions-2026-10-29-review","global-matchmaking-2026-10-28-official","global-matchmaking-2026-10-28-review","global-client-2-0-9-0-gamingtools","global-client-2-0-9-0-aion2gg"],"layout":"events"}
+{"slug":"events","title":"イベント","checked_at":"2026-11-01","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official","global-patch-2026-10-28-official","global-patch-2026-10-28-review","global-patch-2026-10-28-independent","global-attendance-2026-10-28-review","global-halloween-twitch-2026-10-28-official","global-halloween-twitch-2026-10-28-review","global-pass-2026-10-28-official","global-security-restrictions-2026-10-29-official","global-security-restrictions-2026-10-29-review","global-matchmaking-2026-10-28-official","global-matchmaking-2026-10-28-review","global-client-2-0-9-0-gamingtools","global-client-2-0-9-0-aion2gg","global-nae-dst-2026-11-01-official","global-naw-dst-2026-11-01-official","global-na-dst-2026-11-01-aion2gg","global-na-dst-2026-11-01-aion2builds"],"layout":"events"}
+
+## 11/1 北米限定：夏時間切替の臨時メンテナンス（11/1確認）
+
+**公式公開：2026/10/30 PDT（日本時間10/31）／対象：北米 East・West のみ。** 夏時間終了（EDT→EST、PDT→PST）に伴うゲームサーバーの臨時メンテナンスが**予定**されています。公式Steam本文とNC公式記事へのリンク、第三者の公式ニュース索引を照合しました。**日本・Asia向けの停止案内ではありません。**
+
+- **NA East（NAE）**：10/31 22:30 PDT＝11/1 06:30 CET＝**11/1 14:30 JST**開始予定。所要**2時間30分**（予定終了17:00 JST）。
+- **NA West（NAW）**：11/1 01:30 PDT＝11/1 09:30 CET＝**11/1 17:30 JST**開始予定。所要**2時間30分**（予定終了20:00 JST）。
+
+メンテ中は該当サーバーのログインができず、接続中のプレイヤーは切断されます。**終了予定時刻は開始時刻と所要時間からの計算値であり、完了実績ではありません。** 公式にゲーム内の適用ビルド番号・新パッチ内容の記載はなく、日本・Asiaへの適用や日本のログイン停止は確認されていません。公式の更新・現地のサーバー状態を優先してください。[[source:global-nae-dst-2026-11-01-official]][[source:global-naw-dst-2026-11-01-official]][[source:global-na-dst-2026-11-01-aion2gg]][[source:global-na-dst-2026-11-01-aion2builds]]
+
 
 ## 10/29 Global運用告知：不正アカウント制限（10/30確認）
 
