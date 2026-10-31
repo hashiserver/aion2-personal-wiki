@@ -664,5 +664,41 @@
     "scope": "サイトのゲーム版2.0.9.0、Steam build 26262663、データ最終更新2026-10-28を確認。gaming.toolsと版表示が一致。NCSOFT公式がビルド番号を告知した証拠ではない。",
     "published_at": null,
     "checked_at": "2026-10-30"
+  },
+  "global-nae-dst-2026-11-01-official": {
+    "title": "AION2 Global公式：NA East夏時間終了対応の臨時メンテナンス（11/1）",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae61e9028c7452635072e28",
+    "tag": "Global公式（NAE限定）",
+    "region": "North America Eastのみ。日本・Asia、EU、NA Westの停止告知ではない",
+    "scope": "公式Steam掲載2026-10-30 PDT（日本時間10/31）。10/31 22:30 PDT＝11/1 06:30 CET＝11/1 14:30 JST開始予定、2時間30分。東部夏時間EDT→標準時ESTへの切替対応。ログイン停止・切断を予告。メンテ終了実績やゲーム内ビルド変更は未確認。公式NCページはタイトル確認、本文は同一運営のSteam公式掲載で確認。",
+    "published_at": "2026-10-30",
+    "checked_at": "2026-11-01"
+  },
+  "global-naw-dst-2026-11-01-official": {
+    "title": "AION2 Global公式：NA West夏時間終了対応の臨時メンテナンス（11/1）",
+    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae61e90577e8c01355e0248",
+    "tag": "Global公式（NAW限定）",
+    "region": "North America Westのみ。日本・Asia、EU、NA Eastの停止告知ではない",
+    "scope": "公式Steam掲載2026-10-30 PDT（日本時間10/31）。11/1 01:30 PDT＝11/1 09:30 CET＝11/1 17:30 JST開始予定、2時間30分。太平洋夏時間PDT→標準時PSTへの切替対応。ログイン停止・切断を予告。メンテ終了実績やゲーム内ビルド変更は未確認。公式NCページはタイトル確認、本文は同一運営のSteam公式掲載で確認。",
+    "published_at": "2026-10-30",
+    "checked_at": "2026-11-01"
+  },
+  "global-na-dst-2026-11-01-aion2gg": {
+    "title": "Aion2.gg：Global公式のNAE・NAW臨時メンテ告知索引",
+    "url": "https://aion2.gg/news",
+    "tag": "海外データベース（公式記事索引）",
+    "region": "GlobalニュースのうちNA East・NA West限定",
+    "scope": "10/31付の索引でNAE/NAWの別告知と公式NC記事へのリンクを確認。公式の対象地域・開始時刻を同運営Steam本文と照合。サイト表示の日付は公式PDT公開日とは異なる可能性がある。",
+    "published_at": null,
+    "checked_at": "2026-11-01"
+  },
+  "global-na-dst-2026-11-01-aion2builds": {
+    "title": "Aion2Builds：10/30 PDTのNAE・NAW臨時メンテ索引",
+    "url": "https://aion2builds.com/updates/",
+    "tag": "海外攻略（公式記事の独立要約）",
+    "region": "GlobalニュースのうちNA East・NA West限定",
+    "scope": "10/30 17:50 PDT（NAE）と17:55 PDT（NAW）の公開時刻表示、各11/1の予定時刻・所要2時間30分を照合。公式では日本・Asiaへの停止適用を示さない。",
+    "published_at": null,
+    "checked_at": "2026-11-01"
   }
 }
