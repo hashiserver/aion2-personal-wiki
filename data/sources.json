@@ -700,5 +700,32 @@
     "scope": "10/30 17:50 PDT（NAE）と17:55 PDT（NAW）の公開時刻表示、各11/1の予定時刻・所要2時間30分を照合。公式では日本・Asiaへの停止適用を示さない。",
     "published_at": null,
     "checked_at": "2026-11-01"
+  },
+  "global-ludra-2026-10-30-revision-official": {
+    "title": "AION2 Global公式：ルドラ11/4告知の10/30改訂（Twitch Drops箱形式・討伐称号名）",
+    "url": "https://lounge.plaync.com/feed/85150?country=US&locale=en-US",
+    "tag": "Global公式（NC PURPLE Lounge）",
+    "region": "Global（ルドラ討伐イベントはAsia含む）。Twitch DropsのAsiaアカウント対象条件は個別確認が必要",
+    "scope": "初回公開2026-10-23、2026-10-30 17:00 PDT／2026-10-31 01:00 CETに改訂。Twitch Dropsの一部アイテムを箱形式にまとめ、獲得可能な中身は変更なし。11/4 15:00〜11/18 08:59 CET（北米11/4 06:00〜11/17 23:59 PST）、視聴1/2/3/4/6/8/10/12/13/14時間の10段階。ルドラ討伐称号の英語名は1位The First to Slay Ludra、2〜5位Ludra's Conqueror、6〜20位Ludra's Vanquisher、その他のクリア者Ludra's Nemesisに変更。ルドラ11/4実装は11/2時点では予定であり、ゲーム内ビルド番号の変更を示さない。NC公式Lounge全文と公式NC記事タイトルを照合。",
+    "published_at": "2026-10-23",
+    "checked_at": "2026-11-02"
+  },
+  "global-ludra-2026-10-30-revision-review": {
+    "title": "aion2.fyi：ルドラ公式10/30更新内容の原文転載",
+    "url": "https://aion2.fyi/news/ludra-awakens-on-november-4th",
+    "tag": "第三者転載・照合",
+    "region": "Global公式告知の転載（独立した公式発表ではない）",
+    "scope": "2026-10-23公開のGlobal公式記事に2026-10-30の改訂履歴が追加されたこと、Twitch Dropsの箱形式と称号名変更、公式の対象地域と日程を照合。転載ページの確認日2026-11-02。公式NC Lounge全文を優先。",
+    "published_at": "2026-10-23",
+    "checked_at": "2026-11-02"
+  },
+  "global-na-dst-2026-11-01-complete-official": {
+    "title": "AION2 Global公式Steam：NAE・NAW 11/1臨時メンテナンス完了追記",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
+    "tag": "Global公式（Steam告知本文）",
+    "region": "北米East・Westのみ（日本・Asiaは対象外）",
+    "scope": "NAE/NAWの臨時メンテナンス告知は2026-10-30 PDT公開。2026-11-02 JST再確認時点で両記事の見出しに(Completed)が追記され、本文にメンテ完了・サーバー再開が明記。追記の正確な公開時刻、実際の完了時刻、ゲーム内ビルド番号は未記載。元の11/1開始予定時刻・所要2時間30分は履歴として維持。",
+    "published_at": "2026-10-30",
+    "checked_at": "2026-11-02"
   }
 }
