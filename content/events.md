@@ -1,14 +1,22 @@
-{"slug":"events","title":"イベント","checked_at":"2026-11-01","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official","global-patch-2026-10-28-official","global-patch-2026-10-28-review","global-patch-2026-10-28-independent","global-attendance-2026-10-28-review","global-halloween-twitch-2026-10-28-official","global-halloween-twitch-2026-10-28-review","global-pass-2026-10-28-official","global-security-restrictions-2026-10-29-official","global-security-restrictions-2026-10-29-review","global-matchmaking-2026-10-28-official","global-matchmaking-2026-10-28-review","global-client-2-0-9-0-gamingtools","global-client-2-0-9-0-aion2gg","global-nae-dst-2026-11-01-official","global-naw-dst-2026-11-01-official","global-na-dst-2026-11-01-aion2gg","global-na-dst-2026-11-01-aion2builds"],"layout":"events"}
+{"slug":"events","title":"イベント","checked_at":"2026-11-02","source_ids":["halloween-official","attendance-official","launch-rewards-current","rise-challenge-official","global-ludra-official","global-ludra-review","global-transfer-hold-official","global-transfer-window-review","global-transfer-products-official","global-maintenance-2026-10-28-official","global-patch-2026-10-28-official","global-patch-2026-10-28-review","global-patch-2026-10-28-independent","global-attendance-2026-10-28-review","global-halloween-twitch-2026-10-28-official","global-halloween-twitch-2026-10-28-review","global-pass-2026-10-28-official","global-security-restrictions-2026-10-29-official","global-security-restrictions-2026-10-29-review","global-matchmaking-2026-10-28-official","global-matchmaking-2026-10-28-review","global-client-2-0-9-0-gamingtools","global-client-2-0-9-0-aion2gg","global-nae-dst-2026-11-01-official","global-naw-dst-2026-11-01-official","global-na-dst-2026-11-01-aion2gg","global-na-dst-2026-11-01-aion2builds","global-ludra-2026-10-30-revision-official","global-ludra-2026-10-30-revision-review","global-na-dst-2026-11-01-complete-official"],"layout":"events"}
 
-## 11/1 北米限定：夏時間切替の臨時メンテナンス（11/1確認）
+## 11/1 北米限定：夏時間切替の臨時メンテナンス（11/2完了確認）
 
-**公式公開：2026/10/30 PDT（日本時間10/31）／対象：北米 East・West のみ。** 夏時間終了（EDT→EST、PDT→PST）に伴うゲームサーバーの臨時メンテナンスが**予定**されています。公式Steam本文とNC公式記事へのリンク、第三者の公式ニュース索引を照合しました。**日本・Asia向けの停止案内ではありません。**
+**公式公開：2026/10/30 PDT（日本時間10/31）／対象：北米 East・West のみ。** 夏時間終了（EDT→EST、PDT→PST）に伴うゲームサーバーの臨時メンテナンスが**予定されていました**。**11/2の再確認では、NA East・NA Westとも公式Steamに「Completed」とサーバー再開の追記があります。**公式Steam本文とNC公式記事へのリンク、第三者の公式ニュース索引を照合しました。**日本・Asia向けの停止案内ではありません。**
 
 - **NA East（NAE）**：10/31 22:30 PDT＝11/1 06:30 CET＝**11/1 14:30 JST**開始予定。所要**2時間30分**（予定終了17:00 JST）。
 - **NA West（NAW）**：11/1 01:30 PDT＝11/1 09:30 CET＝**11/1 17:30 JST**開始予定。所要**2時間30分**（予定終了20:00 JST）。
 
-メンテ中は該当サーバーのログインができず、接続中のプレイヤーは切断されます。**終了予定時刻は開始時刻と所要時間からの計算値であり、完了実績ではありません。** 公式にゲーム内の適用ビルド番号・新パッチ内容の記載はなく、日本・Asiaへの適用や日本のログイン停止は確認されていません。公式の更新・現地のサーバー状態を優先してください。[[source:global-nae-dst-2026-11-01-official]][[source:global-naw-dst-2026-11-01-official]][[source:global-na-dst-2026-11-01-aion2gg]][[source:global-na-dst-2026-11-01-aion2builds]]
+メンテ中は該当サーバーのログインができず、接続中のプレイヤーは切断されます。**終了予定時刻は開始時刻と所要時間からの計算値であり、実際の完了時刻ではありません。** 完了そのものは公式で確認しましたが、完了時刻・追記時刻は未公表です。 公式にゲーム内の適用ビルド番号・新パッチ内容の記載はなく、日本・Asiaへの適用や日本のログイン停止は確認されていません。公式の更新・現地のサーバー状態を優先してください。[[source:global-nae-dst-2026-11-01-official]][[source:global-naw-dst-2026-11-01-official]][[source:global-na-dst-2026-11-01-aion2gg]][[source:global-na-dst-2026-11-01-aion2builds]][[source:global-na-dst-2026-11-01-complete-official]]
 
+
+## 10/30 Global公式訂正：ルドラのTwitch Dropsと称号（11/2確認）
+
+**初回公開：2026/10/23／改訂：10/30 17:00 PDT＝10/31 01:00 CET／参照確認：11/2。** NC公式Lounge全文を一次情報として確認。**11/4のルドラ実装予定自体や必要IL（Normal 2,800／Hard 3,000）は変更なし**。新たなゲーム内ビルド番号の告知ではありません。ルドラ討伐イベントの対象地域には**Asia**が明記されていますが、Twitch Dropsの日本・Asiaアカウントの受取条件は別途公式・ゲーム内で確認してください。[[source:global-ludra-2026-10-30-revision-official]][[source:global-ludra-2026-10-30-revision-review]]
+
+**Twitch Drops**：11/4 15:00〜11/18 08:59 CET（北米11/4 06:00〜11/17 23:59 PST）。一部報酬が**箱形式**にまとめられましたが、公式によれば**獲得できるアイテムの中身は不変**です。視聴時間の10段階は**1/2/3/4/6/8/10/12/13/14時間**。1時間で戦闘支援箱、4時間でカスタマイズ箱、6時間で魂の書箱、8時間でオードエネルギー×6、12時間でドット眼鏡、14時間で黒い円錐帽子。中身・他の段階は公式表を参照。[[source:global-ludra-2026-10-30-revision-official]]
+
+**ルドラ討伐称号（改訂後の英語名）**：各リージョンのHard初回討伐で、1位パーティーは **The First to Slay Ludra**、2〜5位は **Ludra's Conqueror**、6〜20位は **Ludra's Vanquisher**。それ以外のNormal/Hardクリア者は **Ludra's Nemesis**。称号名の訂正であり、**先着20パーティーの条件・討伐イベント期間（欧州11/4メンテ後〜11/25メンテ前）は変更されていません**。[[source:global-ludra-2026-10-30-revision-official]]
 
 ## 10/29 Global運用告知：不正アカウント制限（10/30確認）
 
