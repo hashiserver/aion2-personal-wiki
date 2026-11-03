@@ -1,6 +1,17 @@
 {
-  "checked_at": "2026-11-02",
+  "checked_at": "2026-11-04",
   "events": [
+    {
+      "source_id": "global-maintenance-2026-11-04-official",
+      "category": "メンテナンス",
+      "title": "11/4 定期メンテナンス（予定）",
+      "starts_on": "2026-11-04",
+      "ends_on": "2026-11-04",
+      "period": "11/4 15:30〜18:30 JST（予定・3時間）",
+      "description": "日本語のAION2公式Steam告知では全サーバー対象。メンテナンス中はプレイ不可。ルドラ実装を含む具体的な更新内容・適用ビルド番号は別途発表待ち。",
+      "deadline": "終了予定は延長・前倒しの可能性あり。メンテ開始・完了はまだ確認できていません。",
+      "short_end": "11/4 18:30 JST予定"
+    },
     {
       "source_id": "halloween-official",
       "category": "期間限定",
