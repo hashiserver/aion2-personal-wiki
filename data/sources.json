@@ -736,5 +736,32 @@
     "scope": "11/4 15:30〜18:30 JST、3時間予定、対象は全サーバー。Global英語公式の11/3 22:30 PST／11/4 07:30 CETと時刻一致。ゲーム内ログイン停止。更新内容は後日発表、ビルド番号未記載。2026-11-04 07時台JST確認時点では開始・完了未確認。公式一覧の時刻表示は閲覧タイムゾーン依存のため、公開日の正確なタイムゾーンは未確認。",
     "published_at": "2026-11-04",
     "checked_at": "2026-11-04"
+  },
+  "global-patch-2026-11-04-official": {
+    "title": "AION2 Global公式：11/3 PST・11/4 CETパッチノート",
+    "url": "https://aion2.plaync.com/en-us/board/update/view?articleId=6aead0e86cfe4756db5b913f",
+    "tag": "Global公式（Steam公式本文で照合）",
+    "region": "Global公式（Asiaの討伐イベント対象明記、個別クライアント版未確認）",
+    "scope": "11/3 PST／11/4 CETの公式更新。ルドラNormal IL2800/Hard IL3000、腕輪・確定交換券、混沌の外部レスハンタ（Lv45、週3時間、能力標準化）、要塞戦木土週2回、フィールドボス11時間、探索遠征報酬、製作成功100%レシピ等。適用ビルド番号は未記載。Steam公式全文で確認。",
+    "published_at": "2026-11-04",
+    "checked_at": "2026-11-05"
+  },
+  "global-hotfix-2026-11-04-official": {
+    "title": "AION2 Global公式Steam：11/4 Hotfix",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
+    "tag": "Global公式Steam",
+    "region": "Global告知（Asia個別適用ビルド未確認）",
+    "scope": "11/4公開表示。炎の神殿とFerocious Horn Denの遠征にHard難易度が誤表示される問題を修正。Steam/PURPLEでクライアント更新後に再起動するよう案内。正式ビルド番号・正確な適用時刻未記載。",
+    "published_at": "2026-11-04",
+    "checked_at": "2026-11-05"
+  },
+  "global-patch-2026-11-04-review": {
+    "title": "Shugo.GG：Global 11/4パッチの独立要約",
+    "url": "https://shugo.gg/news/global-patch-notes-2026-11-04",
+    "tag": "第三者攻略要約",
+    "region": "Global（Asia個別実装の独立確認ではない）",
+    "scope": "11/4 Globalパッチのルドラ、混沌の外部レスハンタ、要塞戦、探索、製作、Hotfixを公式Steam本文と照合。独立した一次情報ではない。",
+    "published_at": "2026-11-04",
+    "checked_at": "2026-11-05"
   }
 }
