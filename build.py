@@ -132,7 +132,23 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             if portal_data['checked_at'] != meta['checked_at']:
                 raise ValueError('portal checked date does not match article')
             renderer = {'portal': render_portal, 'resources': render_links, 'events': render_events}[layout]
-            body_html = body_html + renderer(portal_data, sources, meta['source_ids'])
+            rendered = renderer(portal_data, sources, meta['source_ids'])
+            if layout == 'portal':
+                # Daily actions belong above archival patch notes. Leave the Markdown
+                # untouched so the scheduled content updater keeps its source of truth.
+                body_html = (rendered +
+                             '<details class="update-archive" id="updates">'
+                             '<summary>更新履歴・地域別の適用状況を読む</summary>'
+                             '<div class="update-archive-body">' + body_html + '</div></details>')
+            elif layout == 'events':
+                # Long official patch summaries remain searchable without pushing
+                # the time-sensitive event list below the fold.
+                body_html = (rendered +
+                             '<details class="update-archive" id="update-notes">'
+                             '<summary>パッチ詳細・過去のお知らせを読む</summary>'
+                             '<div class="update-archive-body">' + body_html + '</div></details>')
+            else:
+                body_html = body_html + rendered
         quick_nav = ''.join(f'<a href="{relative_link(slug, target)}"' +
                             (' aria-current="page"' if slug == target else '') + f'>{label}</a>'
                             for target, label in NAV[:5] if target in known)
