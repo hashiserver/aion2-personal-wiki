@@ -72,6 +72,49 @@ class PortalTests(unittest.TestCase):
         self.assertIn('#source-tool', Links(result).hrefs)
 
 
+    def test_secondary_tasks_are_collapsed_and_daily_stays_visible(self):
+        sources = {'s': {'tag': '公式', 'title': '案内'}}
+        data = {'checked_at': '2026-11-05', 'events': [],
+                'daily': [{'source_id': 's', 'title': '郵便', 'description': '受取'}],
+                'weekly': [{'source_id': 's', 'title': '指令書', 'description': '週枠'}]}
+        output = portal.render_portal(data, sources, ['s'])
+        self.assertIn('<section class="task-panel" id="daily"', output)
+        self.assertIn('<details class="task-panel collapsible-panel" id="weekly"', output)
+        self.assertIn('<details class="task-detail">', output)
+        self.assertIn('href="#weekly"', output)
+        self.assertLess(output.index('id="daily"'), output.index('id="weekly"'))
+
+    def test_events_keep_expired_items_inside_collapsed_archive(self):
+        sources = {'s': {'tag': '公式', 'title': '告知', 'url': 'https://example.com'}}
+        def event(title, start, end):
+            return {'source_id': 's', 'title': title, 'starts_on': start, 'ends_on': end,
+                    'period': '期間', 'description': '報酬', 'deadline': 'ゲーム内確認',
+                    'short_end': '受取期限'}
+        data = {'checked_at': '2026-11-05', 'events': [
+            event('終了したイベント', '2026-10-01', '2026-11-04'),
+            event('開催中イベント', '2026-11-01', '2026-11-18'),
+            event('今後のイベント', '2026-11-10', '2026-11-30')]}
+        output = portal.render_events(data, sources, ['s'])
+        self.assertIn('id="current-events"', output)
+        self.assertIn('id="upcoming-events"', output)
+        self.assertIn('<details class="event-archive" id="past-events">', output)
+        self.assertLess(output.index('開催中イベント'), output.index('終了したイベント'))
+        self.assertIn('2026-11-05', output)
+        self.assertIn('公式・参照元を確認', output)
+
+    def test_chanter_links_are_prominent_other_classes_are_accessible(self):
+        sources = {key: {'tag': '資料', 'title': key, 'url': 'https://example.com/' + key}
+                   for key in ('chanter-l', 'chanter-p', 'chanter-g', 'cleric-l', 'cleric-p', 'cleric-g')}
+        data = {'classes': [
+            {'name': 'クレリック', 'leveling': 'cleric-l', 'pve': 'cleric-p', 'alternative': 'cleric-g'},
+            {'name': 'チャンター', 'leveling': 'chanter-l', 'pve': 'chanter-p', 'alternative': 'chanter-g'}]}
+        output = portal.render_links(data, sources, list(sources))
+        self.assertIn('<section class="featured-build" id="builds">', output)
+        self.assertIn('その他の職業ビルド（1職）', output)
+        self.assertLess(output.index('チャンターのビルド'), output.index('その他の職業ビルド'))
+        self.assertIn('href="https://example.com/cleric-p"', output)
+
+
 if __name__ == '__main__':
     unittest.main()
 
