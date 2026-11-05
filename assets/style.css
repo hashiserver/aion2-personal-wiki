@@ -82,3 +82,7 @@
  .collapsible-panel>summary,.update-archive>summary,.event-archive>summary{display:none}
  .collapsible-panel>ul,.update-archive-body,.event-archive-list,.event-details dl,.task-body{display:block}
 }
+
+/* Five-item top nav: keep mobile navigation on one line rather than uneven rows. */
+@media(max-width:767px){.primary-nav{display:flex;grid-template-columns:none;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:thin;padding-bottom:.2rem}.primary-nav a{white-space:nowrap;flex:0 0 auto;padding:.45rem .75rem}}
+.page-progression main{max-width:990px}.page-progression main>h2{scroll-margin-top:1.25rem}.page-progression .table-scroll{background:var(--paper)}.page-progression th:first-child{min-width:6rem}.page-progression td:nth-child(2){min-width:12rem}.page-progression td:nth-child(3){min-width:21rem}.page-progression main>ol,.page-progression main>ul{padding-left:1.5rem}.page-progression main>ol li{padding-bottom:.35rem}
