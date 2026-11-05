@@ -81,7 +81,7 @@ def render_portal(data, sources, declared_ids):
             panel('weekly', '週の期限までに', '週の残数・購入枠を確認。') +
             panel('optional', '開催時・余裕があれば', '出現状況と目的に合わせて参加。') + '</div>' +
             '<aside class="plain-note"><strong>リセットの時刻について</strong><p>出席簿は毎日16:00 JST。その他はゲーム内の残り時間を優先してください。すべてを毎日消化する必要はありません。</p></aside>' +
-            exchange_note + '<div class="related"><a href="/duty/">任務・指令の受け方</a>'
+            exchange_note + '<div class="related"><a href="/progression/">IL別の次の育成目標</a><a href="/duty/">任務・指令の受け方</a>'
             '<a href="/events/">イベントと受取期限</a><a href="/links/">ビルド・マップ・計算機</a></div>')
 
 
