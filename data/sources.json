@@ -763,5 +763,41 @@
     "scope": "11/4 Globalパッチのルドラ、混沌の外部レスハンタ、要塞戦、探索、製作、Hotfixを公式Steam本文と照合。独立した一次情報ではない。",
     "published_at": "2026-11-04",
     "checked_at": "2026-11-05"
+  },
+  "il-global-gates": {
+    "title": "Aion 2 Companion：Item Levelコンテンツ解放表",
+    "url": "https://aion2.grimvane.app/companion/wiki/item-level/",
+    "tag": "海外攻略・IL条件",
+    "region": "Global版（日本・Asia個別の全IL条件の公式確認ではない）",
+    "scope": "700〜3000のコンテンツ解放値。2026-11-05に検索結果を照合。各入場画面の必要ILとSランク等の追加条件を優先。",
+    "published_at": null,
+    "checked_at": "2026-11-05"
+  },
+  "il-japan-guide": {
+    "title": "VIPでAion2 Wiki：アイテムレベルのあげ方",
+    "url": "https://wikiwiki.jp/vipdeaion2/%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0%E3%83%AC%E3%83%99%E3%83%AB%E3%81%AE%E3%81%82%E3%81%92%E6%96%B9",
+    "tag": "日本語コミュニティ攻略",
+    "region": "日本語のGlobal版攻略。攻略者の助言であり公式情報ではない",
+    "scope": "1000〜2500の育成手順、アルカナ5枠・前段階評価・不足ILの確認順の照合。ILと入場条件はゲーム内優先。",
+    "published_at": null,
+    "checked_at": "2026-11-05"
+  },
+  "il-global-gear": {
+    "title": "Aion 2 Maps：Progression path",
+    "url": "https://aion2maps.com/guides/progression-path/",
+    "tag": "海外攻略・育成方針",
+    "region": "Global版（独立した公式検証ではない）",
+    "scope": "2026-10-23更新のIL別遠征・装備交換・アルカナ育成の優先順位。交換で更新できる部位は高額強化の前に確認する方針を参照。",
+    "published_at": "2026-10-23",
+    "checked_at": "2026-11-05"
+  },
+  "il-hard-2026-10-21": {
+    "title": "AION 2 Global公式10/21パッチ（SteamDB収録）",
+    "url": "https://steamdb.info/patchnotes/26077854/",
+    "tag": "Global公式告知の保存版",
+    "region": "Global版（Asia固有の入場状況は未確認）",
+    "scope": "2026-10-21の公式パッチ本文。クラオ洞窟・ドラウプニルHardの必要IL2600、アリエルの欠片と新ボード、蘇生制限を確認。SteamDBが公式Steamニュース本文を保存した二次掲載。",
+    "published_at": "2026-10-21",
+    "checked_at": "2026-11-05"
   }
 }
