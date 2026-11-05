@@ -120,6 +120,29 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="/events/?view=compact#details"', nested)
         self.assertIn('href="#source-s1"', nested)
 
+    def test_progression_page_has_its_own_canonical_route(self):
+        self.article('index.md')
+        self.article('progression.md', slug='progression', body='IL目標の説明')
+        self.build()
+        homepage = (self.root / 'dist/index.html').read_text()
+        roadmap = self.root / 'dist/progression/index.html'
+        self.assertTrue(roadmap.exists())
+        self.assertIn('href="/progression/"', homepage)
+        self.assertIn('IL目標の説明', roadmap.read_text())
+        redirects = (self.root / 'dist/_redirects').read_text()
+        self.assertNotIn('/progression/ /links/', redirects)
+
+    def test_real_il_roadmap_covers_all_key_global_thresholds(self):
+        article = ROOT / 'content/progression.md'
+        self.assertTrue(article.exists())
+        text = article.read_text(encoding='utf-8')
+        for threshold in ('1,000', '1,400', '1,600', '1,900', '2,100',
+                          '2,200', '2,500', '2,600', '2,700', '2,800', '3,000'):
+            with self.subTest(il=threshold):
+                self.assertIn(threshold, text)
+        self.assertIn('日本・Asia', text)
+        self.assertIn('[[source:global-patch-2026-11-04-official]]', text)
+
     def test_changed_css_has_new_cache_key_and_old_assets_are_removed(self):
         self.article('index.md')
         project = self.root / 'project'

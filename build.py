@@ -12,7 +12,7 @@ import markdown2
 from portal import render_portal, render_links, render_events
 
 ROOT = Path(__file__).resolve().parent
-NAV = [('', '日課・週課'), ('duty', '任務・指令'), ('events', 'イベント'), ('links', 'リンク集')]
+NAV = [('', '日課・週課'), ('progression', 'IL育成'), ('duty', '任務・指令'), ('events', 'イベント'), ('links', 'リンク集')]
 MARKER = re.compile(r'\[\[source:([a-z0-9-]+)\]\]')
 
 
