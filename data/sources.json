@@ -799,5 +799,15 @@
     "scope": "2026-10-21の公式パッチ本文。クラオ洞窟・ドラウプニルHardの必要IL2600、アリエルの欠片と新ボード、蘇生制限を確認。SteamDBが公式Steamニュース本文を保存した二次掲載。",
     "published_at": "2026-10-21",
     "checked_at": "2026-11-05"
+  },
+  "global-security-restrictions-2026-11-04-official": {
+    "title": "Global公式：Account Restrictions | 4 Nov（2,423アカウント）",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
+    "tag": "Global公式Steam",
+    "region": "Global（日本・Asia内訳未公表）",
+    "scope": "2026/11/4 00:00 PST／09:00 CETに2,423アカウント制限。BOT・金策・RMT・不正プログラム等。通常の長時間プレイとセキュリティ保護ロックは制裁と区別。ゲーム内ビルド番号は未記載。",
+    "published_at": "2026-11-04",
+    "effective_at": "2026-11-04 00:00 PST / 09:00 CET",
+    "checked_at": "2026-11-06"
   }
 }

@@ -1,6 +1,17 @@
 {
-  "checked_at": "2026-11-05",
+  "checked_at": "2026-11-06",
   "events": [
+    {
+      "source_id": "global-security-restrictions-2026-11-04-official",
+      "category": "運用告知",
+      "title": "11/4 Global公式：不正アカウント2,423件制限",
+      "starts_on": "2026-11-04",
+      "ends_on": "2026-11-04",
+      "period": "11/4 00:00 PST／09:00 CET実施。日本・Asia内訳未公表",
+      "description": "BOT・金策・RMT・不正プログラム等の違反による制限。通常の長時間プレイは対象外。保護目的の一時的セキュリティロックは制裁とは別。",
+      "deadline": "運用告知であり、ゲーム内ビルド番号の変更ではありません。",
+      "short_end": "11/4実施"
+    },
     {
       "source_id": "global-patch-2026-11-04-official",
       "category": "アップデート",
