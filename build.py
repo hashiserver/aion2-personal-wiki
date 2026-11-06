@@ -53,6 +53,34 @@ def navigation(slug: str, known_slugs: set[str]) -> str:
     return f'<nav aria-label="ページ一覧">{primary}</nav>'
 
 
+GEAR_CLASSES = [
+    ('chanter', 'チャント'),
+    ('gladiator', 'ソード'),
+    ('templar', 'シールド'),
+    ('assassin', 'シャドウ'),
+    ('ranger', 'ボウ'),
+    ('sorcerer', 'スペル'),
+    ('spiritmaster', 'スピリット'),
+    ('cleric', 'キュア'),
+]
+
+
+def gear_subnavigation(slug: str, known_slugs: set[str]) -> str:
+    """Secondary navigation shared by gear overview and each class page."""
+    if slug != 'gear' and not slug.startswith('gear/'):
+        return ''
+    tabs = [('gear', '全体方針')] + [('gear/' + key, label) for key, label in GEAR_CLASSES]
+    links = []
+    for target, label in tabs:
+        if target not in known_slugs:
+            continue
+        selected = ' aria-current="page"' if target == slug else ''
+        links.append(f'<a href="{relative_link(slug, target)}"{selected}>{html.escape(label)}</a>')
+    return ('<nav class="gear-subnav" aria-label="装備厳選：クラス切り替え">'
+            '<span class="gear-subnav-title">クラス別の厳選表</span>'
+            '<div class="gear-subnav-links">' + ''.join(links) + '</div></nav>')
+
+
 def render_sources(ids: list[str], sources: dict) -> str:
     rows = []
     for sid in ids:
@@ -155,10 +183,10 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
         values = {
             'TITLE': html.escape(meta['title']), 'DATE': html.escape(meta['checked_at']),
             'CSS': f'/assets/{css_name}',
-            'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known), 'BODY': body_html,
+            'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known), 'BODY': gear_subnavigation(slug, known) + body_html,
             'TOC': '<nav class="toc" aria-label="この記事の目次">' + toc + '</nav>' if toc else '',
             'SOURCES': render_sources(meta['source_ids'], sources),
-            'PAGE_CLASS': 'page-' + (slug.replace('/', '-') or 'home'),
+            'PAGE_CLASS': 'page-' + (slug.replace('/', '-') or 'home') + (' page-gear' if slug.startswith('gear/') else ''),
             'ABOUT': relative_link(slug, 'sources'),
             'HEADING': '' if is_portal else '<h1>' + html.escape(meta['title']) + '</h1>',
             'QUICK_NAV': quick_nav,
