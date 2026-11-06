@@ -1,4 +1,4 @@
-{"slug":"gear/ranger","title":"ボウ｜装備オプション厳選","checked_at":"2026-11-06","source_ids":["gear-kr-ranked-pve-2026-10-19","gear-global-roll-pool","gear-pvp-abyss-survey"]}
+{"slug":"gear/ranger","title":"レンジャー｜装備オプション厳選","checked_at":"2026-11-06","source_ids":["gear-kr-ranked-pve-2026-10-19","gear-global-roll-pool","gear-pvp-abyss-survey"]}
 
 韓国PvE上位者の**実装備に採用されたステータス**を、①〜④の採用率順で表示しています。**①〜④はスロット順でもDPS順位でもありません**。PvPは実測ランキングではなく、役割別の調整方針です。[[source:gear-kr-ranked-pve-2026-10-19]]
 
