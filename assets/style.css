@@ -89,3 +89,19 @@
 
 /* Eight-class gear tables: retain the first column while scrolling four candidate columns. */
 .page-gear main{max-width:1088px}.page-gear main>h2{margin-top:2rem;scroll-margin-top:1.2rem}.page-gear .table-scroll{background:var(--paper);margin:1rem 0 1.5rem}.page-gear .table-scroll table{min-width:840px}.page-gear th,.page-gear td{font-size:.86rem;padding:.6rem .7rem;min-width:10rem;line-height:1.5}.page-gear th:first-child,.page-gear td:first-child{position:sticky;left:0;min-width:7.5rem;max-width:12rem;z-index:1;box-shadow:2px 0 0 var(--line);background:var(--paper)}.page-gear th:first-child{background:#eaf1f5;z-index:2}.page-gear tr:hover td{background:#f5f9fc}.page-gear tr:hover td:first-child{background:#f5f9fc}@media(max-width:767px){.page-gear th,.page-gear td{font-size:.8rem;padding:.55rem}.page-gear th:first-child,.page-gear td:first-child{min-width:6.5rem}}
+
+/* Gear sub-header: class switching without JavaScript, visible on every class page. */
+.gear-subnav{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:.9rem;margin:0 0 1.15rem;padding:.75rem .8rem;background:var(--paper);border:1px solid var(--line);border-radius:7px;box-shadow:0 2px 9px rgba(23,43,57,.06)}
+.gear-subnav-title{flex:0 0 auto;white-space:nowrap;font-size:.8rem;font-weight:750;color:var(--muted)}
+.gear-subnav-links{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem}
+.gear-subnav-links a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:.35rem .7rem;border:1px solid var(--line);border-radius:5px;background:#f8fafb;color:var(--ink);font-size:.86rem;font-weight:650;text-decoration:none;white-space:nowrap}
+.gear-subnav-links a:hover{background:var(--soft);border-color:#9abacb}
+.gear-subnav-links a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:white}
+.gear-subnav-links a:focus-visible{outline:3px solid #a55b13;outline-offset:2px}
+.page-gear main>h2{scroll-margin-top:6rem}
+@media(max-width:767px){
+ .gear-subnav{display:block;margin:0 -.25rem 1rem;padding:.6rem .5rem}
+ .gear-subnav-title{display:block;padding:0 .4rem .3rem;font-size:.75rem}
+ .gear-subnav-links{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding:.1rem .3rem .4rem;scroll-snap-type:x proximity}
+ .gear-subnav-links a{flex:0 0 auto;scroll-snap-align:start;font-size:.84rem;min-height:44px;padding:.4rem .75rem}
+}
