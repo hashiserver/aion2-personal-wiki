@@ -54,14 +54,14 @@ def navigation(slug: str, known_slugs: set[str]) -> str:
 
 
 GEAR_CLASSES = [
-    ('chanter', 'チャント'),
-    ('gladiator', 'ソード'),
-    ('templar', 'シールド'),
-    ('assassin', 'シャドウ'),
-    ('ranger', 'ボウ'),
-    ('sorcerer', 'スペル'),
-    ('spiritmaster', 'スピリット'),
-    ('cleric', 'キュア'),
+    ('chanter', 'チャンター'),
+    ('gladiator', 'グラディエーター'),
+    ('templar', 'テンプラー'),
+    ('assassin', 'アサシン'),
+    ('ranger', 'レンジャー'),
+    ('sorcerer', 'ソーサラー'),
+    ('spiritmaster', 'スピリットマスター'),
+    ('cleric', 'クレリック'),
 ]
 
 
