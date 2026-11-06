@@ -188,6 +188,36 @@ class BuildTests(unittest.TestCase):
                         any(line.startswith('| ' + slot + ' |') for slot in slots)
                         for line in data.splitlines()), 13)
 
+    def test_gear_transfer_guide_subnav_is_linked(self):
+        self.article('index.md')
+        self.article('gear.md', slug='gear', body='[強化・継承](/gear/transfer/)')
+        self.article('transfer.md', slug='gear/transfer',
+                     body='## 継承\n\n| 装備 | 判断 |\n|---|---|\n| 低IL | 強化 |')
+        self.article('gear-chanter.md', slug='gear/chanter', body='## チャンター')
+        self.build()
+        overview = (self.root / 'dist/gear/index.html').read_text()
+        transfer = (self.root / 'dist/gear/transfer/index.html').read_text()
+        chanter = (self.root / 'dist/gear/chanter/index.html').read_text()
+        self.assertIn('href="/gear/transfer/"', overview)
+        self.assertIn('href="/gear/transfer/" aria-current="page"', transfer)
+        self.assertIn('href="/gear/chanter/"', transfer)
+        self.assertIn('href="/gear/transfer/"', chanter)
+        self.assertIn('aria-label="比較表。横にスクロールできます"', transfer)
+
+    def test_real_transfer_guide_preserves_important_warnings(self):
+        data = (ROOT / 'content/gear-transfer.md').read_text(encoding='utf-8')
+        meta = json.loads(data.splitlines()[0])
+        self.assertEqual(meta['slug'], 'gear/transfer')
+        for term in ('継承元', '継承先', 'IL36', 'IL86', '魂魄',
+                     '上書き', '魂結束', '潜在力', '魔石', '台湾公式',
+                     'ゲーム', '/gear/chanter/'):
+            with self.subTest(term=term):
+                self.assertIn(term, data)
+        self.assertIn('[[source:gear-transfer-tw-official]]', data)
+        self.assertIn('[[source:gear-transfer-jp-cost]]', data)
+        self.assertIn('[[source:gear-transfer-global-guide]]', data)
+
+
     def test_progression_page_has_its_own_canonical_route(self):
         self.article('index.md')
         self.article('progression.md', slug='progression', body='IL目標の説明')

@@ -69,7 +69,7 @@ def gear_subnavigation(slug: str, known_slugs: set[str]) -> str:
     """Secondary navigation shared by gear overview and each class page."""
     if slug != 'gear' and not slug.startswith('gear/'):
         return ''
-    tabs = [('gear', '全体方針')] + [('gear/' + key, label) for key, label in GEAR_CLASSES]
+    tabs = [('gear', '全体方針'), ('gear/transfer', '強化・継承')] + [('gear/' + key, label) for key, label in GEAR_CLASSES]
     links = []
     for target, label in tabs:
         if target not in known_slugs:
@@ -77,7 +77,7 @@ def gear_subnavigation(slug: str, known_slugs: set[str]) -> str:
         selected = ' aria-current="page"' if target == slug else ''
         links.append(f'<a href="{relative_link(slug, target)}"{selected}>{html.escape(label)}</a>')
     return ('<nav class="gear-subnav" aria-label="装備厳選：クラス切り替え">'
-            '<span class="gear-subnav-title">クラス別の厳選表</span>'
+            '<span class="gear-subnav-title">装備厳選メニュー</span>'
             '<div class="gear-subnav-links">' + ''.join(links) + '</div></nav>')
 
 

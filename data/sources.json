@@ -862,5 +862,59 @@
     "scope": "PvP専用統計サイトは存在するが、今回の取得ではクラス別の採用率テーブルが読み出せず、数値は本記事へ転記していない。",
     "published_at": null,
     "checked_at": "2026-11-06"
+  },
+  "gear-transfer-tw-official": {
+    "title": "AION2台湾公式：統合強化と継承の仕様",
+    "url": "https://tw.ncsoft.com/aion2/guidebook/view?title=%E7%B6%9C%E5%90%88%E5%BC%B7%E5%8C%96",
+    "tag": "台湾公式",
+    "region": "台湾版（日本・Globalの適用保証なし）",
+    "scope": "同等級・同部位、成功時の元装備消費、強化・突破・魂刻印・失敗補正、ライン数差と数値範囲、上級継承を区別。原記事は2026-10-13改訂。Globalの個別適用は未確認。",
+    "published_at": "2026-10-13",
+    "checked_at": "2026-11-06"
+  },
+  "gear-transfer-global-guide": {
+    "title": "Aion 2 Maps：Global版の装備継承（Transfer）",
+    "url": "https://aion2maps.com/guides/inheritance/",
+    "tag": "Global第三者ガイド",
+    "region": "Global版（第三者検証・公式公告ではない）",
+    "scope": "2026-10-28更新。唯一同士の継承条件、継承石、引き継げる装備成長要素と失われる魔石・潜在能力を参照。成功率100%の記述は他の日本語ガイドと相違するため、ゲーム内プレビュー最優先。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-11-06"
+  },
+  "gear-transfer-jp-cost": {
+    "title": "AION2 Times：装備の強化と継承・低IL装備の強化費用比較",
+    "url": "https://aion2-times.com/aion2-gear-enhancement/",
+    "tag": "日本攻略・試算",
+    "region": "日本語Global向け解説（非公式）",
+    "scope": "IL36とIL86の+15平均強化費、魂魄の武器・ガーダーの固定魂刻印からの継承、装身具・防具の注意を参照。費用は確率を仮定した平均値で保証値ではない。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
+  },
+  "gear-transfer-jp-soul": {
+    "title": "AION2 Times：魂刻印と継承時のオプション置換",
+    "url": "https://aion2-times.com/aion2-soul-engraving/",
+    "tag": "日本攻略・魂刻印",
+    "region": "日本語Global向け解説（非公式）",
+    "scope": "継承元の通常魂刻印が継承先を上書きする仕組み、ライン数差、調律、魂結束追加ラインの非継承、魂魄武器・ガーダー例を参照。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
+  },
+  "gear-transfer-global-cost-calculator": {
+    "title": "Aion2Data：Tier1装備+15→Tier3装備継承の費用モデル",
+    "url": "https://aion2data.com/tools/succession",
+    "tag": "Global費用計算",
+    "region": "Global版クライアントデータ由来（第三者）",
+    "scope": "IL36からIL86への強化節約試算（約731万ギーナ、強化石約9.3万個の差）。素材価格・強化結果により個人差あり。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
+  },
+  "gear-transfer-conflict-guide": {
+    "title": "lan-gaming：装備強化・継承の注意点",
+    "url": "https://www.lan-gaming.net/aion2-enhance/",
+    "tag": "日本攻略（差分確認）",
+    "region": "日本語攻略（複数地域混在の可能性あり）",
+    "scope": "シーズン回数制限・継承失敗の記述はGlobal版の100%成功という独立ガイドと食い違うため、確定仕様には採用せず注意喚起に使用。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
   }
 }

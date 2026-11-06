@@ -72,5 +72,5 @@
 4. 現在のILで入れる遠征・超越の未回収報酬がないか。
 5. 最後に強化・突破で不足分を埋めるか。**無理に数字だけを上げず、戦闘能力も確認**する。
 
-関連ページ：[日課・週課](/)／[任務・指令](/duty/)／[装備厳選の対応表](/gear/)／[ビルド・ツール](/links/)。[[source:il-japan-guide]][[source:il-global-gear]]
+関連ページ：[日課・週課](/)／[任務・指令](/duty/)／[装備厳選の対応表](/gear/)／[強化・継承の失敗を防ぐ](/gear/transfer/)／[ビルド・ツール](/links/)。[[source:il-japan-guide]][[source:il-global-gear]]
 
