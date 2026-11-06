@@ -120,6 +120,16 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="/events/?view=compact#details"', nested)
         self.assertIn('href="#source-s1"', nested)
 
+    def test_gear_roll_article_is_linked(self):
+        self.article('index.md')
+        self.article('gear.md', slug='gear', body='## 4候補\n\n| 部位 | ① | ② | ③ | ④ |\n|---|---|---|---|---|\n| ワンド | 戦闘速度 | 威力 | 正確 | 強打 |')
+        self.build()
+        home = (self.root / 'dist/index.html').read_text()
+        gear = (self.root / 'dist/gear/index.html').read_text()
+        self.assertIn('href="/gear/"', home)
+        self.assertIn('戦闘速度', gear)
+        self.assertIn('aria-label="比較表。横にスクロールできます"', gear)
+
     def test_progression_page_has_its_own_canonical_route(self):
         self.article('index.md')
         self.article('progression.md', slug='progression', body='IL目標の説明')

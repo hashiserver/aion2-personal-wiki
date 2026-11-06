@@ -799,5 +799,68 @@
     "scope": "2026-10-21の公式パッチ本文。クラオ洞窟・ドラウプニルHardの必要IL2600、アリエルの欠片と新ボード、蘇生制限を確認。SteamDBが公式Steamニュース本文を保存した二次掲載。",
     "published_at": "2026-10-21",
     "checked_at": "2026-11-05"
+  },
+  "gear-kr-ranked-pve-2026-10-19": {
+    "title": "kisk：韓国上位PvEプレイヤーの部位別魂刻印採用率（cielui集計）",
+    "url": "https://kisk.app/scoring",
+    "tag": "韓国上位実測",
+    "region": "韓国版（PvE上位者・8クラス）",
+    "scope": "2026-10-19時点の各クラス528〜1,158人の魂刻印採用率。ステータス上位4件を掲載。スキル+1採用率を含まず、PvP装備の標本ではない。日本・Globalの最適解とは区別。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
+  },
+  "gear-cielui-kr-rankers": {
+    "title": "cielui：韓国の上位者装備・魂刻印・魔石採用統計",
+    "url": "https://cielui.com/stats/engrave",
+    "tag": "韓国統計",
+    "region": "韓国版（実装備統計）",
+    "scope": "上位者の主要オプション採用傾向を相互確認。2026-11-06参照時のサイト表示を確認。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
+  },
+  "gear-global-roll-pool": {
+    "title": "Wikily：装備部位別の魂刻印候補と抽選率",
+    "url": "https://wikily.gg/ja/aion-2/enhancement/soul-binding",
+    "tag": "海外解析（日本語）",
+    "region": "Global版の解析データ（公式認定ではない）",
+    "scope": "装備の部位固有候補、抽選確率、等級による付与項目数の検証。日本・Asiaでの最終条件はゲーム内を優先。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
+  },
+  "gear-global-top-100": {
+    "title": "AION2Tierlist：Global各クラス戦闘力上位100人の装備傾向",
+    "url": "https://aion2tierlist.com/builds",
+    "tag": "Global統計",
+    "region": "Global版（戦闘力上位者）",
+    "scope": "2026-11-06閲覧。上位者の装備本体やILの傾向。部位別魂刻印のPvP・PvE最適解までは保証しない。",
+    "published_at": "2026-11-06",
+    "checked_at": "2026-11-06"
+  },
+  "gear-pvp-cleric-guide": {
+    "title": "AION2Vault：Cleric PvP装備・スキル構成",
+    "url": "https://aion2vault.com/builds/cleric/pvp/",
+    "tag": "PvP個人ガイド",
+    "region": "Global版向け（プレイヤー解説）",
+    "scope": "キュアのガード・クリティカル抵抗・HPの参考。上位者全体の採用率ではなくプレイヤー事例。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
+  },
+  "gear-pvp-chanter-guide": {
+    "title": "Aion2Data：Chanter PvP装備・スキル構成",
+    "url": "https://aion2data.com/guides/chanter/pvp",
+    "tag": "PvPビルド例",
+    "region": "Global版向け（ガイド側の推奨）",
+    "scope": "チャントのPvP耐久・HP重視の一例。実測上位者採用率ではないため、PvE統計と分離。",
+    "published_at": "2026-10-22",
+    "checked_at": "2026-11-06"
+  },
+  "gear-pvp-abyss-survey": {
+    "title": "a2build：韓国アビス上位者のPvP装備分析",
+    "url": "https://www.a2build.net/",
+    "tag": "韓国PvP統計（要再確認）",
+    "region": "韓国版（アビス上位者）",
+    "scope": "PvP専用統計サイトは存在するが、今回の取得ではクラス別の採用率テーブルが読み出せず、数値は本記事へ転記していない。",
+    "published_at": null,
+    "checked_at": "2026-11-06"
   }
 }

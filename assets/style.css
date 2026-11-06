@@ -83,6 +83,9 @@
  .collapsible-panel>ul,.update-archive-body,.event-archive-list,.event-details dl,.task-body{display:block}
 }
 
-/* Five-item top nav: keep mobile navigation on one line rather than uneven rows. */
+/* Compact top nav: keep mobile navigation on one line rather than uneven rows. */
 @media(max-width:767px){.primary-nav{display:flex;grid-template-columns:none;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:thin;padding-bottom:.2rem}.primary-nav a{white-space:nowrap;flex:0 0 auto;padding:.45rem .75rem}}
 .page-progression main{max-width:990px}.page-progression main>h2{scroll-margin-top:1.25rem}.page-progression .table-scroll{background:var(--paper)}.page-progression th:first-child{min-width:6rem}.page-progression td:nth-child(2){min-width:12rem}.page-progression td:nth-child(3){min-width:21rem}.page-progression main>ol,.page-progression main>ul{padding-left:1.5rem}.page-progression main>ol li{padding-bottom:.35rem}
+
+/* Eight-class gear tables: retain the first column while scrolling four candidate columns. */
+.page-gear main{max-width:1088px}.page-gear main>h2{margin-top:2rem;scroll-margin-top:1.2rem}.page-gear .table-scroll{background:var(--paper);margin:1rem 0 1.5rem}.page-gear .table-scroll table{min-width:840px}.page-gear th,.page-gear td{font-size:.86rem;padding:.6rem .7rem;min-width:10rem;line-height:1.5}.page-gear th:first-child,.page-gear td:first-child{position:sticky;left:0;min-width:7.5rem;max-width:12rem;z-index:1;box-shadow:2px 0 0 var(--line);background:var(--paper)}.page-gear th:first-child{background:#eaf1f5;z-index:2}.page-gear tr:hover td{background:#f5f9fc}.page-gear tr:hover td:first-child{background:#f5f9fc}@media(max-width:767px){.page-gear th,.page-gear td{font-size:.8rem;padding:.55rem}.page-gear th:first-child,.page-gear td:first-child{min-width:6.5rem}}
