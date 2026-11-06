@@ -130,6 +130,43 @@ class BuildTests(unittest.TestCase):
         self.assertIn('戦闘速度', gear)
         self.assertIn('aria-label="比較表。横にスクロールできます"', gear)
 
+    def test_gear_class_subnavigation_and_isolated_tables(self):
+        self.article('index.md')
+        self.article('gear.md', slug='gear', body='## 全体方針\\nクラスを選択')
+        self.article('gear-chanter.md', slug='gear/chanter',
+                     body='## チャント装備\\n\\n| 部位 | ① | ② | ③ | ④ |\\n|---|---|---|---|---|\\n| ガーダー | 戦闘速度 | 威力 | 状態異常的中 | 武器ダメージ増幅 |')
+        self.article('gear-cleric.md', slug='gear/cleric',
+                     body='## キュア装備\\n\\n| 部位 | ① | ② | ③ | ④ |\\n|---|---|---|---|---|\\n| グローブ | 戦闘速度 | 完璧 | HP | 命中 |')
+        self.build()
+        overview = (self.root / 'dist/gear/index.html').read_text()
+        chanter = (self.root / 'dist/gear/chanter/index.html').read_text()
+        cleric = (self.root / 'dist/gear/cleric/index.html').read_text()
+        self.assertIn('aria-label="装備厳選：クラス切り替え"', overview)
+        self.assertIn('href="/gear/chanter/"', overview)
+        self.assertIn('href="/gear/cleric/"', chanter)
+        self.assertIn('href="/gear/chanter/" aria-current="page"', chanter)
+        self.assertIn('href="/gear/" aria-current="page"', overview)
+        self.assertIn('page-gear-chanter page-gear', chanter)
+        self.assertIn('状態異常的中', chanter)
+        self.assertNotIn('キュア装備', chanter)
+        self.assertIn('キュア装備', cleric)
+        self.assertNotIn('チャント装備', cleric)
+
+    def test_gear_class_pages_have_all_original_thirteen_slots(self):
+        classes = ['chanter', 'gladiator', 'templar', 'assassin', 'ranger',
+                   'sorcerer', 'spiritmaster', 'cleric']
+        slots = ['武器', 'ガーダー', 'ヘルム', 'ショルダー', 'トップス',
+                 'グローブ', 'ボトムス', 'シューズ', 'マント',
+                 'ネックレス', 'イヤリング×2', 'リング×2', 'ブレスレット']
+        for name in classes:
+            with self.subTest(klass=name):
+                data = (ROOT / f'content/gear-{name}.md').read_text(encoding='utf-8')
+                for slot in slots:
+                    self.assertIn('| ' + slot + ' |', data)
+                self.assertEqual(sum(line.startswith('| ') and
+                        any(line.startswith('| ' + slot + ' |') for slot in slots)
+                        for line in data.splitlines()), 13)
+
     def test_progression_page_has_its_own_canonical_route(self):
         self.article('index.md')
         self.article('progression.md', slug='progression', body='IL目標の説明')
