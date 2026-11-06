@@ -12,7 +12,7 @@ import markdown2
 from portal import render_portal, render_links, render_events
 
 ROOT = Path(__file__).resolve().parent
-NAV = [('', '日課・週課'), ('progression', 'IL育成'), ('duty', '任務・指令'), ('events', 'イベント'), ('links', 'リンク集')]
+NAV = [('', '日課・週課'), ('progression', 'IL育成'), ('duty', '任務・指令'), ('events', 'イベント'), ('gear', '装備厳選'), ('links', 'リンク集')]
 MARKER = re.compile(r'\[\[source:([a-z0-9-]+)\]\]')
 
 
@@ -151,7 +151,7 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
                 body_html = body_html + rendered
         quick_nav = ''.join(f'<a href="{relative_link(slug, target)}"' +
                             (' aria-current="page"' if slug == target else '') + f'>{label}</a>'
-                            for target, label in NAV[:5] if target in known)
+                            for target, label in NAV if target in known)
         values = {
             'TITLE': html.escape(meta['title']), 'DATE': html.escape(meta['checked_at']),
             'CSS': f'/assets/{css_name}',
