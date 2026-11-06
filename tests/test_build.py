@@ -134,9 +134,9 @@ class BuildTests(unittest.TestCase):
         self.article('index.md')
         self.article('gear.md', slug='gear', body='## 全体方針\nクラスを選択')
         self.article('gear-chanter.md', slug='gear/chanter',
-                     body='## チャント装備\n\n| 部位 | ① | ② | ③ | ④ |\n|---|---|---|---|---|\n| ガーダー | 戦闘速度 | 威力 | 状態異常的中 | 武器ダメージ増幅 |')
+                     body='## チャンター装備\n\n| 部位 | ① | ② | ③ | ④ |\n|---|---|---|---|---|\n| ガーダー | 戦闘速度 | 威力 | 状態異常的中 | 武器ダメージ増幅 |')
         self.article('gear-cleric.md', slug='gear/cleric',
-                     body='## キュア装備\n\n| 部位 | ① | ② | ③ | ④ |\n|---|---|---|---|---|\n| グローブ | 戦闘速度 | 完璧 | HP | 命中 |')
+                     body='## クレリック装備\n\n| 部位 | ① | ② | ③ | ④ |\n|---|---|---|---|---|\n| グローブ | 戦闘速度 | 完璧 | HP | 命中 |')
         self.build()
         overview = (self.root / 'dist/gear/index.html').read_text()
         chanter = (self.root / 'dist/gear/chanter/index.html').read_text()
@@ -145,12 +145,33 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="/gear/chanter/"', overview)
         self.assertIn('href="/gear/cleric/"', chanter)
         self.assertIn('href="/gear/chanter/" aria-current="page"', chanter)
+        self.assertIn('>チャンター</a>', chanter)
+        self.assertNotIn('>チャント</a>', chanter)
+        self.assertNotIn('>ソード</a>', chanter)
         self.assertIn('href="/gear/" aria-current="page"', overview)
         self.assertIn('page-gear-chanter page-gear', chanter)
         self.assertIn('状態異常的中', chanter)
-        self.assertNotIn('キュア装備', chanter)
-        self.assertIn('キュア装備', cleric)
-        self.assertNotIn('チャント装備', cleric)
+        self.assertNotIn('クレリック装備', chanter)
+        self.assertIn('クレリック装備', cleric)
+        self.assertNotIn('チャンター装備', cleric)
+
+    def test_official_gear_class_names_on_all_pages(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('gear_build', ROOT / 'build.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        expected = {'chanter': 'チャンター', 'gladiator': 'グラディエーター',
+                    'templar': 'テンプラー', 'assassin': 'アサシン',
+                    'ranger': 'レンジャー', 'sorcerer': 'ソーサラー',
+                    'spiritmaster': 'スピリットマスター', 'cleric': 'クレリック'}
+        self.assertEqual(dict(module.GEAR_CLASSES), expected)
+        for slug, name in expected.items():
+            with self.subTest(klass=slug):
+                meta = json.loads((ROOT / f'content/gear-{slug}.md').read_text(encoding='utf-8').splitlines()[0])
+                self.assertEqual(meta['title'], name + '｜装備オプション厳選')
+        overview = (ROOT / 'content/gear.md').read_text(encoding='utf-8')
+        for slug, name in expected.items():
+            self.assertIn(f'[{name}](/gear/{slug}/)', overview)
 
     def test_gear_class_pages_have_all_original_thirteen_slots(self):
         classes = ['chanter', 'gladiator', 'templar', 'assassin', 'ranger',
