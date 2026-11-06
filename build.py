@@ -77,7 +77,7 @@ def gear_subnavigation(slug: str, known_slugs: set[str]) -> str:
         selected = ' aria-current="page"' if target == slug else ''
         links.append(f'<a href="{relative_link(slug, target)}"{selected}>{html.escape(label)}</a>')
     return ('<nav class="gear-subnav" aria-label="装備厳選：クラス切り替え">'
-            '<span class="gear-subnav-title">クラス別の厳選表</span>'
+            '<span class="gear-subnav-title">装備厳選メニュー</span>'
             '<div class="gear-subnav-links">' + ''.join(links) + '</div></nav>')
 
 
