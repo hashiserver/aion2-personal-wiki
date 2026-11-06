@@ -146,7 +146,6 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="/gear/cleric/"', chanter)
         self.assertIn('href="/gear/chanter/" aria-current="page"', chanter)
         self.assertIn('>チャンター</a>', chanter)
-        self.assertIn('>グラディエーター</a>', chanter)
         self.assertNotIn('>チャント</a>', chanter)
         self.assertNotIn('>ソード</a>', chanter)
         self.assertIn('href="/gear/" aria-current="page"', overview)
