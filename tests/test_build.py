@@ -132,11 +132,11 @@ class BuildTests(unittest.TestCase):
 
     def test_gear_class_subnavigation_and_isolated_tables(self):
         self.article('index.md')
-        self.article('gear.md', slug='gear', body='## 全体方針\\nクラスを選択')
+        self.article('gear.md', slug='gear', body='## 全体方針\nクラスを選択')
         self.article('gear-chanter.md', slug='gear/chanter',
-                     body='## チャント装備\\n\\n| 部位 | ① | ② | ③ | ④ |\\n|---|---|---|---|---|\\n| ガーダー | 戦闘速度 | 威力 | 状態異常的中 | 武器ダメージ増幅 |')
+                     body='## チャント装備\n\n| 部位 | ① | ② | ③ | ④ |\n|---|---|---|---|---|\n| ガーダー | 戦闘速度 | 威力 | 状態異常的中 | 武器ダメージ増幅 |')
         self.article('gear-cleric.md', slug='gear/cleric',
-                     body='## キュア装備\\n\\n| 部位 | ① | ② | ③ | ④ |\\n|---|---|---|---|---|\\n| グローブ | 戦闘速度 | 完璧 | HP | 命中 |')
+                     body='## キュア装備\n\n| 部位 | ① | ② | ③ | ④ |\n|---|---|---|---|---|\n| グローブ | 戦闘速度 | 完璧 | HP | 命中 |')
         self.build()
         overview = (self.root / 'dist/gear/index.html').read_text()
         chanter = (self.root / 'dist/gear/chanter/index.html').read_text()
