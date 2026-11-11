@@ -916,5 +916,23 @@
     "scope": "シーズン回数制限・継承失敗の記述はGlobal版の100%成功という独立ガイドと食い違うため、確定仕様には採用せず注意喚起に使用。",
     "published_at": null,
     "checked_at": "2026-11-06"
+  },
+  "global-maintenance-2026-11-11-official": {
+    "title": "AION 2 Global公式：11月11日定期メンテナンス",
+    "url": "https://steamcommunity.com/app/3393110",
+    "tag": "公式Steam告知",
+    "region": "Global（ゲームサーバー。日本・Asia個別適用の詳細未確認）",
+    "scope": "11/10 22:30 PST／11/11 07:30 CET開始予定、4時間30分。更新詳細は後日発表。完了・適用ビルド未確認。",
+    "published_at": "2026-11-11",
+    "checked_at": "2026-11-11"
+  },
+  "global-platform-maintenance-2026-11-10-official": {
+    "title": "AION 2 Global公式：11月10日プラットフォーム保守",
+    "url": "https://steamcommunity.com/app/3393110/announcements",
+    "tag": "公式Steam告知",
+    "region": "Global（アカウント管理サービス）",
+    "scope": "11/10 12:00 PST／20:00 CET開始予定、3時間40分。アカウント作成・管理が対象。ゲームサーバー保守とは別。完了未確認。",
+    "published_at": "2026-11-09",
+    "checked_at": "2026-11-11"
   }
 }
