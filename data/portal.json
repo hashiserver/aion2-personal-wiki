@@ -2,6 +2,17 @@
   "checked_at": "2026-11-05",
   "events": [
     {
+      "source_id": "global-patch-2026-11-11-official",
+      "category": "アップデート",
+      "title": "11/11公式更新：ルドラ・遠征Hard・週次報酬",
+      "starts_on": "2026-11-11",
+      "ends_on": "2026-11-11",
+      "period": "11/11定期メンテ後の更新（日本語Global公式）。個別適用時刻・ビルド番号未公表",
+      "description": "ルドラ制限120分、報酬第5グループ30→100%。炎の神殿・獰猛な角岩窟Hard追加（IL2,800）。調律石週最大3個、使命AP2,500。詳細はイベント記事。",
+      "deadline": "11/4時点のルドラ60分の記載は旧仕様。実際の適用状態はゲーム内確認。",
+      "short_end": "11/11公式更新"
+    },
+    {
       "source_id": "global-platform-maintenance-2026-11-10-official",
       "category": "メンテナンス",
       "title": "11/10 Globalアカウント管理サービス保守",
