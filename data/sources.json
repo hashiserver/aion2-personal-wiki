@@ -934,5 +934,32 @@
     "scope": "11/10 12:00 PST／20:00 CET開始予定、3時間40分。アカウント作成・管理が対象。ゲームサーバー保守とは別。完了未確認。",
     "published_at": "2026-11-09",
     "checked_at": "2026-11-11"
+  },
+  "global-patch-2026-11-11-official": {
+    "title": "AION2公式：11月11日アップデートノート",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=japanese",
+    "tag": "公式Steam日本語パッチノート",
+    "region": "日本語Global公式（日本・Asia個別ビルド未公表）",
+    "scope": "ルドラ制限時間120分・報酬改善、遠征Hard2種IL2800、週次報酬・AP調整、消耗品10分、修正・復旧。11/11定期メンテ後の変更として告知。正式ビルド番号未公表。",
+    "published_at": "2026-11-11",
+    "checked_at": "2026-11-12"
+  },
+  "global-matchmaking-2026-11-11-official": {
+    "title": "AION2公式：11月11日サーバーマッチング",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=japanese",
+    "tag": "公式Steam日本語告知",
+    "region": "日本・Asiaのサーバー名を含む公式表",
+    "scope": "アビス・時空の亀裂の組合せを変更。アビスのアーティファクト占領状況・回廊を初期化。表の正確な組合せは公式を参照。",
+    "published_at": "2026-11-11",
+    "checked_at": "2026-11-12"
+  },
+  "global-restrictions-2026-11-11-official": {
+    "title": "AION2 Global公式：11月11日不正アカウント制限",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
+    "tag": "公式Steam運用告知",
+    "region": "Global（日本・Asia内訳未公表）",
+    "scope": "11/11 00:00 PDT／09:00 CETに21,091アカウントを制限。通常プレイと保護目的の一時ロックは区別。公式ビルド変更ではない。",
+    "published_at": "2026-11-11",
+    "checked_at": "2026-11-12"
   }
 }
