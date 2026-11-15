@@ -27,7 +27,7 @@ class PetPriorityTests(unittest.TestCase):
         catalog = self.catalog["items"]
         self.assertEqual(len(catalog), len({pet["name"] for pet in catalog}))
         sorted_names = [p["name"] for p in sorted(catalog, key=pet_sort_key)]
-        self.assertEqual(sorted_names[0], "赤い炎イグヌス")
+        self.assertEqual(sorted_names[0], "アウルトロスの分身")
         self.assertLess(sorted_names.index("火炎バルゲスト"),
                         sorted_names.index("監視兵器クナッシュ"))
         self.assertLess(sorted_names.index("精鋭ニュート"),
