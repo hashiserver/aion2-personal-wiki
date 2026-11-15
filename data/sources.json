@@ -961,5 +961,59 @@
     "scope": "11/11 00:00 PDT／09:00 CETに21,091アカウントを制限。通常プレイと保護目的の一時ロックは区別。公式ビルド変更ではない。",
     "published_at": "2026-11-11",
     "checked_at": "2026-11-12"
+  },
+  "pet-shop-core-global": {
+    "title": "AION2攻略ノート：黒雲貿易団でしか入手できないペット（32種）",
+    "url": "https://gameguide-navi.com/aion2/pet-map/black-cloud/",
+    "tag": "Global向け攻略（一覧）",
+    "region": "日本語・Global向け第三者データ（公式未検証）",
+    "scope": "通常モンスターから魂が落ちないと整理された32種、知性・野性・自然・変形の分類、ショップのスペシャル・ペットタブ、箱や覚醒戦での代替入手の可能性。完全なショップ限定とは断定しない。",
+    "published_at": null,
+    "checked_at": "2026-11-15"
+  },
+  "pet-shop-older-35": {
+    "title": "Box of Maple：黒雲貿易団限定ペット35種（10月28日以前）",
+    "url": "https://note.com/hakobox8585/n/nc906edda5050",
+    "tag": "日本語ユーザー調査",
+    "region": "Global向けコミュニティ情報（10月28日メンテ前）",
+    "scope": "35種の旧リスト、1購入5魂、毎時商品更新、魔族・天族のみの出現やレア敵の購入推奨。最新32種と一致しない6種を区別して扱う。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-11-15"
+  },
+  "pet-shop-client-pool": {
+    "title": "Aion2.gg：Global黒雲貿易団のペット出現候補",
+    "url": "https://aion2.gg/database/shops/random-shop?pool=group_vehicle_Dark",
+    "tag": "Globalクライアント解析",
+    "region": "Globalクライアント由来（第三者）",
+    "scope": "天族・魔族共通のペット商品プール200種と1時間ごとの自動更新。有料更新の段階費用は表示されるが各ペットの実売価格や出現確率は掲載されない。",
+    "published_at": null,
+    "checked_at": "2026-11-15"
+  },
+  "pet-shop-merchant-jp": {
+    "title": "AION2 Global DB：黒雲貿易団の商品候補（日本語名）",
+    "url": "https://aion2.th.gl/ja/db/shops/sh_101",
+    "tag": "ゲームDB",
+    "region": "AION2日本語クライアント情報（第三者）",
+    "scope": "日本語表記のペット名と黒雲貿易団の商品候補リスト。実際に並ぶ確率や価格、狩りの入手可否までは断定しない。",
+    "published_at": null,
+    "checked_at": "2026-11-15"
+  },
+  "pet-shop-habitat": {
+    "title": "AION2攻略ノート：ペットの生息地マップ（陣営別）",
+    "url": "https://gameguide-navi.com/aion2/pet-map/",
+    "tag": "Global向け生息地",
+    "region": "日本語・Global向け第三者マップ（魔族／天族／アビス）",
+    "scope": "魔族のアルトガルドで狩れる種や天族ベルテロンに偏る種の比較。位置とドロップはゲーム内でも確認。",
+    "published_at": "2026-11-06",
+    "checked_at": "2026-11-15"
+  },
+  "pet-shop-community-40": {
+    "title": "がめおじビビ：黒雲貿易団で買うペット40体チェックシート",
+    "url": "https://game-ojisan.com/reviews/aion2-black-cloud-pet-checklist",
+    "tag": "Global実測メモ",
+    "region": "Global版をプレイしたユーザーの調査",
+    "scope": "ショップで集める40種の別集計とLv1→2に25魂、Lv2→3に75魂、1購入5魂。対象数は他の32/35種リストと一致しない。",
+    "published_at": "2026-11-01",
+    "checked_at": "2026-11-15"
   }
 }
