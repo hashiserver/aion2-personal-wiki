@@ -37,7 +37,7 @@ class BuildTests(unittest.TestCase):
 
     def test_pet_shop_buying_guide_uses_current_roster_and_caveat(self):
         text = (ROOT / 'content/pets.md').read_text(encoding='utf-8')
-        meta, body = text.split('\\n', 1)
+        meta, body = text.split('\n', 1)
         metadata = json.loads(meta)
         self.assertEqual(metadata['slug'], 'pets')
         self.assertIn('ムームー族監督官', body)
