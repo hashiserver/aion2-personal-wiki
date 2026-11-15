@@ -1,6 +1,7 @@
 """Server-rendered pet priority checklist; filtering/state are optional client enhancements."""
 from collections import Counter
 from html import escape
+import unicodedata
 
 GROUPS = {
     "shop": "購入・箱中心",
@@ -11,8 +12,17 @@ GROUPS = {
 GENERA = {"知性", "野性", "自然", "変形"}
 
 
+def pet_sort_key(item: dict) -> tuple[str, str]:
+    """Sort by Japanese pronunciation, not by Unicode ordering of kanji names."""
+    reading = unicodedata.normalize("NFKC", item.get("reading", item["name"]))
+    # Unicode hiragana follows gojuon order; normalize katakana to hiragana.
+    reading = "".join(chr(ord(c) - 0x60) if 0x30A1 <= ord(c) <= 0x30F6
+                      else c for c in reading)
+    return reading.replace(" ", ""), item["name"]
+
+
 def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> str:
-    pets = catalog["items"]
+    pets = sorted(catalog["items"], key=pet_sort_key)
     if not pets:
         raise ValueError("empty pet catalog")
     names = set()
@@ -21,6 +31,8 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
 
     for index, item in enumerate(pets):
         name = item["name"]
+        if any("\u3400" <= c <= "\u9fff" for c in name) and not item.get("reading"):
+            raise ValueError("missing reading for kanji pet name: " + name)
         if not name or name in names:
             raise ValueError("duplicate or empty pet name: " + name)
         names.add(name)
@@ -74,7 +86,7 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
                '<th scope="col">根拠</th></tr></thead>')
     return (
         '<section id="pet-tracker" aria-labelledby="pet-tracker-title">'
-        '<h2 id="pet-tracker-title">最優先：購入チェックリスト</h2>'
+        '<h2 id="pet-tracker-title">最優先：購入チェックリスト（あいうえお順）</h2>'
         '<p>魔族視点で、<strong>購入中心・天族側の狩場・ID産・狩場少数</strong>を一つの表に集約。'
         '同じペットに理由が複数ある場合はラベルを併記しています。'
         '完了は「ペット理解度Lv3になり、これ以上ショップで魂を買わない」を目安にしてください。</p>'
