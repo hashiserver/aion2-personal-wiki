@@ -34,6 +34,17 @@ class BuildTests(unittest.TestCase):
         meta = {'slug': slug, 'title': '記事', 'checked_at': '2026-10-06', 'source_ids': ids if ids is not None else ['s1']}
         (self.content / filename).write_text(json.dumps(meta) + '\n\n' + body)
 
+
+    def test_pet_shop_buying_guide_uses_current_roster_and_caveat(self):
+        text = (ROOT / 'content/pets.md').read_text(encoding='utf-8')
+        meta, body = text.split('\\n', 1)
+        metadata = json.loads(meta)
+        self.assertEqual(metadata['slug'], 'pets')
+        self.assertIn('ムームー族監督官', body)
+        self.assertIn('手懐けたザイフ', body)
+        self.assertIn('ショップ専用と断定しない', body)
+        self.assertIn('[[source:pet-shop-core-global]]', body)
+
     def test_unknown_source_is_rejected(self):
         self.article('index.md', ids=['missing'])
         with self.assertRaisesRegex(ValueError, 'unknown source'):
