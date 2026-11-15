@@ -80,7 +80,7 @@
       updateLabel(row);
     });
 
-    // Re-checking a row restores its original priority order rather than
+    // Re-checking a row restores its original gojuon order rather than
     // leaving it at the end of the list.
     [pendingBody, completedBody].forEach((body) => {
       Array.from(body.children)
