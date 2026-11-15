@@ -1,0 +1,1201 @@
+{
+  "checked_at": "2026-11-15",
+  "scope": "魔族向け。種族理解度をLv3まで育てるペット候補。通常狩場とショップ、箱は別の入手経路。",
+  "items": [
+    {
+      "name": "アウルトロスの分身",
+      "genus": "知性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "ケルノン",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "コラドン",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "ディオナエ",
+      "genus": "自然",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "ドゥラトナ雑用係",
+      "genus": "知性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "ドラナ汚染体",
+      "genus": "変形",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "プレル帳管理者",
+      "genus": "知性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "ムームー族監督官",
+      "genus": "知性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "火炎バルゲスト",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "火炎石の守護像",
+      "genus": "変形",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "灰色のバジリスク",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "灰色のルフィーリニ",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "干からびた森の守護者",
+      "genus": "自然",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "監視兵器クナッシュ",
+      "genus": "知性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "狂暴なフェルク",
+      "genus": "知性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "古代の精霊",
+      "genus": "自然",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "最上級火の精霊",
+      "genus": "自然",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "最上級風の精霊",
+      "genus": "自然",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "沼の怪物",
+      "genus": "変形",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "森のディオナエ",
+      "genus": "自然",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "精鋭ウルサス",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "精鋭カルニフ",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "精鋭ケネイル",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "精鋭ドゥラトナ",
+      "genus": "知性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "精鋭魂のない屍ヤブカ",
+      "genus": "変形",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "精鋭毒胞子ファンガス",
+      "genus": "自然",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "変異虫バルカ",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "変種オード蜘蛛",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "墓ネズミ",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "猛毒虫スラム",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "門番ピノピ",
+      "genus": "変形",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "幼いトーグ",
+      "genus": "野性",
+      "groups": [
+        "shop"
+      ],
+      "notes": [
+        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+      ],
+      "source_ids": [
+        "pet-shop-core-global",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "アウルラウ呪術士",
+      "genus": "知性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "オスのクレストリッチ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ガーディット",
+      "genus": "変形",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "カルニフ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "クラル強化警戒兵",
+      "genus": "知性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "クラル呪術兵",
+      "genus": "知性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "クラル戦士",
+      "genus": "知性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "クラル労働者",
+      "genus": "知性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "クレストリッチ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "コヌティ作業員",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ザイフ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "スカマ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "スパーキー",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ドラナ スウォーム",
+      "genus": "変形",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ドラナ胞子",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ピノ",
+      "genus": "変形",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ピノ作業員",
+      "genus": "変形",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ファンガス",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ファンギ",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ベビー オード蜘蛛",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ルフィーリニ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "闇の精霊",
+      "genus": "変形",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "下級水の精霊",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "下級地の精霊",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "監視ガーディット",
+      "genus": "変形",
+      "groups": [
+        "elyos",
+        "rare"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認",
+        "ベルテロンの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "強化されたクラル戦闘兵",
+      "genus": "知性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "枯れ葉アグリント",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "手懐けたザイフ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "沼地のタルゴン",
+      "genus": "変形",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "森の守護者",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "森の霊魂",
+      "genus": "自然",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "精鋭ガーディット",
+      "genus": "変形",
+      "groups": [
+        "elyos",
+        "rare"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認",
+        "ベルテロンの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "精鋭ニュート",
+      "genus": "知性",
+      "groups": [
+        "elyos",
+        "rare"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認",
+        "ベルテロンの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "大きなハチ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "洞窟のコウモリ",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "変異した死肉虫",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "変種アルマドン",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "変種キャンサリード",
+      "genus": "野性",
+      "groups": [
+        "elyos"
+      ],
+      "notes": [
+        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ウルググ闘士",
+      "genus": "知性",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "ウルググ峡谷のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "クラオ実験体",
+      "genus": "変形",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "クラオ洞窟のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "クラオ封印の守護者",
+      "genus": "変形",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "クラオ洞窟のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "クラオ変異体",
+      "genus": "変形",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "クラオ洞窟のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "ハルコン",
+      "genus": "変形",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "クラオ洞窟のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "黒煙モルト",
+      "genus": "自然",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "炎の神殿のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "最上級水の精霊",
+      "genus": "自然",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "砕けたアルカニスのモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "最上級地の精霊",
+      "genus": "自然",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "バクロンの空中島のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "赤い炎イグヌス",
+      "genus": "自然",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "炎の神殿のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "捕食者サラスワティ",
+      "genus": "知性",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "ドラウプニルのモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "夢幻のラクシュミ",
+      "genus": "知性",
+      "groups": [
+        "dungeon"
+      ],
+      "notes": [
+        "ドラウプニルのモンスターから魂を入手（ショップ・箱など別経路もあり）"
+      ],
+      "source_ids": [
+        "pet-shop-dungeon"
+      ]
+    },
+    {
+      "name": "ドラナ スライム",
+      "genus": "変形",
+      "groups": [
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "バジリスク",
+      "genus": "野性",
+      "groups": [
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "ビベル",
+      "genus": "野性",
+      "groups": [
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "監視のオキュラゼン",
+      "genus": "変形",
+      "groups": [
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "凝固されたドラナ",
+      "genus": "変形",
+      "groups": [
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "色あせた浮遊体",
+      "genus": "変形",
+      "groups": [
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "中毒になったシュラク担夫",
+      "genus": "知性",
+      "groups": [
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    },
+    {
+      "name": "変異したウルサス",
+      "genus": "野性",
+      "groups": [
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+      ],
+      "source_ids": [
+        "pet-shop-habitat"
+      ]
+    }
+  ]
+}

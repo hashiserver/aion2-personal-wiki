@@ -39,10 +39,12 @@ class BuildTests(unittest.TestCase):
         text = (ROOT / 'content/pets.md').read_text(encoding='utf-8')
         meta, body = text.split('\n', 1)
         metadata = json.loads(meta)
+        roster = json.loads((ROOT / 'data/pets.json').read_text(encoding='utf-8'))
+        names = {pet['name'] for pet in roster['items']}
         self.assertEqual(metadata['slug'], 'pets')
-        self.assertIn('ムームー族監督官', body)
-        self.assertIn('手懐けたザイフ', body)
-        self.assertIn('ショップ専用と断定しない', body)
+        self.assertIn('ムームー族監督官', names)
+        self.assertIn('手懐けたザイフ', names)
+        self.assertIn('通常モンスターからのドロップ場所の分類', body)
         self.assertIn('[[source:pet-shop-core-global]]', body)
 
     def test_unknown_source_is_rejected(self):
