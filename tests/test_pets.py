@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import unittest
 
-from pets import render_pet_tracker
+from pets import render_pet_tracker, pet_sort_key
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -23,10 +23,22 @@ class PetPriorityTests(unittest.TestCase):
                 self.assertEqual(sum(reason in item["groups"] for item in pets), expected)
         self.assertEqual(self.catalog["checked_at"], self.meta["checked_at"])
 
-    def test_pets_are_in_purchase_priority_order(self):
-        priorities = {"shop": 0, "elyos": 1, "dungeon": 2, "rare": 3}
-        actual = [min(priorities[group] for group in pet["groups"]) for pet in self.catalog["items"]]
-        self.assertEqual(actual, sorted(actual))
+    def test_japanese_alphabetical_order_uses_kanji_readings(self):
+        catalog = self.catalog["items"]
+        self.assertEqual(len(catalog), len({pet["name"] for pet in catalog}))
+        sorted_names = [p["name"] for p in sorted(catalog, key=pet_sort_key)]
+        self.assertEqual(sorted_names[0], "赤い炎イグヌス")
+        self.assertLess(sorted_names.index("火炎バルゲスト"),
+                        sorted_names.index("監視兵器クナッシュ"))
+        self.assertLess(sorted_names.index("精鋭ニュート"),
+                        sorted_names.index("手懐けたザイフ"))
+        self.assertLess(sorted_names.index("ムームー族監督官"),
+                        sorted_names.index("門番ピノピ"))
+        html = render_pet_tracker(self.catalog, self.sources, self.meta["source_ids"])
+        self.assertIn("あいうえお順", html)
+        self.assertLess(html.index('data-key="' + sorted_names[0] + '"'),
+                        html.index('data-key="' + sorted_names[1] + '"'))
+        self.assertEqual(sum("reading" in pet for pet in catalog), 70)
 
     def test_dungeon_pets_are_not_marked_shop_only(self):
         pets = {item["name"]: item for item in self.catalog["items"]}
