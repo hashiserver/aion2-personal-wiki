@@ -10,6 +10,7 @@ from urllib.parse import urlsplit, urlunsplit
 
 import markdown2
 from portal import render_portal, render_links, render_events
+from pets import render_pet_tracker
 
 ROOT = Path(__file__).resolve().parent
 NAV = [('', '日課・週課'), ('progression', 'IL育成'), ('duty', '任務・指令'), ('events', 'イベント'), ('gear', '装備厳選'), ('pets', 'ペット購入'), ('links', 'リンク集')]
@@ -140,9 +141,16 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
     # Keep the former URL working for an already-open, older document.
     shutil.copyfile(ROOT / 'assets/style.css', output_dir / 'assets/style.css')
     shutil.copyfile(ROOT / '_redirects', output_dir / '_redirects')
+    pet_js_bytes = (ROOT / 'assets/pets.js').read_bytes()
+    pet_js_name = f'pets.{hashlib.sha256(pet_js_bytes).hexdigest()[:12]}.js'
+    for old_js in (output_dir / 'assets').glob('pets.*.js'):
+        if old_js.name != pet_js_name:
+            old_js.unlink()
+    (output_dir / 'assets' / pet_js_name).write_bytes(pet_js_bytes)
     # Only content-addressed CSS gets an immutable cache. HTML revalidates.
     header_rules = [f'{relative_link("", slug)}\n  Cache-Control: public, max-age=0, must-revalidate' for slug in sorted(known)]
     header_rules.append(f'/assets/{css_name}\n  Cache-Control: public, max-age=31536000, immutable')
+    header_rules.append(f'/assets/{pet_js_name}\n  Cache-Control: public, max-age=31536000, immutable')
     (output_dir / '_headers').write_text('\n\n'.join(header_rules) + '\n', encoding='utf-8')
     template = (ROOT / 'templates/page.html').read_text(encoding='utf-8')
     for meta, body in articles:
@@ -177,6 +185,11 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
                              '<div class="update-archive-body">' + body_html + '</div></details>')
             else:
                 body_html = body_html + rendered
+        if slug == 'pets':
+            catalog = json.loads((ROOT / 'data/pets.json').read_text(encoding='utf-8'))
+            if catalog['checked_at'] != meta['checked_at']:
+                raise ValueError('pet catalog checked date does not match article')
+            body_html = render_pet_tracker(catalog, sources, meta['source_ids']) + body_html
         quick_nav = ''.join(f'<a href="{relative_link(slug, target)}"' +
                             (' aria-current="page"' if slug == target else '') + f'>{label}</a>'
                             for target, label in NAV if target in known)
@@ -190,6 +203,7 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             'ABOUT': relative_link(slug, 'sources'),
             'HEADING': '' if is_portal else '<h1>' + html.escape(meta['title']) + '</h1>',
             'QUICK_NAV': quick_nav,
+            'PAGE_SCRIPTS': f'<script defer src="/assets/{pet_js_name}"></script>' if slug == 'pets' else '',
         }
         page = template
         for key, value in values.items():
