@@ -963,13 +963,13 @@
     "checked_at": "2026-11-12"
   },
   "pet-shop-core-global": {
-    "title": "AION2攻略ノート：黒雲貿易団でしか入手できないペット（32種）",
-    "url": "https://gameguide-navi.com/aion2/pet-map/black-cloud/",
-    "tag": "Global向け攻略（一覧）",
-    "region": "日本語・Global向け第三者データ（公式未検証）",
-    "scope": "通常モンスターから魂が落ちないと整理された32種、知性・野性・自然・変形の分類、ショップのスペシャル・ペットタブ、箱や覚醒戦での代替入手の可能性。完全なショップ限定とは断定しない。",
-    "published_at": null,
-    "checked_at": "2026-11-15"
+    "title": "AION2 Times：集めにくいペットと魂の入手先",
+    "url": "https://aion2-times.com/aion2-pet-farming-guide/",
+    "tag": "Global向け攻略",
+    "region": "日本語・Global版（第三者攻略）",
+    "scope": "討伐入手が確認されていない通常ペット29種、IDにしか討伐入手元がない14種の周回あたりの出現数、店頭価格と1購入あたりの魂。",
+    "published_at": "2026-11-17",
+    "checked_at": "2026-11-19"
   },
   "pet-shop-older-35": {
     "title": "Box of Maple：黒雲貿易団限定ペット35種（10月28日以前）",
@@ -987,7 +987,7 @@
     "region": "Globalクライアント由来（第三者）",
     "scope": "天族・魔族共通のペット商品プール200種と1時間ごとの自動更新。有料更新の段階費用は表示されるが各ペットの実売価格や出現確率は掲載されない。",
     "published_at": null,
-    "checked_at": "2026-11-15"
+    "checked_at": "2026-11-19"
   },
   "pet-shop-merchant-jp": {
     "title": "AION2 Global DB：黒雲貿易団の商品候補（日本語名）",
@@ -996,16 +996,16 @@
     "region": "AION2日本語クライアント情報（第三者）",
     "scope": "日本語表記のペット名と黒雲貿易団の商品候補リスト。実際に並ぶ確率や価格、狩りの入手可否までは断定しない。",
     "published_at": null,
-    "checked_at": "2026-11-15"
+    "checked_at": "2026-11-19"
   },
   "pet-shop-habitat": {
-    "title": "AION2攻略ノート：ペットの生息地マップ（陣営別）",
-    "url": "https://gameguide-navi.com/aion2/pet-map/",
-    "tag": "Global向け生息地",
-    "region": "日本語・Global向け第三者マップ（魔族／天族／アビス）",
-    "scope": "ベルテロン（天族）・アルトガルド（魔族）・アビスの生息地と地点数を照合。掲載差分による暫定分類であり、未掲載や更新差分、実際の個体数・ドロップ率まで保証しない。",
-    "published_at": "2026-11-06",
-    "checked_at": "2026-11-15"
+    "title": "Aion2.gg：ペットの魂の入手経路",
+    "url": "https://aion2.gg/database/pets",
+    "tag": "Globalクライアント解析",
+    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
+    "scope": "ペットごとに魂を落とすフィールド・アビス・ダンジョンのモンスターを照合。天族側の狩場に加えて共通IDでも魂が出る9種を確認。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
   },
   "pet-shop-community-40": {
     "title": "がめおじビビ：黒雲貿易団で買うペット40体チェックシート",
@@ -1017,12 +1017,66 @@
     "checked_at": "2026-11-15"
   },
   "pet-shop-dungeon": {
-    "title": "AION2攻略ノート：ダンジョンで入手できるペット（11種）",
-    "url": "https://gameguide-navi.com/aion2/pet-map/dungeon/",
-    "tag": "Global向け生息地",
-    "region": "日本語・Global向け第三者攻略（日本・Asiaはゲーム内確認）",
-    "scope": "クラオ洞窟・ウルググ峡谷・炎の神殿・ドラウプニル・砕けたアルカニス・バクロンの空中島の計11種。11月4日の変更で6種追加。各ペットはショップ・箱での別入手余地がある。",
-    "published_at": "2026-11-09",
-    "checked_at": "2026-11-15"
+    "title": "Aion2.gg：ダンジョンの討伐入手限定ペット14種",
+    "url": "https://aion2.gg/database/pets?side=dungeon",
+    "tag": "Globalクライアント解析",
+    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
+    "scope": "ダンジョンでのみ討伐入手が確認できた14種。炎の神殿の火炎バルゲスト、火炎石の守護像、最上級火の精霊のドロップ記録を含む。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "pet-shop-verteron": {
+    "title": "Aion2.gg：ベルテロンのペットの魂",
+    "url": "https://aion2.gg/database/pets/regions/verteron-1010",
+    "tag": "Globalクライアント解析",
+    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
+    "scope": "ベルテロンのドロップ元とモンスターの湧き地点を照合。共通IDまたはアビスにも入手先があるペットはベルテロン限定から除外。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "pet-shop-altgard": {
+    "title": "Aion2.gg：アルトガルドのペットの魂",
+    "url": "https://aion2.gg/database/pets/regions/altgard-1110",
+    "tag": "Globalクライアント解析",
+    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
+    "scope": "アルトガルドのドロップ元とモンスターの湧き地点を照合。地点数は同時出現数や再出現速度とは別の記録。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "pet-shop-outer": {
+    "title": "Aion2.gg：混沌のエレシュランタ表層のペットの魂",
+    "url": "https://aion2.gg/database/pets/regions/chaotic-outer-reshanta-23",
+    "tag": "Globalクライアント解析",
+    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
+    "scope": "表層の赤い棘の王冠島に出るモンスターが沼地のタルゴンの魂をドロップする記録。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "pet-shop-build-note": {
+    "title": "AION2 11月4日アップデートノート（Wikily掲載）",
+    "url": "https://wikily.gg/ja/aion-2/patches/notice-patch-notes-nov-3-pst-nov-4-cet",
+    "tag": "Global告知の転載",
+    "region": "日本語・Global版",
+    "scope": "11月4日適用。一部のペットの魂の直接入手先として遠征・超越を追加。対象ペットの個別名はクライアントDBを照合。",
+    "published_at": "2026-11-04",
+    "checked_at": "2026-11-19"
+  },
+  "pet-shop-understanding": {
+    "title": "AION2 Times：種族理解度の効率的な上げ方",
+    "url": "https://aion2-times.com/aion2-pet-understanding-guide/",
+    "tag": "Global向け攻略",
+    "region": "日本語・Global版（第三者攻略）",
+    "scope": "新規ペット登録で種族理解度経験値500。ペット理解度Lv2とLv3で各250。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "pet-shop-award-coupon": {
+    "title": "AION2公式Steam：ゲーム大賞受賞記念クーポン",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=japanese",
+    "tag": "Global公式",
+    "region": "全サーバー（Global公式Steam）",
+    "scope": "11月18日開始。THANKSFROMAION2で成長のペット箱（刻印）100個などを受け取れる。1アカウント1回。2027年3月3日16:00 JSTまで。",
+    "published_at": "2026-11-18",
+    "checked_at": "2026-11-19"
   }
 }

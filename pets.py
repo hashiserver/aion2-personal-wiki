@@ -5,9 +5,12 @@ import unicodedata
 
 GROUPS = {
     "shop": "購入・箱中心",
-    "elyos": "天族側の狩場",
-    "dungeon": "ID（ダンジョン）産",
+    "elyos": "ベルテロン限定",
+    "dungeon-single": "IDで1周1体",
+    "dungeon": "ID産",
     "rare": "狩場少数",
+    "alternate": "共通ID・アビスあり",
+    "altgard": "魔族側の狩場",
 }
 GENERA = {"知性", "野性", "自然", "変形"}
 
@@ -26,6 +29,7 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
     if not pets:
         raise ValueError("empty pet catalog")
     names = set()
+    storage_keys = set()
     rows = []
     counts = Counter()
 
@@ -36,6 +40,10 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
         if not name or name in names:
             raise ValueError("duplicate or empty pet name: " + name)
         names.add(name)
+        storage_key = item.get("storage_key", name)
+        if not storage_key or storage_key in storage_keys:
+            raise ValueError("duplicate or empty pet storage key: " + name)
+        storage_keys.add(storage_key)
         genus = item["genus"]
         if genus not in GENERA:
             raise ValueError("unknown pet genus: " + genus)
@@ -59,7 +67,8 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
         # A link to the page's existing source list makes each classification auditable.
         source_id = source_ids[0]
         rows.append(
-            '<tr class="pet-row" data-key="' + escape(name, quote=True) + '"'
+            '<tr class="pet-row" data-key="' + escape(storage_key, quote=True) + '"'
+            ' data-name="' + escape(name, quote=True) + '"'
             ' data-order="' + str(index) + '"'
             ' data-groups="' + escape(" ".join(groups), quote=True) + '"'
             ' data-genus="' + escape(genus, quote=True) + '">'
@@ -86,10 +95,7 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
                '<th scope="col">根拠</th></tr></thead>')
     return (
         '<section id="pet-tracker" aria-labelledby="pet-tracker-title">'
-        '<h2 id="pet-tracker-title">最優先：購入チェックリスト（あいうえお順）</h2>'
-        '<p>魔族視点で、<strong>購入中心・天族側の狩場・ID産・狩場少数</strong>を一つの表に集約。'
-        '同じペットに理由が複数ある場合はラベルを併記しています。'
-        '完了は「ペット理解度Lv3になり、これ以上ショップで魂を買わない」を目安にしてください。</p>'
+        '<h2 id="pet-tracker-title">購入チェックリスト（あいうえお順）</h2>'
         '<div class="pet-summary" role="status" aria-live="polite">'
         '<strong id="pet-pending-count">' + str(len(rows)) + '</strong><span>未完了</span>'
         '<strong id="pet-done-count">0</strong><span>完了</span>'
@@ -99,9 +105,9 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
         '<label for="pet-search">ペット名を検索'
         '<input id="pet-search" type="search" placeholder="名前を入力" autocomplete="off"></label>'
         '<label for="pet-group">入手区分'
-        '<select id="pet-group"><option value="all">すべての最優先</option>'
+        '<select id="pet-group"><option value="all">すべての購入候補</option>'
         + options + '</select></label>'
-        '<label for="pet-genus">種族理解度'
+        '<label for="pet-genus">種族'
         '<select id="pet-genus"><option value="all">すべて</option>'
         + "".join('<option value="' + escape(g) + '">' + escape(g) + '</option>'
                   for g in ("知性", "野性", "自然", "変形")) +
@@ -109,7 +115,7 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
         '<p class="pet-local-note">チェックはこのブラウザのlocalStorageにのみ保存。'
         'ログイン・サーバー保存・端末間同期はありません。ブラウザのデータ削除で消える場合があります。</p>'
         '<noscript><p>絞り込みと完了保存にはJavaScriptが必要です。下の一覧は閲覧できます。</p></noscript>'
-        '<div class="table-scroll pet-table-wrap" role="region" aria-label="未完了の優先ペット一覧" tabindex="0">'
+        '<div class="table-scroll pet-table-wrap" role="region" aria-label="未完了の購入候補一覧" tabindex="0">'
         '<table id="pet-pending-table">' + headers + '<tbody id="pet-pending-body">' + rows_html
         + '</tbody></table></div>'
         '<p id="pet-empty" class="pet-empty" hidden>条件に一致する未完了のペットはありません。</p>'

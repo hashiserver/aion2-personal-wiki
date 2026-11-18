@@ -44,13 +44,14 @@
   function updateLabel(row) {
     checkbox(row).setAttribute(
       "aria-label",
-      row.dataset.key + (checkbox(row).checked ? "の完了を解除する" : "を完了済みにする")
+      row.dataset.name + (checkbox(row).checked ? "の完了を解除する" : "を完了済みにする")
     );
   }
 
   function matchesFilters(row) {
     const phrase = search.value.trim().toLocaleLowerCase();
-    const matchesName = !phrase || row.dataset.key.toLocaleLowerCase().includes(phrase);
+    const matchesName = !phrase || [row.dataset.name, row.dataset.key]
+      .some((name) => name.toLocaleLowerCase().includes(phrase));
     const matchesGroup = group.value === "all" ||
       row.dataset.groups.split(" ").includes(group.value);
     const matchesGenus = genus.value === "all" || row.dataset.genus === genus.value;
@@ -125,14 +126,14 @@
     save();
     repaint();
     if (storageAvailable) {
-      status.textContent = row.dataset.key + (target.checked
+      status.textContent = row.dataset.name + (target.checked
         ? "を完了にしました。下の「完了済み」から戻せます。"
         : "を未完了に戻しました。");
     }
   });
 
-  [search, group, genus].forEach((control) => {
-    control.addEventListener("input", repaint);
+  search.addEventListener("input", repaint);
+  [group, genus].forEach((control) => {
     control.addEventListener("change", repaint);
   });
 

@@ -16,9 +16,13 @@ class PetPriorityTests(unittest.TestCase):
 
     def test_pet_categories_and_unique_names(self):
         pets = self.catalog["items"]
-        self.assertEqual(len(pets), 89)
+        self.assertEqual(len(pets), 92)
         self.assertEqual(len({item["name"] for item in pets}), len(pets))
-        for reason, expected in (("shop", 32), ("elyos", 38), ("dungeon", 11), ("rare", 11)):
+        expected_counts = {
+            "shop": 29, "elyos": 28, "dungeon": 14, "dungeon-single": 7,
+            "rare": 8, "alternate": 10, "altgard": 11,
+        }
+        for reason, expected in expected_counts.items():
             with self.subTest(group=reason):
                 self.assertEqual(sum(reason in item["groups"] for item in pets), expected)
         self.assertEqual(self.catalog["checked_at"], self.meta["checked_at"])
@@ -38,11 +42,16 @@ class PetPriorityTests(unittest.TestCase):
         self.assertIn("あいうえお順", html)
         self.assertLess(html.index('data-key="' + sorted_names[0] + '"'),
                         html.index('data-key="' + sorted_names[1] + '"'))
-        self.assertEqual(sum("reading" in pet for pet in catalog), 70)
+        self.assertLess(sorted_names.index("クラル強化警戒兵"),
+                        sorted_names.index("クラル強化戦闘兵"))
+        self.assertTrue(all(pet["reading"] for pet in catalog
+                            if any("\u3400" <= c <= "\u9fff" for c in pet["name"])))
 
     def test_dungeon_pets_are_not_marked_shop_only(self):
         pets = {item["name"]: item for item in self.catalog["items"]}
-        for name in ("ウルググ闘士", "クラオ実験体", "クラオ変異体", "クラオ封印の守護者", "最上級水の精霊", "最上級地の精霊"):
+        for name in ("ウルググ闘士", "クラオ実験体", "クラオ変異体", "クラオ封印の守護者",
+                     "最上級水の精霊", "最上級地の精霊", "火炎石の守護像",
+                     "火炎バルゲスト", "最上級火の精霊"):
             with self.subTest(pet=name):
                 self.assertIn("dungeon", pets[name]["groups"])
                 self.assertNotIn("shop", pets[name]["groups"])
@@ -50,6 +59,22 @@ class PetPriorityTests(unittest.TestCase):
     def test_elyos_and_rare_can_share_a_single_row(self):
         pet = next(p for p in self.catalog["items"] if p["name"] == "精鋭ニュート")
         self.assertEqual(set(pet["groups"]), {"elyos", "rare"})
+
+    def test_alternate_routes_and_spawn_counts_adjust_priority(self):
+        pets = {item["name"]: item for item in self.catalog["items"]}
+        for name in ("沼地のタルゴン", "クラル戦士", "コヌティ作業員"):
+            self.assertEqual(pets[name]["groups"], ["alternate"])
+        self.assertEqual(pets["ビベル"]["groups"], ["altgard"])
+        self.assertIn("71地点", pets["ビベル"]["notes"][0])
+        self.assertEqual(pets["ビロータ薬草採り"]["groups"], ["altgard", "rare"])
+
+    def test_renamed_pets_keep_previous_saved_keys(self):
+        result = render_pet_tracker(self.catalog, self.sources, self.meta["source_ids"])
+        for old, name in (("強化されたクラル戦闘兵", "クラル強化戦闘兵"),
+                          ("精鋭魂のない屍ヤブカ", "精鋭魂のない棺蜘蛛")):
+            with self.subTest(pet=name):
+                self.assertIn(f'data-key="{old}" data-name="{name}"', result)
+                self.assertIn(f'aria-label="{name}を完了済みにする"', result)
 
     def test_every_pet_source_is_declared(self):
         for item in self.catalog["items"]:
@@ -59,7 +84,7 @@ class PetPriorityTests(unittest.TestCase):
 
     def test_accessible_interactive_table_and_complete_section(self):
         result = render_pet_tracker(self.catalog, self.sources, self.meta["source_ids"])
-        self.assertEqual(result.count('class="pet-row"'), 89)
+        self.assertEqual(result.count('class="pet-row"'), 92)
         for term in ('id="pet-pending-body"', 'id="pet-completed-body"',
                      'id="pet-pending-count"', 'id="pet-done-count"',
                      'id="pet-search"', 'id="pet-group"', 'id="pet-genus"',
