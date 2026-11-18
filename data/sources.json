@@ -1078,5 +1078,32 @@
     "scope": "11月18日開始。THANKSFROMAION2で成長のペット箱（刻印）100個などを受け取れる。1アカウント1回。2027年3月3日16:00 JSTまで。",
     "published_at": "2026-11-18",
     "checked_at": "2026-11-19"
+  },
+  "global-patch-2026-11-18-official": {
+    "title": "AION 2 Global公式：Patch Notes | Nov. 18",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
+    "tag": "Global公式パッチ",
+    "region": "Global（Asiaを含む。個別適用ビルド未確認）",
+    "scope": "ルドラEasy追加、装備合算ドロップ率15%、交換券変換費用変更、AP3倍イベント、フィールドギーナ刻印化、修正。正式な個別ビルド番号・Asia個別適用時刻は未確認。",
+    "published_at": "2026-11-18",
+    "checked_at": "2026-11-19"
+  },
+  "global-restrictions-2026-11-18-official": {
+    "title": "AION 2 Global公式：Account Restrictions (Nov 18)",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
+    "tag": "Global公式運用",
+    "region": "Global（Asia内訳未公表）",
+    "scope": "11/18 00:00 PST／09:00 CETに20,105件制限。保護目的の一時ロックは制裁とは別。",
+    "published_at": "2026-11-18",
+    "checked_at": "2026-11-19"
+  },
+  "global-award-coupon-2026-11-18-official": {
+    "title": "AION 2 Global公式：Korea Game Awards - Appreciation Gift",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
+    "tag": "Global公式イベント",
+    "region": "Global全サーバー（公式記載）",
+    "scope": "THANKSFROMAION2、11/18 01:00 PST／10:00 CETから2027/3/2 23:00 PST／3/3 08:00 CETまで、1アカウント1回。ペット成長箱100、調律石10など。",
+    "published_at": "2026-11-18",
+    "checked_at": "2026-11-19"
   }
 }
