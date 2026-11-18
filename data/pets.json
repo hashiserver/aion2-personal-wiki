@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-15",
-  "scope": "魔族向け。種族理解度をLv3まで育てるペット候補。通常狩場とショップ、箱は別の入手経路。",
+  "checked_at": "2026-11-19",
+  "scope": "魔族向けの黒雲貿易団購入候補。討伐での入手経路と確認した湧き地点数を基に優先度を判断する。",
   "items": [
     {
       "name": "アウルトロスの分身",
@@ -9,7 +9,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -24,7 +24,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -38,7 +38,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -52,7 +52,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -66,7 +66,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -81,7 +81,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -96,7 +96,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -111,7 +111,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -123,13 +123,13 @@
       "name": "火炎バルゲスト",
       "genus": "野性",
       "groups": [
-        "shop"
+        "dungeon"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "炎の神殿のモンスターから魂を入手。周回するならドロップ分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-core-global",
+        "pet-shop-dungeon",
         "pet-shop-merchant-jp"
       ],
       "reading": "かえんバルゲスト"
@@ -138,13 +138,13 @@
       "name": "火炎石の守護像",
       "genus": "変形",
       "groups": [
-        "shop"
+        "dungeon"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "炎の神殿のモンスターから魂を入手。周回するならドロップ分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-core-global",
+        "pet-shop-dungeon",
         "pet-shop-merchant-jp"
       ],
       "reading": "かえんせきのしゅごぞう"
@@ -156,7 +156,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -171,7 +171,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -186,7 +186,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -201,7 +201,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -216,7 +216,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -231,7 +231,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -243,13 +243,13 @@
       "name": "最上級火の精霊",
       "genus": "自然",
       "groups": [
-        "shop"
+        "dungeon"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "炎の神殿のモンスターから魂を入手。周回するならドロップ分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-core-global",
+        "pet-shop-dungeon",
         "pet-shop-merchant-jp"
       ],
       "reading": "さいじょうきゅうひのせいれい"
@@ -261,7 +261,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -276,7 +276,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -291,7 +291,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -306,7 +306,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -321,7 +321,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -336,7 +336,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -351,7 +351,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -360,19 +360,20 @@
       "reading": "せいえいドゥラトナ"
     },
     {
-      "name": "精鋭魂のない屍ヤブカ",
+      "name": "精鋭魂のない棺蜘蛛",
       "genus": "変形",
       "groups": [
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
-      "reading": "せいえいたましいのないしかばねヤブカ"
+      "reading": "せいえいたましいのないひつぎぐも",
+      "storage_key": "精鋭魂のない屍ヤブカ"
     },
     {
       "name": "精鋭毒胞子ファンガス",
@@ -381,7 +382,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -396,7 +397,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -411,7 +412,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -426,7 +427,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -441,7 +442,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -456,7 +457,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -471,7 +472,7 @@
         "shop"
       ],
       "notes": [
-        "通常モンスターでは魂が集められないとする調査。箱・覚醒戦報酬などの代替入手あり"
+        "討伐による魂の入手は確認されていない。黒雲貿易団・成長のペット箱などで集める"
       ],
       "source_ids": [
         "pet-shop-core-global",
@@ -483,13 +484,14 @@
       "name": "アウルラウ呪術士",
       "genus": "知性",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、ウルググ峡谷でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ],
       "reading": "アウルラウじゅじゅつし"
     },
@@ -500,10 +502,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -513,10 +516,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -526,10 +530,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -539,10 +544,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "クラルきょうかけいかいへい"
     },
@@ -550,13 +556,14 @@
       "name": "クラル呪術兵",
       "genus": "知性",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、デウス研究基地（超越）でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ],
       "reading": "クラルじゅじゅつへい"
     },
@@ -564,13 +571,14 @@
       "name": "クラル戦士",
       "genus": "知性",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、デウス研究基地（超越）でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ],
       "reading": "クラルせんし"
     },
@@ -581,10 +589,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "クラルろうどうしゃ"
     },
@@ -595,23 +604,25 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
       "name": "コヌティ作業員",
       "genus": "自然",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、ウルググ峡谷でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ],
       "reading": "コヌティさぎょういん"
     },
@@ -622,10 +633,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -635,10 +647,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -648,10 +661,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -661,10 +675,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -674,10 +689,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "ドラナほうし"
     },
@@ -685,26 +701,28 @@
       "name": "ピノ",
       "genus": "変形",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、ウルググ峡谷でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ]
     },
     {
       "name": "ピノ作業員",
       "genus": "変形",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、ウルググ峡谷でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ],
       "reading": "ピノさぎょういん"
     },
@@ -715,10 +733,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -728,23 +747,26 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
       "name": "ベビー オード蜘蛛",
       "genus": "野性",
       "groups": [
-        "elyos"
+        "elyos",
+        "rare"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンの海岸のオード蜘蛛から入手。湧き8地点。亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "ベビー オードぐも"
     },
@@ -755,10 +777,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ]
     },
     {
@@ -768,10 +791,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "やみのせいれい"
     },
@@ -779,13 +803,14 @@
       "name": "下級水の精霊",
       "genus": "自然",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、砕けたアルカニス（超越）でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ],
       "reading": "かきゅうみずのせいれい"
     },
@@ -793,13 +818,14 @@
       "name": "下級地の精霊",
       "genus": "自然",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、バクロンの空中島でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ],
       "reading": "かきゅうちのせいれい"
     },
@@ -807,31 +833,32 @@
       "name": "監視ガーディット",
       "genus": "変形",
       "groups": [
-        "elyos",
-        "rare"
+        "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認",
-        "ベルテロンの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "ベルテロンの汚染されたガーディットから入手。湧き44地点。亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "かんしガーディット"
     },
     {
-      "name": "強化されたクラル戦闘兵",
+      "name": "クラル強化戦闘兵",
       "genus": "知性",
       "groups": [
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
-      "reading": "きょうかされたクラルせんとうへい"
+      "reading": "クラルきょうかせんとうへい",
+      "storage_key": "強化されたクラル戦闘兵"
     },
     {
       "name": "枯れ葉アグリント",
@@ -840,10 +867,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "かれはアグリント"
     },
@@ -851,13 +879,15 @@
       "name": "手懐けたザイフ",
       "genus": "野性",
       "groups": [
-        "elyos"
+        "elyos",
+        "rare"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンの略奪団ザイフから入手。湧き6地点。亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "てなづけたザイフ"
     },
@@ -865,13 +895,14 @@
       "name": "沼地のタルゴン",
       "genus": "変形",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、混沌のエレシュランタ表層でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-outer",
+        "pet-shop-merchant-jp"
       ],
       "reading": "ぬまちのタルゴン"
     },
@@ -879,13 +910,15 @@
       "name": "森の守護者",
       "genus": "自然",
       "groups": [
-        "elyos"
+        "elyos",
+        "rare"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンの庭園の守護者から入手。湧き10地点。亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "もりのしゅごしゃ"
     },
@@ -896,10 +929,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "もりのれいこん"
     },
@@ -911,11 +945,11 @@
         "rare"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認",
-        "ベルテロンの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "ベルテロンの神聖なアンサスから入手。湧き1地点のネームドなので購入を優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "せいえいガーディット"
     },
@@ -927,11 +961,11 @@
         "rare"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認",
-        "ベルテロンの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "ベルテロンの護衛兵ティガントから入手。湧き1地点のネームドなので購入を優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "せいえいニュート"
     },
@@ -939,13 +973,14 @@
       "name": "大きなハチ",
       "genus": "野性",
       "groups": [
-        "elyos"
+        "alternate"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのほか、バクロンの空中島でも魂を入手できる。通う予定があれば先にそちらで集める"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-habitat",
+        "pet-shop-merchant-jp"
       ],
       "reading": "おおきなハチ"
     },
@@ -956,10 +991,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "ベルテロンのドラナ変異コウモリから入手。湧き11地点。亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "どうくつのコウモリ"
     },
@@ -970,10 +1006,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "へんいしたしにくちゅう"
     },
@@ -984,10 +1021,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "へんしゅアルマドン"
     },
@@ -998,10 +1036,11 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンに狩場掲載。アルトガルド・アビスの掲載リストでは同名の魂源未確認"
+        "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-verteron",
+        "pet-shop-merchant-jp"
       ],
       "reading": "へんしゅキャンサリード"
     },
@@ -1009,13 +1048,15 @@
       "name": "ウルググ闘士",
       "genus": "知性",
       "groups": [
-        "dungeon"
+        "dungeon",
+        "dungeon-single"
       ],
       "notes": [
-        "ウルググ峡谷のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "ウルググ峡谷で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "ウルググとうし"
     },
@@ -1026,10 +1067,11 @@
         "dungeon"
       ],
       "notes": [
-        "クラオ洞窟のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "クラオ洞窟で対象が1周に複数。普段回るなら周回分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "クラオじっけんたい"
     },
@@ -1037,13 +1079,15 @@
       "name": "クラオ封印の守護者",
       "genus": "変形",
       "groups": [
-        "dungeon"
+        "dungeon",
+        "dungeon-single"
       ],
       "notes": [
-        "クラオ洞窟のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "クラオ洞窟で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "クラオふういんのしゅごしゃ"
     },
@@ -1054,10 +1098,11 @@
         "dungeon"
       ],
       "notes": [
-        "クラオ洞窟のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "クラオ洞窟で対象が1周に複数。普段回るなら周回分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "クラオへんいたい"
     },
@@ -1065,26 +1110,30 @@
       "name": "ハルコン",
       "genus": "変形",
       "groups": [
-        "dungeon"
+        "dungeon",
+        "dungeon-single"
       ],
       "notes": [
-        "クラオ洞窟のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "クラオ洞窟で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ]
     },
     {
       "name": "黒煙モルト",
       "genus": "自然",
       "groups": [
-        "dungeon"
+        "dungeon",
+        "dungeon-single"
       ],
       "notes": [
-        "炎の神殿のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "炎の神殿で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "こくえんモルト"
     },
@@ -1095,10 +1144,11 @@
         "dungeon"
       ],
       "notes": [
-        "砕けたアルカニスのモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "砕けたアルカニスで対象が1周に複数。普段回るなら周回分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "さいじょうきゅうみずのせいれい"
     },
@@ -1109,10 +1159,11 @@
         "dungeon"
       ],
       "notes": [
-        "バクロンの空中島のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "バクロンの空中島で対象が1周に複数。普段回るなら周回分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "さいじょうきゅうちのせいれい"
     },
@@ -1120,13 +1171,15 @@
       "name": "赤い炎イグヌス",
       "genus": "自然",
       "groups": [
-        "dungeon"
+        "dungeon",
+        "dungeon-single"
       ],
       "notes": [
-        "炎の神殿のモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "炎の神殿で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "あかいほのおイグヌス"
     },
@@ -1134,13 +1187,15 @@
       "name": "捕食者サラスワティ",
       "genus": "知性",
       "groups": [
-        "dungeon"
+        "dungeon",
+        "dungeon-single"
       ],
       "notes": [
-        "ドラウプニルのモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "ドラウプニルで対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "ほしょくしゃサラスワティ"
     },
@@ -1148,13 +1203,15 @@
       "name": "夢幻のラクシュミ",
       "genus": "知性",
       "groups": [
-        "dungeon"
+        "dungeon",
+        "dungeon-single"
       ],
       "notes": [
-        "ドラウプニルのモンスターから魂を入手（ショップ・箱など別経路もあり）"
+        "ドラウプニルで対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon"
+        "pet-shop-dungeon",
+        "pet-shop-merchant-jp"
       ],
       "reading": "むげんのラクシュミ"
     },
@@ -1162,52 +1219,56 @@
       "name": "ドラナ スライム",
       "genus": "変形",
       "groups": [
-        "rare"
+        "altgard"
       ],
       "notes": [
-        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "アルトガルドに湧き21地点。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
       ]
     },
     {
       "name": "バジリスク",
       "genus": "野性",
       "groups": [
-        "rare"
+        "altgard"
       ],
       "notes": [
-        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "アルトガルドに湧き16地点。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
       ]
     },
     {
       "name": "ビベル",
       "genus": "野性",
       "groups": [
-        "rare"
+        "altgard"
       ],
       "notes": [
-        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "アルトガルドに湧き71地点。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
       ]
     },
     {
       "name": "監視のオキュラゼン",
       "genus": "変形",
       "groups": [
-        "rare"
+        "altgard"
       ],
       "notes": [
-        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "アルトガルドに湧き19地点。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
       ],
       "reading": "かんしのオキュラゼン"
     },
@@ -1215,13 +1276,14 @@
       "name": "凝固されたドラナ",
       "genus": "変形",
       "groups": [
-        "rare"
+        "altgard"
       ],
       "notes": [
-        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "アルトガルドに湧き26地点。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
       ],
       "reading": "ぎょうこされたドラナ"
     },
@@ -1229,13 +1291,14 @@
       "name": "色あせた浮遊体",
       "genus": "変形",
       "groups": [
-        "rare"
+        "altgard"
       ],
       "notes": [
-        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "アルトガルドに湧き20地点。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
       ],
       "reading": "いろあせたふゆうたい"
     },
@@ -1243,13 +1306,14 @@
       "name": "中毒になったシュラク担夫",
       "genus": "知性",
       "groups": [
-        "rare"
+        "altgard"
       ],
       "notes": [
-        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "アルトガルドに湧き29地点。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
       ],
       "reading": "ちゅうどくになったシュラクたんぷ"
     },
@@ -1257,15 +1321,63 @@
       "name": "変異したウルサス",
       "genus": "野性",
       "groups": [
+        "altgard"
+      ],
+      "notes": [
+        "アルトガルドに湧き18地点。魔族側での狩りを優先"
+      ],
+      "source_ids": [
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
+      ],
+      "reading": "へんいしたウルサス"
+    },
+    {
+      "name": "ビロータ薬草採り",
+      "reading": "ビロータやくそうとり",
+      "genus": "知性",
+      "groups": [
+        "altgard",
         "rare"
       ],
       "notes": [
-        "アルトガルドの生息地マップで掲載地点1件。地点数は出現個体数・ドロップ率ではない"
+        "アルトガルドに湧き4地点。狩りの回りづらさに応じて購入を検討"
       ],
       "source_ids": [
-        "pet-shop-habitat"
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "灰色のアグリント",
+      "reading": "はいいろのアグリント",
+      "genus": "自然",
+      "groups": [
+        "altgard",
+        "rare"
       ],
-      "reading": "へんいしたウルサス"
+      "notes": [
+        "アルトガルドに湧き8地点。狩りの回りづらさに応じて購入を検討"
+      ],
+      "source_ids": [
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
+      ]
+    },
+    {
+      "name": "スライム",
+      "genus": "変形",
+      "groups": [
+        "altgard",
+        "rare"
+      ],
+      "notes": [
+        "アルトガルドに湧き10地点。狩りの回りづらさに応じて購入を検討"
+      ],
+      "source_ids": [
+        "pet-shop-altgard",
+        "pet-shop-merchant-jp"
+      ]
     }
   ]
 }

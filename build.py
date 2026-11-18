@@ -189,7 +189,10 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             catalog = json.loads((ROOT / 'data/pets.json').read_text(encoding='utf-8'))
             if catalog['checked_at'] != meta['checked_at']:
                 raise ValueError('pet catalog checked date does not match article')
-            body_html = render_pet_tracker(catalog, sources, meta['source_ids']) + body_html
+            marker = '<p>[[pet-tracker]]</p>'
+            if body_html.count(marker) != 1:
+                raise ValueError('pet article must have one tracker marker')
+            body_html = body_html.replace(marker, render_pet_tracker(catalog, sources, meta['source_ids']), 1)
         quick_nav = ''.join(f'<a href="{relative_link(slug, target)}"' +
                             (' aria-current="page"' if slug == target else '') + f'>{label}</a>'
                             for target, label in NAV if target in known)

@@ -44,8 +44,9 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(metadata['slug'], 'pets')
         self.assertIn('ムームー族監督官', names)
         self.assertIn('手懐けたザイフ', names)
-        self.assertIn('通常モンスターからのドロップ場所の分類', body)
+        self.assertIn('討伐で魂を得る経路が確認されていない', body)
         self.assertIn('[[source:pet-shop-core-global]]', body)
+        self.assertLess(body.index('THANKSFROMAION2'), body.index('[[pet-tracker]]'))
 
     def test_unknown_source_is_rejected(self):
         self.article('index.md', ids=['missing'])
