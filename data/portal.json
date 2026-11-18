@@ -2,6 +2,50 @@
   "checked_at": "2026-11-05",
   "events": [
     {
+      "source_id": "global-restrictions-2026-11-18-official",
+      "category": "運用告知",
+      "title": "11/18 Global不正アカウント20,105件制限",
+      "starts_on": "2026-11-18",
+      "ends_on": "2026-11-18",
+      "period": "11/18 00:00 PST／09:00 CET（18:00 JST）",
+      "description": "BOT・金策・不正プログラム・RMTなどで20,105アカウントを制限。セキュリティ保護の一時ロックは別。Asia内訳は未公表。",
+      "deadline": "ゲーム内パッチとは別の運用告知。",
+      "short_end": "11/18公式告知"
+    },
+    {
+      "source_id": "global-patch-2026-11-18-official",
+      "category": "期間限定",
+      "title": "アビスポイント3倍イベント",
+      "starts_on": "2026-11-18",
+      "ends_on": "2026-12-17",
+      "period": "11/18メンテ後〜12/17メンテ前（CET公式表記。北米PSTでは11/17〜12/16）",
+      "description": "外部アビスのモンスタードロップAP、戦場勝利参加報酬・勝利ミッション報酬が3倍。週間等のAP上限は据え置き。外部アビスPvP獲得APは対象外。",
+      "deadline": "Asia固有のイベント終了時刻は未確認。",
+      "short_end": "12/17メンテ前（欧州）"
+    },
+    {
+      "source_id": "global-patch-2026-11-18-official",
+      "category": "アップデート",
+      "title": "11/18 Global更新：ルドラEasy・AP3倍",
+      "starts_on": "2026-11-18",
+      "ends_on": "2026-11-18",
+      "period": "11/18定期メンテナンスに伴うGlobal公式更新。Asia個別適用時刻・ビルド番号未確認",
+      "description": "ルドラEasy（IL2,800・120分・復活無制限）追加。ルドラ装備合算ドロップ率Normal/Hard 5→15%、Easy 15%。交換券変換ギーナ1,000万→500万。フィールドモンスターのギーナは刻印に変更。",
+      "deadline": "11/11の情報は当時の履歴。公式11/18パッチを優先。",
+      "short_end": "11/18 Globalパッチ"
+    },
+    {
+      "source_id": "global-award-coupon-2026-11-18-official",
+      "category": "クーポン",
+      "title": "受賞記念クーポン THANKSFROMAION2",
+      "starts_on": "2026-11-18",
+      "ends_on": "2027-03-03",
+      "period": "11/18 18:00 JST〜2027/3/3 16:00 JST（公式PST/CET換算）",
+      "description": "全サーバー・1アカウント1回。調律石（唯一）10、成長ペット箱100、オードエネルギー5など。設定＞その他＞アカウント＞クーポン入力。",
+      "deadline": "2027/3/3 16:00 JSTまで。報酬は刻印。",
+      "short_end": "2027/3/3 16:00 JST"
+    },
+    {
       "source_id": "global-patch-2026-11-11-official",
       "category": "アップデート",
       "title": "11/11公式更新：ルドラ・遠征Hard・週次報酬",
