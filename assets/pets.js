@@ -132,8 +132,8 @@
     }
   });
 
-  [search, group, genus].forEach((control) => {
-    control.addEventListener("input", repaint);
+  search.addEventListener("input", repaint);
+  [group, genus].forEach((control) => {
     control.addEventListener("change", repaint);
   });
 
