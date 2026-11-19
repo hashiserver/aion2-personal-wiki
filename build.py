@@ -45,13 +45,17 @@ def canonical_link(slug: str, ref: str, known_slugs: set[str]) -> str:
 
 
 def navigation(slug: str, known_slugs: set[str]) -> str:
-    def item(target, title):
+    items = []
+    for target, title in NAV:
         if target not in known_slugs:
-            return ''
-        current = ' aria-current="page" class="current"' if target == slug else ''
-        return f'<a href="{relative_link(slug, target)}"{current}>{html.escape(title)}</a>'
-    primary = ''.join(item(s, t) for s, t in NAV)
-    return f'<nav aria-label="ページ一覧">{primary}</nav>'
+            continue
+        current = ''
+        if target == slug:
+            current = ' aria-current="page"'
+        elif target and slug.startswith(target + '/'):
+            current = ' aria-current="location"'
+        items.append(f'<li><a href="{relative_link(slug, target)}"{current}>{html.escape(title)}</a></li>')
+    return '<ul>' + ''.join(items) + '</ul>'
 
 
 GEAR_CLASSES = [
@@ -78,7 +82,6 @@ def gear_subnavigation(slug: str, known_slugs: set[str]) -> str:
         selected = ' aria-current="page"' if target == slug else ''
         links.append(f'<a href="{relative_link(slug, target)}"{selected}>{html.escape(label)}</a>')
     return ('<nav class="gear-subnav" aria-label="装備厳選：クラス切り替え">'
-            '<span class="gear-subnav-title">装備厳選メニュー</span>'
             '<div class="gear-subnav-links">' + ''.join(links) + '</div></nav>')
 
 
@@ -159,8 +162,6 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
         body_html = MARKER.sub(lambda m: f'<a class="tag source-tag" href="#source-{m[1]}" title="{html.escape(sources[m[1]]["region"] + " / " + sources[m[1]]["scope"], quote=True)}">{html.escape(sources[m[1]]["tag"])}</a>', body_html)
         body_html = re.sub(r'<table>', '<div class="table-scroll" tabindex="0" role="region" aria-label="比較表。横にスクロールできます"><table>', body_html)
         body_html = body_html.replace('</table>', '</table></div>')
-        toc = ''.join(f'<a href="#{html.escape(anchor, quote=True)}">{re.sub("<[^>]+>", "", title)}</a>'
-                      for anchor, title in re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body_html))
         layout = meta.get('layout')
         is_portal = layout in ('portal', 'resources', 'events')
         if is_portal:
@@ -193,19 +194,20 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             if body_html.count(marker) != 1:
                 raise ValueError('pet article must have one tracker marker')
             body_html = body_html.replace(marker, render_pet_tracker(catalog, sources, meta['source_ids']), 1)
-        quick_nav = ''.join(f'<a href="{relative_link(slug, target)}"' +
-                            (' aria-current="page"' if slug == target else '') + f'>{label}</a>'
-                            for target, label in NAV if target in known)
+        headings = re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body_html)
+        toc = ''
+        if len(headings) >= 3 and not is_portal:
+            links = ''.join(f'<li><a href="#{html.escape(anchor, quote=True)}">{re.sub("<[^>]+>", "", title)}</a></li>'
+                            for anchor, title in headings)
+            toc = '<nav class="article-toc" aria-label="このページの目次"><p>このページの目次</p><ul>' + links + '</ul></nav>'
         values = {
             'TITLE': html.escape(meta['title']), 'DATE': html.escape(meta['checked_at']),
             'CSS': f'/assets/{css_name}',
-            'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known), 'BODY': gear_subnavigation(slug, known) + body_html,
-            'TOC': '<nav class="toc" aria-label="この記事の目次">' + toc + '</nav>' if toc else '',
+            'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known),
+            'BODY': gear_subnavigation(slug, known) + toc + body_html,
             'SOURCES': render_sources(meta['source_ids'], sources),
             'PAGE_CLASS': 'page-' + (slug.replace('/', '-') or 'home') + (' page-gear' if slug.startswith('gear/') else ''),
             'ABOUT': relative_link(slug, 'sources'),
-            'HEADING': '' if is_portal else '<h1>' + html.escape(meta['title']) + '</h1>',
-            'QUICK_NAV': quick_nav,
             'PAGE_SCRIPTS': f'<script defer src="/assets/{pet_js_name}"></script>' if slug == 'pets' else '',
         }
         page = template

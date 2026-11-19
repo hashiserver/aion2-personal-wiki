@@ -74,7 +74,7 @@ class PetPriorityTests(unittest.TestCase):
                           ("精鋭魂のない屍ヤブカ", "精鋭魂のない棺蜘蛛")):
             with self.subTest(pet=name):
                 self.assertIn(f'data-key="{old}" data-name="{name}"', result)
-                self.assertIn(f'aria-label="{name}を完了済みにする"', result)
+                self.assertIn(f'aria-label="{name}の完了"', result)
 
     def test_every_pet_source_is_declared(self):
         for item in self.catalog["items"]:
@@ -97,12 +97,8 @@ class PetPriorityTests(unittest.TestCase):
         js = (ROOT / "assets/pets.js").read_text(encoding="utf-8")
         for term in ('aion2-pet-completed-v1', 'localStorage.getItem',
                      'localStorage.setItem', 'completed.delete',
-                     'pet-completed-body', 'window.confirm', 'data.order'):
-            # JS may use dataset.order instead of a literal "data.order".
-            if term == "data.order":
-                self.assertIn("dataset.order", js)
-            else:
-                self.assertIn(term, js)
+                     'pet-completed-body', 'window.confirm'):
+            self.assertIn(term, js)
         self.assertNotIn("fetch(", js)
         self.assertNotIn("XMLHttpRequest", js)
 

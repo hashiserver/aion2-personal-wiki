@@ -9,16 +9,19 @@
 <meta name="theme-color" content="#f3f6f8">
 <style>html{background:#f3f6f8;scrollbar-gutter:stable}body{margin:0}</style>
 <link rel="stylesheet" href="{{CSS}}">
+<script type="speculationrules">
+{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"selector_matches":":is(.primary-nav, .gear-subnav) a:not([aria-current='page'])"}]},"eagerness":"moderate"}]}
+</script>
 </head>
 <body class="{{PAGE_CLASS}}">
-<a class="skip-link" href="#main">本文へ移動</a>
-<header class="site-header"><div><a class="brand" href="{{HOME}}">AION2 <span>ポータル</span></a><nav class="primary-nav" aria-label="主要ページ">{{QUICK_NAV}}</nav></div></header>
+<a class="skip-link" href="#page-title">本文へ移動</a>
+<header class="site-header"><div><a class="brand" href="{{HOME}}">AION2 <span>ポータル</span></a><nav class="primary-nav" aria-label="主要ページ">{{NAV}}</nav></div></header>
 <main id="main">
-<div class="page-heading"><p class="page-meta">日本・グローバル版 <span>確認日 {{DATE}} JST</span></p><h1>{{TITLE}}</h1><p class="site-notice">AIで公開情報を整理した、個人利用向けの非公式ポータルです。</p></div>
+<div class="page-heading"><h1 id="page-title" tabindex="-1">{{TITLE}}</h1><p class="page-meta">日本・グローバル版 <span>確認日 {{DATE}} JST</span></p></div>
 {{BODY}}
 {{SOURCES}}
 </main>
-<footer><a href="{{ABOUT}}">このサイトについて・情報源の方針</a><p>非公式の個人用メモです。NCSOFTとは関係ありません。</p></footer>
+<footer><a href="{{ABOUT}}">このサイトについて・情報源の方針</a><p>AIで公開情報を整理した、個人利用向けの非公式ポータルです。NCSOFTとは関係ありません。</p></footer>
 {{PAGE_SCRIPTS}}
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Only loaded by /pets/. No backend calls and no account tracking. */
+/* Only loaded on the pet purchase page. */
 (() => {
   "use strict";
 
@@ -8,146 +8,156 @@
   const storageKey = "aion2-pet-completed-v1";
   const pendingBody = root.querySelector("#pet-pending-body");
   const completedBody = root.querySelector("#pet-completed-body");
+  const pendingTable = pendingBody.closest(".pet-table-wrap");
+  const completedTable = completedBody.closest(".pet-table-wrap");
   const search = root.querySelector("#pet-search");
   const group = root.querySelector("#pet-group");
   const genus = root.querySelector("#pet-genus");
   const pendingCount = root.querySelector("#pet-pending-count");
   const doneCount = root.querySelector("#pet-done-count");
   const doneSummary = root.querySelector("#pet-done-summary");
+  const completedSummary = root.querySelector("#pet-completed-summary");
+  const completedPanel = root.querySelector("#pet-completed-panel");
+  const completedLink = root.querySelector("#pet-completed-link");
   const empty = root.querySelector("#pet-empty");
   const doneEmpty = root.querySelector("#pet-done-empty");
+  const results = root.querySelector("#pet-results");
   const status = root.querySelector("#pet-action-status");
   const reset = root.querySelector("#pet-reset");
-  const rows = Array.from(root.querySelectorAll("tr.pet-row"));
   let storageAvailable = true;
+
+  function normalize(value) {
+    return value.normalize("NFKC").toLowerCase()
+      .replace(/[ァ-ヶ]/g, (char) => String.fromCharCode(char.charCodeAt(0) - 0x60))
+      .replace(/\s+/g, "");
+  }
+
+  const pets = Array.from(root.querySelectorAll(".pet-row"), (row) => ({
+    row,
+    input: row.querySelector(".pet-done-input"),
+    key: row.dataset.key,
+    name: row.dataset.name,
+    groups: row.dataset.groups.split(" "),
+    genus: row.dataset.genus,
+    searchText: [row.dataset.name, row.dataset.reading, row.dataset.key].map(normalize),
+  }));
 
   function readCompleted() {
     try {
       const value = JSON.parse(localStorage.getItem(storageKey) || "[]");
-      if (!Array.isArray(value)) return new Set();
-      return new Set(value.filter((key) => typeof key === "string"));
-    } catch (_error) {
+      return new Set(Array.isArray(value) ? value.filter((key) => typeof key === "string") : []);
+    } catch {
       storageAvailable = false;
+      status.textContent = "保存先にアクセスできません。このタブを閉じるとチェックが失われる場合があります。";
       return new Set();
     }
   }
 
   const completed = readCompleted();
-  if (!storageAvailable) {
-    status.textContent = "保存先にアクセスできません。このタブを閉じるとチェックが失われる場合があります。";
-  }
-
-  function checkbox(row) {
-    return row.querySelector("input.pet-done-input");
-  }
-
-  function updateLabel(row) {
-    checkbox(row).setAttribute(
-      "aria-label",
-      row.dataset.name + (checkbox(row).checked ? "の完了を解除する" : "を完了済みにする")
-    );
-  }
-
-  function matchesFilters(row) {
-    const phrase = search.value.trim().toLocaleLowerCase();
-    const matchesName = !phrase || [row.dataset.name, row.dataset.key]
-      .some((name) => name.toLocaleLowerCase().includes(phrase));
-    const matchesGroup = group.value === "all" ||
-      row.dataset.groups.split(" ").includes(group.value);
-    const matchesGenus = genus.value === "all" || row.dataset.genus === genus.value;
-    return matchesName && matchesGroup && matchesGenus;
-  }
-
-  function repaint() {
-    let pending = 0;
-    let finished = 0;
-    let visiblePending = 0;
-    let visibleDone = 0;
-
-    rows.forEach((row) => {
-      const input = checkbox(row);
-      const isDone = input.checked;
-      row.classList.toggle("is-done", isDone);
-      const target = isDone ? completedBody : pendingBody;
-      target.appendChild(row);
-      row.hidden = !matchesFilters(row);
-      if (isDone) {
-        finished++;
-        if (!row.hidden) visibleDone++;
-      } else {
-        pending++;
-        if (!row.hidden) visiblePending++;
-      }
-      updateLabel(row);
-    });
-
-    // Re-checking a row restores its original gojuon order rather than
-    // leaving it at the end of the list.
-    [pendingBody, completedBody].forEach((body) => {
-      Array.from(body.children)
-        .sort((a, b) => Number(a.dataset.order) - Number(b.dataset.order))
-        .forEach((row) => body.appendChild(row));
-    });
-
-    pendingCount.textContent = String(pending);
-    doneCount.textContent = String(finished);
-    doneSummary.textContent = String(finished);
-    empty.hidden = visiblePending !== 0;
-    doneEmpty.hidden = visibleDone !== 0;
-    reset.disabled = finished === 0;
-  }
 
   function save() {
     if (!storageAvailable) return;
     try {
       localStorage.setItem(storageKey, JSON.stringify(Array.from(completed)));
-    } catch (_error) {
+    } catch {
       storageAvailable = false;
       status.textContent = "ブラウザへの保存に失敗しました。チェックはこの画面内だけに保持されています。";
     }
   }
 
-  rows.forEach((row) => {
-    checkbox(row).checked = completed.has(row.dataset.key);
-  });
+  function updateTotals() {
+    const finished = completedBody.rows.length;
+    pendingCount.textContent = String(pendingBody.rows.length);
+    doneCount.textContent = String(finished);
+    doneSummary.textContent = String(finished);
+    completedLink.hidden = finished === 0;
+    reset.disabled = completed.size === 0;
+  }
+
+  function applyFilters() {
+    const phrase = normalize(search.value);
+    const selectedGroup = group.value;
+    const selectedGenus = genus.value;
+    const filtering = phrase || selectedGroup !== "all" || selectedGenus !== "all";
+    let visiblePending = 0;
+    let visibleDone = 0;
+    for (const pet of pets) {
+      const visible = (!phrase || pet.searchText.some((text) => text.includes(phrase))) &&
+        (selectedGroup === "all" || pet.groups.includes(selectedGroup)) &&
+        (selectedGenus === "all" || selectedGenus === pet.genus);
+      if (pet.row.hidden === visible) pet.row.hidden = !visible;
+      if (visible) {
+        if (pet.input.checked) visibleDone++;
+        else visiblePending++;
+      }
+    }
+
+    pendingTable.hidden = visiblePending === 0;
+    completedTable.hidden = visibleDone === 0;
+    empty.hidden = visiblePending !== 0;
+    doneEmpty.hidden = visibleDone !== 0;
+    const doneMessage = completedBody.rows.length
+      ? "条件に一致する完了済みのペットはありません。"
+      : "まだ完了済みのペットはありません。";
+    if (doneEmpty.textContent !== doneMessage) doneEmpty.textContent = doneMessage;
+    const message = filtering ? `表示中 未完了 ${visiblePending}件・完了 ${visibleDone}件` : "";
+    if (results.textContent !== message) results.textContent = message;
+  }
+
+  for (const pet of pets) {
+    pet.input.checked = completed.has(pet.key);
+    if (pet.input.checked) completedBody.append(pet.row);
+  }
+  updateTotals();
+  applyFilters();
 
   root.addEventListener("change", (event) => {
-    const target = event.target;
-    if (!(target instanceof HTMLInputElement) || !target.classList.contains("pet-done-input")) {
-      return;
-    }
-    const row = target.closest("tr.pet-row");
-    if (!row) return;
-    if (target.checked) {
-      completed.add(row.dataset.key);
-    } else {
-      completed.delete(row.dataset.key);
-    }
+    if (!event.target.matches(".pet-done-input")) return;
+    const index = pets.findIndex((pet) => pet.input === event.target);
+    const pet = pets[index];
+    const checked = pet.input.checked;
+    if (checked) completed.add(pet.key);
+    else completed.delete(pet.key);
+
+    const hadFocus = document.activeElement === pet.input;
+    const nextFocus = pets.find((candidate, position) => position > index &&
+      candidate.input.checked !== checked && !candidate.row.hidden) ??
+      pets.findLast((candidate, position) => position < index &&
+        candidate.input.checked !== checked && !candidate.row.hidden);
+    const target = checked ? completedBody : pendingBody;
+    const nextPet = pets.find((candidate, position) => position > index && candidate.row.parentElement === target);
+    target.insertBefore(pet.row, nextPet?.row ?? null);
+    updateTotals();
+    applyFilters();
+    if (hadFocus) (nextFocus?.input ?? (checked ? search : completedSummary)).focus();
     save();
-    repaint();
     if (storageAvailable) {
-      status.textContent = row.dataset.name + (target.checked
-        ? "を完了にしました。下の「完了済み」から戻せます。"
-        : "を未完了に戻しました。");
+      status.textContent = pet.name + (checked ? "を完了にしました。" : "を未完了に戻しました。");
     }
   });
 
-  search.addEventListener("input", repaint);
-  [group, genus].forEach((control) => {
-    control.addEventListener("change", repaint);
+  search.addEventListener("input", applyFilters);
+  group.addEventListener("change", applyFilters);
+  genus.addEventListener("change", applyFilters);
+
+  completedLink.addEventListener("click", () => {
+    completedPanel.open = true;
   });
 
   reset.addEventListener("click", () => {
-    if (completed.size === 0) return;
-    if (!window.confirm("このブラウザで保存したペットの完了チェックをすべて解除しますか？")) {
-      return;
-    }
-    completed.clear();
-    rows.forEach((row) => { checkbox(row).checked = false; });
-    save();
-    repaint();
-    if (storageAvailable) status.textContent = "全て未完了に戻しました。";
-  });
+    if (!completed.size || !window.confirm("このブラウザで保存したペットの完了チェックをすべて解除しますか？")) return;
 
-  repaint();
+    completed.clear();
+    const rows = document.createDocumentFragment();
+    for (const pet of pets) {
+      pet.input.checked = false;
+      rows.append(pet.row);
+    }
+    pendingBody.append(rows);
+    search.focus();
+    updateTotals();
+    applyFilters();
+    save();
+    if (storageAvailable) status.textContent = "すべて未完了に戻しました。";
+  });
 })();
