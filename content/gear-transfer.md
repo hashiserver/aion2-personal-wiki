@@ -1,6 +1,6 @@
-{"slug":"gear/transfer","title":"装備強化・継承：良オプションを残す手順","checked_at":"2026-11-06","source_ids":["gear-transfer-tw-official","gear-transfer-global-guide","gear-transfer-jp-cost","gear-transfer-jp-soul","gear-transfer-global-cost-calculator","gear-transfer-conflict-guide","gear-global-roll-pool"]}
+{"slug":"gear/transfer","title":"装備強化・継承：良オプションを残す手順","checked_at":"2026-11-19","source_ids":["gear-transfer-global-guide","gear-transfer-jp-cost","gear-transfer-jp-soul","gear-transfer-global-cost-calculator","gear-global-roll-pool"]}
 
-**結論：同じ部位の低ILの唯一（金）装備に良い通常の魂刻印が付いていれば、そこを継承元として強化し、上位の唯一装備に移すことができます。** 一方、良い魂刻印が付いているのが**上位の継承先**なら、普通に継承するとその良い効果が置き換わるため要注意です。[[source:gear-transfer-jp-soul]][[source:gear-transfer-tw-official]]
+**結論：同じ部位の低ILの唯一（金）装備に良い通常の魂刻印が付いていれば、そこを継承元として強化し、上位の唯一装備に移すことができます。** 一方、良い魂刻印が付いているのが**上位の継承先**なら、普通に継承するとその良い効果が置き換わるため要注意です。[[source:gear-transfer-jp-soul]][[source:gear-transfer-global-guide]]
 
 ## まず判断：どちらに良オプションがある？
 
@@ -53,7 +53,7 @@
 | 潜在力 | **移らない** | 乗り換えを見込んで投資する |
 | 継承元の装備本体 | **消費される** | 後から取り戻せないため確認必須 |
 
-魂刻印の枠数が異なる場合、**継承元が多いとランダムな一部だけが移り、継承先が多いと余った枠には継承先のラインが残る**ことがあります。台湾公式でもこの処理が説明されています。[[source:gear-transfer-tw-official]][[source:gear-transfer-global-guide]]
+魂刻印の枠数が異なる場合、**継承元が多いとランダムな一部だけが移り、継承先が多いと余った枠には継承先のラインが残る**ことがあります。実行前に継承プレビューで結果を確認してください。[[source:gear-transfer-global-guide]]
 
 ## 実行前のおすすめ手順
 
@@ -64,15 +64,9 @@
 5. **継承のプレビューを確認**：残る魂刻印4項目、数値、強化・突破段階、必要な継承石・ギーナ、成功率、対象・回数条件を全部確認。ひとつでも予想と違えば実行しない。
 6. **継承後に仕上げる**：最後に調律や魂の書で仕上げ、魂結束、魔石・神石・潜在力などの移らない育成を行う。[[source:gear-transfer-jp-cost]][[source:gear-transfer-global-guide]]
 
-## 地域・仕様差の注意
 
-| 情報源・対象 | 内容 | 扱い |
-|---|---|---|
-| 台湾公式（2026-10-13更新） | 同部位・同等級、通常魂刻印の継承、強化失敗補正、成功率100%・回数制限なし。さらに唯一→英雄の上級継承も記載 | **台湾版公式**。日本・Globalにそのまま適用しない |
-| Global第三者ガイド（2026-10-28更新） | 唯一装備の継承石1〜2個、成功率100%、ギーナ不要と案内 | **Globalの第三者記載**。公式確認済みではない |
-| 別の日本語攻略 | 成功率やシーズン回数制限について異なる説明あり | **矛盾あり**。現行ゲーム画面の表示を優先 |
-| 魂魄武器・ガーダーの特殊ルート | 固定魂刻印からの継承なら先の良オプを保持するという攻略例 | **第三者の実践例**。実行前のプレビュー必須 |
+## 必要素材と適用条件
 
-さらに、台湾版で案内される**唯一→英雄の上級継承は日本・Global版で利用できると確認できていません**。区別してください。[[source:gear-transfer-tw-official]][[source:gear-transfer-global-guide]][[source:gear-transfer-conflict-guide]]
+Global版の攻略では同じ部位の唯一装備同士の継承に、継承石を使うと案内されています。必要素材・成功率・追加枠の扱いは、Asiaのゲーム内プレビューで確認してください。[[source:gear-transfer-global-guide]]
 
-関連：[クラス別の4オプション厳選表](/gear/)／[チャンターの厳選表](/gear/chanter/)／[IL育成ロードマップ](/progression/)。
+関連：[各職の装備厳選](/gear/)／[チャンターの厳選表](/gear/chanter/)／[IL育成ロードマップ](/progression/)。

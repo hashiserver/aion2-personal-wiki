@@ -187,21 +187,15 @@ class BuildTests(unittest.TestCase):
         for slug, name in expected.items():
             self.assertIn(f'[{name}](/gear/{slug}/)', overview)
 
-    def test_gear_class_pages_have_all_original_thirteen_slots(self):
-        classes = ['chanter', 'gladiator', 'templar', 'assassin', 'ranger',
-                   'sorcerer', 'spiritmaster', 'cleric']
+    def test_chanter_asia_table_preserves_all_thirteen_slots(self):
         slots = ['武器', 'ガーダー', 'ヘルム', 'ショルダー', 'トップス',
                  'グローブ', 'ボトムス', 'シューズ', 'マント',
                  'ネックレス', 'イヤリング×2', 'リング×2', 'ブレスレット']
-        for name in classes:
-            with self.subTest(klass=name):
-                data = (ROOT / f'content/gear-{name}.md').read_text(encoding='utf-8')
-                ranked_table = data.split('| 部位 | ① | ② | ③ | ④ |', 1)[1].split('\n\n', 1)[0]
-                for slot in slots:
-                    self.assertIn('| ' + slot + ' |', ranked_table)
-                self.assertEqual(sum(line.startswith('| ') and
-                        any(line.startswith('| ' + slot + ' |') for slot in slots)
-                        for line in ranked_table.splitlines()), 13)
+        data = (ROOT / 'content/gear-chanter.md').read_text(encoding='utf-8')
+        table = data.split('| 部位 | 優先 | 妥協候補 |', 1)[1].split('\n\n', 1)[0]
+        self.assertEqual(re.findall(r'^\| ([^|]+?) \|', table, re.MULTILINE), slots)
+        for guide in (ROOT / 'content').glob('gear-*.md'):
+            self.assertNotIn('| 部位 | ① | ② | ③ | ④ |', guide.read_text(encoding='utf-8'))
 
     def test_gear_transfer_guide_subnav_is_linked(self):
         self.article('index.md')
@@ -224,11 +218,10 @@ class BuildTests(unittest.TestCase):
         meta = json.loads(data.splitlines()[0])
         self.assertEqual(meta['slug'], 'gear/transfer')
         for term in ('継承元', '継承先', 'IL36', 'IL86', '魂魄',
-                     '上書き', '魂結束', '潜在力', '魔石', '台湾公式',
+                     '上書き', '魂結束', '潜在力', '魔石', 'Asiaのゲーム内プレビュー',
                      'ゲーム', '/gear/chanter/'):
             with self.subTest(term=term):
                 self.assertIn(term, data)
-        self.assertIn('[[source:gear-transfer-tw-official]]', data)
         self.assertIn('[[source:gear-transfer-jp-cost]]', data)
         self.assertIn('[[source:gear-transfer-global-guide]]', data)
 
@@ -253,7 +246,7 @@ class BuildTests(unittest.TestCase):
                           '2,200', '2,500', '2,600', '2,700', '2,800', '3,000'):
             with self.subTest(il=threshold):
                 self.assertIn(threshold, text)
-        self.assertIn('日本・Asia', text)
+        self.assertIn('Global版・Asia', text)
         self.assertIn('[[source:global-patch-2026-11-04-official]]', text)
 
     def test_changed_css_has_new_cache_key_and_old_assets_are_removed(self):

@@ -10,7 +10,8 @@
       "period": "11/18定期メンテナンス後",
       "description": "ルドラ［簡単］追加。AP3倍は対象コンテンツのみ。",
       "deadline": "ルドラとAPの詳細は公式パッチノートを参照。",
-      "short_end": "11/18公式更新"
+      "short_end": "11/18公式更新",
+      "coverage": "asia"
     },
     {
       "source_id": "global-patch-2026-11-18-jp",
@@ -18,11 +19,11 @@
       "title": "アビスポイント3倍",
       "starts_on": "2026-11-18",
       "ends_on": "2026-12-16",
-      "period": "11/18定期メンテナンス後〜12/16定期メンテナンス前（日本語告知）。英語告知では12/16 PST／12/17 CET。",
+      "period": "11/18定期メンテナンス後〜12/16定期メンテナンス前",
       "description": "混沌のエレシュランタ表層のモンスター、戦場の勝利参加報酬・勝利ミッション報酬でAPが3倍。",
-      "deadline": "表層のPvPで得るAPは対象外。獲得上限は通常どおり。終了時刻は地域別の公式メンテナンス告知を確認。",
-      "short_end": "12/16 メンテ前（日本語告知）",
-      "status_basis": "日本語告知"
+      "deadline": "表層のPvPで得るAPは対象外。獲得上限は通常どおり。開始・終了時刻はAsiaの公式メンテナンス告知を確認。",
+      "short_end": "12/16 定期メンテナンス前",
+      "coverage": "asia"
     },
     {
       "source_id": "pet-shop-award-coupon",
@@ -35,7 +36,8 @@
       "period": "2026/11/18 18:00〜2027/3/3 16:00 JST",
       "description": "THANKSFROMAION2で成長のペット箱100個、調律石（唯一）10個などを受取。",
       "deadline": "全サーバー対象、1アカウント1回。ゲーム内の設定 → その他 → アカウント → クーポン登録から入力。",
-      "short_end": "2027/3/3 16:00 JSTまで"
+      "short_end": "2027/3/3 16:00 JSTまで",
+      "coverage": "global-all"
     },
     {
       "source_id": "global-patch-2026-11-11-official",
@@ -43,54 +45,47 @@
       "title": "11/11公式更新：ルドラ・遠征Hard・週次報酬",
       "starts_on": "2026-11-11",
       "ends_on": "2026-11-11",
-      "period": "11/11定期メンテ後の更新（日本語Global公式）。個別適用時刻・ビルド番号未公表",
+      "period": "11/11定期メンテナンス後の更新",
       "description": "ルドラ制限120分、報酬第5グループ30→100%。炎の神殿・獰猛な角岩窟Hard追加（IL2,800）。調律石週最大3個、使命AP2,500。詳細はイベント記事。",
       "deadline": "11/4時点のルドラ60分の記載は旧仕様。実際の適用状態はゲーム内確認。",
-      "short_end": "11/11公式更新"
-    },
-    {
-      "source_id": "global-platform-maintenance-2026-11-10-official",
-      "category": "メンテナンス",
-      "title": "11/10 Globalアカウント管理サービス保守",
-      "starts_on": "2026-11-10",
-      "ends_on": "2026-11-11",
-      "period": "11/11 05:00〜08:40 JST（予定・3時間40分）",
-      "description": "アカウント作成・管理、Steam/PURPLE新規登録などが対象。ゲームサーバーメンテナンスとは別。完了未確認。",
-      "deadline": "実際の完了は未確認。",
-      "short_end": "11/11 08:40 JST予定"
+      "short_end": "11/11公式更新",
+      "coverage": "asia"
     },
     {
       "source_id": "global-maintenance-2026-11-11-official",
       "category": "メンテナンス",
-      "title": "11/11 Global定期メンテナンス（公式予告）",
+      "title": "11/11 定期メンテナンス",
       "starts_on": "2026-11-11",
       "ends_on": "2026-11-11",
-      "period": "11/11 15:30〜20:00 JST（予定・4時間30分）",
-      "description": "Global公式Steam：11/10 22:30 PST／11/11 07:30 CET開始予定。ゲームサーバーが対象。更新詳細は後日公表。日本・Asia固有の適用版、完了時刻は未確認。",
-      "deadline": "予定は変更される可能性あり。公式の続報を優先。",
-      "short_end": "11/11 20:00 JST予定"
+      "period": "11/11 15:30〜20:00 JST",
+      "description": "Asiaを含む全サーバーが対象。20:00 JSTに完了。",
+      "deadline": "詳細は日本語の公式告知を参照。",
+      "short_end": "11/11 20:00 JST完了",
+      "coverage": "asia"
     },
     {
       "source_id": "global-patch-2026-11-04-official",
       "category": "アップデート",
-      "title": "11/4 Global更新：ルドラ・混沌の外部レスハンタ",
+      "title": "11/4公式更新：ルドラ・混沌のエレシュランタ表層",
       "starts_on": "2026-11-04",
       "ends_on": "2026-11-04",
-      "period": "11/3 PST／11/4 CETパッチ（公式告知）。実際のAsia適用時刻・ビルド番号未確認",
-      "description": "ルドラNormal IL2,800／Hard IL3,000。Lv45から能力標準化PvPの混沌の外部レスハンタ（週3時間）。要塞戦は木・土の週2回、アビス回廊AP+50%。詳細はイベント記事と公式を参照。",
+      "period": "11/4定期メンテナンス後の更新",
+      "description": "ルドラ［普通］IL2,800・［難しい］IL3,000と、混沌のエレシュランタ表層を追加。",
       "deadline": "実装状況は公式とゲーム内を優先。HotfixはSteam/PURPLEで更新が必要。",
-      "short_end": "11/4 Globalパッチ"
+      "short_end": "11/4 Globalパッチ",
+      "coverage": "asia"
     },
     {
       "source_id": "global-maintenance-2026-11-04-official",
       "category": "メンテナンス",
-      "title": "11/4 定期メンテナンス（公式予告）",
+      "title": "11/4 定期メンテナンス",
       "starts_on": "2026-11-04",
       "ends_on": "2026-11-04",
-      "period": "11/4 15:30〜18:30 JST（予定・3時間）",
-      "description": "公式告知の予定時間は11/4 15:30〜18:30 JST。11/4 Globalパッチノート・Hotfixは別途公表。実際の終了時刻・Asia個別適用ビルドは未確認。",
-      "deadline": "終了予定は延長・前倒しの可能性あり。メンテ開始・完了はまだ確認できていません。",
-      "short_end": "11/4 18:30 JST予定"
+      "period": "11/4 15:30〜18:30 JST",
+      "description": "Asiaを含む全サーバーが対象。18:30 JSTに完了。",
+      "deadline": "詳細は日本語の公式告知を参照。",
+      "short_end": "11/4 18:30 JST完了",
+      "coverage": "asia"
     },
     {
       "source_id": "halloween-official",
@@ -101,7 +96,8 @@
       "period": "10/14 メンテナンス後 → 11/4 メンテナンス前",
       "description": "出席と週のミッションでコインを集め、各地域の商人で交換。普段の周回と一緒に進めよう。",
       "deadline": "コインはイベント終了後に削除。交換は期間内に。",
-      "short_end": "11/4 メンテナンス前まで"
+      "short_end": "11/4 メンテナンス前まで",
+      "coverage": "asia"
     },
     {
       "source_id": "attendance-official",
@@ -114,7 +110,8 @@
       "deadline": "開催中でも受取条件・残り日数をゲーム内で確認。",
       "short_end": "12/16 15:30 JSTまで",
       "starts_at": "2026-09-30T22:30:00+09:00",
-      "ends_at": "2026-12-16T15:30:00+09:00"
+      "ends_at": "2026-12-16T15:30:00+09:00",
+      "coverage": "asia"
     },
     {
       "source_id": "launch-rewards-current",
@@ -127,84 +124,65 @@
       "deadline": "報酬受取：12/9 15:30 JSTまで。",
       "short_end": "12/9 15:30 JSTまで",
       "ends_at": "2026-12-09T15:30:00+09:00",
-      "action": "ゲーム内郵便で乗り物2種を受取。対象アカウントの作成は12/2 15:30 JSTまで。"
+      "action": "ゲーム内郵便で乗り物2種を受取。対象アカウントの作成は12/2 15:30 JSTまで。",
+      "coverage": "asia"
     },
     {
-      "source_id": "rise-challenge-official",
-      "category": "期間限定",
-      "title": "Rise to the Challenge（挑戦の時）",
-      "starts_on": "2026-10-21",
-      "ends_on": "2026-12-16",
-      "period": "10/21 メンテ後〜12/16 メンテ前（欧州CEST/CET表記。北米は10/20〜12/15）",
-      "description": "ショップ＞Wind Breeze Merchantsで期間限定の復活の精霊石を購入可能。25,000ギーナで30個、次の段階は50,000ギーナで30個（各サーバー週単位）。",
-      "deadline": "期間限定品は12/16 09:00 CETに削除予定。自分のサーバーとゲーム内表記を優先。",
-      "short_end": "12/16 メンテ前（欧州表記）",
-      "status_basis": "欧州告知"
-    },
-    {
-      "source_id": "global-ludra-official",
+      "source_id": "global-patch-2026-11-04-official",
       "category": "期間限定",
       "title": "オードエネルギー支援（ルドラ準備）",
       "starts_on": "2026-10-28",
       "ends_on": "2026-11-11",
-      "period": "10/28 メンテ後 → 11/11 メンテ前（欧州CET表記。北米は11/10まで）",
+      "period": "10/28定期メンテナンス後〜11/11定期メンテナンス前",
       "description": "期間中は毎日ログインし、ゲーム内郵便でオードエネルギー×4を受取。1アカウント1日1回。10/27のGlobal公式訂正（旧告知は×2・キャラ単位）。",
-      "deadline": "郵便は受信から7日で失効。日本・Asiaの実際の配布開始と受取可否はゲーム内を優先。",
-      "short_end": "11/11 メンテ前（欧州表記）",
-      "status_basis": "欧州告知"
+      "deadline": "郵便は受信から7日で失効。",
+      "short_end": "11/11 定期メンテナンス前",
+      "id": "global-ludra-official",
+      "coverage": "asia"
     },
     {
-      "source_id": "global-ludra-official",
+      "source_id": "global-patch-2026-11-04-official",
       "category": "期間限定",
-      "title": "ルドラ征服出席簿・Twitch Drops",
+      "title": "ルドラ討伐出席イベント",
       "starts_on": "2026-11-04",
       "ends_on": "2026-11-18",
-      "period": "11/4 15:00 → 11/18 08:59 CET（北米11/4 06:00 → 11/17 23:59 PST）",
-      "description": "出席簿は14日間で7日分の報酬。Twitch Dropsは視聴時間に応じた報酬。遠征・超越の対象ダンジョン討伐を集計するDaeva Bootcampも同期間。 10/30のGlobal公式改訂でTwitch Dropsは箱形式に集約（中身の獲得アイテムは変更なし）、最大14時間・10段階。",
-      "deadline": "出席簿は7日分を順に受取。日本・アジアサーバーの開催時刻・対象条件はゲーム内/公式を確認。",
-      "short_end": "11/18 16:59 JSTまで（告知時刻換算）",
+      "period": "11/4 23:00〜11/18 16:59 JST",
+      "description": "1日1回の出席チェックで報酬が1日分ずつ解放されます。",
+      "deadline": "対象の出席簿は11/18 16:59 JSTで終了。",
+      "short_end": "11/18 16:59 JSTまで",
       "starts_at": "2026-11-04T23:00:00+09:00",
       "ends_at": "2026-11-18T16:59:00+09:00",
-      "action": "7日分の出席報酬と、対象配信の視聴で獲得したTwitch Dropsを確認。"
+      "action": "ゲーム内の出席簿で7日分の報酬を受取。",
+      "id": "global-ludra-official-2",
+      "coverage": "asia"
     },
     {
-      "source_id": "global-ludra-official",
+      "source_id": "global-patch-2026-11-04-official",
       "category": "新コンテンツ",
       "title": "ルドラ討伐イベント",
       "starts_on": "2026-11-04",
       "ends_on": "2026-11-25",
-      "period": "11/4 メンテ後にルドラ開放。討伐イベントは11/25 メンテ前まで（欧州表記。北米は11/24まで）",
-      "description": "期間中に普通・難しいをクリアして称号を狙う。アジアを含む各地域の難しい先着20フォースには順位称号。",
-      "deadline": "［簡単］での称号条件は11/4のイベント告知で確認できない。日本・Asiaの終了時刻はゲーム内か地域の公式告知で確認。",
-      "short_end": "討伐イベント 11/25 メンテ前（欧州）",
-      "status_basis": "欧州告知"
+      "period": "11/4定期メンテナンス後〜11/25定期メンテナンス前",
+      "description": "普通・難しいをクリアして称号を獲得。Asiaで難しいを先着20フォースまでにクリアすると順位称号。",
+      "deadline": "対象難易度は普通・難しい。終了時刻はAsiaの公式メンテナンス告知を確認。",
+      "short_end": "11/25 定期メンテナンス前",
+      "id": "global-ludra-official-3",
+      "coverage": "asia"
     },
     {
-      "source_id": "global-halloween-twitch-2026-10-28-official",
+      "source_id": "asia-pass-2026-10-28",
       "category": "期間限定",
-      "title": "ハロウィン Twitch Drops",
-      "starts_on": "2026-10-28",
-      "ends_on": "2026-11-18",
-      "period": "10/28 10:00 PDT／18:00 CET → 11/3 23:59 PST／11/4 08:59 CET",
-      "description": "対象のAION2配信を累計1/2/4/6/8時間視聴。復活の精霊石×15、外見変更券、カスタマイズ券×3、オードエネルギー×4、Chubby Panda（頭装備）。Twitch連携・参加チャンネル・アジアアカウントの対象条件は公式で確認。",
-      "deadline": "獲得したDropsは11/17 23:59 PST／11/18 08:59 CETまでにTwitchのインベントリから受取。",
-      "short_end": "視聴11/4・受取11/18 16:59 JSTまで（告知時刻換算）",
-      "ends_at": "2026-11-18T16:59:00+09:00",
-      "action": "視聴で獲得したDropsをTwitchのインベントリから受取。"
-    },
-    {
-      "source_id": "global-pass-2026-10-28-official",
-      "category": "期間限定",
-      "title": "新ディーヴァパス：Prelude to Flight",
+      "title": "ディーヴァパス：飛翔の序章",
       "starts_on": "2026-10-28",
       "ends_on": "2026-12-02",
-      "period": "10/28 00:00 PDT／08:00 CET → 12/2 00:00 PST／09:00 CET",
+      "period": "販売：10/28 16:00〜12/2 16:00 JST（国内攻略による）",
       "description": "遠征・超越や採集・製作でパスEXPを獲得し、報酬を受け取る。",
-      "deadline": "公式の欧州・米州時刻表記。Asia固有の終了時刻は未確認。",
-      "short_end": "12/2 17:00 JST（欧州告知の換算）",
-      "status_basis": "欧州告知",
+      "deadline": "報酬の受取期限はゲーム内のパス画面で確認。",
+      "short_end": "販売：12/2 16:00 JSTまで（国内攻略）",
       "starts_at": "2026-10-28T16:00:00+09:00",
-      "ends_at": "2026-12-02T17:00:00+09:00"
+      "ends_at": "2026-12-02T16:00:00+09:00",
+      "id": "global-pass-2026-10-28-official",
+      "coverage": "asia"
     }
   ],
   "daily": [
@@ -295,50 +273,42 @@
     {
       "name": "グラディエーター",
       "leveling": "build-gladiator",
-      "pve": "pve-gladiator",
-      "alternative": "guide-gladiator"
+      "pve": "pve-gladiator"
     },
     {
       "name": "テンプラー",
       "leveling": "build-templar",
-      "pve": "pve-templar",
-      "alternative": "guide-templar"
+      "pve": "pve-templar"
     },
     {
       "name": "アサシン",
       "leveling": "build-assassin",
-      "pve": "pve-assassin",
-      "alternative": "guide-assassin"
+      "pve": "pve-assassin"
     },
     {
       "name": "レンジャー",
       "leveling": "build-ranger",
-      "pve": "pve-ranger",
-      "alternative": "guide-ranger"
+      "pve": "pve-ranger"
     },
     {
       "name": "チャンター",
       "leveling": "build-chanter",
-      "pve": "pve-chanter",
-      "alternative": "guide-chanter"
+      "pve": "pve-chanter"
     },
     {
       "name": "クレリック",
       "leveling": "build-cleric",
-      "pve": "pve-cleric",
-      "alternative": "guide-cleric"
+      "pve": "pve-cleric"
     },
     {
       "name": "ソーサラー",
       "leveling": "build-sorcerer",
-      "pve": "pve-sorcerer",
-      "alternative": "guide-sorcerer"
+      "pve": "pve-sorcerer"
     },
     {
       "name": "スピリットマスター",
       "leveling": "build-spiritmaster",
-      "pve": "pve-spiritmaster",
-      "alternative": "guide-spiritmaster"
+      "pve": "pve-spiritmaster"
     }
   ],
   "guides": [

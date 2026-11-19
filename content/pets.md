@@ -1,6 +1,6 @@
-{"slug":"pets","title":"ショップ購入ペット優先表","checked_at":"2026-11-19","source_ids":["pet-shop-core-global","pet-shop-habitat","pet-shop-dungeon","pet-shop-verteron","pet-shop-altgard","pet-shop-outer","pet-shop-client-pool","pet-shop-merchant-jp","pet-shop-build-note","pet-shop-understanding","pet-shop-award-coupon","pet-elite-guardit","pet-elite-klaw"]}
+{"slug":"pets","title":"ショップ購入ペット優先表","checked_at":"2026-11-19","source_ids":["pet-shop-core-global","pet-shop-asia-map","pet-shop-merchant-jp","pet-shop-build-note","pet-shop-understanding","pet-shop-award-coupon","pet-elite-guardit","pet-elite-klaw"]}
 
-黒雲貿易団（ショップ H → スペシャル → ペット）の魔族向け一覧です。**最優先は「購入・箱中心」の29種**。[[source:pet-shop-core-global]]
+Global版・Asiaの黒雲貿易団（ショップ H → スペシャル → ペット）の魔族向け一覧です。**最優先は「購入・箱中心」の29種**。[[source:pet-shop-core-global]]
 
 > **購入前に成長のペット箱100個を受け取る。** クーポン `THANKSFROMAION2` は2027年3月3日16:00（JST）まで。[入力手順を見る](/events/#event-pet-shop-award-coupon) [[source:pet-shop-award-coupon]]
 
@@ -11,18 +11,18 @@
 | 入手区分 | ショップでの判断 |
 |---|---|
 | 購入・箱中心（29種） | 討伐で魂を得る経路が確認されていない。未完了なら優先。成長のペット箱なども活用。 |
-| ベルテロン限定（28種） | 討伐で確認できた入手先はベルテロン。時空の亀裂に行かない場合に買う。ネームド各1地点の精鋭ガーディット・精鋭ニュートは特に優先。個別DBで討伐先を確認できます。 |
+| ベルテロン（28種） | 討伐で確認できた入手先はベルテロン。時空の亀裂に行かない場合に買う。ネームド各1地点の精鋭ガーディット・精鋭ニュートは特に優先。個別DBで討伐先を確認できます。 |
 | ID産（14種） | 対象の討伐入手先はID。うち1周1体の7種は、普段回らないなら購入優先。複数出る対象は周回分を先に回収。 |
-| 共通ID・アビスあり（10種） | ベルテロンに加えて両陣営から行ける入手先あり。通う予定のID・アビスで先に集める。 |
-| 魔族側の狩場（11種） | アルトガルドでの討伐を優先。ビロータ薬草採り（4地点）、灰色のアグリント（8地点）、スライム（10地点）は周回しにくい場合の購入候補。 |
+| 別の入手先を要確認（10種） | ベルテロンに加え、共通ID・アビスでも入手できるかゲーム内の獲得先を確認。 |
+| 魔族側の狩場（11種） | アルトガルドでの討伐を優先。ビロータ薬草採り、灰色のアグリント、スライムは討伐対象が少なく、狩りづらい場合の購入候補。 |
 
-「狩場少数」は、個別に確認できた**湧き10地点以下**のペットに付けています。たとえばビベルはアルトガルドの掲載エリアが1件でも、対象モンスターの湧き地点は71あります。地点数はクライアントデータ上の数で、同時出現数・復活速度・ドロップ率とは別です。日本サーバーの実測は未確認です。[[source:pet-shop-verteron]][[source:pet-shop-altgard]]
+「狩場少数」は、日本語攻略・地図資料で討伐対象が少ないと確認できたペットに付けています。[[source:pet-shop-core-global]][[source:pet-shop-asia-map]]
 
-11月4日更新で一部ペットの魂が遠征・超越で直接入手できるようになりました。**火炎石の守護像・火炎バルゲスト・最上級火の精霊**は炎の神殿で確認できるため、ID産に含めています。[[source:pet-shop-build-note]][[source:pet-shop-dungeon]]
+11月4日更新で一部ペットの魂が遠征・超越で直接入手できるようになりました。**火炎石の守護像・火炎バルゲスト・最上級火の精霊**は炎の神殿で確認できるため、ID産に含めています。[[source:pet-shop-build-note]][[source:pet-shop-core-global]]
 
 **戦闘力を上げたいなら、未登録のペットを先にLv1へ。** 種族理解度経験値は新規登録で500、Lv2・Lv3で各250。登録後の購入は1回につき魂5個。未登録から購入だけでLv3にする場合は計21回、店頭価格の確認例（1回5万〜9万ギーナ）で約105万〜189万ギーナです。[[source:pet-shop-understanding]][[source:pet-shop-core-global]]
 
-黒雲貿易団は1時間ごとに自動更新され、手動更新は回数に応じて費用が上がります。品ぞろえと価格はゲーム内で確認できます。[[source:pet-shop-client-pool]][[source:pet-shop-merchant-jp]]
+黒雲貿易団は1時間ごとに自動更新され、手動更新は回数に応じて費用が上がります。品ぞろえと価格はゲーム内で確認できます。[[source:pet-shop-core-global]][[source:pet-shop-merchant-jp]]
 
 ## 完了チェックの目安
 

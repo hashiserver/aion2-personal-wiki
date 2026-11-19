@@ -2,6 +2,7 @@
 from collections import Counter
 from datetime import date, datetime, time, timedelta
 from html import escape
+import re
 from zoneinfo import ZoneInfo
 
 
@@ -34,11 +35,18 @@ def event_schedule(event):
 
 def scheduled_events(data):
     ids = Counter()
+    used_anchors = set()
     for item in data.get('events', []):
+        if item.get('coverage') not in ('asia', 'global-all'):
+            raise ValueError(f'event coverage must include Global Asia: {item["title"]}')
         sid = item['source_id']
         ids[sid] += 1
         suffix = f'-{ids[sid]}' if ids[sid] > 1 else ''
-        yield item, 'event-' + sid + suffix
+        anchor = 'event-' + item.get('id', sid + suffix)
+        if not re.fullmatch(r'event-[a-z0-9]+(?:-[a-z0-9]+)*', anchor) or anchor in used_anchors:
+            raise ValueError(f'invalid or duplicate event anchor: {anchor}')
+        used_anchors.add(anchor)
+        yield item, anchor
 
 
 def source_tag(sid, sources, declared_ids):
@@ -148,16 +156,12 @@ def render_links(data, sources, declared_ids):
         other_section = ('<section id="builds"><h2>職業別ビルド</h2><ul class="class-list">' +
                          ''.join(class_row(i) for i in classes) + '</ul></section>')
 
-    alternatives = ''.join(link(i['alternative'], i['name']) for i in classes)
     tools = []
     for item in data.get('tools', []):
         sid = item['source_id']
         tools.append(f'<li><div><h3>{link(sid,item["title"])}</h3><p>{e(item["description"])}</p></div>'
                      f'{source_tag(sid,sources,declared_ids)}</li>')
     return (featured_section + other_section +
-            f'<details class="guide-note" id="guide-notes"><summary>ビルド構成や海外ガイドを比較</summary>'
-            '<p>追加ポイントや装備の有無で最適な配分は変わります。当サイトは最適DPSを実測したものではありません。</p>'
-            f'<div class="resource-pairs">{alternatives}</div></details>'
             f'<section id="tools"><h2>マップ・計画ツール</h2><ul class="resource-list">{"".join(tools)}</ul></section>'
             '<details class="guide-note" id="guides"><summary>初心者向け攻略を探す</summary>'
             '<p>カバン整理・強化・ディーヴァニオンの詳細は攻略サイトで確認できます。</p>'
@@ -203,8 +207,8 @@ def render_events(data, sources, declared_ids):
                 f'<div class="event-list">{"".join(card for _, card in sorted(items))}</div>'
                 f'<p class="event-empty" hidden>{empty}</p></section>')
 
-    return ('<p class="event-context">時刻は確認できたものを日本時間（JST）で表示します。'
-            'メンテナンス前後の期限は、該当する地域の告知を確認してください。</p>'
+    return ('<p class="event-context">Global版のAsiaが対象です。確認できた時刻は日本時間（JST）で表示します。'
+            'メンテナンス前後の期限は、Asiaの公式告知を確認してください。</p>'
             '<noscript><p>開催状況は各項目に記載した期限をご確認ください。</p></noscript>'
             '<nav class="section-nav" aria-label="イベントの項目">'
             '<a href="#current-events">イベント</a><a href="#rewards">クーポン・受取</a>'

@@ -103,7 +103,7 @@ class PortalTests(unittest.TestCase):
         def event(title, start, end, category):
             return {'source_id': 's', 'title': title, 'starts_on': start, 'ends_on': end,
                     'period': '期間', 'description': '報酬', 'deadline': 'ゲーム内確認',
-                    'short_end': '受取期限', 'category': category}
+                    'short_end': '受取期限', 'category': category, 'coverage': 'asia'}
         data = {'checked_at': '2026-11-05', 'events': [
             event('受取イベント', '2026-10-01', '2026-11-04', 'クーポン'),
             event('通常イベント', '2026-11-01', '2026-11-18', '期間限定'),
@@ -118,6 +118,16 @@ class PortalTests(unittest.TestCase):
         self.assertLess(output.index('id="update-notes"'), output.index('パッチ告知'))
         self.assertNotIn('開催中', output)
         self.assertIn('公式・参照元を確認', output)
+
+    def test_events_must_apply_to_asia_and_keep_explicit_anchor(self):
+        asia = {'title': 'Asia向け', 'source_id': 'jp', 'coverage': 'asia', 'id': 'old-event'}
+        worldwide = {'title': '全リージョン', 'source_id': 'global', 'coverage': 'global-all'}
+        self.assertEqual(list(portal.scheduled_events({'events': [asia, worldwide]})),
+                         [(asia, 'event-old-event'), (worldwide, 'event-global')])
+        for unverified in ('other-region', None):
+            with self.subTest(coverage=unverified):
+                with self.assertRaisesRegex(ValueError, 'Global Asia'):
+                    list(portal.scheduled_events({'events': [dict(asia, coverage=unverified)]}))
 
     def test_chanter_links_are_prominent_other_classes_are_accessible(self):
         sources = {key: {'tag': '資料', 'title': key, 'url': 'https://example.com/' + key}

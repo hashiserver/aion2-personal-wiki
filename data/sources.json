@@ -152,27 +152,9 @@
     "published_at": null,
     "checked_at": "2026-10-19"
   },
-  "official-nightmare": {
-    "title": "日本公式ガイド：悪夢",
-    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E6%82%AA%E5%A4%A2",
-    "tag": "日本公式",
-    "region": "日本・グローバル",
-    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
   "official-expedition": {
     "title": "日本公式ガイド：遠征",
     "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E9%81%A0%E5%BE%81",
-    "tag": "日本公式",
-    "region": "日本・グローバル",
-    "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
-  "official-daily": {
-    "title": "日本公式ガイド：デイリー ダンジョン",
-    "url": "https://aion2.ncsoft.jp/ja/guides/aion2/guides/%E3%83%87%E3%82%A4%E3%83%AA%E3%83%BC-%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B3",
     "tag": "日本公式",
     "region": "日本・グローバル",
     "scope": "2026/9/30時点の公式ガイド。残数・解放・更新内容は現在のゲーム内表示を優先",
@@ -224,30 +206,12 @@
     "published_at": null,
     "checked_at": "2026-10-19"
   },
-  "guide-gladiator": {
-    "title": "AION 2 Global Guides：グラディエーター",
-    "url": "https://aion2-guides.info/en/gladiator/",
-    "tag": "海外攻略",
-    "region": "グローバル／一部先行版参考",
-    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
   "pve-templar": {
     "title": "gaming.tools：テンプラー Lv45 PvE",
     "url": "https://aion2.gaming.tools/ja/builds/templar/pve",
     "tag": "海外攻略",
     "region": "グローバル",
     "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
-  "guide-templar": {
-    "title": "AION 2 Global Guides：テンプラー",
-    "url": "https://aion2-guides.info/en/templar/",
-    "tag": "海外攻略",
-    "region": "グローバル／一部先行版参考",
-    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
     "published_at": null,
     "checked_at": "2026-10-19"
   },
@@ -260,30 +224,12 @@
     "published_at": null,
     "checked_at": "2026-10-19"
   },
-  "guide-assassin": {
-    "title": "AION 2 Global Guides：アサシン",
-    "url": "https://aion2-guides.info/en/assassin/",
-    "tag": "海外攻略",
-    "region": "グローバル／一部先行版参考",
-    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
   "pve-ranger": {
     "title": "gaming.tools：レンジャー Lv45 PvE",
     "url": "https://aion2.gaming.tools/ja/builds/ranger/pve",
     "tag": "海外攻略",
     "region": "グローバル",
     "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
-  "guide-ranger": {
-    "title": "AION 2 Global Guides：レンジャー",
-    "url": "https://aion2-guides.info/en/ranger/",
-    "tag": "海外攻略",
-    "region": "グローバル／一部先行版参考",
-    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
     "published_at": null,
     "checked_at": "2026-10-19"
   },
@@ -296,30 +242,12 @@
     "published_at": null,
     "checked_at": "2026-10-19"
   },
-  "guide-chanter": {
-    "title": "AION 2 Global Guides：チャンター",
-    "url": "https://aion2-guides.info/en/chanter/",
-    "tag": "海外攻略",
-    "region": "グローバル／一部先行版参考",
-    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
   "pve-cleric": {
     "title": "gaming.tools：クレリック Lv45 PvE",
     "url": "https://aion2.gaming.tools/ja/builds/cleric/pve",
     "tag": "海外攻略",
     "region": "グローバル",
     "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
-  "guide-cleric": {
-    "title": "AION 2 Global Guides：クレリック",
-    "url": "https://aion2-guides.info/en/cleric/",
-    "tag": "海外攻略",
-    "region": "グローバル／一部先行版参考",
-    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
     "published_at": null,
     "checked_at": "2026-10-19"
   },
@@ -332,39 +260,12 @@
     "published_at": null,
     "checked_at": "2026-10-19"
   },
-  "guide-sorcerer": {
-    "title": "AION 2 Global Guides：ソーサラー",
-    "url": "https://aion2-guides.info/en/sorcerer/",
-    "tag": "海外攻略",
-    "region": "グローバル／一部先行版参考",
-    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
   "pve-spiritmaster": {
     "title": "gaming.tools：スピリットマスター Lv45 PvE",
     "url": "https://aion2.gaming.tools/ja/builds/spiritmaster/pve",
     "tag": "海外攻略",
     "region": "グローバル",
     "scope": "2.0.7.0、10/14更新。初期表示のソロ周回を確認。装備・アルカナ補正は含まれず、全プリセットの数値監査は未実施",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
-  "guide-spiritmaster": {
-    "title": "AION 2 Global Guides：スピリットマスター",
-    "url": "https://aion2-guides.info/en/elementalist/",
-    "tag": "海外攻略",
-    "region": "グローバル／一部先行版参考",
-    "scope": "作者動画・ゲームデータを整理したAI併用ガイド。参照元は職業ページ末尾。元動画は今回直接視聴できておらず、動画由来の説明は二次情報",
-    "published_at": null,
-    "checked_at": "2026-10-19"
-  },
-  "command-scroll-merchants": {
-    "title": "gaming.tools：指令書商人・所在地",
-    "url": "https://aion2.gaming.tools/ja/npcs/2939438",
-    "tag": "海外解析（日本語）",
-    "region": "グローバル",
-    "scope": "通常マップの魔族2拠点・天族2拠点とアビスの販売NPCを確認。逃亡者の村／ノルニル集会所は魔族向け。",
     "published_at": null,
     "checked_at": "2026-10-19"
   },
@@ -404,15 +305,6 @@
     "published_at": null,
     "checked_at": "2026-10-20"
   },
-  "reward-festival": {
-    "title": "MetaBot：シューゴフェスタ報酬",
-    "url": "https://metabot.gg/ja_JP/aion-2/events/shugo-festival",
-    "tag": "攻略・解析",
-    "region": "日本・グローバル",
-    "scope": "クライアント解析に記載された装備・オード類・精錬石・百年人参の証。金装備や煌めく素材は確定としない。NCER記事はAI生成と注記されており、公式の独立検証として扱わない。",
-    "published_at": null,
-    "checked_at": "2026-10-20"
-  },
   "reward-ordeal": {
     "title": "Aion2.gg：アルカナと神秘的な結晶の入手先",
     "url": "https://aion2.gg/guides/arcana-system-explained",
@@ -449,15 +341,6 @@
     "published_at": null,
     "checked_at": "2026-10-20"
   },
-  "rise-challenge-official": {
-    "title": "AION 2公式Steam告知：[Event] Rise to the Challenge",
-    "url": "https://steamcommunity.com/app/3393110/announcements/",
-    "tag": "グローバル公式",
-    "region": "Global（北米PDT/PST、欧州CEST/CET。日本サーバー時刻は未照合）",
-    "scope": "2026/10/20掲載の公式イベント告知。欧州は10/21メンテ後〜12/16メンテ前。復活の精霊石はサーバー週ごとの2段階購入。実際の残数はゲーム内を優先。公式Steamの告知一覧を参照",
-    "published_at": "2026-10-20",
-    "checked_at": "2026-10-25"
-  },
   "global-boss-list": {
     "title": "Wikily：Globalフィールドボス一覧",
     "url": "https://new.wikily.gg/ja/aion-2/bosses",
@@ -466,60 +349,6 @@
     "scope": "ガルトゥアLv51・ラグタ/タルタン/カシャパLv48の4体を照合。魔族はアルトガルド、天族はベルテロンに出現。特定順での確実な連続湧きは未検証。ゲーム内の出現状況を優先",
     "published_at": null,
     "checked_at": "2026-10-25"
-  },
-  "global-boss-timer": {
-    "title": "AION2 Status：フィールドボスの再出現タイマー",
-    "url": "https://aion2status.com/en/boss-timer/",
-    "tag": "海外解析",
-    "region": "グローバル（プレイヤー報告、非公式）",
-    "scope": "ガルトゥア/ラグタ約12時間、タルタン/カシャパ約6時間。各サーバー討伐からの経過時間で変動。固定開催時刻や全サーバー共通の時刻を保証しない",
-    "published_at": null,
-    "checked_at": "2026-10-25"
-  },
-  "global-boss-loot": {
-    "title": "lan-gaming：フィールドネームドの報酬と場所",
-    "url": "https://www.lan-gaming.net/aion2-field-bosses/",
-    "tag": "日本攻略記事",
-    "region": "グローバル（第三者攻略）",
-    "scope": "4体を討伐候補として比較。唯一装備・名画・精錬石などの報酬、陣営別の場所と経路。ドロップ率はゲーム内表示・最新版のデータを優先",
-    "published_at": null,
-    "checked_at": "2026-10-25"
-  },
-  "global-ludra-official": {
-    "title": "AION 2 Global公式：Ludra Awakens on November 4th（10/27訂正）",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6adbaeb06cfe4756db5b8efb",
-    "tag": "グローバル公式",
-    "region": "Global（イベント告知はCET/PST基準。討伐・Bootcamp対象にAsia明記。Asia個別の配布時刻は未確認）",
-    "scope": "初回公開2026-10-23、2026-10-27に本文訂正。10/28〜11/11 CETのオードエネルギー支援は旧×2/キャラ/日から×4/アカウント/日に変更。1アカウント1日1回、郵便7日で失効。公式本文には訂正時刻として08:15 CET/12:15 PDTの併記があるが相互換算に不整合があるため、訂正日は10/27のみ採用。11/4ルドラNormal IL2800/Hard IL3000は未適用予定。Global適用ビルド番号は告知に記載なし。公式Steam一覧でも最新本文を照合。",
-    "published_at": "2026-10-23",
-    "checked_at": "2026-10-28"
-  },
-  "global-ludra-review": {
-    "title": "AION2 Vault：Ludra Global復帰・イベント日程の独立照合",
-    "url": "https://aion2vault.com/builds/ludra-raid/",
-    "tag": "海外攻略・照合",
-    "region": "Global（非公式、Asia固有の適用時刻は未確認）",
-    "scope": "2026-10-24公開の記事で11/4ルドラNormal IL2800/Hard IL3000、10/28〜11/11 CETのオードエネルギー支援、11/4〜11/18 CETの出席簿等を公式告知と照合。推測・未適用の戦闘詳細は採用しない。",
-    "published_at": "2026-10-24",
-    "checked_at": "2026-10-26"
-  },
-  "global-transfer-hold-official": {
-    "title": "AION 2 Global公式：Server Transfers Update（停止と再開）",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6adfa9906276ae76f3e4a593",
-    "tag": "グローバル公式",
-    "region": "Global運用告知。再開文はEurope、NA East/West、South Americaを列挙。Asiaは明記されず個別再開状況は未確認",
-    "scope": "初回公開2026-10-26。問題調査で移転を一時停止した本文に、欧州から再開（03:00 PDT/12:00 CET）、米州は次回受付枠で再開と追記。必要レベルは45に変更。Asiaの再開は追記文に明示されておらず断定しない。運用告知でゲーム内ビルド番号なし。旧一時停止の事実は履歴として保持。",
-    "published_at": "2026-10-26",
-    "checked_at": "2026-10-28"
-  },
-  "global-transfer-window-review": {
-    "title": "AION2help：Globalサーバー移転の当初予定（10月15日記事）",
-    "url": "https://aion2help.com/en/news/server-transfer-opens-2026-10-14/",
-    "tag": "海外攻略・照合",
-    "region": "Global（北米PDT・欧州CEST/CET、Asia含む移転日程）",
-    "scope": "2026-10-15公開・更新。正式サービスサーバーの当初移転期間は10/20 PDT・10/21 CESTメンテ後〜10/27 PDT・10/28 CETメンテ前。10/26の公式停止告知より前の記事であり、現在の申請可否を保証しない。ゲーム内ビルド番号は記事中で確定できない。",
-    "published_at": "2026-10-15",
-    "checked_at": "2026-10-27"
   },
   "duty-reward-guide": {
     "title": "Aion 2 Maps：日課・週課と使命報酬",
@@ -530,239 +359,32 @@
     "published_at": null,
     "checked_at": "2026-10-27"
   },
-  "global-transfer-products-official": {
-    "title": "AION 2 Global公式：Server Transfer Products Info（10/26要件更新）",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ac932a8fa34c1011d627bc9",
-    "tag": "グローバル公式",
-    "region": "Global（Europe・NA・South America・Asiaを含む受付時間の案内）",
-    "scope": "初回記事2026-10-09、更新2026-10-26 23:30 PDT（Lv10→Lv45）。正式サービスの当初受付期限は10/27 PDT・10/28 CETの定期メンテナンス前。Asiaの元の受付枠と10/28特別枠を記載。ただし一時停止/再開告知は別途確認し、Asiaの再開を保証しない。運用規則でゲーム内ビルド番号なし。",
-    "published_at": "2026-10-09",
-    "checked_at": "2026-10-28"
-  },
-  "global-maintenance-2026-10-28-official": {
-    "title": "AION2 Global公式：10/28定期メンテナンス（完了追記）",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae0ae606cfe4756db5b8f5a",
-    "tag": "グローバル公式",
-    "region": "Global（公式のゲームサーバー保守告知。Asia個別の実施・終了時刻は未確認）",
-    "scope": "2026-10-27公開。10/27 23:30 PDT／10/28 07:30 CET（10/28 15:30 JST）開始予定、所要4時間30分。予定終了は10/28 20:00 JST相当（計算値で公式の完了発表ではない）。更新内容は後日発表と明記。適用ビルド番号未公表。10/28早朝JST時点で開始・完了未確認。 10/29の再確認で同一公式記事の見出しがCompleteに更新され、10/28メンテ完了が確認できた。以前の開始予定・所要時間は当時の予告履歴。Asiaの実際の完了時刻・パッチビルド番号は未確認。",
-    "published_at": "2026-10-27",
-    "checked_at": "2026-10-29"
-  },
   "global-patch-2026-10-28-official": {
-    "title": "AION2 Global公式：10/27 PDT・10/28 CETパッチノート",
+    "title": "AION2公式：10月28日アップデートノート",
     "url": "https://aion2.plaync.com/en-us/board/update/view?articleId=6ae19668577e8c01355e0210",
     "tag": "Global公式",
-    "region": "Global公式告知（日本・Asiaの実装ビルド番号は未確認）",
-    "scope": "2026-10-28公開。10/28定期メンテナンスに伴う遠征/超越ボス弱体化、ウルググ峡谷/ヴァクロン空島Hard IL2700、Lv45基礎HP増加、オディリウム貯蔵庫、採集Lv45/サーバー1日1000回、装備増幅/継承、28日出席簿、商店/パス等。正式クライアントビルド番号は本文に明記なし。原文はNC公式ページで本文抽出が難しいためSteam公式告知索引・第三者原文転載・別解説で照合。",
+    "region": "Asiaを含むGlobal共通仕様",
+    "scope": "遠征・超越ボス調整と、ウルググ峡谷・バクロンの空中島［難しい］の追加。Asiaの入場条件はゲーム内表示を確認。",
     "published_at": "2026-10-28",
     "checked_at": "2026-10-29"
-  },
-  "global-patch-2026-10-28-review": {
-    "title": "AION2HUB：Global 10/28公式パッチノートの原文転載",
-    "url": "https://aion2hub.me/en/news/notice-patch-notes-oct-27-pdt-oct-28-cet-h68djg",
-    "tag": "公式原文転載（第三者）",
-    "region": "Global（韓国・台湾版ではない）",
-    "scope": "2026-10-28付の公式告知を転載。遠征・超越ボス調整、Hard追加、全8職Lv45基礎HP、採集・商店・装備強化・出席簿を項目別に照合。転載元であり独立した公式発表ではない。",
-    "published_at": "2026-10-28",
-    "checked_at": "2026-10-29"
-  },
-  "global-patch-2026-10-28-independent": {
-    "title": "Aion2Builds：10/28 Globalパッチの要点とビルドへの影響",
-    "url": "https://aion2builds.com/updates/patch-notes-2026-10-27/",
-    "tag": "海外攻略（独立要約）",
-    "region": "Global（地域固有差分は未確認）",
-    "scope": "10/27 PDT／10/28 CET更新のGlobalパッチを公式リンクと照合。遠征・超越弱体化、ウルググ/ヴァクロンHard、HP、採集、装備継承など。ページ上の更新日表示には不整合があるため記事公開日時はGlobal公式を優先。",
-    "published_at": null,
-    "checked_at": "2026-10-29"
-  },
-  "global-attendance-2026-10-28-review": {
-    "title": "AION2HUB：Atreia's Call 28日出席簿の公式告知転載",
-    "url": "https://aion2hub.me/en/news/notice-new-attendance-event-notice-pwwzoz",
-    "tag": "公式原文転載（第三者）",
-    "region": "Global告知（日本・Asia固有の日付は未確認）",
-    "scope": "2026-10-28公開。出席簿は10/28メンテ後に開始、1サーバー1回、28日分の報酬。単独の公式告知原文に終了日12/1と12/2が併記され矛盾。別の公式パッチ本文は12/2と記載。終了日を確定せず12/1までの早期受取を推奨。",
-    "published_at": "2026-10-28",
-    "checked_at": "2026-10-29"
-  },
-  "global-halloween-twitch-2026-10-28-official": {
-    "title": "AION2 Global公式：Halloween Twitch Drops 10/28–11/3 PT",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6adb63578af865061f6b12b8",
-    "tag": "Global公式",
-    "region": "Global Twitchイベント告知（日本・Asiaアカウント適用条件は未確認）",
-    "scope": "2026-10-28公開。10/28 10:00 PDT〜11/3 23:59 PST（欧州10/28 18:00〜11/4 08:59 CET）。参加チャンネル視聴1/2/4/6/8時間の5段階。Twitch報酬受取期限11/17 23:59 PST／11/18 08:59 CET。公式告知の存在をNCニュース一覧で確認し、詳細は転載/独立記事で照合。",
-    "published_at": "2026-10-28",
-    "checked_at": "2026-10-29"
-  },
-  "global-halloween-twitch-2026-10-28-review": {
-    "title": "AION2HUB：Halloween Twitch Drops公式本文転載",
-    "url": "https://aion2hub.me/en/news/global-halloween-twitch-drops-8h7saf",
-    "tag": "公式原文転載（第三者）",
-    "region": "Global（参加条件は公式を優先）",
-    "scope": "2026-10-28付。視聴時間・報酬・配信期間・11/18 CET受取期限を転載原文で照合。",
-    "published_at": "2026-10-28",
-    "checked_at": "2026-10-29"
-  },
-  "global-pass-2026-10-28-official": {
-    "title": "AION2 Global公式：10/28新ディーヴァパス案内",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6acf216828c7452635072d9c",
-    "tag": "Global公式",
-    "region": "Global公式告知（日本・Asiaの販売条件は未確認）",
-    "scope": "2026-10-28公開。Prelude to Flightは10/28 08:00 CET〜12/2 09:00 CET。Basic無料、Premium1,000キューナ、各キャラ1回。詳細は同日Globalパッチ原文転載と公式告知一覧を照合。",
-    "published_at": "2026-10-28",
-    "checked_at": "2026-10-29"
-  },
-  "global-security-restrictions-2026-10-29-official": {
-    "title": "AION2 Global公式：10/28 PDT・10/29 CETのアカウント制限",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae2b7c0fa7da41c727d6a4f",
-    "tag": "Global公式",
-    "region": "Global（アカウント運用方針の告知。日本・Asia個別の対象件数内訳は未記載）",
-    "scope": "公開2026-10-28 20:04 PDT／10-29 03:04 UTC、処分実施2026-10-28 20:00 PDT／10-29 04:00 CET。4,651アカウントをBOT・金策組織・不正プログラム・RMT等の違反で制限。別途の一時的セキュリティロックは違反制裁とは異なる。公式Steam全文と照合。運用告知でゲーム内ビルド番号なし。日本・Asiaの個別件数は未確認。",
-    "published_at": "2026-10-29",
-    "checked_at": "2026-10-30"
-  },
-  "global-security-restrictions-2026-10-29-review": {
-    "title": "Aion2Builds：Globalアカウント制限の公式記事リンク付き要約",
-    "url": "https://aion2builds.com/updates/",
-    "tag": "海外攻略・照合",
-    "region": "Global公式ニュースの第三者索引",
-    "scope": "2026-10-29更新のニュース索引で、公式10/28 PDTの4,651アカウント制限と別扱いのセキュリティロックを照合。第三者による要約であり一次情報ではない。",
-    "published_at": "2026-10-29",
-    "checked_at": "2026-10-30"
-  },
-  "global-matchmaking-2026-10-28-official": {
-    "title": "AION2 Global公式：10/28サーバーマッチング（Asia含む）",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae00a2f6276ae76f3e4a59d",
-    "tag": "Global公式",
-    "region": "Global（Europe・NA East/West・South America・Asiaの地域別表）",
-    "scope": "公式Steamで2026-10-27 PDT公開、10/28マッチング案内。Asiaを含むアビス・時空の亀裂のサーバー組合せを別々に掲載。アビスは同陣営同士も組合せあり（AsiaのMarchutan/Ereshkigal、Hithanya/Naniaなど）。組合せは定期的に更新されるため恒久的な固定表ではない。適用開始の厳密な時刻とクライアントビルド番号は本文に記載なし。",
-    "published_at": "2026-10-27",
-    "checked_at": "2026-10-30"
-  },
-  "global-matchmaking-2026-10-28-review": {
-    "title": "AION2HUB：10/28公式サーバーマッチングの原文転載",
-    "url": "https://aion2hub.me/en/news/notice-server-matchmaking-october-28-q6wldy",
-    "tag": "公式原文転載（第三者）",
-    "region": "Global（Asiaのアビス・亀裂の組合せを含む）",
-    "scope": "2026-10-28付の転載記事にAsiaのAbyss 10組、Rift 10組を掲載。Steam公式本文と照合。転載元であり独立した公式発表ではない。",
-    "published_at": "2026-10-28",
-    "checked_at": "2026-10-30"
-  },
-  "global-client-2-0-9-0-gamingtools": {
-    "title": "gaming.tools：AION2 Globalデータベース版2.0.9.0",
-    "url": "https://aion2.gaming.tools/ja",
-    "tag": "海外データベース（日本語）",
-    "region": "Globalデータベース。日本・Asiaのクライアント実測ではない",
-    "scope": "サイト上のGlobal版表示2.0.9.0、最終更新2026-10-29。ゲーム内の日本・Asiaクライアントに同版が適用されたことや公式ビルド番号を証明するものではない。別のEUクライアント解析サイトとも照合。",
-    "published_at": null,
-    "checked_at": "2026-10-30"
-  },
-  "global-client-2-0-9-0-aion2gg": {
-    "title": "Aion2.gg：EUクライアント解析版2.0.9.0",
-    "url": "https://aion2.gg/database",
-    "tag": "海外データベース（解析）",
-    "region": "EUクライアント（Globalの欧州版。日本・Asiaは未検証）",
-    "scope": "サイトのゲーム版2.0.9.0、Steam build 26262663、データ最終更新2026-10-28を確認。gaming.toolsと版表示が一致。NCSOFT公式がビルド番号を告知した証拠ではない。",
-    "published_at": null,
-    "checked_at": "2026-10-30"
-  },
-  "global-nae-dst-2026-11-01-official": {
-    "title": "AION2 Global公式：NA East夏時間終了対応の臨時メンテナンス（11/1）",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae61e9028c7452635072e28",
-    "tag": "Global公式（NAE限定）",
-    "region": "North America Eastのみ。日本・Asia、EU、NA Westの停止告知ではない",
-    "scope": "公式Steam掲載2026-10-30 PDT（日本時間10/31）。10/31 22:30 PDT＝11/1 06:30 CET＝11/1 14:30 JST開始予定、2時間30分。東部夏時間EDT→標準時ESTへの切替対応。ログイン停止・切断を予告。メンテ終了実績やゲーム内ビルド変更は未確認。公式NCページはタイトル確認、本文は同一運営のSteam公式掲載で確認。",
-    "published_at": "2026-10-30",
-    "checked_at": "2026-11-01"
-  },
-  "global-naw-dst-2026-11-01-official": {
-    "title": "AION2 Global公式：NA West夏時間終了対応の臨時メンテナンス（11/1）",
-    "url": "https://aion2.plaync.com/en-us/board/notice/view?articleId=6ae61e90577e8c01355e0248",
-    "tag": "Global公式（NAW限定）",
-    "region": "North America Westのみ。日本・Asia、EU、NA Eastの停止告知ではない",
-    "scope": "公式Steam掲載2026-10-30 PDT（日本時間10/31）。11/1 01:30 PDT＝11/1 09:30 CET＝11/1 17:30 JST開始予定、2時間30分。太平洋夏時間PDT→標準時PSTへの切替対応。ログイン停止・切断を予告。メンテ終了実績やゲーム内ビルド変更は未確認。公式NCページはタイトル確認、本文は同一運営のSteam公式掲載で確認。",
-    "published_at": "2026-10-30",
-    "checked_at": "2026-11-01"
-  },
-  "global-na-dst-2026-11-01-aion2gg": {
-    "title": "Aion2.gg：Global公式のNAE・NAW臨時メンテ告知索引",
-    "url": "https://aion2.gg/news",
-    "tag": "海外データベース（公式記事索引）",
-    "region": "GlobalニュースのうちNA East・NA West限定",
-    "scope": "10/31付の索引でNAE/NAWの別告知と公式NC記事へのリンクを確認。公式の対象地域・開始時刻を同運営Steam本文と照合。サイト表示の日付は公式PDT公開日とは異なる可能性がある。",
-    "published_at": null,
-    "checked_at": "2026-11-01"
-  },
-  "global-na-dst-2026-11-01-aion2builds": {
-    "title": "Aion2Builds：10/30 PDTのNAE・NAW臨時メンテ索引",
-    "url": "https://aion2builds.com/updates/",
-    "tag": "海外攻略（公式記事の独立要約）",
-    "region": "GlobalニュースのうちNA East・NA West限定",
-    "scope": "10/30 17:50 PDT（NAE）と17:55 PDT（NAW）の公開時刻表示、各11/1の予定時刻・所要2時間30分を照合。公式では日本・Asiaへの停止適用を示さない。",
-    "published_at": null,
-    "checked_at": "2026-11-01"
-  },
-  "global-ludra-2026-10-30-revision-official": {
-    "title": "AION2 Global公式：ルドラ11/4告知の10/30改訂（Twitch Drops箱形式・討伐称号名）",
-    "url": "https://lounge.plaync.com/feed/85150?country=US&locale=en-US",
-    "tag": "Global公式（NC PURPLE Lounge）",
-    "region": "Global（ルドラ討伐イベントはAsia含む）。Twitch DropsのAsiaアカウント対象条件は個別確認が必要",
-    "scope": "初回公開2026-10-23、2026-10-30 17:00 PDT／2026-10-31 01:00 CETに改訂。Twitch Dropsの一部アイテムを箱形式にまとめ、獲得可能な中身は変更なし。11/4 15:00〜11/18 08:59 CET（北米11/4 06:00〜11/17 23:59 PST）、視聴1/2/3/4/6/8/10/12/13/14時間の10段階。ルドラ討伐称号の英語名は1位The First to Slay Ludra、2〜5位Ludra's Conqueror、6〜20位Ludra's Vanquisher、その他のクリア者Ludra's Nemesisに変更。ルドラ11/4実装は11/2時点では予定であり、ゲーム内ビルド番号の変更を示さない。NC公式Lounge全文と公式NC記事タイトルを照合。",
-    "published_at": "2026-10-23",
-    "checked_at": "2026-11-02"
-  },
-  "global-ludra-2026-10-30-revision-review": {
-    "title": "aion2.fyi：ルドラ公式10/30更新内容の原文転載",
-    "url": "https://aion2.fyi/news/ludra-awakens-on-november-4th",
-    "tag": "第三者転載・照合",
-    "region": "Global公式告知の転載（独立した公式発表ではない）",
-    "scope": "2026-10-23公開のGlobal公式記事に2026-10-30の改訂履歴が追加されたこと、Twitch Dropsの箱形式と称号名変更、公式の対象地域と日程を照合。転載ページの確認日2026-11-02。公式NC Lounge全文を優先。",
-    "published_at": "2026-10-23",
-    "checked_at": "2026-11-02"
-  },
-  "global-na-dst-2026-11-01-complete-official": {
-    "title": "AION2 Global公式Steam：NAE・NAW 11/1臨時メンテナンス完了追記",
-    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
-    "tag": "Global公式（Steam告知本文）",
-    "region": "北米East・Westのみ（日本・Asiaは対象外）",
-    "scope": "NAE/NAWの臨時メンテナンス告知は2026-10-30 PDT公開。2026-11-02 JST再確認時点で両記事の見出しに(Completed)が追記され、本文にメンテ完了・サーバー再開が明記。追記の正確な公開時刻、実際の完了時刻、ゲーム内ビルド番号は未記載。元の11/1開始予定時刻・所要2時間30分は履歴として維持。",
-    "published_at": "2026-10-30",
-    "checked_at": "2026-11-02"
   },
   "global-maintenance-2026-11-04-official": {
-    "title": "AION2日本語公式Steam：11月4日(水) 定期メンテナンスのご案内",
-    "url": "https://steamcommunity.com/app/3393110/allnews/?l=japanese",
-    "tag": "AION2公式Steam（日本語）",
-    "region": "日本語公式：全サーバーと記載（Asia個別の実施完了状況は未確認）。Global英語公式では11/3 22:30 PST／11/4 07:30 CETを併記",
-    "scope": "11/4 15:30〜18:30 JST、3時間予定、対象は全サーバー。Global英語公式の11/3 22:30 PST／11/4 07:30 CETと時刻一致。ゲーム内ログイン停止。更新内容は後日発表、ビルド番号未記載。2026-11-04 07時台JST確認時点では開始・完了未確認。公式一覧の時刻表示は閲覧タイムゾーン依存のため、公開日の正確なタイムゾーンは未確認。",
+    "title": "AION2日本公式：11月4日定期メンテナンス",
+    "url": "https://aion2.plaync.com/ja-jp/board/notice/view?articleId=6ae9beb0577e8c01355e02cb",
+    "tag": "日本公式",
+    "region": "Asiaを含む全サーバー",
+    "scope": "11/4 15:30 JST開始。18:30 JSTに完了。",
     "published_at": "2026-11-04",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-19"
   },
   "global-patch-2026-11-04-official": {
-    "title": "AION2 Global公式：11/3 PST・11/4 CETパッチノート",
-    "url": "https://aion2.plaync.com/en-us/board/update/view?articleId=6aead0e86cfe4756db5b913f",
-    "tag": "Global公式（Steam公式本文で照合）",
-    "region": "Global公式（Asiaの討伐イベント対象明記、個別クライアント版未確認）",
-    "scope": "11/3 PST／11/4 CETの公式更新。ルドラNormal IL2800/Hard IL3000、腕輪・確定交換券、混沌の外部レスハンタ（Lv45、週3時間、能力標準化）、要塞戦木土週2回、フィールドボス11時間、探索遠征報酬、製作成功100%レシピ等。適用ビルド番号は未記載。Steam公式全文で確認。",
+    "title": "AION2日本公式：11月4日アップデートノート",
+    "url": "https://aion2.plaync.com/ja-jp/board/update/view?articleId=6aead0e8066b033317c02ab3",
+    "tag": "日本公式",
+    "region": "Global版・Asia向けの日本語告知",
+    "scope": "ルドラの再開放、討伐イベント、出席イベント、オードエネルギー配布。同日の日本語資料とも照合。",
     "published_at": "2026-11-04",
-    "checked_at": "2026-11-05"
-  },
-  "global-hotfix-2026-11-04-official": {
-    "title": "AION2 Global公式Steam：11/4 Hotfix",
-    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
-    "tag": "Global公式Steam",
-    "region": "Global告知（Asia個別適用ビルド未確認）",
-    "scope": "11/4公開表示。炎の神殿とFerocious Horn Denの遠征にHard難易度が誤表示される問題を修正。Steam/PURPLEでクライアント更新後に再起動するよう案内。正式ビルド番号・正確な適用時刻未記載。",
-    "published_at": "2026-11-04",
-    "checked_at": "2026-11-05"
-  },
-  "global-patch-2026-11-04-review": {
-    "title": "Shugo.GG：Global 11/4パッチの独立要約",
-    "url": "https://shugo.gg/news/global-patch-notes-2026-11-04",
-    "tag": "第三者攻略要約",
-    "region": "Global（Asia個別実装の独立確認ではない）",
-    "scope": "11/4 Globalパッチのルドラ、混沌の外部レスハンタ、要塞戦、探索、製作、Hotfixを公式Steam本文と照合。独立した一次情報ではない。",
-    "published_at": "2026-11-04",
-    "checked_at": "2026-11-05"
+    "checked_at": "2026-11-19"
   },
   "il-global-gates": {
     "title": "Aion 2 Companion：Item Levelコンテンツ解放表",
@@ -800,76 +422,13 @@
     "published_at": "2026-10-21",
     "checked_at": "2026-11-05"
   },
-  "gear-kr-ranked-pve-2026-10-19": {
-    "title": "kisk：韓国上位PvEプレイヤーの部位別魂刻印採用率（cielui集計）",
-    "url": "https://kisk.app/scoring",
-    "tag": "韓国上位実測",
-    "region": "韓国版（PvE上位者・8クラス）",
-    "scope": "2026-10-19時点の各クラス528〜1,158人の魂刻印採用率。ステータス上位4件を掲載。スキル+1採用率を含まず、PvP装備の標本ではない。日本・Globalの最適解とは区別。",
-    "published_at": null,
-    "checked_at": "2026-11-06"
-  },
-  "gear-cielui-kr-rankers": {
-    "title": "cielui：韓国の上位者装備・魂刻印・魔石採用統計",
-    "url": "https://cielui.com/stats/engrave",
-    "tag": "韓国統計",
-    "region": "韓国版（実装備統計）",
-    "scope": "上位者の主要オプション採用傾向を相互確認。2026-11-06参照時のサイト表示を確認。",
-    "published_at": null,
-    "checked_at": "2026-11-06"
-  },
   "gear-global-roll-pool": {
     "title": "Wikily：装備部位別の魂刻印候補と抽選率",
     "url": "https://wikily.gg/ja/aion-2/enhancement/soul-binding",
     "tag": "海外解析（日本語）",
-    "region": "Global版の解析データ（公式認定ではない）",
-    "scope": "装備の部位固有候補、抽選確率、等級による付与項目数の検証。日本・Asiaでの最終条件はゲーム内を優先。",
+    "region": "Global共通のゲームデータ",
+    "scope": "通常の魂刻印について、部位別の候補と装備等級による枠数を確認。",
     "published_at": null,
-    "checked_at": "2026-11-06"
-  },
-  "gear-global-top-100": {
-    "title": "AION2Tierlist：Global各クラス戦闘力上位100人の装備傾向",
-    "url": "https://aion2tierlist.com/builds",
-    "tag": "Global統計",
-    "region": "Global版（戦闘力上位者）",
-    "scope": "2026-11-06閲覧。上位者の装備本体やILの傾向。部位別魂刻印のPvP・PvE最適解までは保証しない。",
-    "published_at": "2026-11-06",
-    "checked_at": "2026-11-06"
-  },
-  "gear-pvp-cleric-guide": {
-    "title": "AION2Vault：Cleric PvP装備・スキル構成",
-    "url": "https://aion2vault.com/builds/cleric/pvp/",
-    "tag": "PvP個人ガイド",
-    "region": "Global版向け（プレイヤー解説）",
-    "scope": "キュアのガード・クリティカル抵抗・HPの参考。上位者全体の採用率ではなくプレイヤー事例。",
-    "published_at": null,
-    "checked_at": "2026-11-06"
-  },
-  "gear-pvp-chanter-guide": {
-    "title": "Aion2Data：Chanter PvP装備・スキル構成",
-    "url": "https://aion2data.com/guides/chanter/pvp",
-    "tag": "PvPビルド例",
-    "region": "Global版向け（ガイド側の推奨）",
-    "scope": "チャントのPvP耐久・HP重視の一例。実測上位者採用率ではないため、PvE統計と分離。",
-    "published_at": "2026-10-22",
-    "checked_at": "2026-11-06"
-  },
-  "gear-pvp-abyss-survey": {
-    "title": "a2build：韓国アビス上位者のPvP装備分析",
-    "url": "https://www.a2build.net/",
-    "tag": "韓国PvP統計（要再確認）",
-    "region": "韓国版（アビス上位者）",
-    "scope": "PvP専用統計サイトは存在するが、今回の取得ではクラス別の採用率テーブルが読み出せず、数値は本記事へ転記していない。",
-    "published_at": null,
-    "checked_at": "2026-11-06"
-  },
-  "gear-transfer-tw-official": {
-    "title": "AION2台湾公式：統合強化と継承の仕様",
-    "url": "https://tw.ncsoft.com/aion2/guidebook/view?title=%E7%B6%9C%E5%90%88%E5%BC%B7%E5%8C%96",
-    "tag": "台湾公式",
-    "region": "台湾版（日本・Globalの適用保証なし）",
-    "scope": "同等級・同部位、成功時の元装備消費、強化・突破・魂刻印・失敗補正、ライン数差と数値範囲、上級継承を区別。原記事は2026-10-13改訂。Globalの個別適用は未確認。",
-    "published_at": "2026-10-13",
     "checked_at": "2026-11-06"
   },
   "gear-transfer-global-guide": {
@@ -877,9 +436,9 @@
     "url": "https://aion2maps.com/guides/inheritance/",
     "tag": "Global第三者ガイド",
     "region": "Global版（第三者検証・公式公告ではない）",
-    "scope": "2026-10-28更新。唯一同士の継承条件、継承石、引き継げる装備成長要素と失われる魔石・潜在能力を参照。成功率100%の記述は他の日本語ガイドと相違するため、ゲーム内プレビュー最優先。",
+    "scope": "Global版の継承条件、必要素材と引き継げる項目。装備ごとの詳細はプレビューを確認。",
     "published_at": "2026-10-28",
-    "checked_at": "2026-11-06"
+    "checked_at": "2026-11-19"
   },
   "gear-transfer-jp-cost": {
     "title": "AION2 Times：装備の強化と継承・低IL装備の強化費用比較",
@@ -894,10 +453,10 @@
     "title": "AION2 Times：魂刻印と継承時のオプション置換",
     "url": "https://aion2-times.com/aion2-soul-engraving/",
     "tag": "日本攻略・魂刻印",
-    "region": "日本語Global向け解説（非公式）",
-    "scope": "継承元の通常魂刻印が継承先を上書きする仕組み、ライン数差、調律、魂結束追加ラインの非継承、魂魄武器・ガーダー例を参照。",
+    "region": "Global版・Asia向けの日本語攻略",
+    "scope": "部位別の推奨効果、スキルLv.+1、通常継承と固定魂刻印の注意点。",
     "published_at": null,
-    "checked_at": "2026-11-06"
+    "checked_at": "2026-11-19"
   },
   "gear-transfer-global-cost-calculator": {
     "title": "Aion2Data：Tier1装備+15→Tier3装備継承の費用モデル",
@@ -908,32 +467,14 @@
     "published_at": null,
     "checked_at": "2026-11-06"
   },
-  "gear-transfer-conflict-guide": {
-    "title": "lan-gaming：装備強化・継承の注意点",
-    "url": "https://www.lan-gaming.net/aion2-enhance/",
-    "tag": "日本攻略（差分確認）",
-    "region": "日本語攻略（複数地域混在の可能性あり）",
-    "scope": "シーズン回数制限・継承失敗の記述はGlobal版の100%成功という独立ガイドと食い違うため、確定仕様には採用せず注意喚起に使用。",
-    "published_at": null,
-    "checked_at": "2026-11-06"
-  },
   "global-maintenance-2026-11-11-official": {
-    "title": "AION 2 Global公式：11月11日定期メンテナンス",
-    "url": "https://steamcommunity.com/app/3393110",
-    "tag": "公式Steam告知",
-    "region": "Global（ゲームサーバー。日本・Asia個別適用の詳細未確認）",
-    "scope": "11/10 22:30 PST／11/11 07:30 CET開始予定、4時間30分。更新詳細は後日発表。完了・適用ビルド未確認。",
-    "published_at": "2026-11-11",
-    "checked_at": "2026-11-11"
-  },
-  "global-platform-maintenance-2026-11-10-official": {
-    "title": "AION 2 Global公式：11月10日プラットフォーム保守",
-    "url": "https://steamcommunity.com/app/3393110/announcements",
-    "tag": "公式Steam告知",
-    "region": "Global（アカウント管理サービス）",
-    "scope": "11/10 12:00 PST／20:00 CET開始予定、3時間40分。アカウント作成・管理が対象。ゲームサーバー保守とは別。完了未確認。",
-    "published_at": "2026-11-09",
-    "checked_at": "2026-11-11"
+    "title": "AION2日本公式：11月11日定期メンテナンス",
+    "url": "https://aion2.plaync.com/ja-jp/board/notice/view?articleId=6af2f9306cfe4756db5b919c",
+    "tag": "日本公式",
+    "region": "Asiaを含む全サーバー",
+    "scope": "11/11 15:30 JST開始。20:00 JSTに完了。",
+    "published_at": "2026-11-10",
+    "checked_at": "2026-11-19"
   },
   "global-patch-2026-11-11-official": {
     "title": "AION2公式：11月11日アップデートノート",
@@ -946,21 +487,12 @@
   },
   "global-matchmaking-2026-11-11-official": {
     "title": "AION2公式：11月11日サーバーマッチング",
-    "url": "https://steamcommunity.com/app/3393110/allnews/?l=japanese",
-    "tag": "公式Steam日本語告知",
-    "region": "日本・Asiaのサーバー名を含む公式表",
-    "scope": "アビス・時空の亀裂の組合せを変更。アビスのアーティファクト占領状況・回廊を初期化。表の正確な組合せは公式を参照。",
+    "url": "https://aion2.plaync.com/ja-jp/board/notice/view?articleId=6af40b68263e537d356d1576",
+    "tag": "日本公式",
+    "region": "Global版・Asia向けの日本語告知",
+    "scope": "公式表のうち、Asiaのアビスと時空の亀裂の組合せを参照。組合せは変更される場合がある。",
     "published_at": "2026-11-11",
-    "checked_at": "2026-11-12"
-  },
-  "global-restrictions-2026-11-11-official": {
-    "title": "AION2 Global公式：11月11日不正アカウント制限",
-    "url": "https://steamcommunity.com/app/3393110/allnews/?l=english",
-    "tag": "公式Steam運用告知",
-    "region": "Global（日本・Asia内訳未公表）",
-    "scope": "11/11 00:00 PDT／09:00 CETに21,091アカウントを制限。通常プレイと保護目的の一時ロックは区別。公式ビルド変更ではない。",
-    "published_at": "2026-11-11",
-    "checked_at": "2026-11-12"
+    "checked_at": "2026-11-19"
   },
   "pet-shop-core-global": {
     "title": "AION2 Times：集めにくいペットと魂の入手先",
@@ -969,24 +501,6 @@
     "region": "日本語・Global版（第三者攻略）",
     "scope": "討伐入手が確認されていない通常ペット29種、IDにしか討伐入手元がない14種の周回あたりの出現数、店頭価格と1購入あたりの魂。",
     "published_at": "2026-11-17",
-    "checked_at": "2026-11-19"
-  },
-  "pet-shop-older-35": {
-    "title": "Box of Maple：黒雲貿易団限定ペット35種（10月28日以前）",
-    "url": "https://note.com/hakobox8585/n/nc906edda5050",
-    "tag": "日本語ユーザー調査",
-    "region": "Global向けコミュニティ情報（10月28日メンテ前）",
-    "scope": "35種の旧リスト、1購入5魂、毎時商品更新、魔族・天族のみの出現やレア敵の購入推奨。最新32種と一致しない6種を区別して扱う。",
-    "published_at": "2026-10-28",
-    "checked_at": "2026-11-15"
-  },
-  "pet-shop-client-pool": {
-    "title": "Aion2.gg：Global黒雲貿易団のペット出現候補",
-    "url": "https://aion2.gg/database/shops/random-shop?pool=group_vehicle_Dark",
-    "tag": "Globalクライアント解析",
-    "region": "Globalクライアント由来（第三者）",
-    "scope": "天族・魔族共通のペット商品プール200種と1時間ごとの自動更新。有料更新の段階費用は表示されるが各ペットの実売価格や出現確率は掲載されない。",
-    "published_at": null,
     "checked_at": "2026-11-19"
   },
   "pet-shop-merchant-jp": {
@@ -998,66 +512,12 @@
     "published_at": null,
     "checked_at": "2026-11-19"
   },
-  "pet-shop-habitat": {
-    "title": "Aion2.gg：ペットの魂の入手経路",
-    "url": "https://aion2.gg/database/pets",
-    "tag": "Globalクライアント解析",
-    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
-    "scope": "ペットごとに魂を落とすフィールド・アビス・ダンジョンのモンスターを照合。天族側の狩場に加えて共通IDでも魂が出る9種を確認。",
-    "published_at": null,
-    "checked_at": "2026-11-19"
-  },
-  "pet-shop-community-40": {
-    "title": "がめおじビビ：黒雲貿易団で買うペット40体チェックシート",
-    "url": "https://game-ojisan.com/reviews/aion2-black-cloud-pet-checklist",
-    "tag": "Global実測メモ",
-    "region": "Global版をプレイしたユーザーの調査",
-    "scope": "ショップで集める40種の別集計とLv1→2に25魂、Lv2→3に75魂、1購入5魂。対象数は他の32/35種リストと一致しない。",
-    "published_at": "2026-11-01",
-    "checked_at": "2026-11-15"
-  },
-  "pet-shop-dungeon": {
-    "title": "Aion2.gg：ダンジョンの討伐入手限定ペット14種",
-    "url": "https://aion2.gg/database/pets?side=dungeon",
-    "tag": "Globalクライアント解析",
-    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
-    "scope": "ダンジョンでのみ討伐入手が確認できた14種。炎の神殿の火炎バルゲスト、火炎石の守護像、最上級火の精霊のドロップ記録を含む。",
-    "published_at": null,
-    "checked_at": "2026-11-19"
-  },
-  "pet-shop-verteron": {
-    "title": "Aion2.gg：ベルテロンのペットの魂",
-    "url": "https://aion2.gg/database/pets/regions/verteron-1010",
-    "tag": "Globalクライアント解析",
-    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
-    "scope": "ベルテロンのドロップ元とモンスターの湧き地点を照合。共通IDまたはアビスにも入手先があるペットはベルテロン限定から除外。",
-    "published_at": null,
-    "checked_at": "2026-11-19"
-  },
-  "pet-shop-altgard": {
-    "title": "Aion2.gg：アルトガルドのペットの魂",
-    "url": "https://aion2.gg/database/pets/regions/altgard-1110",
-    "tag": "Globalクライアント解析",
-    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
-    "scope": "アルトガルドのドロップ元とモンスターの湧き地点を照合。地点数は同時出現数や再出現速度とは別の記録。",
-    "published_at": null,
-    "checked_at": "2026-11-19"
-  },
-  "pet-shop-outer": {
-    "title": "Aion2.gg：混沌のエレシュランタ表層のペットの魂",
-    "url": "https://aion2.gg/database/pets/regions/chaotic-outer-reshanta-23",
-    "tag": "Globalクライアント解析",
-    "region": "Global EU/NAクライアント 2.0.10.0（11月5日抽出・第三者DB）",
-    "scope": "表層の赤い棘の王冠島に出るモンスターが沼地のタルゴンの魂をドロップする記録。",
-    "published_at": null,
-    "checked_at": "2026-11-19"
-  },
   "pet-shop-build-note": {
-    "title": "AION2 11月4日アップデートノート（Wikily掲載）",
-    "url": "https://wikily.gg/ja/aion-2/patches/notice-patch-notes-nov-3-pst-nov-4-cet",
-    "tag": "Global告知の転載",
-    "region": "日本語・Global版",
-    "scope": "11月4日適用。一部のペットの魂の直接入手先として遠征・超越を追加。対象ペットの個別名はクライアントDBを照合。",
+    "title": "AION2日本公式：11月4日ペットの入手先追加",
+    "url": "https://aion2.plaync.com/ja-jp/board/update/view?articleId=6aead0e8066b033317c02ab3",
+    "tag": "日本公式",
+    "region": "Global版・Asia向けの日本語告知",
+    "scope": "一部のペットの魂の入手先として遠征・超越を追加。個別の対象は日本語攻略と照合。",
     "published_at": "2026-11-04",
     "checked_at": "2026-11-19"
   },
@@ -1080,20 +540,20 @@
     "checked_at": "2026-11-19"
   },
   "global-patch-2026-11-18-official": {
-    "title": "AION2公式Steam：11月18日アップデートノート",
-    "url": "https://steamcommunity.com/app/3393110/allnews/?l=japanese",
-    "tag": "Global公式",
-    "region": "Global版（英語告知）",
-    "scope": "ルドラ［簡単］IL2,800、装備の合計獲得率、AP3倍の対象。終了メンテナンスの日付はPST・CETと日本語告知で表記が異なる。",
+    "title": "AION2日本公式：11月18日アップデートノート",
+    "url": "https://lounge.plaync.com/feed/88095?country=JP&locale=ja-JP",
+    "tag": "日本公式",
+    "region": "Global版・Asia向けの日本語告知",
+    "scope": "ルドラ［簡単］の最低IL2,800、装備の合計獲得率、フィールドのギーナ（刻印）への変更。",
     "published_at": "2026-11-18",
     "checked_at": "2026-11-19"
   },
   "global-patch-2026-11-18-jp": {
-    "title": "AION2 NOW：11月18日アップデートと日本語・英語の告知比較",
-    "url": "https://aion2now.com/ja/articles/global-update-2026-11-18/",
-    "tag": "告知比較",
-    "region": "日本語・英語のGlobal版告知",
-    "scope": "日本語告知ではAP3倍の終了を12月16日定期メンテナンス前と記載。明示されていない時刻は換算しない。",
+    "title": "AION2日本公式：アビスポイントブーストイベント",
+    "url": "https://lounge.plaync.com/feed/88095?country=JP&locale=ja-JP",
+    "tag": "日本公式",
+    "region": "Global版・Asia向けの日本語告知",
+    "scope": "11月18日定期メンテナンス後～12月16日定期メンテナンス前。対象は表層のモンスター、戦場の勝利・参加報酬と勝利時のミッション報酬。",
     "published_at": "2026-11-18",
     "checked_at": "2026-11-19"
   },
@@ -1124,24 +584,6 @@
     "published_at": null,
     "checked_at": "2026-11-19"
   },
-  "chanter-role-guide": {
-    "title": "Aion2Data：チャンターの役割別ビルド",
-    "url": "https://aion2data.com/guides/chanter",
-    "tag": "Global向け攻略",
-    "region": "Global版向け。一部に韓国版の参考情報あり。",
-    "scope": "DPS・支援・対人別の特化とスティグマの参照先。採用率を示す資料ではない。",
-    "published_at": "2026-10-22",
-    "checked_at": "2026-11-19"
-  },
-  "chanter-global-meta": {
-    "title": "Aion 2 Meta：チャンターのスキル・スティグマ・アルカナ",
-    "url": "https://aion2-meta.com/guides/chanter/",
-    "tag": "Global・韓国版の比較",
-    "region": "Global上位チャンター39人と韓国版の別集計",
-    "scope": "11月12日のGlobal列を参照。装備の着用品・スキルの集計。部位別の魂刻印採用率の集計ではない。",
-    "published_at": null,
-    "checked_at": "2026-11-19"
-  },
   "pet-elite-guardit": {
     "title": "gaming.tools：精鋭ガーディット（Global版）",
     "url": "https://aion2.gaming.tools/ja/pets/1206",
@@ -1157,6 +599,42 @@
     "tag": "Global版DB",
     "region": "Global版 2.0.12.0",
     "scope": "テイム元の護衛兵ティガント、報酬箱と魔族のランダム商店プールを確認。湧き地点数は地図資料を参照。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "asia-patch-2026-11-04-check": {
+    "title": "AION2攻略wiki：11月4日アップデート（JST）",
+    "url": "https://aion2.emagwiki.jp/update261104",
+    "tag": "国内攻略",
+    "region": "Global版・Asia向けの日本語資料",
+    "scope": "日本語公式のルドラ討伐イベント、出席簿とオードエネルギー配布の日時を照合。",
+    "published_at": "2026-11-04",
+    "checked_at": "2026-11-19"
+  },
+  "asia-pass-2026-10-28": {
+    "title": "AION2攻略wiki：ディーヴァパス「飛翔の序章」",
+    "url": "https://aion2.emagwiki.jp/update261028",
+    "tag": "国内攻略",
+    "region": "Global版・Asia向けの日本語資料",
+    "scope": "パスの販売期限は12月2日16:00 JSTとの記載。報酬の受取期限はゲーム内の表示を確認。",
+    "published_at": "2026-10-28",
+    "checked_at": "2026-11-19"
+  },
+  "asia-arcana-db": {
+    "title": "Wikily：Global版のアルカナ一覧",
+    "url": "https://wikily.gg/ja/aion-2/arcana",
+    "tag": "Global版DB",
+    "region": "Global共通のゲームデータ",
+    "scope": "日本語のカード名と個別効果を確認。集計値は掲載対象外。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "pet-shop-asia-map": {
+    "title": "AION2攻略ノート：ペットの生息地マップ",
+    "url": "https://gameguide-navi.com/aion2/pet-map/",
+    "tag": "国内攻略",
+    "region": "Global版・Asia向けの日本語攻略",
+    "scope": "ベルテロンとアルトガルドの討伐対象、精鋭ガーディット・精鋭ニュートの掲載地点を照合。",
     "published_at": null,
     "checked_at": "2026-11-19"
   }

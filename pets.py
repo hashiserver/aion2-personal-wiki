@@ -5,11 +5,11 @@ import unicodedata
 
 GROUPS = {
     "shop": "購入・箱中心",
-    "elyos": "ベルテロン限定",
+    "elyos": "ベルテロン",
     "dungeon-single": "IDで1周1体",
     "dungeon": "ID産",
     "rare": "狩場少数",
-    "alternate": "共通ID・アビスあり",
+    "alternate": "別の入手先を要確認",
     "altgard": "魔族側の狩場",
 }
 GENERA = {"知性", "野性", "自然", "変形"}

@@ -103,22 +103,19 @@ def render_tables(body: str, gear_class: bool) -> str:
         table = match[0]
         headers = re.findall(r'<th>(.*?)</th>', table)
         if gear_class and headers and headers[0] == '部位':
-            ranked = headers[1:] == ['①', '②', '③', '④']
-            labels = [f'採用率{i}位' for i in range(1, 5)] if ranked else headers[1:]
-
             def row(cells):
                 values = re.findall(r'<td>(.*?)</td>', cells[1], re.DOTALL)
                 if len(values) != len(headers):
                     raise ValueError('gear row does not match table headers')
                 columns = ''.join(f'<td role="cell"><span class="gear-cell-label" aria-hidden="true">{label}</span>{value}</td>'
-                                  for label, value in zip(labels, values[1:]))
+                                  for label, value in zip(headers[1:], values[1:]))
                 return f'<tr role="row"><th scope="row" role="rowheader">{values[0]}</th>{columns}</tr>'
 
             table = re.sub(r'<tr>(\s*<td>.*?)</tr>', row, table, flags=re.DOTALL)
             table = table.replace('<th>', '<th scope="col" role="columnheader">')
             table = table.replace('<thead>', '<thead role="rowgroup">').replace('<tbody>', '<tbody role="rowgroup">')
             table = table.replace('<tr>', '<tr role="row">').replace('<table>', '<table role="table">')
-            title = '韓国PvE上位の魂刻印採用率' if ranked else 'Global版の魂刻印厳選候補'
+            title = 'Asia向けの魂刻印厳選候補'
             table = table.replace('<table role="table">', f'<table role="table" aria-label="{title}">')
             return f'<div class="table-scroll gear-options" tabindex="0" role="region" aria-label="{title}">{table}</div>'
         return f'<div class="table-scroll" tabindex="0" role="region" aria-label="比較表。横にスクロールできます">{table}</div>'
@@ -186,14 +183,6 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
         body_html = MARKER.sub(lambda m: f'<a class="tag source-tag" href="#source-{m[1]}" title="{html.escape(sources[m[1]]["region"] + " / " + sources[m[1]]["scope"], quote=True)}">{html.escape(sources[m[1]]["tag"])}</a>', body_html)
         gear_class = any(slug == f'gear/{key}' for key, _ in GEAR_CLASSES)
         body_html = render_tables(body_html, gear_class)
-        if slug == 'gear/chanter':
-            reference = re.search(r'<h2 id="[^"]+">韓国PvE上位の採用率</h2>', body_html)
-            if reference:
-                before, after = body_html[:reference.start()], body_html[reference.end():]
-                table_end = after.index('</table></div>') + len('</table></div>')
-                body_html = (before + '<details class="gear-reference" id="kr-pve">'
-                             '<summary>韓国PvE上位の採用率を見る</summary>'
-                             + after[:table_end] + '</details>' + after[table_end:])
         layout = meta.get('layout')
         is_portal = layout in ('portal', 'resources', 'events')
         if is_portal:
@@ -207,7 +196,7 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
                 # untouched so the scheduled content updater keeps its source of truth.
                 body_html = (rendered +
                              '<details class="update-archive" id="updates">'
-                             '<summary>更新履歴・地域別の適用状況を読む</summary>'
+                             '<summary>Asia向けの更新履歴を読む</summary>'
                              '<div class="update-archive-body">' + body_html + '</div></details>')
             elif layout == 'events':
                 # Long official patch summaries remain searchable without pushing
@@ -234,7 +223,7 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             toc = '<nav class="article-toc" aria-label="このページの目次"><p>このページの目次</p><ul>' + links + '</ul></nav>'
         values = {
             'TITLE': html.escape(meta['title']), 'DATE': html.escape(meta['checked_at']),
-            'REGION_LABEL': '韓国PvE・参考資料' if gear_class and slug != 'gear/chanter' else '日本・グローバル版',
+            'REGION_LABEL': 'Global版・Asia',
             'CSS': f'/assets/{assets["style"]}',
             'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known),
             'BODY': gear_subnavigation(slug, known) + toc + body_html,

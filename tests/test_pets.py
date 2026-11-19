@@ -60,12 +60,13 @@ class PetPriorityTests(unittest.TestCase):
         pet = next(p for p in self.catalog["items"] if p["name"] == "精鋭ニュート")
         self.assertEqual(set(pet["groups"]), {"elyos", "rare"})
 
-    def test_alternate_routes_and_spawn_counts_adjust_priority(self):
+    def test_asia_habitat_evidence_adjusts_priority(self):
         pets = {item["name"]: item for item in self.catalog["items"]}
         for name in ("沼地のタルゴン", "クラル戦士", "コヌティ作業員"):
             self.assertEqual(pets[name]["groups"], ["alternate"])
+            self.assertIn("ゲーム内のペット画面", pets[name]["notes"][0])
         self.assertEqual(pets["ビベル"]["groups"], ["altgard"])
-        self.assertIn("71地点", pets["ビベル"]["notes"][0])
+        self.assertIn("アルトガルド", pets["ビベル"]["notes"][0])
         self.assertEqual(pets["ビロータ薬草採り"]["groups"], ["altgard", "rare"])
 
     def test_renamed_pets_keep_previous_saved_keys(self):

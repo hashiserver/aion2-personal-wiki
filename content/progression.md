@@ -1,6 +1,6 @@
 {"slug":"progression","title":"IL別育成ロードマップ","checked_at":"2026-11-19","source_ids":["official-expedition","official-ordeal","official-abyss","gaming-daevanion","global-patch-2026-10-28-official","global-patch-2026-11-04-official","il-global-gates","il-japan-guide","il-global-gear","il-hard-2026-10-21","global-patch-2026-11-11-official","global-patch-2026-11-18-official","il-global-vacron"]}
 
-次のコンテンツに必要な **IL（アイテムレベル）を目標に、いま優先する行動** を整理したページです。対象は **2026年11月19日時点のAION2 Global版（Lv45帯）**。日本・Asiaでの実際の入場可否、コンテンツ名、段階・必要ILはゲーム内の表示を優先してください。
+次のコンテンツに必要な **IL（アイテムレベル）を目標に、いま優先する行動** を整理したページです。対象は **2026年11月19日時点のAION2 Global版・Asia（Lv45帯）**。Asiaでの実際の入場可否、コンテンツ名、段階・必要ILはゲーム内の表示を優先してください。
 
 **使い方**：現在のIL以上で、まだ解放していない次の行を探す → 「先にやること」から着手 → 解放後は次の段階に進みます。**入場ILはクリアを保証しません**。スキル、特化、立ち回り、パーティ編成も確認してください。
 
@@ -63,7 +63,7 @@
 - **3,000**：同「難しい」の入場目標。ILだけでなくHP・防御・スキル特化・火力とパーティ役割を確認する。
 - ルドラでは装備・腕輪などの報酬と交換券を活用し、必要部位の更新を目指す。
 
-ルドラの制限は［普通・難しい］も2時間。装備の合計獲得率は［簡単・普通・難しい］とも15%。日本・Asiaでの入場条件と報酬はゲーム内でも確認してください。[[source:global-patch-2026-11-11-official]][[source:global-patch-2026-11-18-official]]
+ルドラの制限は［普通・難しい］も2時間。装備の合計獲得率は［簡単・普通・難しい］とも15%。Asiaでの入場条件と報酬はゲーム内でも確認してください。[[source:global-patch-2026-11-11-official]][[source:global-patch-2026-11-18-official]]
 
 ## ILが伸びないときの確認順
 
@@ -74,4 +74,3 @@
 5. 最後に強化・突破で不足分を埋めるか。**無理に数字だけを上げず、戦闘能力も確認**する。
 
 関連ページ：[日課・週課](/)／[任務・指令](/duty/)／[装備厳選の対応表](/gear/)／[強化・継承の失敗を防ぐ](/gear/transfer/)／[ビルド・ツール](/links/)。[[source:il-japan-guide]][[source:il-global-gear]]
-

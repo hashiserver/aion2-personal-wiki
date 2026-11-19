@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-11-19",
-  "scope": "魔族向けの黒雲貿易団購入候補。討伐での入手経路と確認した湧き地点数を基に優先度を判断する。",
+  "scope": "Global版・Asiaの魔族向け。討伐で確認できる入手先と周回しやすさを基に購入を判断する。",
   "items": [
     {
       "name": "アウルトロスの分身",
@@ -129,7 +129,7 @@
         "炎の神殿のモンスターから魂を入手。周回するならドロップ分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "かえんバルゲスト"
@@ -144,7 +144,7 @@
         "炎の神殿のモンスターから魂を入手。周回するならドロップ分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "かえんせきのしゅごぞう"
@@ -249,7 +249,7 @@
         "炎の神殿のモンスターから魂を入手。周回するならドロップ分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "さいじょうきゅうひのせいれい"
@@ -487,10 +487,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、ウルググ峡谷でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "アウルラウじゅじゅつし"
@@ -505,7 +505,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -519,7 +519,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -533,7 +533,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -547,7 +547,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "クラルきょうかけいかいへい"
@@ -559,10 +559,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、デウス研究基地（超越）でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "クラルじゅじゅつへい"
@@ -574,10 +574,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、デウス研究基地（超越）でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "クラルせんし"
@@ -592,7 +592,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "クラルろうどうしゃ"
@@ -607,7 +607,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -618,10 +618,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、ウルググ峡谷でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "コヌティさぎょういん"
@@ -636,7 +636,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -650,7 +650,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -664,7 +664,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -678,7 +678,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -692,7 +692,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "ドラナほうし"
@@ -704,10 +704,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、ウルググ峡谷でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -718,10 +718,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、ウルググ峡谷でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "ピノさぎょういん"
@@ -736,7 +736,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -750,7 +750,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -762,10 +762,11 @@
         "rare"
       ],
       "notes": [
-        "ベルテロンの海岸のオード蜘蛛から入手。湧き8地点。亀裂で集めに行かない場合は購入候補"
+        "ベルテロンの海岸のオード蜘蛛から入手。討伐対象が少なく、亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-core-global",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "ベビー オードぐも"
@@ -780,7 +781,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -794,7 +795,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "やみのせいれい"
@@ -806,10 +807,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、砕けたアルカニス（超越）でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "かきゅうみずのせいれい"
@@ -821,10 +822,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、バクロンの空中島でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "かきゅうちのせいれい"
@@ -836,10 +837,10 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンの汚染されたガーディットから入手。湧き44地点。亀裂で集めに行かない場合は購入候補"
+        "ベルテロンの汚染されたガーディットから入手。亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "かんしガーディット"
@@ -854,7 +855,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "クラルきょうかせんとうへい",
@@ -870,7 +871,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "かれはアグリント"
@@ -883,10 +884,11 @@
         "rare"
       ],
       "notes": [
-        "ベルテロンの略奪団ザイフから入手。湧き6地点。亀裂で集めに行かない場合は購入候補"
+        "ベルテロンの略奪団ザイフから入手。討伐対象が少なく、亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-core-global",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "てなづけたザイフ"
@@ -898,10 +900,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、混沌のエレシュランタ表層でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-outer",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "ぬまちのタルゴン"
@@ -914,10 +916,11 @@
         "rare"
       ],
       "notes": [
-        "ベルテロンの庭園の守護者から入手。湧き10地点。亀裂で集めに行かない場合は購入候補"
+        "ベルテロンの庭園の守護者から入手。討伐対象が少なく、亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-core-global",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "もりのしゅごしゃ"
@@ -932,7 +935,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "もりのれいこん"
@@ -949,7 +952,7 @@
       ],
       "source_ids": [
         "pet-elite-guardit",
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "せいえいガーディット"
@@ -966,7 +969,7 @@
       ],
       "source_ids": [
         "pet-elite-klaw",
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "せいえいニュート"
@@ -978,10 +981,10 @@
         "alternate"
       ],
       "notes": [
-        "ベルテロンのほか、バクロンの空中島でも魂を入手できる。通う予定があれば先にそちらで集める"
+        "ベルテロンで入手先を確認。購入前に、ゲーム内のペット画面で共通ID・アビスの入手先も確認"
       ],
       "source_ids": [
-        "pet-shop-habitat",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "おおきなハチ"
@@ -993,10 +996,10 @@
         "elyos"
       ],
       "notes": [
-        "ベルテロンのドラナ変異コウモリから入手。湧き11地点。亀裂で集めに行かない場合は購入候補"
+        "ベルテロンのドラナ変異コウモリから入手。亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "どうくつのコウモリ"
@@ -1011,7 +1014,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "へんいしたしにくちゅう"
@@ -1026,7 +1029,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "へんしゅアルマドン"
@@ -1041,7 +1044,7 @@
         "確認できた討伐入手先はベルテロン。時空の亀裂で集めに行かない場合は購入候補"
       ],
       "source_ids": [
-        "pet-shop-verteron",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "へんしゅキャンサリード"
@@ -1057,7 +1060,7 @@
         "ウルググ峡谷で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "ウルググとうし"
@@ -1072,7 +1075,7 @@
         "クラオ洞窟で対象が1周に複数。普段回るなら周回分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "クラオじっけんたい"
@@ -1088,7 +1091,7 @@
         "クラオ洞窟で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "クラオふういんのしゅごしゃ"
@@ -1103,7 +1106,7 @@
         "クラオ洞窟で対象が1周に複数。普段回るなら周回分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "クラオへんいたい"
@@ -1119,7 +1122,7 @@
         "クラオ洞窟で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ]
     },
@@ -1134,7 +1137,7 @@
         "炎の神殿で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "こくえんモルト"
@@ -1149,7 +1152,7 @@
         "砕けたアルカニスで対象が1周に複数。普段回るなら周回分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "さいじょうきゅうみずのせいれい"
@@ -1164,7 +1167,7 @@
         "バクロンの空中島で対象が1周に複数。普段回るなら周回分を先に集める"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "さいじょうきゅうちのせいれい"
@@ -1180,7 +1183,7 @@
         "炎の神殿で対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "あかいほのおイグヌス"
@@ -1196,7 +1199,7 @@
         "ドラウプニルで対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "ほしょくしゃサラスワティ"
@@ -1212,7 +1215,7 @@
         "ドラウプニルで対象が1周1体。周回しづらければ購入を優先"
       ],
       "source_ids": [
-        "pet-shop-dungeon",
+        "pet-shop-core-global",
         "pet-shop-merchant-jp"
       ],
       "reading": "むげんのラクシュミ"
@@ -1224,10 +1227,10 @@
         "altgard"
       ],
       "notes": [
-        "アルトガルドに湧き21地点。魔族側での狩りを優先"
+        "アルトガルドで入手先を確認。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -1238,10 +1241,10 @@
         "altgard"
       ],
       "notes": [
-        "アルトガルドに湧き16地点。魔族側での狩りを優先"
+        "アルトガルドで入手先を確認。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -1252,10 +1255,10 @@
         "altgard"
       ],
       "notes": [
-        "アルトガルドに湧き71地点。魔族側での狩りを優先"
+        "アルトガルドで入手先を確認。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -1266,10 +1269,10 @@
         "altgard"
       ],
       "notes": [
-        "アルトガルドに湧き19地点。魔族側での狩りを優先"
+        "アルトガルドで入手先を確認。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "かんしのオキュラゼン"
@@ -1281,10 +1284,10 @@
         "altgard"
       ],
       "notes": [
-        "アルトガルドに湧き26地点。魔族側での狩りを優先"
+        "アルトガルドで入手先を確認。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "ぎょうこされたドラナ"
@@ -1296,10 +1299,10 @@
         "altgard"
       ],
       "notes": [
-        "アルトガルドに湧き20地点。魔族側での狩りを優先"
+        "アルトガルドで入手先を確認。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "いろあせたふゆうたい"
@@ -1311,10 +1314,10 @@
         "altgard"
       ],
       "notes": [
-        "アルトガルドに湧き29地点。魔族側での狩りを優先"
+        "アルトガルドで入手先を確認。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "ちゅうどくになったシュラクたんぷ"
@@ -1326,10 +1329,10 @@
         "altgard"
       ],
       "notes": [
-        "アルトガルドに湧き18地点。魔族側での狩りを優先"
+        "アルトガルドで入手先を確認。魔族側での狩りを優先"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ],
       "reading": "へんいしたウルサス"
@@ -1343,10 +1346,11 @@
         "rare"
       ],
       "notes": [
-        "アルトガルドに湧き4地点。狩りの回りづらさに応じて購入を検討"
+        "アルトガルドの討伐対象が少ない。狩りで集めにくければ購入を検討"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-core-global",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -1359,10 +1363,11 @@
         "rare"
       ],
       "notes": [
-        "アルトガルドに湧き8地点。狩りの回りづらさに応じて購入を検討"
+        "アルトガルドの討伐対象が少ない。狩りで集めにくければ購入を検討"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-core-global",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     },
@@ -1374,10 +1379,11 @@
         "rare"
       ],
       "notes": [
-        "アルトガルドに湧き10地点。狩りの回りづらさに応じて購入を検討"
+        "アルトガルドの討伐対象が少ない。狩りで集めにくければ購入を検討"
       ],
       "source_ids": [
-        "pet-shop-altgard",
+        "pet-shop-core-global",
+        "pet-shop-asia-map",
         "pet-shop-merchant-jp"
       ]
     }
