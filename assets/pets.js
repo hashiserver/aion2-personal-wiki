@@ -12,6 +12,8 @@
   const completedTable = completedBody.closest(".pet-table-wrap");
   const search = root.querySelector("#pet-search");
   const group = root.querySelector("#pet-group");
+  const quick = root.querySelector("#pet-quick");
+  const groupButtons = Array.from(quick.querySelectorAll("button"));
   const genus = root.querySelector("#pet-genus");
   const pendingCount = root.querySelector("#pet-pending-count");
   const doneCount = root.querySelector("#pet-done-count");
@@ -78,6 +80,9 @@
     const phrase = normalize(search.value);
     const selectedGroup = group.value;
     const selectedGenus = genus.value;
+    for (const button of groupButtons) {
+      button.setAttribute("aria-pressed", String(button.dataset.petGroup === selectedGroup));
+    }
     const filtering = phrase || selectedGroup !== "all" || selectedGenus !== "all";
     let visiblePending = 0;
     let visibleDone = 0;
@@ -139,6 +144,13 @@
   search.addEventListener("input", applyFilters);
   group.addEventListener("change", applyFilters);
   genus.addEventListener("change", applyFilters);
+  quick.hidden = false;
+  quick.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-pet-group]");
+    if (!button) return;
+    group.value = button.dataset.petGroup;
+    applyFilters();
+  });
 
   completedLink.addEventListener("click", () => {
     completedPanel.open = true;

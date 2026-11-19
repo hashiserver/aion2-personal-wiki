@@ -196,11 +196,12 @@ class BuildTests(unittest.TestCase):
         for name in classes:
             with self.subTest(klass=name):
                 data = (ROOT / f'content/gear-{name}.md').read_text(encoding='utf-8')
+                ranked_table = data.split('| 部位 | ① | ② | ③ | ④ |', 1)[1].split('\n\n', 1)[0]
                 for slot in slots:
-                    self.assertIn('| ' + slot + ' |', data)
+                    self.assertIn('| ' + slot + ' |', ranked_table)
                 self.assertEqual(sum(line.startswith('| ') and
                         any(line.startswith('| ' + slot + ' |') for slot in slots)
-                        for line in data.splitlines()), 13)
+                        for line in ranked_table.splitlines()), 13)
 
     def test_gear_transfer_guide_subnav_is_linked(self):
         self.article('index.md')

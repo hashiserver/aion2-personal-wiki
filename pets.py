@@ -89,6 +89,15 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
         '<option value="' + key + '">' + label + '（' + str(counts[key]) + '）</option>'
         for key, label in GROUPS.items()
     )
+    quick_filters = "".join(
+        f'<button type="button" data-pet-group="{group}" aria-pressed="{str(group == "all").lower()}">{label} <span>{count}</span></button>'
+        for group, label, count in [
+            ('all', 'すべて', len(rows)),
+            ('shop', '最優先', counts['shop']),
+            ('elyos', GROUPS['elyos'], counts['elyos']),
+            ('dungeon-single', GROUPS['dungeon-single'], counts['dungeon-single']),
+        ]
+    )
     rows_html = "".join(rows)
     headers = ('<thead role="rowgroup"><tr role="row"><th role="columnheader" scope="col">済</th>'
                '<th role="columnheader" scope="col">ペット名</th><th role="columnheader" scope="col">入手区分</th>'
@@ -102,6 +111,8 @@ def render_pet_tracker(catalog: dict, sources: dict, allowed_ids: list[str]) -> 
         '<span>完了 <strong id="pet-done-count">0</strong></span>'
         '<a href="#pet-completed-summary" id="pet-completed-link" hidden>完了済みへ移動</a>'
         '</div>'
+        '<div class="pet-quick" id="pet-quick" role="group" aria-label="購入候補のクイックフィルター" hidden>'
+        + quick_filters + '</div>'
         '<div class="pet-controls">'
         '<label for="pet-search">ペット名を検索'
         '<input id="pet-search" type="search" placeholder="名前・よみがな" autocomplete="off"></label>'

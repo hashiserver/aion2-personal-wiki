@@ -1,5 +1,5 @@
 import unittest
-from datetime import date
+from datetime import datetime
 from html.parser import HTMLParser
 
 import portal
@@ -48,12 +48,24 @@ class PortalTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'source'):
             portal.render_portal(data, {}, [])
 
-    def test_event_end_day_is_not_claimed_to_be_fully_active(self):
-        event = {'starts_on': '2026-10-14', 'ends_on': '2026-11-04'}
-        for day, state in [('2026-10-13', 'upcoming'), ('2026-10-19', 'active'),
-                           ('2026-11-04', 'ending'), ('2026-11-05', 'ended')]:
-            with self.subTest(day=day):
-                self.assertEqual(portal.event_state(event, date.fromisoformat(day)), state)
+    def test_approximate_event_end_has_a_full_day_confirmation_window(self):
+        event = {'title': '時刻未公表', 'starts_on': '2026-10-14', 'ends_on': '2026-11-04'}
+        schedule = portal.event_schedule(event)
+        warning = int(datetime.fromisoformat('2026-11-04T00:00:00+09:00').timestamp() * 1000)
+        expired = int(datetime.fromisoformat('2026-11-05T00:00:00+09:00').timestamp() * 1000)
+        self.assertIn(f'data-warning="{warning}"', schedule)
+        self.assertIn(f'data-end="{expired}"', schedule)
+        self.assertNotIn('data-exact-end', schedule)
+
+    def test_exact_event_end_requires_time_zone_and_matching_jst_date(self):
+        event = {'title': 'クーポン', 'starts_on': '2026-11-18', 'ends_on': '2027-03-03'}
+        for invalid in ('2027-03-03T16:00:00', '2027-03-03T16:00:00+00:00'):
+            with self.subTest(invalid=invalid), self.assertRaisesRegex(ValueError, 'ends_at'):
+                portal.event_schedule({**event, 'ends_at': invalid})
+        end = '2027-03-03T16:00:00+09:00'
+        schedule = portal.event_schedule({**event, 'ends_at': end})
+        self.assertIn('data-exact-end', schedule)
+        self.assertIn(f'data-end="{int(datetime.fromisoformat(end).timestamp() * 1000)}"', schedule)
 
     def test_unknown_card_source_prevents_publication(self):
         data = {'checked_at': '2026-10-19', 'events': [], 'tools': [], 'daily': [
@@ -72,34 +84,39 @@ class PortalTests(unittest.TestCase):
         self.assertIn('#source-tool', Links(result).hrefs)
 
 
-    def test_secondary_tasks_are_collapsed_and_daily_stays_visible(self):
+    def test_weekly_limits_are_visible_without_expanding_the_panel(self):
         sources = {'s': {'tag': '公式', 'title': '案内'}}
         data = {'checked_at': '2026-11-05', 'events': [],
                 'daily': [{'source_id': 's', 'title': '郵便', 'description': '受取'}],
-                'weekly': [{'source_id': 's', 'title': '指令書', 'description': '週枠'}]}
+                'weekly': [{'source_id': 's', 'title': '指令書', 'description': '進行手順',
+                            'summary': '週12枚'}]}
         output = portal.render_portal(data, sources, ['s'])
         self.assertIn('<section class="task-panel" id="daily"', output)
-        self.assertIn('<details class="task-panel collapsible-panel" id="weekly"', output)
+        self.assertIn('<section class="task-panel" id="weekly"', output)
         self.assertIn('<details class="task-detail">', output)
+        self.assertLess(output.index('週12枚'), output.index('<details class="task-detail">'))
         self.assertIn('href="#weekly"', output)
         self.assertLess(output.index('id="daily"'), output.index('id="weekly"'))
 
-    def test_events_keep_expired_items_inside_collapsed_archive(self):
+    def test_events_have_neutral_fallback_and_distinct_groups(self):
         sources = {'s': {'tag': '公式', 'title': '告知', 'url': 'https://example.com'}}
-        def event(title, start, end):
+        def event(title, start, end, category):
             return {'source_id': 's', 'title': title, 'starts_on': start, 'ends_on': end,
                     'period': '期間', 'description': '報酬', 'deadline': 'ゲーム内確認',
-                    'short_end': '受取期限'}
+                    'short_end': '受取期限', 'category': category}
         data = {'checked_at': '2026-11-05', 'events': [
-            event('終了したイベント', '2026-10-01', '2026-11-04'),
-            event('開催中イベント', '2026-11-01', '2026-11-18'),
-            event('今後のイベント', '2026-11-10', '2026-11-30')]}
+            event('受取イベント', '2026-10-01', '2026-11-04', 'クーポン'),
+            event('通常イベント', '2026-11-01', '2026-11-18', '期間限定'),
+            event('パッチ告知', '2026-11-10', '2026-11-10', 'アップデート')]}
         output = portal.render_events(data, sources, ['s'])
         self.assertIn('id="current-events"', output)
-        self.assertIn('id="upcoming-events"', output)
-        self.assertIn('<details class="event-archive" id="past-events">', output)
-        self.assertLess(output.index('開催中イベント'), output.index('終了したイベント'))
-        self.assertIn('2026-11-05', output)
+        self.assertIn('id="rewards"', output)
+        self.assertIn('<details class="event-archive" id="past-events" hidden>', output)
+        self.assertEqual(output.count('<span class="status" hidden>'), 2)
+        self.assertIn('id="event-s-2"', output)
+        self.assertLess(output.index('通常イベント'), output.index('受取イベント'))
+        self.assertLess(output.index('id="update-notes"'), output.index('パッチ告知'))
+        self.assertNotIn('開催中', output)
         self.assertIn('公式・参照元を確認', output)
 
     def test_chanter_links_are_prominent_other_classes_are_accessible(self):

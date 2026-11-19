@@ -1,4 +1,4 @@
-"""Generate a lightweight static wiki; no network calls or runtime JavaScript."""
+"""Generate a static wiki with page-specific progressive enhancements."""
 import html
 import hashlib
 import json
@@ -98,6 +98,34 @@ def render_sources(ids: list[str], sources: dict) -> str:
     return '<details class="sources"><summary>情報源・確認した範囲（' + str(len(ids)) + '件）</summary><ul>' + ''.join(rows) + '</ul></details>' if ids else ''
 
 
+def render_tables(body: str, gear_class: bool) -> str:
+    def wrap(match):
+        table = match[0]
+        headers = re.findall(r'<th>(.*?)</th>', table)
+        if gear_class and headers and headers[0] == '部位':
+            ranked = headers[1:] == ['①', '②', '③', '④']
+            labels = [f'採用率{i}位' for i in range(1, 5)] if ranked else headers[1:]
+
+            def row(cells):
+                values = re.findall(r'<td>(.*?)</td>', cells[1], re.DOTALL)
+                if len(values) != len(headers):
+                    raise ValueError('gear row does not match table headers')
+                columns = ''.join(f'<td role="cell"><span class="gear-cell-label" aria-hidden="true">{label}</span>{value}</td>'
+                                  for label, value in zip(labels, values[1:]))
+                return f'<tr role="row"><th scope="row" role="rowheader">{values[0]}</th>{columns}</tr>'
+
+            table = re.sub(r'<tr>(\s*<td>.*?)</tr>', row, table, flags=re.DOTALL)
+            table = table.replace('<th>', '<th scope="col" role="columnheader">')
+            table = table.replace('<thead>', '<thead role="rowgroup">').replace('<tbody>', '<tbody role="rowgroup">')
+            table = table.replace('<tr>', '<tr role="row">').replace('<table>', '<table role="table">')
+            title = '韓国PvE上位の魂刻印採用率' if ranked else 'Global版の魂刻印厳選候補'
+            table = table.replace('<table role="table">', f'<table role="table" aria-label="{title}">')
+            return f'<div class="table-scroll gear-options" tabindex="0" role="region" aria-label="{title}">{table}</div>'
+        return f'<div class="table-scroll" tabindex="0" role="region" aria-label="比較表。横にスクロールできます">{table}</div>'
+
+    return re.sub(r'<table>.*?</table>', wrap, body, flags=re.DOTALL)
+
+
 def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
     sources = json.loads(sources_path.read_text(encoding='utf-8'))
     for sid, s in sources.items():
@@ -135,38 +163,42 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
         if old_page not in expected_pages:
             old_page.unlink()
     (output_dir / 'assets').mkdir(exist_ok=True)
-    css_bytes = (ROOT / 'assets/style.css').read_bytes()
-    css_name = f'style.{hashlib.sha256(css_bytes).hexdigest()[:12]}.css'
-    for old_css in (output_dir / 'assets').glob('style.*.css'):
-        if old_css.name != css_name:
-            old_css.unlink()
-    (output_dir / 'assets' / css_name).write_bytes(css_bytes)
+    assets = {}
+    for stem, extension in [('style', 'css'), ('pets', 'js'), ('events', 'js')]:
+        data = (ROOT / 'assets' / f'{stem}.{extension}').read_bytes()
+        name = f'{stem}.{hashlib.sha256(data).hexdigest()[:12]}.{extension}'
+        for old in (output_dir / 'assets').glob(f'{stem}.*.{extension}'):
+            if old.name != name:
+                old.unlink()
+        (output_dir / 'assets' / name).write_bytes(data)
+        assets[stem] = name
     # Keep the former URL working for an already-open, older document.
     shutil.copyfile(ROOT / 'assets/style.css', output_dir / 'assets/style.css')
     shutil.copyfile(ROOT / '_redirects', output_dir / '_redirects')
-    pet_js_bytes = (ROOT / 'assets/pets.js').read_bytes()
-    pet_js_name = f'pets.{hashlib.sha256(pet_js_bytes).hexdigest()[:12]}.js'
-    for old_js in (output_dir / 'assets').glob('pets.*.js'):
-        if old_js.name != pet_js_name:
-            old_js.unlink()
-    (output_dir / 'assets' / pet_js_name).write_bytes(pet_js_bytes)
-    # Only content-addressed CSS gets an immutable cache. HTML revalidates.
+    # Content-addressed assets are immutable. HTML revalidates.
     header_rules = [f'{relative_link("", slug)}\n  Cache-Control: public, max-age=0, must-revalidate' for slug in sorted(known)]
-    header_rules.append(f'/assets/{css_name}\n  Cache-Control: public, max-age=31536000, immutable')
-    header_rules.append(f'/assets/{pet_js_name}\n  Cache-Control: public, max-age=31536000, immutable')
+    header_rules.extend(f'/assets/{name}\n  Cache-Control: public, max-age=31536000, immutable' for name in assets.values())
     (output_dir / '_headers').write_text('\n\n'.join(header_rules) + '\n', encoding='utf-8')
     template = (ROOT / 'templates/page.html').read_text(encoding='utf-8')
     for meta, body in articles:
         slug = meta['slug']
         body_html = str(markdown2.markdown(body, extras=['tables', 'header-ids'], safe_mode='escape'))
         body_html = MARKER.sub(lambda m: f'<a class="tag source-tag" href="#source-{m[1]}" title="{html.escape(sources[m[1]]["region"] + " / " + sources[m[1]]["scope"], quote=True)}">{html.escape(sources[m[1]]["tag"])}</a>', body_html)
-        body_html = re.sub(r'<table>', '<div class="table-scroll" tabindex="0" role="region" aria-label="比較表。横にスクロールできます"><table>', body_html)
-        body_html = body_html.replace('</table>', '</table></div>')
+        gear_class = any(slug == f'gear/{key}' for key, _ in GEAR_CLASSES)
+        body_html = render_tables(body_html, gear_class)
+        if slug == 'gear/chanter':
+            reference = re.search(r'<h2 id="[^"]+">韓国PvE上位の採用率</h2>', body_html)
+            if reference:
+                before, after = body_html[:reference.start()], body_html[reference.end():]
+                table_end = after.index('</table></div>') + len('</table></div>')
+                body_html = (before + '<details class="gear-reference" id="kr-pve">'
+                             '<summary>韓国PvE上位の採用率を見る</summary>'
+                             + after[:table_end] + '</details>' + after[table_end:])
         layout = meta.get('layout')
         is_portal = layout in ('portal', 'resources', 'events')
         if is_portal:
             portal_data = json.loads((ROOT / 'data/portal.json').read_text(encoding='utf-8'))
-            if portal_data['checked_at'] != meta['checked_at']:
+            if layout in ('portal', 'events') and portal_data['checked_at'] != meta['checked_at']:
                 raise ValueError('portal checked date does not match article')
             renderer = {'portal': render_portal, 'resources': render_links, 'events': render_events}[layout]
             rendered = renderer(portal_data, sources, meta['source_ids'])
@@ -181,7 +213,7 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
                 # Long official patch summaries remain searchable without pushing
                 # the time-sensitive event list below the fold.
                 body_html = (rendered +
-                             '<details class="update-archive" id="update-notes">'
+                             '<details class="update-archive" id="patch-history">'
                              '<summary>パッチ詳細・過去のお知らせを読む</summary>'
                              '<div class="update-archive-body">' + body_html + '</div></details>')
             else:
@@ -202,13 +234,17 @@ def build_site(content_dir: Path, sources_path: Path, output_dir: Path) -> None:
             toc = '<nav class="article-toc" aria-label="このページの目次"><p>このページの目次</p><ul>' + links + '</ul></nav>'
         values = {
             'TITLE': html.escape(meta['title']), 'DATE': html.escape(meta['checked_at']),
-            'CSS': f'/assets/{css_name}',
+            'REGION_LABEL': '韓国PvE・参考資料' if gear_class and slug != 'gear/chanter' else '日本・グローバル版',
+            'CSS': f'/assets/{assets["style"]}',
             'HOME': relative_link(slug, ''), 'NAV': navigation(slug, known),
             'BODY': gear_subnavigation(slug, known) + toc + body_html,
             'SOURCES': render_sources(meta['source_ids'], sources),
             'PAGE_CLASS': 'page-' + (slug.replace('/', '-') or 'home') + (' page-gear' if slug.startswith('gear/') else ''),
             'ABOUT': relative_link(slug, 'sources'),
-            'PAGE_SCRIPTS': f'<script defer src="/assets/{pet_js_name}"></script>' if slug == 'pets' else '',
+            'PAGE_SCRIPTS': (
+                f'<script defer src="/assets/{assets["pets"]}"></script>' if slug == 'pets' else
+                f'<script defer src="/assets/{assets["events"]}"></script>' if layout in ('portal', 'events') else ''
+            ),
         }
         page = template
         for key, value in values.items():

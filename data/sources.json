@@ -1078,5 +1078,86 @@
     "scope": "11月18日開始。THANKSFROMAION2で成長のペット箱（刻印）100個などを受け取れる。1アカウント1回。2027年3月3日16:00 JSTまで。",
     "published_at": "2026-11-18",
     "checked_at": "2026-11-19"
+  },
+  "global-patch-2026-11-18-official": {
+    "title": "AION2公式Steam：11月18日アップデートノート",
+    "url": "https://steamcommunity.com/app/3393110/allnews/?l=japanese",
+    "tag": "Global公式",
+    "region": "Global版（英語告知）",
+    "scope": "ルドラ［簡単］IL2,800、装備の合計獲得率、AP3倍の対象。終了メンテナンスの日付はPST・CETと日本語告知で表記が異なる。",
+    "published_at": "2026-11-18",
+    "checked_at": "2026-11-19"
+  },
+  "global-patch-2026-11-18-jp": {
+    "title": "AION2 NOW：11月18日アップデートと日本語・英語の告知比較",
+    "url": "https://aion2now.com/ja/articles/global-update-2026-11-18/",
+    "tag": "告知比較",
+    "region": "日本語・英語のGlobal版告知",
+    "scope": "日本語告知ではAP3倍の終了を12月16日定期メンテナンス前と記載。明示されていない時刻は換算しない。",
+    "published_at": "2026-11-18",
+    "checked_at": "2026-11-19"
+  },
+  "global-routine-2026-11-16": {
+    "title": "Aion 2 Maps：日課・週課と上限",
+    "url": "https://aion2maps.com/guides/daily-and-weekly/",
+    "tag": "Global向け攻略",
+    "region": "Global版",
+    "scope": "16:00 JSTリセット、シューゴフェスタ報酬の鍵のサーバー共通枠（通常12・会員21）。",
+    "published_at": "2026-11-16",
+    "checked_at": "2026-11-19"
+  },
+  "il-global-vacron": {
+    "title": "gaming.tools：バクロンの空中島（Global版）",
+    "url": "https://aion2.gaming.tools/ja/activities/group-14",
+    "tag": "Global版DB",
+    "region": "Global版",
+    "scope": "クライアントの日本語名と通常IL1,400、難しいIL2,700。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "gear-global-vacron-cloak": {
+    "title": "gaming.tools：バクロンのマント（Global版）",
+    "url": "https://aion2.gaming.tools/ja/items/210730050",
+    "tag": "Global版DB",
+    "region": "Global版",
+    "scope": "装備個別の魂刻印候補を照合。公開候補には完璧が載っていない。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "chanter-role-guide": {
+    "title": "Aion2Data：チャンターの役割別ビルド",
+    "url": "https://aion2data.com/guides/chanter",
+    "tag": "Global向け攻略",
+    "region": "Global版向け。一部に韓国版の参考情報あり。",
+    "scope": "DPS・支援・対人別の特化とスティグマの参照先。採用率を示す資料ではない。",
+    "published_at": "2026-10-22",
+    "checked_at": "2026-11-19"
+  },
+  "chanter-global-meta": {
+    "title": "Aion 2 Meta：チャンターのスキル・スティグマ・アルカナ",
+    "url": "https://aion2-meta.com/guides/chanter/",
+    "tag": "Global・韓国版の比較",
+    "region": "Global上位チャンター39人と韓国版の別集計",
+    "scope": "11月12日のGlobal列を参照。装備の着用品・スキルの集計。部位別の魂刻印採用率の集計ではない。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "pet-elite-guardit": {
+    "title": "gaming.tools：精鋭ガーディット（Global版）",
+    "url": "https://aion2.gaming.tools/ja/pets/1206",
+    "tag": "Global版DB",
+    "region": "Global版 2.0.12.0",
+    "scope": "テイム元の神聖なアンサス、報酬箱と魔族のランダム商店プールを確認。湧き地点数は地図資料を参照。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
+  },
+  "pet-elite-klaw": {
+    "title": "gaming.tools：精鋭ニュート（Global版）",
+    "url": "https://aion2.gaming.tools/ja/pets/1156",
+    "tag": "Global版DB",
+    "region": "Global版 2.0.12.0",
+    "scope": "テイム元の護衛兵ティガント、報酬箱と魔族のランダム商店プールを確認。湧き地点数は地図資料を参照。",
+    "published_at": null,
+    "checked_at": "2026-11-19"
   }
 }

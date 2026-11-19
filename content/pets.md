@@ -1,8 +1,8 @@
-{"slug":"pets","title":"ショップ購入ペット優先表","checked_at":"2026-11-19","source_ids":["pet-shop-core-global","pet-shop-habitat","pet-shop-dungeon","pet-shop-verteron","pet-shop-altgard","pet-shop-outer","pet-shop-client-pool","pet-shop-merchant-jp","pet-shop-build-note","pet-shop-understanding","pet-shop-award-coupon"]}
+{"slug":"pets","title":"ショップ購入ペット優先表","checked_at":"2026-11-19","source_ids":["pet-shop-core-global","pet-shop-habitat","pet-shop-dungeon","pet-shop-verteron","pet-shop-altgard","pet-shop-outer","pet-shop-client-pool","pet-shop-merchant-jp","pet-shop-build-note","pet-shop-understanding","pet-shop-award-coupon","pet-elite-guardit","pet-elite-klaw"]}
 
-黒雲貿易団（ショップ H → スペシャル → ペット）の魔族向けチェックリストです。**最優先は「購入・箱中心」の29種**。時空の亀裂で集めにくい日は「ベルテロン限定」、普段回らないダンジョンは「IDで1周1体」も買いどころです。[[source:pet-shop-core-global]]
+黒雲貿易団（ショップ H → スペシャル → ペット）の魔族向け一覧です。**最優先は「購入・箱中心」の29種**。[[source:pet-shop-core-global]]
 
-> **購入前に受賞記念の箱を確認。** クーポン `THANKSFROMAION2` で成長のペット箱（刻印）100個。ゲーム内の「設定 → その他 → アカウント → クーポン登録」から、2027年3月3日16:00（JST）まで1アカウント1回。受け取った箱を開けてから、足りないペットを買い足せます。[[source:pet-shop-award-coupon]]
+> **購入前に成長のペット箱100個を受け取る。** クーポン `THANKSFROMAION2` は2027年3月3日16:00（JST）まで。[入力手順を見る](/events/#event-pet-shop-award-coupon) [[source:pet-shop-award-coupon]]
 
 [[pet-tracker]]
 
@@ -11,7 +11,7 @@
 | 入手区分 | ショップでの判断 |
 |---|---|
 | 購入・箱中心（29種） | 討伐で魂を得る経路が確認されていない。未完了なら優先。成長のペット箱なども活用。 |
-| ベルテロン限定（28種） | 討伐で確認できた入手先はベルテロン。時空の亀裂に行かない場合に買う。ネームド各1地点の精鋭ガーディット・精鋭ニュートは特に優先。 |
+| ベルテロン限定（28種） | 討伐で確認できた入手先はベルテロン。時空の亀裂に行かない場合に買う。ネームド各1地点の精鋭ガーディット・精鋭ニュートは特に優先。個別DBで討伐先を確認できます。 |
 | ID産（14種） | 対象の討伐入手先はID。うち1周1体の7種は、普段回らないなら購入優先。複数出る対象は周回分を先に回収。 |
 | 共通ID・アビスあり（10種） | ベルテロンに加えて両陣営から行ける入手先あり。通う予定のID・アビスで先に集める。 |
 | 魔族側の狩場（11種） | アルトガルドでの討伐を優先。ビロータ薬草採り（4地点）、灰色のアグリント（8地点）、スライム（10地点）は周回しにくい場合の購入候補。 |
